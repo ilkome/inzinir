@@ -1,0 +1,270 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Документы
+	
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.remodal.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.hide
+		.remodal(data-remodal-id="enter-popup")
+			.ins.login-popup
+				span Авторизуйтесь
+				.social
+					ul
+						li.vk
+							a(href="#")
+						li.fb
+							a(href="#")
+						li.tw
+							a(href="#")
+						li.od
+							a(href="#")
+						li.you
+							a(href="#")
+						li.rss
+							a(href="#") 
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Рынок услуг
+				li.sep >
+				li
+					a(href="#") Потребности
+		//------------------------------------------------
+		.page-name
+			h1 Потребности
+			p Рынок предложений и услуг
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 65
+					.views 2726
+				.bname
+					h1 Проектирование маневрового устройства для передвижения вагонов
+				.bcon
+					.line-text-grey
+						span Национальный исследовательский Томский политехнический университет 
+						.irating
+							span Рейтинг
+							ul
+								li.star
+								li.star
+								li.star
+								li.star
+								li
+					.item-cloud-one
+						.iprev
+							.person
+								.person__img
+									a(href="#")
+										img(src="img/content/ava-100.jpg", alt="img")
+								.person__name 
+									a(href="#") Олег Джагупов
+								ul.person__info 
+									li
+										a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+						.icon
+							.cloud
+								.itext 
+									p Здравствуйте, прошу сообщить, кто из инжиниринговых компаний возьмется за проектирование УПВ-25 (маневренное устройство для передвижения вагонов)?
+									p С уважением, Олег Джагупов.
+								a(href="#").doc-link math.pdf 
+									span (14 mb)`
+				.bmetabot.right
+					.addd
+						a(href="#").btn-orange-big Предложить решение
+					.share.small
+						span Поделиться
+						ul
+							li.vk
+								a(href="#")
+							li.fb
+								a(href="#")
+							li.tw
+								a(href="#")
+							li.in
+								a(href="#")
+				.box-comments
+					.bwrite
+						.bname
+							h3 Комментарии к статье
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------------
+		.main-right
+			.box-sort-docs.box-right
+				.bname
+					h3 Показать статьи
+				.bcon
+					.dates
+						.legend c датой публикации
+						.line
+							.td
+								span от
+							.td
+								input(type="text", placeholder="дата от")
+							.td
+								.calendar-widget-pop
+									a(href="#").cal
+						.line
+							.td
+								span до
+							.td
+								input(type="text", placeholder="дата до")
+							.td
+								.calendar-widget-pop
+									a(href="#").cal
+					.checks
+						.legend Относятся к разделу
+						.line
+							input(id="check-val2" type="checkbox" name="radio")
+							label(for="check-val2") Свидетельства о регистрации (243)
+						.line
+							input(id="check-val3" type="checkbox" name="radio")
+							label(for="check-val3") Патенты РФ (68)
+				.action
+					a(href="#") Показать
+			.box-right.boxside-sort-cat
+				.bname
+					h3 По разделам
+				.bcon
+					ul
+						li.selected
+							a(href="#") Авиация и космос (10)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

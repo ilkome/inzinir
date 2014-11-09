@@ -1,0 +1,2277 @@
+@import "common.styl"
+min-height = "screen and (min-height: 768px)"
+min-width = "screen and (max-width 1350px)"
+
+body
+	position relative;
+	background #e6e6e6;
+#shikarniy
+	min-height 100%;
+	min-width 1300px;
+.main-width
+	max-width 1055px; margin 0 auto;
+.hoverbg
+	.icon
+		position relative; 
+		.act
+			display none; position absolute; left 0; top 0;
+.bcon-text-style
+	h3
+		font-size 24px
+		latoblack()	
+		font-weight normal;
+	p.photo-desc
+		font-size 11px; color #B2B2B2
+	p
+		color #333; font-size 16px; line-height 20px;
+		&.grey
+			color #999;
+
+
+//	КНОПКИ
+// ===============================================
+.btn-orange
+	display block;
+	padding 10px 10px;
+	text-align center; 
+	color #333; 
+	font-size 12px; 
+	tdn(); 
+	latoblack(); 
+	text-transform uppercase;
+	border 3px solid #FF8C4D;
+	&:hover
+		tdn(); 
+		border-color #f85800;
+.btn-orange-big
+	@extend .btn-orange
+	padding 15px 35px
+	font-size 15px
+.btn
+	border-width 2px;
+	border-style solid;
+	font-size 12px;
+	text-transform uppercase;
+	text-align center;
+	heavy();
+	anim()
+	&:hover
+		anim()
+	a
+		display block;
+		padding 20px 10px;
+		&:hover
+			text-decoration none
+.btn-warning
+	@extend .btn;
+	border-color #ff8c4d;
+	color #FF8C4D;
+	a
+		color #FF8C4D;
+	&:hover
+		border-color #f85800;
+		color #f85800;
+		a
+			color #f85800;
+.btn-primary
+	@extend .btn;
+	border-color #00557d;
+	color: #00557d;
+	&:hover
+		background #00557d; 
+		color #FFF; 
+	a
+		color: #00557d;
+		&:hover
+			color #FFF;
+.btn-reports
+	margin-bottom 10px;
+
+
+
+//	ЛЕВАЯ КОЛОНКА
+// ===============================================
+.sidebar
+	z-index 101;
+	width 200px; 
+	height 100%; 
+	background-color #F85800
+	text-align center;
+	position fixed; left 0; top 0;
+	.logo
+		padding 60px 0; text-align center;
+		a
+			display inline-block; 
+			width 148px; height 46px;
+			background url("../img/left/logo.png") no-repeat;
+	.menu
+		ul
+			lino();
+			li
+				display block;
+				border-bottom 1px solid #f97933; 
+				text-align left;
+				anim();
+				&:hover
+					background alpha(#272729, .2); 
+				a
+					display block; padding 25px 20px 20px 75px;
+					font-size 12px; color #E6E6E6; text-transform uppercase; tdn(); 
+			li.home
+				a
+					background url("../img/left/home.png") 15px center no-repeat;
+			li.info
+				a
+					background url("../img/left/info.png") 15px center no-repeat;
+			li.events
+				a
+					background url("../img/left/events.png") 15px center no-repeat;
+			li.talks
+				a
+					background url("../img/left/talks.png") 15px center no-repeat;
+			li.search
+				a
+					background url("../img/left/search.png") 15px center no-repeat;
+			li.active 
+				background #272729;
+	// -----------------------------------------------
+	.side-extend-fix
+		display none;
+		position fixed; left 200px; top 0;
+		width 400px; full(); 
+		padding 0 30px;
+		min-height 600px; 
+		height 100%;
+		background url("../img/left/bg.jpg") no-repeat; cover();
+	.side-extend
+		display none;
+		position fixed; left 200px; top 0;
+		width 400px; full(); 
+		padding 0 30px;
+		min-height 600px; 
+		height 100%;
+		text-align left; 
+		background url("../img/left/bg.jpg") no-repeat; cover();
+		.bname
+			padding 30px 0 25px 0;
+			h3
+				margin 0;
+				color #E6E6E6; latohairline();
+			a.close
+				position absolute; right 20px; top 30px; width 32px; height 32px; 
+				background url("../img/left/close.png") no-repeat;
+				&:hover
+					transform rotate(180deg) scale(1.1); 
+		.bnav
+			height 80px
+			ul
+				lino();
+				width 100%;
+				display table;
+				border 1px solid #fff; 
+				border-radius 20px;
+				overflow hidden;
+				li
+					display table-cell; width 33%; full(); text-align center;
+					a
+						display block;
+						padding 10px 0;
+						color #E6E6E6; tdn();
+				li:nth-child(2)
+					border-left 1px solid #fff;
+					border-right 1px solid #fff; 
+				li.active
+					a
+						background #f85800; 
+				li:hover
+					a
+						background alpha(#f85800, 0.5); 
+		.bcat
+			padding-bottom 40px;
+			&.open
+				.bcat-con
+					display block;
+			.bcat-name
+				padding-bottom 10px;
+				border-bottom 1px solid #2e3033; 
+				clearfix(); 
+				.name
+					float left; 
+					color #fff; text-transform uppercase; latoblack();
+					a
+						color #fff; tdn();					
+					span
+						color #f85800;
+				.toogle
+					float right;
+					width 17px; height 15px; text-align center; color #f85800; 
+					border 1px solid #f85800; border-radius 2px;
+					cursor pointer;
+					anim-op(); 						
+			.bcat-name:hover
+				cursor pointer;
+				.name
+					a
+						color #ff8c4d; 	
+				.toogle
+					opacity .7;
+			.bcat-con
+				display none;
+				.item
+					padding 15px 0;
+					border-bottom 1px solid #2e3033;
+					.iprev, .idate
+						display table-cell;
+						vertical-align middle; 
+					.idate
+						padding-left 20px
+						color #F85800
+						font-size 10px
+						line-height 16px
+						text-align center
+						.num
+							font-size 24px
+					.iname
+						display table-cell;
+						padding-left 30px; 
+						vertical-align middle;
+						a
+							color #e5e5e5; tdn();
+							&:hover
+								color #ff8c4d; 
+
+
+//	ВЕРХНЕЕ МЕНЮ
+// ===============================================
+.topper
+	position fixed; left 0; top 0; width 100%; min-width 1000px; full(); height 63px; padding-left 200px; 
+	z-index 100; overflow hidden;
+	background #f76719; clearfix();
+	.main-width
+		max-width 100%;
+	.menu
+		float left; padding-left 20px; 
+		ul
+			lino();
+			li
+				display inline-block;
+				a
+					display block; padding 25px 20px;
+					color #fff; text-transform uppercase; heavy(); 
+					tdn() 
+					&:hover
+						color #333
+			li.active
+				a
+					color #333
+	.user
+		float right;
+		background #333;
+		clearfix(); 
+		.name
+			float left; padding 15px 25px 25px 30px;
+			font-size 14px; 
+			color #eee;
+			a
+				tdn();
+				&:hover
+					opacity .7;
+			.title
+				color #fff;  
+			.email
+				font-size 12px; color #888; 
+		.pic
+			position relative; 
+			float right;
+			margin 10px 40px 0 0;
+			.ava
+				border-radius 50%;
+			.count
+				position absolute; right -8px; top 0px; 
+				a
+					display inline-block;
+					width 19px; height 17px; padding-top 2px;
+					font-size 10px; color #fff; text-align center;
+					background-color #F85800;
+					border-radius 50%;
+					color #fff; tdn(); 
+					&:hover
+						color alpha(#fff, 0.7); 
+			
+
+//	ОСНОВНОЙ КОНТЕНТ
+// ===============================================
+.main-page
+	padding 90px 40px 50px 240px;
+	@media min-width
+		background #fff;
+.main-wrap
+	padding 40px;
+	full(); 
+	box-shadow 0 0 10px rgba(1, 1, 1, 0.15)
+	background #ffff url("../img/main-bg-b.png") 0 bottom repeat-x; 
+	@media min-width
+		padding 0 0 40px 0;
+		box-shadow none;
+// -----------------------------------------------
+.pathway
+	padding-bottom 40px;
+	margin-left -2px;
+	ul 
+		lino();
+		li
+			display inline-block;
+			padding 0 2px;
+			color #f85800; text-transform uppercase; latoblack();
+			a
+				display block; tdn();
+				color #f85800; text-transform uppercase; latoblack();
+				border-bottom 3px solid #f85800;
+				&:hover
+					opacity .8; 
+		li.nound
+			a
+				border-bottom none; 
+// -----------------------------------------------
+.page-name
+	padding-bottom 40px;
+	latolight();
+	h1
+		margin 0;
+		font-size 72px; latolight();
+	p
+		margin 0; latolight(); font-size 18px; 
+// -----------------------------------------------
+.main-left
+	width 75%; display table-cell;
+	vertical-align top;
+.main-right
+	position relative;
+	padding-left 20px; display table-cell;
+	vertical-align top;
+.sep-black
+	margin 30px 0;
+	background #1a1a1a; height 3px;
+.sep-space
+	height 30px
+.mar-bot-20
+	margin-bottom 30px
+.imeta
+	clearfix(); 
+	a.btn-add
+		color #F85800
+	a
+		padding-left 20px; 
+		color #9A9A9A; tdn();
+		&:hover
+			color #ff8c4d; 
+	.comments
+		float left; padding-right 15px;
+		a
+			display block; background url("../img/icons/comments.png") 0 1px no-repeat; 
+	.views
+		float left; 
+		a
+			display block; background url("../img/icons/views.png") 0 2px no-repeat;
+// Социальные кнопки
+.social
+	display table-cell; padding 0 10px 0 20px;
+	width 40%;
+	text-align right; vertical-align top;
+	ul
+		lino();
+		li
+			display inline-block; padding 0 10px;
+			a
+				display block; width 32px; height 32px;
+				&:hover
+					opacity .8; 
+		li.in
+			a
+				background url("../img/footer/in.png") no-repeat; 
+		li.vk
+			a
+				background url("../img/footer/vk.png") no-repeat; 
+		li.fb
+			a
+				background url("../img/footer/fb.png") no-repeat; 
+		li.tw
+			a
+				background url("../img/footer/tw.png") no-repeat; 
+		li.od
+			a
+				background url("../img/footer/od.png") no-repeat; 
+		li.you
+			a
+				background url("../img/footer/you.png") no-repeat; 
+		li.rss
+			a
+				background url("../img/footer/rss.png") no-repeat; 
+// Рейтинг
+.irating
+	span
+		font-size 11px; color #ccc;
+	ul
+		lino();
+		display inline-block;
+		margin 0 0 0 5px; 
+		li
+			display inline-block; width 14px; height 13px; margin-right 4px;
+			background url("../img/icons/stars.png") no-repeat; 
+			cursor pointer; 
+			&:hover
+				opacity 0.7;
+		li.star
+			background-position -14px 0;
+// Описание фото
+.photo-desc-box
+	clearfix()
+	padding-bottom 20px;
+	color #999; font-size 11px; 
+	text-align right; 
+	p
+		color #999; font-size 12px; line-height 16px;
+	.pdb-left
+		float left; 
+		width 30%; full(); 
+		padding-right 20px; 
+	.pdb-right
+		float right; 
+		width 70%; 
+.photo-desc-box-grey
+	position relative
+	clearfix()
+	padding-bottom 20px;
+	color #999; font-size 11px; 
+	text-align right; 
+	p
+		color #999; font-size 12px; line-height 16px;
+	.pdb-left
+		width 70%;
+	.pdb-right
+		position absolute 
+		right 0px  
+		bottom 0px
+		width 30%; 
+		full(); 
+		padding-left 20px; 
+		color #999
+		text-align left
+		p
+			color #999
+img.full
+	display inline-block
+	width 100%
+.search-con
+	position relative
+	margin-bottom 10px
+	&:after
+		content " "
+		background url("../img/icons/search-h.png") center center no-repeat
+	&:before
+		content " "
+		background url("../img/icons/search-p.png") center center no-repeat
+	.inp-text
+		width 100%
+		full() 
+		height 50px
+		padding 0px 30px
+		margin 0
+		color #CCC
+		font-size 18px
+		font-style italic
+		background-color #FFF
+		border 1px solid #E5E5E5
+		box-shadow 0 1px 11px rgba(1, 1, 1, 0.05)
+		&:hover, &:focus
+			box-shadow 0 1px 11px rgba(1, 1, 1, 0.15)
+	.inp-submit
+		position absolute 
+		right 1px 
+		top 1px
+		width 80px
+		height 48px
+		padding 0
+		margin 0
+		font-size 0
+		border-left 1px solid #E5E5E5
+		background url("../img/icons/search.png") center center no-repeat
+		&:hover
+			background url("../img/icons/search-h.png") center center no-repeat
+		&:active
+			background url("../img/icons/search-p.png") center center no-repeat
+			
+
+//	ОСНОВНОЙ СЛАЙДЕР
+// ===============================================
+.slider-index-wrap
+	position relative;
+	margin-top -20px;
+	margin-bottom 20px;
+	height 400px;
+	overflow hidden;
+	ul.slider-index
+		lino();
+		li
+			position relative;
+			overflow hidden; 
+			height 400px;
+			img
+				width 100%;
+			.desc
+				position absolute; left 50%; top 50%;
+				width 620px; full(); 
+				margin -80px 0 0 -310px; padding 25px 40px; 
+				font-size 21px; color #fff; bold(); line-height 30px; 
+				text-align center;
+				background-color rgba(25, 36, 49, 0.6);
+	.lSSlideOuter 
+		.lSSlideWrapper 
+			height 400px;
+		.lSPager.lSpg
+			lino();
+			position absolute; left 50%; bottom 20px; 
+			width 200px; margin-left -100px;
+			li
+				padding 0 7px;
+				a
+					width 16px; height 16px
+					background-color #D3D3D3; border 3px solid #FFF;
+					&:hover
+						background #f2a075;
+			li.active
+				a
+					background-color #FF8B4D
+		.lSAction
+			a
+				width 37px; height 37px;
+				margin-top -18px;
+				background url("../img/slider-index-nav.png") no-repeat;
+				z-index 10;
+			.lSPrev
+				left 25px;
+			.lSNext
+				right 25px;
+				transform rotate(-180deg);
+
+
+//	ВЕЛКОМ
+// ===============================================
+.organ-info
+	position relative;
+	//margin-top -20px;
+	margin-bottom 20px;
+	.prev
+		img
+			display block;
+			width 100%;	
+			height 300px;
+	.pic
+		position absolute; left 50%; top 50%;
+		width 300px; height 100px; 
+		margin -80px 0 0 -150px;
+	.info
+		position absolute; left 40px; bottom 20px; width 40%; 
+		.name
+			font-size 28px; color #333; latoblack();
+			padding-bottom 10px;
+		.desc
+			color #333; font-size 14px;
+	.contacts
+		position absolute; right 40px; bottom 15px;
+		.td
+			display table-cell; white-space nowrap;
+			padding-left 40px;
+		ul
+			lino();
+			li
+				margin-bottom 5px;
+				padding-left 25px;
+				color #333; font-size 14px;
+				a
+					color #333; tdn();
+					&:hover
+						color #f85800;
+			li.phone
+				background url("../img/icons/phone.png") 0 center no-repeat;
+			li.fax
+				background url("../img/icons/fax.png") 0 center no-repeat;
+			li.email
+				background url("../img/icons/email.png") 0 center no-repeat;
+			li.map
+				background url("../img/icons/map.png") 0 0 no-repeat;
+						
+
+//	ИНФО-БЛОКИ ЛЕВОЙ КОЛОНКИ
+// ===============================================
+.item-add
+	a
+		display block; padding 130px 10px 30px 10px;
+		position relative; 
+		text-align center;
+		color #CCC; font-size 14px; tdn();
+		background url("../img/icons/plus-big.jpg") center 40px no-repeat;
+		border 1px solid #E5E5E5;
+		&:after
+			content " "; 
+			background url("../img/icons/plus-big-a.png") center 40px no-repeat;
+		&:hover
+			color #f85800;
+			border-color #f85800;  
+			background url("../img/icons/plus-big-a.png") center 40px no-repeat;
+// -----------------------------------------------
+.box-info
+	margin-bottom 20px;
+	padding-bottom 10px;
+	border 1px solid #E5E5E5;
+	clearfix();
+	&.orange
+		border-color #f85800;
+	.bname
+		padding 20px 20px;
+		h3
+			margin 0;
+			font-size 14px; text-transform uppercase; tdn();
+			a
+				color: #4E5255; tdn(); 
+				&:hover
+					color #ff8c4d; 
+	.bcon
+		padding 0 5px;
+		.item
+			float left; width 33%; padding 0 15px 20px 15px; full();
+			.idate
+				display 11px; color #ccc;
+			.iname
+				padding-bottom 15px;
+				a
+					display inline-block; tdn();
+					font-size 14px; color #333; line-height 20px;
+					&:hover
+						color #ff8c4d; 
+			.itext
+				padding-bottom 15px;
+				color #999; font-size 12px
+				a
+					color #999999;
+				p 
+					margin-bottom 10px;
+					b
+						display block; 
+						regular(); color #333;
+			.isuggest
+				a
+					display inline-block;
+					text-transform uppercase;
+					padding-left 15px;
+					background url("../img/icons/plus-orange.jpg") 0 2px no-repeat; 
+					&:hover
+						tdn(); 
+						opacity .7
+		.all
+			clear both;
+			padding 0 15px 10px 0;
+			text-align right;
+			a
+				font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
+				&:hover
+					color #ff8c4d; 
+		.sep
+			margin 0 15px 10px 15px;
+			border-bottom 1px dotted #E5E5E5;
+// -----------------------------------------------
+.box-info-graph
+	margin-bottom 20px;
+	padding-bottom 10px;
+	border 1px solid #E5E5E5;
+	clearfix();
+	&.orange
+		border-color #f85800; 
+	.bname
+		padding 20px 20px;
+		h3
+			margin 0;
+			font-size 14px; text-transform uppercase;
+			a
+				color: #4E5255; tdn(); 
+				&:hover
+					color #ff8c4d; 
+	.bcon
+		padding 0 5px;
+		margin 0 15px 0 15px;
+		.item
+			display table;
+			width 100%;
+			margin-bottom 20px;
+			border-bottom 1px dotted #E5E5E5;
+			clearfix(); 
+			&:last-of-type
+				margin-bottom 0;
+				border-bottom none;	
+			.item-left
+				display table-cell; width 60%; 
+				vertical-align top; 
+			.item-graph
+				display table-cell; width 40%; padding-right 20px;
+				vertical-align top;
+			.iname
+				padding-bottom 15px;
+				a
+					display inline-block; tdn();
+					font-size 14px; color #333; line-height 20px;
+					&:hover
+						color #ff8c4d; 
+			.itext
+				padding-bottom 15px;
+				color #999; font-size 12px
+				a
+					color #999999;
+				p 
+					margin-bottom 5px;
+					b
+						display block; 
+						regular(); color #333;
+			.item-graph
+				padding-left 20px;
+				.graph-wrap
+					float left; width 80%; height 8px;
+					margin-top 5px;
+					background-color #E5E5E5;
+					border-radius 8px;
+					.graph-inner
+						height 8px;
+						background-color #FF8C4D
+						border-radius 8px;
+				.graph-per
+					float right;
+					color #F85800; font-size 14px;
+				.graph-date
+					clear both;
+					padding-top 10px; 
+					color #333; 						
+	.all
+		clear both;
+		padding 0 20px 10px 0;
+		text-align right;
+		a
+			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
+			&:hover
+				color #ff8c4d;
+// -----------------------------------------------
+.box-info-one
+	margin-bottom 20px;
+	padding-bottom 10px;
+	border 1px solid #E5E5E5;
+	clearfix();
+	&.orange
+		border-color #f85800; 
+	.bname
+		padding 20px 20px;
+		h3
+			margin 0;
+			font-size 14px; text-transform uppercase;
+			a
+				color: #4E5255; tdn(); 
+				&:hover
+					color #ff8c4d; 
+	.bcon
+		padding 0 5px;
+		margin 0 15px 0 15px;
+		.item
+			margin-bottom 20px;
+			border-bottom 1px dotted #E5E5E5;
+			&:last-of-type
+				margin-bottom 0;
+				border-bottom none;
+			.iname
+				padding-bottom 10px;
+				a
+					display inline-block; tdn();
+					font-size 14px; color #333; line-height 20px;
+					&:hover
+						color #ff8c4d; 
+			.itext
+				padding-bottom 15px;
+				color #999; font-size 12px
+				a
+					color #999999;
+				p 
+					margin-bottom 5px;
+					b
+						regular(); color #333;
+		.item-add
+			padding-bottom 20px;
+			a
+				padding 40px 20px 40px 150px;
+				text-align left; 
+				background-position 40px center; 					
+	.all
+		clear both;
+		padding 0 20px 10px 0;
+		text-align right;
+		a
+			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
+			&:hover
+				color #ff8c4d;
+// -----------------------------------------------
+.box-links
+	.item
+		margin-bottom 20px;
+		border 1px solid #E5E5E5;
+		.idesc
+			display table-cell; padding 20px 40px 20px 20px;
+			color #333;
+			vertical-align middle;
+			.name
+				font-size 14px;
+			.site
+				padding 5px 0;
+				color #F85800; font-size 12px;
+			.text
+				color #999; font-size 12px;
+		.igo
+			display table-cell;
+			width 20%; min-height 50px;
+			vertical-align middle;
+			border-left 1px solid #E5E5E5; 
+			background #fafafa;
+			a
+				display block; width 100%; height 100px; 
+				background #fafafa url("../img/link.jpg") center center no-repeat;
+				&:hover
+					opacity .7;
+// -----------------------------------------------
+.box-doc-lnks
+	clearfix() 
+	width 100%
+	margin 0 -40px -30px -40px
+	padding 40px
+	background #fcfcfc url("../img/main-bg-b2.png") 0 0 repeat-x
+	.boxside-docs
+		display table-cell
+		width 60% 
+		border none
+		background none
+		.table-cell
+			display table-cell 
+			width 50%
+			padding-right 50px
+		.ball
+			text-align left
+			padding-left 20px
+	.boxside-links
+		display table-cell
+		width 40%
+		border none
+		background none
+		.ball
+			text-align left
+			padding-left 20px
+	
+
+//	ИНФО-БЛОКИ ПРАВОЙ КОЛОНКИ
+// ===============================================
+.box-right
+	margin-bottom 20px;
+	background #fafafa; border 1px solid #E5E5E5;
+	.bname
+		padding 15px 20px;
+		h3
+			margin 0;
+			font-size 14px; text-transform uppercase;
+			a
+				color: #4E5255; tdn(); 
+				&:hover
+					color #ff8c4d; 
+	.bcon
+		padding 0 20px;
+	.ball
+		clear both;
+		padding 0 20px 15px 0;
+		text-align right;
+		a
+			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
+			&:hover
+				color #ff8c4d; 
+// -----------------------------------------------
+.box-news
+	.bcon
+		padding 0 20px;
+		.item
+			padding-bottom 20px;
+			a
+				display inline-block; tdn();
+				color #333;
+				&:hover
+					color #ff8c4d;
+			.idate
+				display 11px; color #ccc;
+			.iname
+				padding-bottom 5px; font-size 14px; 
+				a
+					line-height 20px;
+					
+			.itext
+				padding-bottom 15px;
+				color #999; font-size 12px
+				a
+					color #999999;
+				p 
+					margin-bottom 10px;
+// -----------------------------------------------
+.box-talks
+	.bcon
+		.item
+			padding-left 25px; padding-bottom 20px; 
+			background url("../img/quot.png") 0 3px no-repeat; 
+			.iname
+				padding-bottom 5px;
+				font-size 14px; color #333;
+				a
+					display inline-block; tdn();
+					color #333;
+					&:hover
+						color #ff8c4d;
+			.ititle
+				padding 5px 0;
+// -----------------------------------------------
+.box-events
+	.bcon
+		padding-bottom 20px;
+		.item
+			padding-bottom 20px; 
+			font-size 14px;
+			.idate
+				display inline; font-size 14px; color #ff8c4d; 
+			.iname
+				display inline;
+				a
+					display inline;
+					tdn();
+					color #333;
+					&:hover
+						color #ff8c4d;
+	.calendar-wrap
+		background #fff;
+		position relative; 
+		overflow hidden;
+		.calendar			
+			margin 20px;
+			position relative; 
+			overflow hidden;
+// -----------------------------------------------
+.box-support
+	height 270px;
+	.bcon
+		position absolute; left 0px; bottom 15px; width 100%; full();
+		text-align center;		  
+		.item
+			padding-top 50px;
+			a
+				display block;
+			a:hover
+				transform scale(1.2); 
+// -----------------------------------------------
+.box-sort-docs
+	position relative;
+	margin-bottom 20px;
+	.bname
+		padding-bottom 25px;
+	.legend
+		padding-bottom 15px;
+		color #999; font-size 11px; text-transform uppercase; 
+	.dates
+		padding-bottom 20px;
+		.line .td
+			display table-cell; padding 0 10px 20px 0;
+			color #333; font-size 14px;
+			vertical-align middle;
+			&:last-child
+				padding-right 0;
+		input
+			width 100%; full(); margin-bottom 0;
+		a.cal
+			display block; width 30px; height 32px;
+			background url("../img/icons/cal.jpg") no-repeat;
+			opacity .6; 
+			&:hover
+				opacity 1;
+	.checks
+		.line
+			padding-bottom 20px;
+	.action
+		padding 20px;
+		a
+			@extend .btn-orange;
+// -----------------------------------------------
+.box-simular-docs
+	.bcon
+		padding-bottom 20px;
+		.item
+			padding-bottom 30px; 
+			font-size 14px;
+			&:last-child
+				padding-bottom 0; 
+			.idate
+				font-size 11px; padding 3px 0 0px 25px; 
+				background url("../img/icons/document-sm.png") 0 center no-repeat; 
+			.iname
+				padding 10px 0;
+				a
+					display inline-block;
+					tdn();
+					color #333;
+					&:hover
+						color #ff8c4d;
+			.subitext
+				font-size 11px;
+// -----------------------------------------------
+.boxside-docs
+	.bcon
+		padding-bottom 20px;
+		.item
+			background url("../img/icons/document.png") 0 0 no-repeat;
+			padding 0 0 20px 0px;
+			&:last-child
+				padding-bottom 0;
+			.iname
+				padding-bottom 10px;
+				a
+					display block; 
+					padding-left 40px;
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #ff8c4d;
+			.ifile
+				padding-left 40px;
+	.badd
+		padding 0 0 20px 20px;
+		a
+			display block; 
+			padding 10px 40px;
+			font-size 14px; tdn();
+			color #f85800; 
+			background url("../img/icons/document-add.png") 0 center no-repeat; 
+			&:hover
+				opacity .7;
+// -----------------------------------------------
+.boxside-links
+	background #fff;
+	.bcon
+		.item
+			padding-bottom 20px;
+			a
+				
+			.iname
+				color #333; font-size 14px;
+				a
+					color #333;
+					&:hover
+						color #f85800; tdn();
+			.isite
+				padding-top 5px; 
+				a
+					color #999;
+					&:hover
+						color #f85800; tdn();
+						
+	.badd
+		padding 0 0 20px 20px;
+		a
+			display block; 
+			padding 10px 0px;
+			font-size 14px; tdn();
+			color #f85800; 
+			&:hover
+				opacity .7;
+// -----------------------------------------------
+.boxside-sort-cat
+	.bcon
+		padding-bottom 10px;
+		ul
+			lino();
+			li
+				padding-bottom 10px;
+				display block;
+				a
+					color #999;
+			li.selected
+				a
+					color #333;
+// -----------------------------------------------
+.boxside-btns
+	padding-bottom 20px;
+// -----------------------------------------------
+.boxside-news
+	padding 25px 0 0 0;
+	background 0; 
+	border 0;
+	.bcon
+		margin -10px;
+		padding 0;
+	.item
+		padding 10px; 
+		margin-bottom 15px;
+		border 1px solid #fff;
+		anim(); 
+		&:hover
+			border 1px solid #ccc; 
+		.iprev
+			padding-bottom 10px;
+			img
+				width 100%;
+		.icon
+			overflow hidden;
+			.iname
+				padding-bottom 10px;
+				a
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #f85800;
+.boxside-news-grey
+	@extend .boxside-news
+	padding-top 0
+	background #fafafa
+	border 1px solid #E5E5E5
+	.bcon
+		margin 0
+		.item
+			border none
+		.item:hover
+			border none
+// -----------------------------------------------
+.box-comments
+	padding-top 20px
+	.bwrite
+		.bname
+			@extend .box-info .bname
+			padding-left 0
+			padding-right 0
+			clearfix() 
+			h3
+				float left 
+			a
+				float right
+				color #F85800
+				text-transform uppercase
+				latoblack()
+		.bcon
+			position relative
+			clearfix() 
+			.ava
+				position absolute 
+				left 0px 
+				top 0px
+			.text
+				position relative
+				margin-left 60px
+				&:after, 
+				&:before
+					right 100%
+					top 22px
+					margin-right -1px
+					border solid transparent
+					content " "
+					height 0
+					width 0
+					position absolute
+					pointer-events none
+				&:after
+					border-right-color #fff
+					border-width 9px
+					margin-top -9px
+				&:before
+					border-right-color #e5e5e5
+					border-width 10px
+					margin-top -10px
+				textarea
+					position relative
+					width 100%
+					full()
+			.action
+				padding-top 20px
+				float right
+	.bcomments
+		.comment
+			clearfix()
+			.cprev 
+				float left
+				width 60px
+				a:hover
+					opacity .7
+			.comment
+				padding-left 60px
+			.ccon
+				overflow hidden
+				margin-bottom 20px
+				padding-bottom 15px
+				border-bottom 1px solid #e6e6e6
+				.name
+					padding-bottom 10px
+					a
+						color #333
+						text-transform uppercase
+						bold()
+					.date
+						display inline-block
+						padding-left 10px
+				.text
+					font-size 14px
+				.answer
+					padding-top 15px
+					a
+						color #C33
+// -----------------------------------------------
+.box-page-nav
+	background #FAFAFA
+	border 1px solid #e5e5e5
+	.bname
+		@extend .box-info .bname
+		border-bottom 1px solid #e5e5e5
+	ol
+		lino()
+		li
+			position relative
+			a
+				display block
+				padding 10px 20px 10px 35px
+				background #FAFAFA
+				border-left: 2px solid #FAFAFA
+				border-bottom 1px dotted #e5e5e5
+				color #999
+				&:hover
+					text-decoration none
+					color #f85800
+			ol
+				li
+					display none
+					border-bottom 1px dotted #e5e5e5
+					a
+						padding 10px 10px 10px 35px
+						border none
+						background #fff
+				li.active
+					a
+						color #f85800
+		li.active
+			a
+				cursor pointer
+			ol 
+				li
+					display block
+		li.active >
+			a
+				color #f85800
+				border-left 2px solid #ff8c4d
+			
+	.count
+		position absolute 
+		left 10px 
+		top 10px
+		text-align right
+		width 20px
+// -----------------------------------------------
+
+
+//	КАЛЕНДАРЬ	 
+// ===============================================
+.supercal-popup
+	position absolute; left 0px; top 0px; 
+	background #fff; 
+	z-index 10;
+	border 1px solid #ccc;
+	width 200px !important;
+	padding 20px; 
+	overflow hidden;
+.supercal 
+	.supercal-header
+		padding-bottom 15px;
+		text-align center;
+		color #FF8C4D; text-transform uppercase; font-size 14px; latoblack();
+		.btn
+			border none
+		.prev-month
+			float left; 
+			width 7px; height 8px;
+			margin 5px 0 0 20px; 
+			text-indent -9999px; cursor pointer;
+			background url("../img/icons/calendar-prev.jpg") no-repeat;  
+		.next-month
+			float right;
+			width 7px; height 8px;
+			margin 5px 20px 0 0; 
+			text-indent -9999px; cursor pointer; 
+			background url("../img/icons/calendar-next.jpg") no-repeat;
+	.supercal-month
+		th
+			color #333; regular(); 
+		td
+			vertical-align middle; text-align center;
+			padding 5px 5px 4px 5px;
+			cursor pointer; 
+			&:hover
+				color #333;
+				background url("../img/cal-bg-a.png") center center no-repeat; 
+		td.selected
+			color #fff; 
+			background url("../img/cal-bg.png") center center no-repeat; 
+
+
+//	ДОКУМЕНТЫ
+// ===============================================
+.box-docs
+	.item
+		margin-bottom 20px;
+		border 1px solid #E5E5E5;
+		.file-list
+			display table-cell;
+			vertical-align middle;
+			background #fafafa;
+			padding 10px 20px;
+			border-right 1px solid #e5e5e5; 
+			a
+				display block; 
+				padding 15px 0px 15px 40px; white-space nowrap;
+				color #999; tdn();
+				background url("../img/icons/document.png") 0 center no-repeat;
+				&:hover
+					opacity .7; 
+		.file-desc
+			display table-cell; padding 10px 20px;
+			vertical-align middle;
+			.date
+				color #CCC; font-size 11px;
+			.text
+				padding 10px 0;
+				color #333; font-size 14px;
+.box-doc-item
+	padding 20px;
+	border 1px solid #E5E5E5;
+	.bmeta
+		padding-bottom 30px;
+		.date
+			display inline-block; padding-right 30px; 
+		.views
+			display inline-block; padding-left 20px; background url("../img/icons/views.png") 0 2px no-repeat;
+			color #9A9A9A;
+			&:hover
+				color #ff8c4d;
+	.bname
+		padding-bottom 30px;
+		color #333;
+		h1
+			margin-bottom 20px;
+			color #333; font-size 30px; latoblack(); light();
+		p
+			font-size 24px;
+
+
+//	НОВОСТИ
+// ===============================================
+.box-news-prev
+	padding 20px;
+	border 1px solid #E5E5E5;
+	.bname
+		padding-bottom 30px;
+		color #333;
+		h1
+			margin-bottom 20px;
+			color #333; font-size 30px; latoblack(); light();
+	.bmeta
+		padding-bottom 30px;
+		clearfix(); 
+		&.bot
+			padding-bottom 0;
+		.date
+			display inline-block; padding-right 30px; 
+		.more
+			float left; 
+			a
+				tdn(); font-size 16px; 
+		.right
+			float right;
+			@extend .imeta
+.news-items-prev
+	clearfix(); 
+	.td
+		width 100%;
+		display table;
+	.item
+		display table-cell;
+		width 25%; full(); 
+		padding 10px; 
+		margin 10px;
+		border 1px solid #fff;
+		anim(); 
+		&:hover
+			border 1px solid #ccc; 
+		.iprev
+			padding-bottom 10px;
+			img
+				width 100%;
+		.icon
+			overflow hidden;
+			.iname
+				padding-bottom 10px;
+				a
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #f85800;
+.box-news-prev-cat
+	@extend .box-news-prev
+	.bcat
+		padding-bottom 30px
+		a
+			color #F85800
+			font-size 30px
+			latoblack()
+	.bcon
+		h2
+			margin-bottom 20px
+			line-height 36px
+			latoblack()
+		.date
+			color #CCC
+			font-size 10px
+	.bmeta
+		@extend .imeta
+		.more
+			a
+				padding 0
+				color #F85800
+		
+
+//	СТАТЬИ
+// ===============================================
+.box-articles
+	padding 20px;
+	border 1px solid #E5E5E5;
+	.bname
+		@extend .box-info .bname
+		margin -20px -20px 10px -20px
+	.bcat
+		@extend .box-news-prev-cat .bcat
+	.item
+		margin-bottom 20px; padding-bottom 20px;
+		border-bottom 1px dotted #E5E5E5;
+		clearfix() 
+		&:last-child
+			margin-bottom 0; border-bottom none; 
+		.iprev
+			float left; width 215px;
+		.icon
+			overflow hidden;
+			.iname
+				padding-bottom 10px;
+				a
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #f85800;
+			.itext
+				padding-bottom 10px; 
+				color #999;
+			.imore
+				padding-bottom 15px;
+			.imeta
+				clearfix(); 
+				.date
+					float left; font-size 11px; color #CCC;
+				.right
+					float right;
+					@extend .imeta
+.box-text-item
+	padding 20px;
+	border 1px solid #E5E5E5;
+	.bmeta
+		padding-bottom 30px;
+		@extend .imeta
+		.date
+			float left
+			padding-right 30px;
+		.views
+			display inline-block; padding-left 20px; background url("../img/icons/views.png") 0 2px no-repeat;
+			color #9A9A9A;
+	.bname
+		padding-bottom 30px;
+		color #333;
+		h1
+			margin-bottom 20px;
+			color #333; font-size 30px; latoblack(); light();
+		p
+			font-size 24px;
+	.bmetabot
+		padding-top 30px;
+		padding-bottom 30px;
+		clearfix(); 
+		.addd
+			float right
+		.share
+			clearfix(); 
+			float left;
+			&.small
+				float right
+				clear both
+				margin-right -55px
+				padding-top 20px
+				transform scale(0.7)
+			span
+				float left; 
+				padding-top 10px;
+				padding-right 15px; 
+				color #CCC;
+				font-size 16px; 
+				text-transform uppercase; 
+			ul
+				float left;  
+				clearfix(); 
+				lino();
+			li
+				display inline-block; padding 0 0 0 20px;
+				a
+					display block; width 38px; height 38px;
+					&:hover
+						opacity .8; 
+			li.vk
+				a
+					background url("../img/icons/social-vk.png") no-repeat; 
+			li.fb
+				a
+					background url("../img/icons/social-fb.png") no-repeat; 
+			li.tw
+				a
+					background url("../img/icons/social-tw.png") no-repeat; 
+			li.in
+				a
+					background url("../img/icons/social-in.png") no-repeat; 
+		.comments
+			float right;
+			a
+				padding 9px 30px;
+.box-interest
+	margin 0 -21px 0px -21px;
+	background #fafafa
+	border 1px solid #E5E5E5
+	.bname
+		@extend .box-info .bname
+	.bcon
+		padding 0 20px 20px 20px; 
+		.item-left
+			display table-cell; 
+			width 65%;
+			padding-right 10px;
+			border-right 1px dotted #e7e7e7; 
+			.iprev
+				display table-cell
+				p.desc
+					color #CCC
+			.item
+				display table-cell
+				padding-left 20px; 
+				vertical-align top; 
+		.items-right
+			display table-cell
+			vertical-align top;
+			padding-left 10px;
+			.item
+				margin-bottom 5px;
+				padding-bottom 5px;
+				border-bottom 1px dotted #e7e7e7;
+				&:last-child
+					border 0; 
+		.item
+			.iname
+				padding-bottom 5px;
+				a
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #f85800;
+			.itext
+				padding-bottom 10px; 
+				color #999;
+			.imore
+				padding-bottom 10px;
+			.idate
+				font-size 11px; color #CCC;
+
+
+//	ПОТРЕБНОСТИ
+// ===============================================
+.item_cloud
+	overflow hidden
+	@extend .box-articles .item
+	.iprev
+		margin-right -10px
+		width 184px
+	.icon
+		overflow hidden
+		padding-left 10px
+		.cloud
+			margin-bottom 22px
+	.itext
+		margin-bottom 8px
+		line-height 1.7
+	.iname
+		padding-bottom: 10px 
+		a
+			color: #333
+			font-size: 14px
+			text-decoration: none
+	.imeta
+		.btn-add
+			float left
+		.right
+			float right
+.item-cloud-one
+	@extend .item_cloud
+	.iprev
+		width 150px
+	.icon
+		padding-left 40px
+	.icon .cloud .itext
+		font-size 16px
+		color #333
+		line-height 20px
+		p
+			margin-bottom 10px
+.person
+	text-align center
+	anim-color()
+	a
+		&:hover
+			color #f85800
+			text-decoration none
+	.date
+		color #ccc 
+		latolight()
+		font-size 10px
+.person__img
+	margin 10px auto 12px
+	width 100px
+	height 100px
+	overflow hidden
+	img
+		max-width 100%
+		border-radius 50% 
+.person__name
+	margin-bottom 2px
+	font-size 14px
+	a
+		color #333 
+.person__info
+	font-size 12px
+	li
+		margin 0 0 3px 0
+		list-style-type none 
+	a
+		color #999 
+.cloud
+	position relative
+	padding 18px 18px 12px
+	background #fafafa
+	border 1px solid #e6e6e6
+	border-radius 5px
+	&:before,
+	&:after
+		content "" 
+		position absolute
+		top 50% 
+		width 0
+		height 0
+		border-style solid
+	&:before
+		margin-top -9px
+		left -10px
+		z-index 2
+		border-width 9px 10px 9px 0
+		border-color transparent #fafafa transparent transparent
+	&:after
+		margin-top -10px
+		left -11px
+		border-width 10px 11px 10px 0
+		border-color transparent #e6e6e6 transparent transparent
+.btn-add
+	display inline-block
+	text-transform uppercase
+	padding-left 15px
+	color #F85800
+	background url("../img/icons/plus-orange.jpg") 0 2px no-repeat
+	&:hover
+		tdn(); 
+		opacity .7
+.doc-link
+	display inline-block
+	padding-left 20px
+	height 16px
+	color #f85800
+	font-size 12px
+	background url("../img/icons/document-sm.png") 0 50% no-repeat
+	&:hover
+		text-decoration none
+		span
+			color #f85800
+	span
+		color #999 
+		anim-color()
+.line-text-grey
+	padding-bottom 30px
+	clearfix()
+	span
+		float left
+		color #999
+		font-size 12px
+	.irating
+		float right 
+
+
+//	ТАБЫ
+// ===============================================
+.tabs
+	display table
+	position relative
+	z-index 2
+	margin 0 0 -1px
+	width 100%
+	text-align center
+	border 1px solid #e5e5e5 
+	border-bottom 0
+	line-height 1
+	full()
+	background #fafafa 
+.tabs__item
+	display table-cell
+	border-left 1px solid #e5e5e5 
+	border-bottom 1px solid #e5e5e5 
+	&.is-active
+		border-bottom-color #fff 
+		background #fff 
+		color #f85800 
+	&:first-child
+		border-left: 0
+.tabs__link
+	display block
+	padding 18px 28px 16px
+	color #333
+	font-size 14px
+	text-transform uppercase  
+	text-decoration none
+	latoblack()
+	anim-color()
+	&:hover
+		color #f85800
+		text-decoration none 
+.tabs-wrapper
+	border 1px solid #e5e5e5 
+.tabs-content
+	@extend .box-articles
+	display none
+	border none
+.tab-active
+	display block
+	animation opacity-fade 1s
+
+
+// ОБЩЕЕ
+// ===============================================
+.tags
+	.tags-item
+		display inline-block
+		margin 0 10px 10px 0
+		background-color #FAFAFA
+		box-shadow 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #FFF
+		border 1px solid transparent
+		border-radius 2px
+		overflow hidden
+		clearfix() 
+		span.name
+			float left
+			tdn() 
+			padding 5px 15px
+			color #333
+			text-shadow 0 1px 0 rgba(255, 255, 255, 0.86)
+			font-size 12px
+		span.count
+			position relative
+			float left
+			height 16px
+			padding 5px 10px
+			
+			color #FEFEFE
+			font-size 12px
+
+			background-color #B3B3B3
+			background-image linear-gradient(to top, #FF8C4D 0%, #FF8C4D 100%)
+			border none
+			&:after
+				content " "
+				position absolute 
+				left -4px
+				top 50%
+				width 8px
+				height 8px
+				margin-top -4px
+				background #ff8c4d
+				border-radius 4px
+		span.empty
+			width 3px
+			padding 5px 0px
+		&:hover
+			background-image linear-gradient(to top, #F5F5F5 0%, #FEFEFE 100%)
+			border 1px solid rgba(0, 0, 0, 0.1)
+.adsress-date
+	color #CCC
+	font-size 11px
+	line-height 14px
+	.ad-adsress
+		padding-left 20px
+		margin-bottom 10px
+		background url("../img/icons/map-sm.png") no-repeat
+	.ad-date
+		padding-left 20px 
+		background url("../img/icons/date-sm.png") 0 1px no-repeat
+.mar-top-20m
+	margin-top -15px
+	
+
+//	ПОДВАЛ
+// ===============================================
+footer
+	padding-top 40px;
+	clearfix();
+	.copy
+		display table-cell; padding-left 20px; 
+		color #1a1a1a; font-size 14px; vertical-align top;
+				
+
+// СКРОЛЛ БЛОКИ
+// ===============================================
+.scroller-box
+	overflow hidden; position relative; height 630px; margin-right -30px;
+.mCustomScrollBox 
+	position relative; overflow hidden; height 100%; max-width 100%; outline none;
+	&:hover
+		.mCSB_scrollTools
+			opacity 1;
+	.mCSB_container
+		overflow hidden; width auto; height auto; margin-right 30px;
+		@media w1500
+			margin-right 50px;
+	.mCSB_scrollTools
+		position absolute; width 5px; height auto; left auto; top 0px; right 0px; bottom 0px; opacity 0.1; anim();
+		.mCSB_draggerContainer
+			position absolute; top 0px; left 0px; bottom 0px; right 0px; height auto;
+			.mCSB_dragger 
+				z-index 1; width 100%; height 30px; cursor pointer;
+				.mCSB_dragger_bar					
+					position relative; width 5px; height 100%; margin 0px auto; text-align center; background-color #ff8c4d;
+			.mCSB_draggerRail
+				width 5px; height 100%; margin 0px auto;
+				
+
+//	ОКОШКИ
+// ===============================================
+.login-popup
+	span
+		display table-cell
+		vertical-align middle
+		color #F85800
+		font-size 16px
+		text-transform uppercase
+	.social
+		width auto
+		vertical-align middle
+.remodal-overlay
+	background alpha(#000, .2)
+	.remodal-close
+		position absolute 
+		right -40px 
+		top -40px
+		width 46px
+		height 46px
+		background url("../img/icons/close.png") no-repeat
+	.remodal
+		width auto
+		margin 0 auto
+		background #fff
+		padding 60px 40px
+		border 2px solid #1a1a1a
+
+
+//	АНИМАЦИЯ
+// ===============================================
+@keyframes opacity-fade
+	0%
+		opacity: .5;
+	100%
+		opacity: 1;
+		
+
+
+//	.bcon-mod
+// ===============================================
+.box-info
+	.bcon-mod
+		padding 0 20px;
+.box-orange
+	border-color #f85800;
+
+//	.table
+// ===============================================
+.table-ind
+	td
+		vertical-align top
+	thead
+		td
+			padding 10px 25px;
+			bold();
+			color #1A1A1A;
+			font-size 14px;
+	tbody
+		.is-active
+			td
+				background #FAFAFA; 
+		td
+			border-top 1px solid #e5e5e5;
+			padding 10px 25px;
+			a
+				color #808080
+				tdn(); 
+				&:hover
+					color #FF8C4D
+		tr:hover
+			td
+				background #FAFAFA; 
+
+
+//	infographics
+// ===============================================
+.infographics
+	overflow hidden;
+	padding-bottom 10px;
+	.infographics-col
+		width 50%;
+		float left;
+		padding-left 10%;
+		full(); 
+		&:first-child
+			padding-left 0;
+	.infographics-col-container
+		height 230px;
+	.infographics-detail
+		.infographics-detail-item
+			min-height 25px
+			margin-bottom 10px;
+			overflow hidden;
+	.infographics-stataus
+			width 60px;
+			margin-right 10px;
+			float left;
+			semibold();
+		.infographics-stataus-green
+			display inline-block;
+			vertical-align middle;
+			width 16px;
+			height 16px;
+			border-radius: 50%;
+			background #90b753;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.25);
+		.infographics-stataus-blue
+			display inline-block;
+			vertical-align middle;
+			width 16px;
+			height 16px;
+			border-radius: 50%;
+			background #72a9bc;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.25);
+		.infographics-stataus-red
+			display inline-block;
+			vertical-align middle;
+			width 16px;
+			height 16px;
+			border-radius: 50%;
+			background #72a9bc;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.25);
+		.infographics-stataus-num
+			display inline-block;
+			vertical-align middle;
+			height 16px;
+			margin-left 5px;
+			font-size 14px;
+			color #1A1A1A; 
+	.infographics-note
+		overflow hidden;
+		mediumfont();
+	.infographics-box
+		width 100%;
+		padding 0 35px;
+		box-sizing: border-box;
+		height 98px;
+		line-height 98px;
+		background #FAFAFA;
+		border: 1px solid #e5e5e5;
+		.infographics-box-in
+			width 100%;
+			display inline-block;
+			vertical-align middle;
+			line-height normal;
+//	misc
+// ===============================================
+.price
+	.price-val
+		font-size 18px;
+		color #9a9a9a;
+		bold();
+	.price-summ
+		font-size 24px;
+		color #444;
+.graph-wrap
+	width 100%; height 8px;
+	margin-top 5px;
+	background-color #E5E5E5;
+	border-radius 8px;
+	&.graph-success
+		.graph-inner
+			background-color #90b753;
+	.graph-inner
+		height 8px;
+		border-radius 8px;
+.stat
+	margin-top 10px;
+	.stat-ico
+		display inline-block;
+		width 11px;
+		height 8px;
+		margin-right 3px;
+		background url("../img/icons/top.png") 0px center no-repeat;
+	.stat-descr
+		display inline-block;
+		.stat-descr-percent
+			margin-right 3px;
+			color #444;
+			font-size 12px;
+			bold(); 
+		.stat-descr-note
+			font-size 12px;
+			color #9A9A9A;
+
+
+//	chart
+// ===============================================
+.chart
+	position relative;
+	display inline-block;
+	width 57px;
+	height 57px;
+	line-height 57px;
+	text-align center;
+	canvas
+		position absolute;
+		top 0;
+		left 0;
+.percent
+	display inline-block;
+	line-height 57px;
+	z-index 2;
+	font-size 12px;
+	bold();
+	color #1a1a1a; 
+	&:after
+		content '%';
+		margin-left 0.1em;
+		font-size .8em;
+.chart-wrap
+	text-align center;
+	width 100%;
+	display table;
+	.chart-item
+		width 20%;
+		display table-cell;
+		text-align center;
+		&:first-child
+			margin-left 0;
+		.chart-descr
+			font-size 10px;
+			text-transform uppercase;
+			color #B2B2B2;
+			bold();
+
+//	gr-chart
+// ===============================================
+.gr-chart
+	height 200px;
+	padding-top 5px;
+	padding-left 20px;
+	// background red; 
+	position relative;
+	.gr-chart-row
+		position absolute;
+		left 0;
+		right 0;
+		&.gr-chart-row-1
+			top 0px;
+		&.gr-chart-row-2
+			top 35px;
+		&.gr-chart-row-3
+			top 70px;
+		&.gr-chart-row-4
+			top 105px;
+		&.gr-chart-row-5
+			top 140px;
+		&.gr-chart-row-0
+			top 175px;
+			.gr-chart-row-num
+				&:after
+					background #b2b2b2;
+		.gr-chart-row-num
+			display block;
+			vertical-align middle;
+			font-size 10px;
+			color #1b1e1f;
+			bold();
+			position relative;
+			&:after
+				content: "";
+				position absolute;
+				left 25px;
+				right 0;
+				top 5px;
+				height 1px;
+				background url("../img/gh-line.png") 0px center repeat-x;
+	.gr-chart-col
+		width 100px;
+		height 220px;
+		display table-cell;
+		text-align center;
+		&.gr-chart-col-1
+			left 50px;
+		&.gr-chart-col-2
+			left 105px;
+		&.gr-chart-col-3
+			left 160px;
+		&.gr-chart-col-4
+			left 215px;
+		&.gr-chart-col-5
+			left 270px;
+		.gr-chart-progress
+			display block;
+			margin 0 auto 5px;
+			width 10px;
+			height 173px;
+			border: 1px solid rgba(178,178,178,.7);
+			border-radius: 3px;
+			background-color: #ddd;
+			box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
+			position relative;
+			overflow hidden;
+			.gr-chart-progress-num
+				left 0;
+				right 0; 
+				position absolute;
+				bottom 0;
+				border: 1px solid rgba(125,125,125,.2);
+				border-radius: 3px;
+				background-color: #a6a6a6;
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+				background-image: linear-gradient(bottom, #ddd 0%, #ddd 100%);
+				&.green
+					border: 0;
+					border-radius: 0;
+					box-shadow: none;
+					background-color: #8fb753;
+					background-image: linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 100%);
+				&.red
+					border: 0;
+					box-shadow: none;
+					background-color: #ff5763;
+					background-image: linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 100%);
+				&.blue
+					border: 0;
+					border-radius: 0;
+					box-shadow: none;
+					background-color: #71a9bb;
+					background-image: linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 100%);
+		.gr-chart-date
+			color #929191;
+			font-size 10px;
+			bold();
+//
+.box-articles
+	&.m-mod
+		padding 0;
+		border 0;
+// 
+.heading
+	margin -21px -21px 20px -21px
+	height 58px
+	line-height 58px
+	padding 0px 25px
+	background #FAFAFA
+	border: 1px solid #e5e5e5
+	overflow hidden
+	.heading-right
+		float right
+	.heading-left
+		float left
+//
+.read-time
+	display: inline-block
+	color #F85800
+	font-size 16px
+	mainfont();
+	.read-time-in
+		line-height 1.4 
+		span
+			display inline-block
+			border-bottom: 3px solid #f85800
+// 
+.change-size
+	display inline-block;
+	vertical-align middle;
+	margin-left 35px
+	&:first-child
+		margin-left 0;
+	.change-size-title
+		margin-right 10px;
+		font-size 16px;
+		color #333;
+	.change-size-plus,
+	.change-size-minus
+		&.is-active
+			color #F85800;
+	.change-size-plus
+		display inline-block;
+		vertical-align middle;
+		cursor pointer;
+		margin-right 15px;
+		font-size 16px;
+		color #333;
+	.change-size-minus
+		font-size 16px;
+		color #333; 
+		display inline-block;
+		vertical-align middle;
+		cursor pointer;
+
+.gz-h2
+	font-size 24px;
+	color #333;
+	
+.box-text-item
+	.bcon
+		&.fz-large
+			p
+				font-size 18px
+		&.fz-default
+			p
+				font-size 16px
+		&.fz-small
+			p
+				font-size 14px
+		&.lh-large
+			p
+				line-height 24px
+		&.lh-default
+			p
+				line-height 20px
+		&.lh-small
+			p
+				line-height 16px

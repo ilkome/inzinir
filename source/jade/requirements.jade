@@ -1,0 +1,488 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Документы
+	
+block scripts
+	script(src="js/jquery.supercal.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Рынок услуг
+				li.sep >
+				li
+					a(href="#") Потребности
+		//------------------------------------------------
+		.page-name
+			h1 Потребности
+			p Рынок предложений и услуг
+		//------------------------------------------------
+		.main-left
+			//------------------------------------------------
+			.tabs-box
+				ul.tabs.js-tabs
+					li.tabs__item
+						a.tabs__link(href="#js-tab-service") в Услугах
+					li.tabs__item
+						a.tabs__link(href="#js-tab-equipment") в оборудовании
+					li.tabs__item
+						a.tabs__link(href="#js-tab-soft") в программном обеспечении
+				//------------------------------------------------
+				.tabs-wrapper
+					.tabs-content.js-tabs-content(data-id="#js-tab-service")
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+					.tabs-content.js-tabs-content(data-id="#js-tab-equipment")
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Человек
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагуповл
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+											a(href="#") 225
+											a(href="#") 225
+					.tabs-content.js-tabs-content(data-id="#js-tab-soft")
+						.item.item_cloud
+							.iprev
+								.person
+									.date 10 сентября 2014
+									.person__img
+										a(href="#")
+											img(src="img/content/ava-100.jpg", alt="img")
+									.person__name 
+										a(href="#") Олег Джагупов
+									ul.person__info 
+										li
+											a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+							.icon
+								.cloud
+									.iname
+										a(href="#") Разработка конструкторской документации
+									.itext Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+											|С уважением, Олег Джагупов.
+									a(href="#").doc-link math.pdf 
+										span (14 mb)
+								.imeta
+									a(href="#").btn-add Предложить решение
+									.right
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+		//------------------------------------------------
+		.main-right
+			.box-sort-docs.box-right
+				.bname
+					h3 Показать статьи
+				.bcon
+					.dates
+						.legend c датой публикации
+						.line
+							.td
+								span от
+							.td
+								input(type="text", placeholder="дата от")
+							.td
+								.calendar-widget-pop
+									a(href="#").cal
+						.line
+							.td
+								span до
+							.td
+								input(type="text", placeholder="дата до")
+							.td
+								.calendar-widget-pop
+									a(href="#").cal
+					.checks
+						.legend Относятся к разделу
+						.line
+							input(id="check-val2" type="checkbox" name="radio")
+							label(for="check-val2") Свидетельства о регистрации (243)
+						.line
+							input(id="check-val3" type="checkbox" name="radio")
+							label(for="check-val3") Патенты РФ (68)
+				.action
+					a(href="#") Показать
+			
+			.box-right.boxside-sort-cat
+				.bname
+					h3 По разделам
+				.bcon
+					ul
+						li.selected
+							a(href="#") Авиация и космос (10)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

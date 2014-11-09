@@ -1,0 +1,876 @@
+
+<!--	proscom.ru-->
+<!--	Простые Коммуникации-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ИП - Документы</title>
+    <!-- Meta-->
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Styles-->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Scripts-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/jquery.supercal.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+  </head>
+</html>
+<body>
+  <style>
+    .system-menu {position: fixed; width:auto; bottom:0; z-index: 9999; background: #fff; opacity:.3; overflow:hidden; transition:all 0.3s ease-out;}
+    .system-menu:hover {width:auto; opacity: 1;}
+    .system-menu a {display:block; padding:10px 15px; font-size:12px; color: #000;}
+    .system-menu a:hover {background:#e6e6e6; text-decoration:none;}
+    .system-menu p.sep {margin:0; padding:5px 10px; min-height:2px; font-size:12px; border-top: 2px solid #000;}
+  </style>
+  <div class="system-menu"><a href="analytics.html">Статья</a><a href="articles.html">Аналитические статьи </a><a href="docs-item.html">Документ </a><a href="docs.html">Документы </a><a href="events.html">События </a><a href="index.html">Главная </a><a href="info.html">Информация </a><a href="links.html">Ссылки </a><a href="lk.html">ЛК </a><a href="news.html">Новости </a><a href="reports.html">Отчеты</a><a href="requirements.html">Потребности</a><a href="requirements-comment.html">Потребности c комменатриями</a><a href="story-item.html">История/Новость</a></div>
+  <div id="shikarniy">
+    <div class="sidebar">
+      <div class="logo"><a href="#"> </a></div>
+      <div class="menu">
+        <ul>
+          <li class="home"><a href="#" data-menu="home">Рынок услуг</a></li>
+          <li class="info"><a href="#" data-menu="info">Информация</a></li>
+          <li class="events"><a href="#" data-menu="events">События</a></li>
+          <li class="talks"><a href="#" data-menu="home">Обсуждения</a></li>
+          <li class="search"><a href="#" data-menu="home">Поиск</a></li>
+        </ul>
+      </div>
+      <div class="side-extend-fix"></div>
+      <div data-menu="home" class="side-extend">
+        <div class="bname">
+          <h3>Рынок услуг</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav">
+          <ul>
+            <li><a href="#">За неделю</a></li>
+            <li class="active"><a href="#">За месяц</a></li>
+            <li><a href="#">За все время</a></li>
+          </ul>
+        </div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Услуги </a><span>(12)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-menu="info" class="side-extend">
+        <div class="bname">
+          <h3>Информация</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav">
+          <ul>
+            <li class="active"><a href="#">За неделю</a></li>
+            <li><a href="#">За месяц</a></li>
+            <li><a href="#">За все время</a></li>
+          </ul>
+        </div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Услуги </a><span>(12)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-menu="events" class="side-extend">
+        <div class="bname">
+          <h3>События</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav"></div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Сегодня </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Ближайшие </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Прошедшие </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-page">
+      <div class="topper">
+        <div class="wrap">
+          <div class="menu">
+            <ul>
+              <li><a href="#">Программы по развитию</a></li>
+              <li><a href="#">Отчеты</a></li>
+              <li><a href="#">О проекте</a></li>
+            </ul>
+          </div>
+          <div class="user">
+            <div class="name"><a href="#"> 
+                <div class="title">Алексей Петров</div>
+                <div class="email">petrov.i1975@mail.ru</div></a></div>
+            <div class="pic">
+              <div class="ava"><img src="img/content/ava-1.png" alt=""></div>
+              <div class="count"><a href="#">9</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-width main-wrap">
+        <div class="pathway">
+          <ul>
+            <li class="nound"><a href="#">Рынок услуг</a></li>
+            <li class="sep">></li>
+            <li><a href="#">Потребности</a></li>
+          </ul>
+        </div>
+        <div class="page-name">
+          <h1>Потребности</h1>
+          <p>Рынок предложений и услуг</p>
+        </div>
+        <div class="main-left">
+          <div class="tabs-box">
+            <ul class="tabs js-tabs">
+              <li class="tabs__item"><a href="#js-tab-service" class="tabs__link">в Услугах</a></li>
+              <li class="tabs__item"><a href="#js-tab-equipment" class="tabs__link">в оборудовании</a></li>
+              <li class="tabs__item"><a href="#js-tab-soft" class="tabs__link">в программном обеспечении</a></li>
+            </ul>
+            <div class="tabs-wrapper">
+              <div data-id="#js-tab-service" class="tabs-content js-tabs-content">
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="#js-tab-equipment" class="tabs-content js-tabs-content">
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Человек</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагуповл</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a><a href="#">225</a><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="#js-tab-soft" class="tabs-content js-tabs-content">
+                <div class="item item_cloud">
+                  <div class="iprev">
+                    <div class="person">
+                      <div class="date">10 сентября 2014</div>
+                      <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                      <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                      <ul class="person__info"> 
+                        <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="cloud">
+                      <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
+                      <div class="itext">
+                        Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                        С уважением, Олег Джагупов.
+                      </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                    </div>
+                    <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                      <div class="right">
+                        <div class="comments"><a href="#">51</a></div>
+                        <div class="views"><a href="#">225</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="box-sort-docs box-right">
+            <div class="bname">
+              <h3>Показать статьи</h3>
+            </div>
+            <div class="bcon">
+              <div class="dates">
+                <div class="legend">c датой публикации</div>
+                <div class="line">
+                  <div class="td"><span>от</span></div>
+                  <div class="td">
+                    <input type="text" placeholder="дата от">
+                  </div>
+                  <div class="td">
+                    <div class="calendar-widget-pop"><a href="#" class="cal"></a></div>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="td"><span>до</span></div>
+                  <div class="td">
+                    <input type="text" placeholder="дата до">
+                  </div>
+                  <div class="td">
+                    <div class="calendar-widget-pop"><a href="#" class="cal"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="checks">
+                <div class="legend">Относятся к разделу</div>
+                <div class="line">
+                  <input id="check-val2" type="checkbox" name="radio">
+                  <label for="check-val2">Свидетельства о регистрации (243)</label>
+                </div>
+                <div class="line">
+                  <input id="check-val3" type="checkbox" name="radio">
+                  <label for="check-val3">Патенты РФ (68)</label>
+                </div>
+              </div>
+            </div>
+            <div class="action"><a href="#">Показать</a></div>
+          </div>
+          <div class="box-right boxside-sort-cat">
+            <div class="bname">
+              <h3>По разделам</h3>
+            </div>
+            <div class="bcon">
+              <ul>
+                <li class="selected"><a href="#">Авиация и космос (10)</a></li>
+                <li><a href="#">Безопасность (17)</a></li>
+                <li><a href="#">Бизнес-консалтинг (1)</a></li>
+                <li><a href="#">Биотехнологии и медицина (25)</a></li>
+                <li><a href="#">Власть (31)</a></li>
+                <li><a href="#">Добыча полезных ископаемых (4)</a></li>
+                <li class="selected"><a href="#">ЖКХ (3)</a></li>
+                <li><a href="#">Бизнес-консалтинг (1)</a></li>
+                <li><a href="#">Биотехнологии и медицина (25)</a></li>
+                <li><a href="#">Власть (31)</a></li>
+                <li><a href="#">Добыча полезных ископаемых (4)</a></li>
+                <li class="selected"><a href="#">ЖКХ (3)</a></li>
+                <li><a href="#">Безопасность (17)</a></li>
+                <li><a href="#">Бизнес-консалтинг (1)</a></li>
+                <li><a href="#">Биотехнологии и медицина (25)</a></li>
+                <li><a href="#">Власть (31)</a></li>
+                <li><a href="#">Добыча полезных ископаемых (4)</a></li>
+                <li class="selected"><a href="#">ЖКХ (3)</a></li>
+                <li><a href="#">Бизнес-консалтинг (1)</a></li>
+                <li><a href="#">Биотехнологии и медицина (25)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-support">
+            <div class="bcon">
+              <div class="item"><a href="#"> <img src="img/content/logo-minprom.png" alt=""></a></div>
+              <div class="item"><a href="#"> <img src="img/content/logo-smr.png" alt=""></a></div>
+              <div class="item"><a href="#"> <img src="img/content/logo-ibs.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="main-width">
+          <div class="copy">© 2013-2014 Информационный портал, содействующий развитию инжиниринговой деятельности и&nbsp;промышленного дизайна</div>
+          <div class="social">
+            <ul>
+              <li class="in"><a href="#"></a></li>
+              <li class="vk"><a href="#"></a></li>
+              <li class="fb"><a href="#"></a></li>
+              <li class="tw"><a href="#"></a></li>
+              <li class="od"><a href="#"></a></li>
+              <li class="you"><a href="#"></a></li>
+              <li class="rss"><a href="#"> </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>

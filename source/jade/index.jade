@@ -1,0 +1,429 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Главная
+
+block styles
+	link(href="css/lightSlider.css", rel="stylesheet")
+
+block scripts
+	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
+	script(src="js/jquery.supercal.js", type="text/javascript")
+
+
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Рынок услуг
+		//------------------------------------------------
+		.slider-index-wrap
+			ul.slider-index
+				li 
+					img(src="img/content/slider-1.jpg", alt="")
+					.desc Информационный портал, содействующий <br>развитию инжиниринговой деятельности<br>и промышленного дизайна
+				li 
+					img(src="img/content/slider-2.jpg", alt="")
+					.desc Информационный портал, содействующий <br>развитию инжиниринговой деятельности<br>и промышленного дизайна
+				li
+					img(src="img/content/slider-3.jpg", alt="")
+		//------------------------------------------------
+		.main-left
+			.box-info
+				.box
+					.bname
+						h3 
+							a(href="#") Оборудование
+					.bcon
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-1.jpg", alt="")
+							.iname
+								a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+							.itext Национальный исследовательский Томский политехнический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li
+									li
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-2.jpg", alt="")
+							.iname
+								a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+							.itext Кубанский государственный технологический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-3.jpg", alt="")
+							.iname
+								a(href="#") Технологический лазерный комплекс гравировки и резки материалов 
+							.itext Ивановский государственный политехнический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li.star
+						.clear
+						.all
+							a(href="#") Все оборудование
+						.sep
+				.box
+					.bname
+						h3 
+							a(href="#") Высокотехнологичные Услуги
+					.bcon
+						.item
+							.iname
+								a(href="#") Технологический лазерный комплекс гравировки и резки материалов 
+							.itext Ивановский государственный политехнический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li.star
+						.item
+							.iname
+								a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+							.itext Национальный исследовательский Томский политехнический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li
+									li
+						.item
+							.iname
+								a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+							.itext Кубанский государственный технологический университет 
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+						.clear
+						.all
+							a(href="#") Все услуги
+						.sep
+				.box
+					.bname
+						h3 
+							a(href="#") Программное обеспечение
+					.bcon
+						.item
+							.iname
+								a(href="#") Разработка систем диспетчерского контроля и управления
+							.itext 
+								| ЗАО «ЭлеСи» <br>
+								a(href="#") http://elesy.ru/engineering/services
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li.star
+						.item
+							.iname
+								a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+							.itext 
+								| ЗАО «ЭлеСи» <br>
+								a(href="#") http://elesy.ru/engineering/services
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li
+									li
+						.item
+							.iname
+								a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+							.itext 
+								| ЗАО «ЭлеСи» <br>
+								a(href="#") http://elesy.ru/engineering/services
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+						.clear
+						.all
+							a(href="#") Все программы
+			//------------------------------------------------
+			.box-info.orange
+				.box
+					.bname
+						h3 
+							a(href="#") Потребности в услугах и оборудовании
+					.bcon
+						.item
+							.idate 19 сентября 2014 года
+							.iname
+								a(href="#") Лазерная гравировка и резка материа
+							.itext 	
+								p
+									b Описание задачи: 
+									| Здравствуйте, прошу сообщить о возможности проектирования грейферов.
+								p С уважением, Олег Джагупов
+								p
+									b Контакт: 
+									| Djagupovol@mzmo.ru
+							.isuggest
+								a(href="#") Предложить решение
+						.item
+							.idate 12 января 2014 года
+							.iname
+								a(href="#") Проектирование маневрового устройства для передвижения вагонов
+							.itext 	
+								p
+									b Описание задачи: 
+									| Здравствуйте, прошу сообщить, кто из инжиниринговых компаний возьмется за проектирование УПВ-25 (маневренное устройство для передвижения вагонов)?
+								p С уважением, Олег Джагупов
+								p
+									b Контакт: 
+									| Djagupovol@mzmo.ru
+							.isuggest
+								a(href="#") Предложить решение
+						.item
+							.idate 14 марта 2014 года
+							.iname
+								a(href="#") Разработка веб-интерфейса
+							.itext 	
+								p
+									b Описание задачи: 
+									| Здравствуйте, прошу сообщить о возможности проектирования грейферов.
+								p С уважением, Олег Джагупов
+								p
+									b Контакт: 
+									| Djagupovol@mzmo.ru
+							.isuggest
+								a(href="#") Предложить решение
+						.clear
+						.all
+							a(href="#") Все потребности
+			//------------------------------------------------
+			.box-info-graph
+				.bname
+					h3 
+						a(href="#") Рейтинг организаций по научно-техническому потенциалу
+				.bcon
+					.item
+						.item-left
+							.iname
+								a(href="#") ГНУ ВИЭСХ Россельхозакадемии
+							.itext
+								p.nomrg Оборудование: 56%
+								p.nomrg Услуги: 23%
+								p.nomrg Результаты интеллектальной деятельности: 58%
+						.item-graph
+							.graph-wrap
+								.graph-inner(style='width:98%;')
+							.graph-per 98%
+							.graph-date +23 п.п. за последние 3 месяца
+					.item
+						.item-left
+							.iname
+								a(href="#") Национальный исследовательский Томский политехнический университет
+							.itext
+								p.nomrg Оборудование: 56%
+								p.nomrg Услуги: 23%
+								p.nomrg Результаты интеллектальной деятельности: 58%
+						.item-graph
+							.graph-wrap
+								.graph-inner(style='width:67%;')
+							.graph-per 67%
+							.graph-date +43 п.п. за последние 3 месяца
+					.item
+						.item-left
+							.iname
+								a(href="#") ООО «ИИТКонсалтинг»
+							.itext
+								p.nomrg Оборудование: 56%
+								p.nomrg Услуги: 23%
+								p.nomrg Результаты интеллектальной деятельности: 58%
+						.item-graph
+							.graph-wrap
+								.graph-inner(style='width:41%;')
+							.graph-per 41%
+							.graph-date +7 п.п. за последние 3 месяца
+				.all
+					a(href="#") Все рейтинги
+			//------------------------------------------------
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Результаты интеллектуальной деятельности
+				.bcon
+					.item
+						.iname
+							a(href="#") Эскизные проекты роторов низкого давления тихоходной турбины мощностью свыше 1200 МВт с двумя ЦНД
+						.itext
+							p
+								b Наименование компании: 
+								| ООО «ГСИ»
+							p
+								b Вид РИД (РНТД): 
+								| Изобретение
+							p
+								b Наименование РИД (РНТД): 
+								| Микроэмульсионные композиции для создания трансдермальных и трансмукозальных форм фармацевтических средств и косметических препаратов, и способ их получения.
+							p
+								b Охранный документ:
+								| Патент №2481822 от 21.02.2012
+					.item
+						.iname
+							a(href="#") Метод определения степени виброактивности элементов различной формы с неоднородным потоком жидкости, а также путей распространения колебательной энергии
+						.itext
+							p
+								b Наименование компании: 
+								| ООО «ГСИ»
+							p
+								b Вид РИД (РНТД): 
+								| Изобретение
+							p
+								b Наименование РИД (РНТД): 
+								| Микроэмульсионные композиции для создания трансдермальных и трансмукозальных форм фармацевтических средств и косметических препаратов, и способ их получения.
+							p
+								b Охранный документ:
+								| Патент №2481822 от 21.02.2012
+				.all
+					a(href="#") Все рейтинги
+		.main-right
+			.box-news.box-right
+				.bname
+					h3 
+						a(href="#") Новости
+				.bcon
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Ученые объяснили смертельную опасность ветряных турбин для летучих мышей
+						.imeta
+							.comments
+								a(href="#") 51
+							.views
+								a(href="#") 225
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Текстильный импортозамещающий комплекс появится в Ростовской области
+						.imeta
+							.comments
+								a(href="#") 51
+							.views
+								a(href="#") 225
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Ученые объяснили смертельную 
+						.imeta
+							.comments
+								a(href="#") 51
+							.views
+								a(href="#") 225
+				.ball
+					a(href="#") Все новости
+			//------------------------------------------------
+			.box-talks.box-right
+				.bname
+					h3 
+						a(href="#") Сейчас обсуждают
+				.bcon
+					.item
+						.iname
+							a(href="#") Это лучшая установка
+						.itext Константин Сергеевич, <br>ООО «ИИтстрой» 
+						.ititle
+							a(href="#") Название статьи
+						.imeta
+							.comments
+								a(href="#") 51
+					.item
+						.iname 
+							a(href="#") Трудно получить допуск к работе на этом 
+						.itext Иван Зиновьев, МФТИ 
+						.ititle
+							a(href="#") Оборудование
+						.imeta
+							.comments
+								a(href="#") 51
+					.item
+						.iname
+							a(href="#") Это лучшая установка Это лучшая установка Это лучшая установка
+						.itext Константин Сергеевич, <br>ООО «ИИтстрой» 
+						.ititle
+							a(href="#") Название статьи
+						.imeta
+							.comments
+								a(href="#") 51
+				.ball
+					a(href="#") Все обсуждения
+			//------------------------------------------------
+			.box-events.box-right
+				.bname
+					h3 
+						a(href="#") События
+				.bcon
+					.item
+						.idate 09.09 >
+						.iname 
+							a(href="#") Конференция по промышленному дизайну
+					.item
+						.idate 18.09 >
+						.iname 
+							a(href="#") Конкурс проектов в области энергосбережения
+					.item
+						.idate 22.09 >
+						.iname 
+							a(href="#") Конкурс проектов в области энергосбережения
+				.calendar-wrap
+					.calendar
+						.calendar-widget
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

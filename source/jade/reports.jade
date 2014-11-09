@@ -1,0 +1,217 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Отчеты
+	
+block scripts
+	script(src="js/jquery.easypiechart.min.js", type="text/javascript")
+
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.organ-info
+			.prev
+				img(src="img/content/pic.png", alt="")
+			.pic
+				img(src="img/content/logo-inz.png", alt="")
+			.info
+				.name ООО «ГСИ»
+				.desc Отраслевые компетенции Компании — нефтяная и газовая промышленность, нефтехимическая и химическая промышленность, черная и цветная.
+			.contacts
+				.td
+					ul
+						li.phone +7 (495) 258-84-20
+						li.fax +7 (495) 258-60-64
+						li.email 
+							a(href="#") info@vebeng.ru
+				.td
+					ul
+						li.map 107078, Россия, Москва, <br>ул. Маши Порываевой, д.7, стр. 2.
+		//------------------------------------------------
+		.main-left
+			.search-con
+				form(action="#")
+					input(type="text", placeholder="Быстрый поиск по отчетам").inp-text
+					input(type="submit", value="").inp-submit
+			.box-info
+				.box
+					.bname
+						h3 Инфографика
+					.bcon.bcon-mod
+						.infographics
+							.infographics-col
+								.infographics-col-container
+									.gr-chart
+										.gr-chart-row.gr-chart-row-1
+											.gr-chart-row-num 100
+										.gr-chart-row.gr-chart-row-2
+											.gr-chart-row-num 80
+										.gr-chart-row.gr-chart-row-3
+											.gr-chart-row-num 60
+										.gr-chart-row.gr-chart-row-4
+											.gr-chart-row-num 40
+										.gr-chart-row.gr-chart-row-5
+											.gr-chart-row-num 20
+										.gr-chart-row.gr-chart-row-0
+											.gr-chart-row-num
+										.gr-chart-col.gr-chart-col-1
+											.gr-chart-progress
+												.gr-chart-progress-num(style="height: 33%;")
+											.gr-chart-date 2010
+										.gr-chart-col.gr-chart-col-2
+											.gr-chart-progress
+												.gr-chart-progress-num(style="height: 1%;")
+											.gr-chart-date 2011
+										.gr-chart-col.gr-chart-col-3
+											.gr-chart-progress
+												.gr-chart-progress-num(style="height: 100%;")
+											.gr-chart-date 2012
+										.gr-chart-col.gr-chart-col-4
+											.gr-chart-progress
+												.gr-chart-progress-num(style="height: 55%;")
+											.gr-chart-date 2013
+										.gr-chart-col.gr-chart-col-5
+											.gr-chart-progress
+												.gr-chart-progress-num.red(style="height: 67%;")
+												.gr-chart-progress-num.blue(style="height: 48%;")
+												.gr-chart-progress-num.green(style="height: 38%;")
+											.gr-chart-date 2014
+								.infographics-box
+									.infographics-box-in
+										.chart-wrap
+											.chart-item
+												span.chart.js-charts-visits(data-percent="40")
+													span.percent
+												.chart-descr visits
+											.chart-item
+												span.chart.js-charts-members(data-percent="25")
+													span.percent
+												.chart-descr members
+											.chart-item
+												span.chart.js-charts-sales(data-percent="23")
+													span.percent
+												.chart-descr sales
+
+							.infographics-col
+								.infographics-col-container
+									.infographics-detail
+										.infographics-detail-item
+											.infographics-stataus
+												span.infographics-stataus-green
+												span.infographics-stataus-num 40%
+											.infographics-note Промышленный дизайн потребительской электронники
+										.infographics-detail-item
+											.infographics-stataus
+												span.infographics-stataus-blue
+												span.infographics-stataus-num 25%
+											.infographics-note Промышленный дизайн медицинского оборудования
+										.infographics-detail-item
+											.infographics-stataus
+												span.infographics-stataus-red
+												span.infographics-stataus-num 14%
+											.infographics-note Строительный инжиниринг
+								.infographics-box
+									.infographics-box-in
+										.price
+											span.price-val $ 
+											span.price-summ 124,057
+										.graph-wrap.graph-success
+											.graph-inner(style="width:78%;")
+										.stat
+											.stat-ico
+											.stat-descr
+												span.stat-descr-percent 27%
+												span.stat-descr-note к предыдущему месяцу
+			.box-info
+				.box
+					.bname
+						h3 Оборудование
+					.bcon.bcon-mod
+						table.table-ind
+							thead
+								tr
+									td.num #
+									td Вуз
+									td Краткое описание
+							tbody
+								tr
+									td.num 1
+									td ТПУ
+									td 
+										a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
+								tr
+									td.num 2
+									td ТУСУР
+									td 
+										a(href="#") Автомат установки компонентов: АРС L40
+								tr
+									td.num 3
+									td КамГУ им. В.Беринга
+									td 
+										a(href="#") Автоматизированная система пробоподготовки для петрографических и минераграфических исследований 
+								tr
+									td.num 4
+									td АмГПГУ
+									td 
+										a(href="#") Автоматизированная система управлением освещением 
+								tr.is-active
+									td.num 5
+									td ТюмГНГУ
+									td 
+										a(href="#") Автоматизированная установка для исследования эксплуатационных характеристик продуктивных пластов FDS-350 VINCI TECHNOLOGIES 
+								tr
+									td.num 6
+									td СибГИУ
+									td 
+										a(href="#") Автоматизированная установка низкотемпературного моделирования саморегулирующегося струйно-эмульсионного реактора. 
+								tr
+									td.num 7
+									td ЮЗГУ
+									td 
+										a(href="#") Автоматизированное рабочее место конструктора АРМК (ПК с 3-мя мониторами,антенное поворотное устр-во, радиостанция,видеоадаптер) 
+								tr
+									td.num 8
+									td КНИТУ
+									td 
+										a(href="#") Автоматизированное рабочее место многодисциплинарного структурного анализа (США)
+								tr
+									td.num 9
+									td КНИТУ
+									td 
+										a(href="#") Автоматизированное рабочее место по созданию сложных конструкций и агрегатов перспективных транспортных средств на основе твердотельного 3D моделирования (США) 
+								tr
+									td.num 10
+									td КНИТУ
+									td 
+										a(href="#") Автоматизированное рабочее место расчета статической и динамической прочности (США) 
+		//------------------------------------------------
+		.main-right
+			.boxside-docs.box-right
+				.bname
+					h3 Документы
+				.bcon
+					.item
+						.iname
+							a(href="#") Лазерная гравировка и резка материалов
+						.ifile PDF - 12 Мб 
+					.item
+						.iname
+							a(href="#") Лазерная гравировка и резка материалов
+						.ifile PDF - 12 Мб 
+					.item
+						.iname
+							a(href="#") Лазерная гравировка и резка материалов
+						.ifile PDF - 12 Мб
+				.badd
+					a(href="#") Добавить документ
+				.ball
+					a(href="#") Все документы
+			.boxside-btns
+				.btn-reports.btn-warning
+					a(href="#") Экспортировать
+				.btn-reports.btn-primary
+					a(href="#") Распечатать

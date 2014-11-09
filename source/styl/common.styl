@@ -1,0 +1,272 @@
+/*
+	proscom.ru
+	Илья Шикарный 
+	Простые Коммуникации
+*/
+
+
+//	ГЛОБАЛЬНЫЙ СБРОС
+// ===============================================
+html, body
+	position relative; min-height: 100%; 
+*
+	margin 0; padding 0; border 0; outline 0;
+
+
+
+//	ПОЛЕЗНОСТИ
+// ===============================================
+clearfix()
+	&:before
+	&:after
+		content ""; display table; clear both;
+pointer()
+	cursor pointer
+full()
+	box-sizing border-box;
+mrno()
+	margin 0;
+pdno()
+	padding 0;
+cover()
+	background-size cover;
+hide()
+	display none;
+tdn()
+	text-decoration none;
+tdu()
+	text-decoration underline;
+
+anim()
+	transition 0.3s ease-out;
+anim-all()
+	transition all 0.3s ease-out;
+anim-bg()
+	transition background-image 0.3s ease-out;
+anim-color()
+	transition color 0.3s ease-out;
+anim-op()
+	transition opacity 0.3s ease-out;
+
+.clear
+	clearfix()
+.hide
+	hide()
+.float-right
+	float right;
+
+
+//	ТЕКСТ
+// ===============================================
+mainfont()
+	font-family: 'latoregular';
+mediumfont()
+	font-family: 'latomedium';
+latolight()
+	font-family: 'latolight';
+latoblack()
+	font-family: 'latoblack';
+latohairline()
+	font-family: 'latohairline';
+latoitalic()
+	font-family: 'latoitalic';
+light()
+	font-weight 300;
+regular()
+	font-weight 400;
+semibold()
+	font-weight 600;
+bold()
+	font-weight 700;
+heavy()
+	font-weight 800;
+.align-center
+	text-align center;
+
+p
+	margin-bottom 20px; line-height normal;
+i
+	latoitalic(); font-style normal;
+body
+	font-size 12px; color #999; mainfont(); light(); line-height normal;
+
+
+
+//	СПИСКИ
+// ===============================================
+ul
+	margin 0 0 15px 0;
+	li
+		margin 0 0 15px 15px; list-style square inside;
+		ul, ol
+			margin 15px 0 10px 0;
+ol
+	margin 0 0 15px 0;
+	li
+		margin 0 0 15px 15px; list-style decimal inside;
+		ul, ol
+			margin 15px 0 10px 0;
+lino()
+	margin 0; list-style none
+	li
+		margin 0;
+		list-style none;
+
+ol.float, ul.float
+	clearfix()
+	li 
+		float left; width 50%; margin-left 0; full();
+ul.mrno
+	margin 0;
+
+
+
+//	ССЫЛКИ
+// ===============================================
+a
+	color #ff8c4d; text-decoration none; anim-all();
+	&:hover
+		text-decoration underline;
+	&.active 
+		cursor default; text-decoration none;
+
+li.active a 
+	cursor default; text-decoration none;
+
+
+
+//	ЗАГОЛОВКИ
+// ===============================================
+h1, h2, h3, h4, h5, h6
+	margin 0 0 30px 0;
+	color #4e5255; mainfont();
+h1
+	font-size 40px;
+h2
+	font-size 36px;
+h3
+	font-size 28px
+h4
+	font-size 16px
+
+
+
+//	ИНПУТЫ
+// ===============================================
+label, input, button, select, textarea
+	color #333333; font-size 14px;
+
+select
+	width 260px; margin 0 0 10px 0; padding 10px; full();
+	background #fff; border 2px solid #cacaca;  
+
+input[type="text"]
+input[type="password"]
+input[type="email"]
+input[type="phone"]
+	width 300px
+	margin-bottom 10px
+	padding 10px 10px
+	full()
+	background #fff
+	border 1px solid #e6e6e6 
+	anim()
+	&:hover
+		//box-shadow inset 0 0 5px alpha(#cccccc, 0.1); 
+	&:focus
+		//box-shadow inset 0 0 5px alpha(#cccccc, 0.1); 
+	&.error
+		border-color #e44343; color #e44343; 
+	&.valid
+		border-color #3ac020;
+		
+input[type="submit"]
+	width auto
+	padding 15px 30px
+	color #fff
+	font-size 18px;
+	border none
+	anim()
+	&:hover
+		background #1aa257
+	&:active
+		opacity 0.8;
+
+textarea
+	width 238px
+	max-width 100%
+	height 100px
+	padding 20px;
+	background #fff
+	border 1px solid #e1e1e1
+	anim();
+	&:hover
+		//border-color #ff8c4d;
+	&:focus
+		//border-color #ff8c4d;
+	&.error
+		border-color #ff0000;
+	&.valid
+		border-color #3ac020;
+
+input[type="checkbox"]
+	display:none;
+input[type="checkbox"] + label
+	position relative;
+	display inline-block;
+	cursor:pointer
+	line-height:16px; margin:0px 10px 0px 0px; padding 4px 0 0 30px; font-size 14px; color #333333;
+input[type="checkbox"] + label::before
+	content:""; position absolute; left 0px; top 0px; height:22px; width:22px; margin:0 10px -3px 0; 
+	background:url("../img/checkbox.png") no-repeat;
+input[type="checkbox"]:disabled + label
+	cursor:default;
+input[type="checkbox"] + label:hover
+	opacity 0.8;
+input[type="checkbox"] + label:hover::before
+	background-position:0px 0px;
+input[type="checkbox"]:checked + label
+	opacity 1;
+input[type="checkbox"]:checked + label::before
+	background-position:0px -22px;
+input[type="checkbox"]:checked + label:hover::before
+	background-position:0px -22px;
+input[type="checkbox"]:disabled + label::before
+	background-position:0px 0px;
+input[type="checkbox"]:checked:disabled + label::before
+	background-position:0px -22px;
+
+/*
+input[type="radio"] + label 
+	cursor:pointer; font-size:20px; line-height:30px; margin:0px 20px 0px 0px;
+input[type="radio"] + label::before 
+	content:""; display:inline-block; height:20px; width:16px; margin:0 8px -3px 0px; 
+	background:url("../img/radio.png") no-repeat;
+input[type="radio"] 
+	display:none;
+input[type="radio"]:disabled 
+	display:none;
+input[type="radio"]:disabled + label 
+	cursor:default;
+input[type="radio"] + label:hover::before
+	opacity 0.8;
+input[type="radio"] + label::before 
+	background-position:0px 0px;
+input[type="radio"]:checked + label::before 
+	background-position:0px -17px;
+input[type="radio"]:disabled + label::before 
+	background-position:0px 0px;
+input[type="radio"]:checked:disabled + label::before 
+	background-position:0px -17px;
+*/
+
+
+
+//	ТАБЛИЦЫ
+// ===============================================
+table
+	width 100%;
+	td
+		vertical-align top;
+		
+

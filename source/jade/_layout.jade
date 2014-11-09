@@ -1,0 +1,58 @@
+//- Настройки 
+//- Навигация по страницам верстки
+- var develop = 1
+
+//- Шаблон
+include _head
+body
+
+	if develop
+		style
+			| .system-menu {position: fixed; width:auto; bottom:0; z-index: 9999; background: #fff; opacity:.3; overflow:hidden; transition:all 0.3s ease-out;}
+			| .system-menu:hover {width:auto; opacity: 1;}
+			| .system-menu a {display:block; padding:10px 15px; font-size:12px; color: #000;}
+			| .system-menu a:hover {background:#e6e6e6; text-decoration:none;}
+			| .system-menu p.sep {margin:0; padding:5px 10px; min-height:2px; font-size:12px; border-top: 2px solid #000;}
+
+		div.system-menu
+			a(href="analytics.html") Статья
+			a(href="articles.html") Аналитические статьи 
+			a(href="docs-item.html") Документ 
+			a(href="docs.html") Документы 
+			a(href="events.html") События 
+			a(href="index.html") Главная 
+			a(href="info.html") Информация 
+			a(href="links.html") Ссылки 
+			a(href="lk.html") ЛК 
+			a(href="news.html") Новости 
+			a(href="reports.html") Отчеты
+			a(href="requirements.html") Потребности
+			a(href="requirements-comment.html") Потребности c комменатриями
+			a(href="story-item.html") История/Новость
+
+	#shikarniy
+		include _sidebar
+		.main-page
+			.topper
+				.wrap
+					.menu
+						ul
+							li
+								a(href="#") Программы по развитию
+							li
+								a(href="#") Отчеты
+							li
+								a(href="#") О проекте
+					.user
+						.name
+							a(href="#") 
+								.title Алексей Петров
+								.email petrov.i1975@mail.ru
+						.pic
+							.ava
+								img(src="img/content/ava-1.png", alt="")
+							.count
+								a(href="#") 9
+			//------------------------------------------------
+			block content
+			include _footer
