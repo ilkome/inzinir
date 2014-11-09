@@ -87,7 +87,8 @@ body
 .btn-reports
 	margin-bottom 10px;
 
-
+color-orange()
+	color #F85800 
 
 //	ЛЕВАЯ КОЛОНКА
 // ===============================================
@@ -147,13 +148,12 @@ body
 		display none;
 		position fixed; left 200px; top 0;
 		width 400px; full(); 
-		padding 0 30px;
 		min-height 600px; 
 		height 100%;
 		text-align left; 
 		background url("../img/left/bg.jpg") no-repeat; cover();
 		.bname
-			padding 30px 0 25px 0;
+			padding 30px 30px 25px 30px;
 			h3
 				margin 0;
 				color #E6E6E6; latohairline();
@@ -164,6 +164,7 @@ body
 					transform rotate(180deg) scale(1.1); 
 		.bnav
 			height 80px
+			padding 0 30px
 			ul
 				lino();
 				width 100%;
@@ -187,7 +188,7 @@ body
 					a
 						background alpha(#f85800, 0.5); 
 		.bcat
-			padding-bottom 40px;
+			padding 0 30px 40px 30px
 			&.open
 				.bcat-con
 					display block;
@@ -218,6 +219,7 @@ body
 			.bcat-con
 				display none;
 				.item
+					position relative
 					padding 15px 0;
 					border-bottom 1px solid #2e3033;
 					.iprev, .idate
@@ -238,7 +240,18 @@ body
 						a
 							color #e5e5e5; tdn();
 							&:hover
-								color #ff8c4d; 
+								color #ff8c4d;
+				.item.active
+					&:after
+						content " "
+						position absolute 
+						right -40px 
+						top 50%
+						width 20px
+						height 20px
+						margin-top -10px
+						background #fff
+						transform rotate(45deg)
 
 
 //	ВЕРХНЕЕ МЕНЮ
@@ -301,6 +314,36 @@ body
 
 //	ОСНОВНОЙ КОНТЕНТ
 // ===============================================
+.event-organizers
+	width 60%
+	margin-top 40px
+	padding-top 20px
+	
+	color #333
+	line-height 20px
+	
+	padding-right 40px
+	border-top 1px solid #e6e6e6
+	a
+		color-orange()
+	.contacts
+		padding-top 20px
+		padding-bottom 30px
+		color #999
+		span
+			padding-top 4px
+			padding-left 30px
+			padding-right 40px
+		span.phone
+			background url("../img/icons/phone.png") no-repeat
+		span.email
+			background url("../img/icons/email.png") 2px 4px no-repeat
+		a
+			color #999
+			tdn() 
+			&:hover
+				color-orange()
+
 .main-page
 	padding 90px 40px 50px 240px;
 	@media min-width
@@ -355,7 +398,13 @@ body
 .sep-space
 	height 30px
 .mar-bot-20
+	margin-bottom 20px
+.mar-bot-30
 	margin-bottom 30px
+.mar-bot-10
+	margin-bottom 10px
+.mar-top-20m
+	margin-top -15px
 .imeta
 	clearfix(); 
 	a.btn-add
@@ -918,6 +967,10 @@ img.full
 					color #999999;
 				p 
 					margin-bottom 10px;
+.box-news_dotted
+	.item
+		margin-bottom 30px
+		border-bottom 1px dotted #E5E5E5
 // -----------------------------------------------
 .box-talks
 	.bcon
@@ -1208,6 +1261,7 @@ img.full
 				border-bottom 1px solid #e6e6e6
 				.name
 					padding-bottom 10px
+					color #333
 					a
 						color #333
 						text-transform uppercase
@@ -1215,6 +1269,14 @@ img.full
 					.date
 						display inline-block
 						padding-left 10px
+						color #CCC
+					.pep
+						display inline-block
+						a
+							color #CCC
+							font-size 12px
+							font-weight 500
+							text-transform none
 				.text
 					font-size 14px
 				.answer
@@ -1441,7 +1503,7 @@ img.full
 				color #F85800
 		
 
-//	СТАТЬИ
+//	СТАТЬИ 
 // ===============================================
 .box-articles
 	padding 20px;
@@ -1479,6 +1541,56 @@ img.full
 				.right
 					float right;
 					@extend .imeta
+.box-interest
+	margin 0 -21px 0px -21px;
+	background #fafafa
+	border 1px solid #E5E5E5
+	.bname
+		@extend .box-info .bname
+	.bcon
+		padding 0 20px 20px 20px; 
+		.item-left
+			display table-cell; 
+			width 65%;
+			padding-right 10px;
+			border-right 1px dotted #e7e7e7; 
+			.iprev
+				display table-cell
+				p.desc
+					color #CCC
+			.item
+				display table-cell
+				padding-left 20px; 
+				vertical-align top; 
+		.items-right
+			display table-cell
+			vertical-align top;
+			padding-left 10px;
+			.item
+				margin-bottom 5px;
+				padding-bottom 5px;
+				border-bottom 1px dotted #e7e7e7;
+				&:last-child
+					border 0; 
+		.item
+			.iname
+				padding-bottom 5px;
+				a
+					color #333; font-size 14px; tdn();
+					&:hover
+						color #f85800;
+			.itext
+				padding-bottom 10px; 
+				color #999;
+			.imore
+				padding-bottom 10px;
+			.idate
+				font-size 11px; color #CCC;
+
+
+
+//	СТАТЬИЯ, НОВОСТЬ, СОБЫТИЕ
+// ===============================================
 .box-text-item
 	padding 20px;
 	border 1px solid #E5E5E5;
@@ -1495,7 +1607,7 @@ img.full
 		padding-bottom 30px;
 		color #333;
 		h1
-			margin-bottom 20px;
+			margin-bottom 0px;
 			color #333; font-size 30px; latoblack(); light();
 		p
 			font-size 24px;
@@ -1547,51 +1659,17 @@ img.full
 			float right;
 			a
 				padding 9px 30px;
-.box-interest
-	margin 0 -21px 0px -21px;
-	background #fafafa
-	border 1px solid #E5E5E5
-	.bname
-		@extend .box-info .bname
-	.bcon
-		padding 0 20px 20px 20px; 
-		.item-left
-			display table-cell; 
-			width 65%;
-			padding-right 10px;
-			border-right 1px dotted #e7e7e7; 
-			.iprev
-				display table-cell
-				p.desc
-					color #CCC
-			.item
-				display table-cell
-				padding-left 20px; 
-				vertical-align top; 
-		.items-right
-			display table-cell
-			vertical-align top;
-			padding-left 10px;
-			.item
-				margin-bottom 5px;
-				padding-bottom 5px;
-				border-bottom 1px dotted #e7e7e7;
-				&:last-child
-					border 0; 
-		.item
-			.iname
-				padding-bottom 5px;
-				a
-					color #333; font-size 14px; tdn();
-					&:hover
-						color #f85800;
-			.itext
-				padding-bottom 10px; 
-				color #999;
-			.imore
-				padding-bottom 10px;
-			.idate
-				font-size 11px; color #CCC;
+.event-item
+	.iprev
+		display table-cell
+		vertical-align top 
+	.icon
+		display table-cell 
+		vertical-align top
+		width 90%
+	.tags
+		padding-bottom 15px
+		
 
 
 //	ПОТРЕБНОСТИ
@@ -1776,7 +1854,7 @@ img.full
 	.tags-item
 		display inline-block
 		margin 0 10px 10px 0
-		background-color #FAFAFA
+		background-color #f8f8f8
 		box-shadow 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #FFF
 		border 1px solid transparent
 		border-radius 2px
@@ -1817,20 +1895,25 @@ img.full
 		&:hover
 			background-image linear-gradient(to top, #F5F5F5 0%, #FEFEFE 100%)
 			border 1px solid rgba(0, 0, 0, 0.1)
-.adsress-date
-	color #CCC
+.address-date
+	color #999
 	font-size 11px
 	line-height 14px
-	.ad-adsress
+	.ad-address
 		padding-left 20px
 		margin-bottom 10px
 		background url("../img/icons/map-sm.png") no-repeat
 	.ad-date
 		padding-left 20px 
 		background url("../img/icons/date-sm.png") 0 1px no-repeat
-.mar-top-20m
-	margin-top -15px
-	
+.add-to-cal
+	margin-top 15px
+	padding-left 25px
+	padding-top 2px
+	background url("../img/icons/cal-sm.png") no-repeat
+	color-orange()
+	a
+		color-orange()
 
 //	ПОДВАЛ
 // ===============================================
@@ -1845,14 +1928,14 @@ footer
 // СКРОЛЛ БЛОКИ
 // ===============================================
 .scroller-box
-	overflow hidden; position relative; height 630px; margin-right -30px;
+	overflow hidden; position relative; height 630px; padding-right 0px;
 .mCustomScrollBox 
 	position relative; overflow hidden; height 100%; max-width 100%; outline none;
 	&:hover
 		.mCSB_scrollTools
 			opacity 1;
 	.mCSB_container
-		overflow hidden; width auto; height auto; margin-right 30px;
+		overflow hidden; width auto; height auto;
 		@media w1500
 			margin-right 50px;
 	.mCSB_scrollTools

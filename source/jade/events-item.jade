@@ -1,0 +1,209 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Событие
+	
+block scripts
+	script(src="js/jquery.supercal.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") События
+				li >
+				li: a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 61
+					.views 2726
+				.bname
+					h1 Выставка научного оборудования НИИ спорта РГУФКСМиТ
+				.bcon.bcon-text-style
+					.event-item.mar-bot-30
+						.icon
+							.tags
+								a(href="#").tags-item
+									span.name Круглый стол
+									span.count.empty
+							.address-date
+								.ad-address Москва, ул. Сиреневый бульвар, д.4
+								.ad-date 27, 28 октября - с 14.00 до 16.00, <br>29, 30 октября - с 10.00 до 12.00
+							.add-to-cal
+								a(href="#") Добавить в Google Calendar  
+								| / 
+								a(href="#") Добавить в календарь (*.ics)
+						.iprev
+							img(src="img/content/180-135-2.jpg", alt="")
+					p В рамках «Гидроавиасалона-2014», который прошел в Геленджике, Минпромторгом, корпорацией Ростех и правительством Ростовской области был подписан меморандум о реализации инвестпроекта.
+					p «Мы договорились о выделении участка земли на базе территории воинской части. Минобороны согласилось передать аэродром в эксплуатацию Ростеху, «Вертолетам России», — пояснил глава Минпромторга Денис Мантуров. 
+					p Бывший владелец холдинга «Связьстрой» Роман Троценко тоже получил предложение: «Были намеки, что продажа бизнеса поможет с заказами. Причем концерн хотели получить практически бесплатно». В «Связьстрой» входили три компании: «Связьстрой-5» (Челябинск), «Связьстрой-2» (Краснодар) и «Межгорсвязьстрой». Из-за кризиса их оборот тогда сократился до $250 млн, и Троценко решил выйти из бизнеса. Но не бесплатно: «Мы нашли другого покупателя — «Конверс груп».
+				.event-organizers
+					.text
+						| Российский государственный университет физической культуры, спорта, молодёжи и туризма, РГУФКСМиТ <br>
+						a(href="#") (все события этого организатора)
+						.contacts
+							span.phone +7 495 675 87 98
+							span.email
+								a(href="#") email@email.com
+				.bmetabot
+					.share
+						span Поделиться
+						ul
+							li.vk
+								a(href="#")
+							li.fb
+								a(href="#")
+							li.tw
+								a(href="#")
+							li.in
+								a(href="#")
+				.box-comments
+					.bwrite
+						.bname
+							h3 Комментарии к статье
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.pep 
+											|  > 
+											a(href="#") Влодко Чорный
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------`------
+		.main-right
+			.box-news.box-right.box-news_dotted
+				.bname
+					h3 
+						a(href="#") Похожие события
+				.bcon
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Круглый стол
+								span.count.empty
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+					.item
+						.idate 18 Сентября
+						.iname 
+							a(href="#") Ивановский государственный политехнический университет
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Выставки
+								span.count 45
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Ученые объяснили смертельную 
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Круглый стол
+								span.count.empty
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+				.ball
+					a(href="#") Все новости
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")
