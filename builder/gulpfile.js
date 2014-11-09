@@ -1,5 +1,5 @@
 /*
-	Gulp shik v2.2
+	Gulp shik v2.3
 
 	Илья Шикарный
 	shikarniy.com

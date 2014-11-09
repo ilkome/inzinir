@@ -19,7 +19,7 @@ Gulp - это таск-менеджер: приложение, которое и
 npm install gulp -g
 
 2. Из папки builder запустить install-gulp.cmd или в ком. строке выполнить:
-npm install gulp gulp-stylus gulp-jade gulp-autoprefixer gulp-connect gulp-plumber gulp-watch
+npm update
 
 3. Из папки builder запустить run-gulp.cmd 
 или в ком. строке выполнить: gulp
