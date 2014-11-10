@@ -1,0 +1,246 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Результат
+	
+block scripts
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") События
+				li >
+				li: a(href="#") РЕЗУЛЬТАТЫ ИНТЕЛЛЕКТУАЛЬНОЙ ДЕЯТЕЛЬНОСТИ
+				li >
+				li Эскизные проекты
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 61
+					.views 2726
+				.bcon.bcon-text-style
+					.event-item
+						.icon
+							h1.service-title Эскизные проекты вариантов роторов низкого давления тихоходной турбины
+							p.grey-without-strong
+								strong Исполнитель: 
+								| НИОКР ОАО НПО «ЦНИИТМАШ»
+							p.grey-without-strong
+								strong Вид РИД: 
+								| Секрет производства (
+								a(href="#") ноу-хау
+								|)
+							p.grey-without-strong
+								strong ФЦП: 
+								| «Национальная технологическая база» на 2007-2011 годы
+							p.grey-without-strong
+								strong Охранный документ: 
+								| в процессе регистрации
+								a(href="#").updade-black
+							p.grey-without-strong
+								strong Стоимость передачи РИД: 
+								| 240 000 рублей
+				.bmetabot
+					.share
+						span Поделиться
+						ul
+							li.vk
+								a(href="#")
+							li.fb
+								a(href="#")
+							li.tw
+								a(href="#")
+							li.in
+								a(href="#")
+					.comments-count
+						a(href="#").btn-grey 19 комментариев
+				.box-comments
+					.bwrite
+						.bname
+							h3 Обсуждаем эскизные проекты
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.pep 
+											|  > 
+											a(href="#") Влодко Чорный
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------`------
+		.main-right
+			.box-news.box-right.box-news_dotted-sm
+				.bname
+					h3 
+						a(href="#") ПОХОЖИЕ РИД
+				.bcon
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.itext 
+							p 
+								strong Исполнитель: <br>
+								| Санкт-Петербургский государственный университет аэрокосмического приборостроения
+							p 
+								strong Вид рид: 
+								| Изобритение
+							p
+								strong Охранный документ: 
+								| в процессе регистрации
+							p
+								strong Стоимость передачи РИД: 
+								| 240 000 рублей
+						.tags
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count 13
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.itext 
+							p 
+								strong Исполнитель: <br>
+								| Санкт-Петербургский государственный университет аэрокосмического приборостроения
+							p 
+								strong Вид рид: 
+								| Изобритение
+							p
+								strong Охранный документ: 
+								| в процессе регистрации
+							p
+								strong Стоимость передачи РИД: 
+								| 240 000 рублей
+						.tags
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count.empty
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.itext 
+							p 
+								strong Исполнитель: <br>
+								| Санкт-Петербургский государственный университет аэрокосмического приборостроения
+							p 
+								strong Вид рид: 
+								| Изобритение
+							p
+								strong Охранный документ: 
+								| в процессе регистрации
+							p
+								strong Стоимость передачи РИД: 
+								| 240 000 рублей
+						.tags
+							a(href="#").tags-item
+								span.name Круглый стол
+								span.count.empty
+				.ball
+					a(href="#") Все рид
+			//------------------------------------------------
+			.box-right
+				.bname
+					h3 Виды рид
+				.bcon
+					ul
+						li: a(href="#") Изобретение
+						li: a(href="#") Полезная модель
+						li: a(href="#") Промышленный образец
+						li: a(href="#") Программа для ЭВМ
+						li: a(href="#") База данных
+						li: a(href="#") Селекционное достижение
+						li: a(href="#") Топология интегральных  микросхем
+						li: a(href="#") Ноу-хау
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

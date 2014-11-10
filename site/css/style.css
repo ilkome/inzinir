@@ -80,7 +80,7 @@ ul.mrno {
   margin: 0;
 }
 a {
-  color: #ff8c4d;
+  color: #f85800;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
@@ -1219,6 +1219,26 @@ h1.service-title {
 .comments-count {
   text-align: right;
 }
+.lh-small p {
+  margin-bottom: 10px;
+}
+.updade-black {
+  display: inline-block;
+  width: 11px;
+  height: 16px;
+  margin: 0 0 0 5px;
+  vertical-align: bottom;
+  background: url("../img/icons/updade-black.png") 0 center no-repeat;
+}
+.updade-black:hover {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.black-strong strong {
+  color: #333;
+  font-weight: 400;
+}
 .slider-index-wrap {
   position: relative;
   margin-top: -20px;
@@ -1888,6 +1908,23 @@ h1.service-title {
 .box-news_dotted .item {
   margin-bottom: 30px;
   border-bottom: 1px dotted #e5e5e5;
+}
+.box-news_dotted-sm .item {
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #e5e5e5;
+  padding-bottom: 10px;
+}
+.box-news_dotted-sm .item .tags {
+  padding-bottom: 0;
+  margin-right: -10px;
+}
+.box-news_dotted-sm .item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.box-news_dotted-sm .item:last-child p strong {
+  color: #333;
+  font-weight: normal;
 }
 .box-talks .bcon .item {
   padding-left: 25px;
