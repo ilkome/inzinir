@@ -52,7 +52,8 @@ gulp.task('customwatch', function() {
 	
 	//	Jade
 	customwatch(['../source/jade/*.jade', '!../source/jade/_*.jade'])
-		.pipe(plumber({errorHandler: notify.onError("<%= error.message %>")}))
+		//.pipe(plumber({errorHandler: notify.onError("<%= error.message %>")}))
+		.pipe(plumber())
 		.pipe(jade({
 			pretty: true
 		}))
