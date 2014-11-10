@@ -2034,13 +2034,9 @@ h1.service-title {
 .box-events .bcon .item .iname a:hover {
   color: #ff8c4d;
 }
-.box-events .calendar-wrap {
+.calendar-wrap {
+  margin: -1px -1px -1px -1px;
   background: #fff;
-  position: relative;
-  overflow: hidden;
-}
-.box-events .calendar-wrap .calendar {
-  margin: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -2498,64 +2494,6 @@ h1.service-title {
   top: 10px;
   text-align: right;
   width: 20px;
-}
-.supercal-popup {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: #fff;
-  z-index: 10;
-  border: 1px solid #ccc;
-  width: 200px !important;
-  padding: 20px;
-  overflow: hidden;
-}
-.supercal .supercal-header {
-  padding-bottom: 15px;
-  text-align: center;
-  color: #ff8c4d;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'latoblack';
-}
-.supercal .supercal-header .btn {
-  border: none;
-}
-.supercal .supercal-header .prev-month {
-  float: left;
-  width: 7px;
-  height: 8px;
-  margin: 5px 0 0 20px;
-  text-indent: -9999px;
-  cursor: pointer;
-  background: url("../img/icons/calendar-prev.jpg") no-repeat;
-}
-.supercal .supercal-header .next-month {
-  float: right;
-  width: 7px;
-  height: 8px;
-  margin: 5px 20px 0 0;
-  text-indent: -9999px;
-  cursor: pointer;
-  background: url("../img/icons/calendar-next.jpg") no-repeat;
-}
-.supercal .supercal-month th {
-  color: #333;
-  font-weight: 400;
-}
-.supercal .supercal-month td {
-  vertical-align: middle;
-  text-align: center;
-  padding: 5px 5px 4px 5px;
-  cursor: pointer;
-}
-.supercal .supercal-month td:hover {
-  color: #333;
-  background: url("../img/cal-bg-a.png") center center no-repeat;
-}
-.supercal .supercal-month td.selected {
-  color: #fff;
-  background: url("../img/cal-bg.png") center center no-repeat;
 }
 .box-docs .item {
   margin-bottom: 20px;

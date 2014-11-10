@@ -6,9 +6,10 @@ extends _layout
 block title
 	| - Документы
 	
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
 block scripts
-	script(src="js/jquery.supercal.js", type="text/javascript")
- 
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
  
 //- Контент
 //------------------------------------------------
@@ -105,18 +106,16 @@ block append content
 							.td
 								span от
 							.td
-								input(type="text", placeholder="дата от")
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
 							.td
-								.calendar-widget-pop
-									a(href="#").cal
+								a(href="#").js-open-cal.cal
 						.line
 							.td
 								span до
 							.td
-								input(type="text", placeholder="дата до")
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
 							.td
-								.calendar-widget-pop
-									a(href="#").cal
+								a(href="#").js-open-cal.cal
 					.checks
 						.legend Относятся к разделу
 						.line

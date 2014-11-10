@@ -8,11 +8,11 @@ block title
 
 block styles
 	link(href="css/lightSlider.css", rel="stylesheet")
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
 
 block scripts
 	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
-	script(src="js/jquery.supercal.js", type="text/javascript")
-
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
 
 //- Контент
 //------------------------------------------------
@@ -413,8 +413,7 @@ block append content
 						.iname 
 							a(href="#") Конкурс проектов в области энергосбережения
 				.calendar-wrap
-					.calendar
-						.calendar-widget
+					input(type="text").calendar-widget
 			//------------------------------------------------
 			.box-support
 				.bcon

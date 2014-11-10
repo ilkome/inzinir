@@ -157,16 +157,30 @@ $(document).ready(function() {
 	// ==================================================
 	//	КАЛЕНДАРЬ
 	// ==================================================
-	if ( $.isFunction($.fn.supercal) ) {
-		$('.calendar-widget-pop').supercal({
-			transition: 'carousel-horizontal',
-			showInput: true,
-			mode:'popup',
-			footer: true,
+	if ( $.isFunction($.fn.datetimepicker) ) {
+		$('.calendar-widget-pop').datetimepicker({
+			lang:'ru',
+			timepicker:false,
+			format:'d.m.Y',
+			todayButton: false,
+		});
+		$('.js-open-cal').click(function(){
+			$(this).closest(".line").find(".js-calendar-widget").datetimepicker('show');
 		});
 
-		$('.calendar-widget').supercal({
-			transition: 'carousel-horizontal'
+		$('.calendar-widget-pop2').datetimepicker({
+			lang:'ru',
+			timepicker:false,
+			format:'d.m.Y',
+			todayButton: false,
+		});
+
+		$('.calendar-widget').datetimepicker({
+			lang:'ru',
+			timepicker:false,
+			format:'d.m.Y',
+			inline:true,
+			todayButton: false,
 		});
 	}
 	

@@ -12,10 +12,11 @@
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.datetimepicker.css" rel="stylesheet">
     <!-- Scripts-->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
-    <script src="js/jquery.supercal.js" type="text/javascript"></script>
+    <script src="js/jquery.datetimepicker.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
   </head>
 </html>
@@ -779,20 +780,16 @@
                 <div class="line">
                   <div class="td"><span>от</span></div>
                   <div class="td">
-                    <input type="text" placeholder="дата от">
+                    <input type="text" placeholder="дата от" class="js-calendar-widget calendar-widget-pop">
                   </div>
-                  <div class="td">
-                    <div class="calendar-widget-pop"><a href="#" class="cal"></a></div>
-                  </div>
+                  <div class="td"><a href="#" class="js-open-cal cal"></a></div>
                 </div>
                 <div class="line">
                   <div class="td"><span>до</span></div>
                   <div class="td">
-                    <input type="text" placeholder="дата до">
+                    <input type="text" placeholder="дата до" class="js-calendar-widget calendar-widget-pop2">
                   </div>
-                  <div class="td">
-                    <div class="calendar-widget-pop"><a href="#" class="cal"></a></div>
-                  </div>
+                  <div class="td"><a href="#" class="js-open-cal cal"></a></div>
                 </div>
               </div>
               <div class="checks">
