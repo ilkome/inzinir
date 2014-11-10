@@ -44,7 +44,7 @@ ul {
 }
 ul li {
   margin: 0 0 15px 15px;
-  list-style: square inside;
+  list-style: disc outside;
 }
 ul li ul,
 ul li ol {
@@ -282,6 +282,15 @@ body {
 .bcon-text-style p.grey {
   color: #999;
 }
+.bcon-text-style p.grey-without-strong {
+  color: #999;
+}
+.bcon-text-style p.grey-without-strong strong {
+  color: #333;
+}
+.bcon-text-style li {
+  font-size: 16px;
+}
 .btn-orange,
 .btn-orange-big,
 .box-sort-docs .action a {
@@ -364,6 +373,46 @@ body {
 }
 .btn-reports {
   margin-bottom: 10px;
+}
+.btn-grey-dashed {
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+  border: 3px dashed #ccc;
+}
+.btn-grey-dashed:hover {
+  text-decoration: none;
+  border-color: #999;
+}
+.btn-grey-dashed:active {
+  background-color: #ccc;
+}
+.btn-grey {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+  border: 3px solid #ccc;
+}
+.btn-grey:hover {
+  text-decoration: none;
+  border-color: #999;
+}
+.btn-grey:active {
+  background-color: #ccc;
+}
+.inline {
+  display: inline-block;
+  margin-right: 20px;
 }
 .sidebar {
   z-index: 101;
@@ -734,27 +783,33 @@ body {
 .event-organizers a {
   color: #f85800;
 }
-.event-organizers .contacts {
+.event-organizers .contacts,
+.order-service-cont .contacts {
   padding-top: 20px;
   padding-bottom: 30px;
   color: #999;
 }
-.event-organizers .contacts span {
+.event-organizers .contacts span,
+.order-service-cont .contacts span {
   padding-top: 4px;
   padding-left: 30px;
   padding-right: 40px;
 }
-.event-organizers .contacts span.phone {
+.event-organizers .contacts span.phone,
+.order-service-cont .contacts span.phone {
   background: url("../img/icons/phone.png") no-repeat;
 }
-.event-organizers .contacts span.email {
+.event-organizers .contacts span.email,
+.order-service-cont .contacts span.email {
   background: url("../img/icons/email.png") 2px 4px no-repeat;
 }
-.event-organizers .contacts a {
+.event-organizers .contacts a,
+.order-service-cont .contacts a {
   color: #999;
   text-decoration: none;
 }
-.event-organizers .contacts a:hover {
+.event-organizers .contacts a:hover,
+.order-service-cont .contacts a:hover {
   color: #f85800;
 }
 .main-page {
@@ -999,6 +1054,20 @@ body {
 .irating ul li.star {
   background-position: -14px 0;
 }
+.irating-service {
+  width: 450px;
+  padding-bottom: 20px;
+}
+.irating-service span {
+  padding-right: 30px;
+  display: table-cell;
+  color: #999;
+  font-size: 16px;
+}
+.irating-service ul {
+  display: table-cell;
+  width: 150px;
+}
 .photo-desc-box {
   padding-bottom: 20px;
   color: #999;
@@ -1110,6 +1179,45 @@ img.full {
 }
 .search-con .inp-submit:active {
   background: url("../img/icons/search-p.png") center center no-repeat;
+}
+.order-service {
+  padding-top: 10px;
+  display: inline-block;
+}
+.order-service a {
+  padding: 10px 25px;
+}
+.order-service-cont {
+  padding: 20px 0;
+}
+.order-service-cont:before,
+.order-service-cont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.order-service-cont > a {
+  float: left;
+  padding: 10px 40px;
+}
+.order-service-cont .contacts {
+  display: none;
+  float: left;
+  padding: 0px 0 0 20px;
+}
+.order-service-cont .contacts span {
+  display: block;
+}
+.reg-black {
+  font-weight: 400;
+  color: #333;
+}
+h1.service-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.comments-count {
+  text-align: right;
 }
 .slider-index-wrap {
   position: relative;
@@ -2105,6 +2213,9 @@ img.full {
 }
 .box-comments {
   padding-top: 20px;
+}
+.box-comments .bwrite {
+  padding-bottom: 40px;
 }
 .box-comments .bwrite .bname {
   padding-left: 0;
@@ -3581,11 +3692,50 @@ footer .copy {
   border: 1px solid #e5e5e5;
   overflow: hidden;
 }
-.heading .heading-right {
+.heading .heading-right,
+.heading .heading-right_sort {
   float: right;
 }
-.heading .heading-left {
+.heading .heading-left,
+.heading .heading-left_sort {
   float: left;
+}
+.heading .heading-left_sort {
+  color: #999;
+  font-size: 16px;
+}
+.heading .heading-right_sort a {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  padding-right: 20px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+.heading .heading-right_sort a:hover {
+  color: #f85800;
+  text-decoration: none;
+}
+.heading .heading-right_sort a span {
+  top: 49%;
+  right: 0%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #ff8c4d;
+  border-width: 5px;
+}
+.heading .heading-right_sort a.active {
+  color: #f85800;
+}
+.heading .heading-right_sort a.active span {
+  top: 40%;
+  border-top-color: transparent;
+  border-bottom-color: #ff8c4d;
 }
 .read-time {
   display: inline-block;

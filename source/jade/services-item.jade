@@ -1,0 +1,310 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Услуга
+	
+block scripts
+	script(src="js/jquery.supercal.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") События
+				li >
+				li: a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 61
+					.views 2726
+				.bcon.bcon-text-style
+					.event-item.mar-bot-30
+						.icon
+							h1.service-title Изготовление деталей
+							.irating.mar-bot-10.irating-service
+								span Микроскопия, анализ химического состава материалов
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+							.tags
+								a(href="#").tags-item
+									span.name Круглый стол
+									span.count.empty
+								a(href="#").tags-item
+									span.name Металлообработка
+									span.count 388
+						.iprev
+							img(src="img/content/180-135-2.jpg", alt="")
+					p
+						strong Выполняемые работы:
+						ul 
+							li оптическая микроскопия
+							li электронная микроскопия
+							li локальный микроанализ химического состава материалов
+							li дюраметрические исследования
+							li изучение прокаливаемости
+							li микро/макро травление для выявления микро/макро структуры
+							li анализ и обработка изображений (структурных составляющих, неметаллических   включений, размер зерна и т.п.)
+					p.grey-without-strong
+						strong Основные возможности: 
+						| Исследования образцов и изделий из сплавов черных и цветных металлов.
+					p.grey-without-strong
+						strong Производственая мощность: 
+						| До 250 исследуемых образцов в месяц
+					p.grey-without-strong
+						strong Аккредитация: 
+						| есть
+					p.grey-without-strong
+						strong Организация (ВУЗ / ГНЦ): 
+						| Национальный исследовательский Томский политехнический университет
+				.order-service-cont
+					a(href="#").btn-orange.inline Заказать услугу
+					a(href="#").btn-grey-dashed.js-show-contacts Показать контакты
+					.contacts.js-contacts-box
+						span.phone +7 495 675 87 98
+						span.email
+							a(href="#") email@email.com
+
+				.bmetabot
+					.share
+						span Поделиться
+						ul
+							li.vk
+								a(href="#")
+							li.fb
+								a(href="#")
+							li.tw
+								a(href="#")
+							li.in
+								a(href="#")
+					.comments-count
+						a(href="#").btn-grey 19 комментариев
+				.box-interest
+					.bname
+						h3 Похожие услуги
+					.bcon
+						.box-articles.m-mod
+							.item
+								.iprev
+									img(src="img/content/180-135-4.jpg", alt="")
+								.icon
+									.iname
+										a(href="#") Состояние науки российской федерации
+									.irating.mar-bot-10
+										span Изготовление деталей типа тел вращения
+										ul
+											li.star
+											li.star
+											li.star
+											li
+											li
+									.itext 
+										p 
+											strong.reg-black Описание: 
+											| участок станков
+										p 
+											strong.reg-black Организация (ВУЗ / ГНЦ): 
+											| Национальный исследовательский Томский политехнический
+									.tags
+										a(href="#").tags-item
+											span.name Металлообратобка
+											span.count 12
+										a(href="#").tags-item
+											span.name Машиностроение
+											span.count.empty
+									.order-service
+										a(href="#").btn-orange Заказать услугу
+									.imeta
+										.right.mar-top-20m
+											.comments
+												a(href="#") 51
+											.views
+												a(href="#") 225
+							.item
+								.iprev
+									img(src="img/content/180-135-4.jpg", alt="")
+								.icon
+									.iname
+										a(href="#") Состояние науки российской федерации
+									.irating.mar-bot-10
+										span Изготовление деталей типа тел вращения
+										ul
+											li.star
+											li.star
+											li.star
+											li
+											li
+									.itext 
+										p 
+											strong.reg-black Описание: 
+											| участок станков
+										p 
+											strong.reg-black Организация (ВУЗ / ГНЦ): 
+											| Национальный исследовательский Томский политехнический
+									.tags
+										a(href="#").tags-item
+											span.name Металлообратобка
+											span.count 12
+										a(href="#").tags-item
+											span.name Машиностроение
+											span.count.empty
+									.order-service
+										a(href="#").btn-orange Заказать услугу
+									.imeta
+										.right.mar-top-20m
+											.comments
+												a(href="#") 51
+											.views
+												a(href="#") 225
+				.box-comments
+					.bwrite
+						.bname
+							h3 Комментарии к статье
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.pep 
+											|  > 
+											a(href="#") Влодко Чорный
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------`------
+		.main-right
+			.box-news.box-right.box-news_dotted
+				.bname
+					h3 
+						a(href="#") Похожие события
+				.bcon
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Круглый стол
+								span.count.empty
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+					.item
+						.idate 18 Сентября
+						.iname 
+							a(href="#") Ивановский государственный политехнический университет
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Выставки
+								span.count 45
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+					.item
+						.idate 30 Сентября
+						.iname 
+							a(href="#") Ученые объяснили смертельную 
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.
+						.tags
+							a(href="#").tags-item
+								span.name Круглый стол
+								span.count.empty
+						.address-date
+							.ad-address Москва, ул. Сиреневый бульвар, д.4
+							.ad-date 27, 28 октября - с 14.00<br>29, 30 октября - с 10.00
+				.ball
+					a(href="#") Все новости
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

@@ -141,6 +141,17 @@ $(document).ready(function() {
 		}
 	})
 
+	// ==================================================
+	//	Свитчер
+	// ==================================================
+	$(".js-show-contacts").on("click", function(e){
+		e.preventDefault()
+		var thisis = $(this);
+		var box = thisis.parent();
+		
+		thisis.hide();
+		$(".js-contacts-box").fadeIn();
+	})
 
 
 	// ==================================================

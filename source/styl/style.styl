@@ -26,7 +26,13 @@ body
 		color #333; font-size 16px; line-height 20px;
 		&.grey
 			color #999;
-
+		&.grey-without-strong
+			color #999;
+			strong
+				color #333
+	li
+		font-size 16px
+			
 
 //	КНОПКИ
 // ===============================================
@@ -86,9 +92,42 @@ body
 			color #FFF;
 .btn-reports
 	margin-bottom 10px;
+.btn-grey-dashed
+	display inline-block;
+	padding 10px 10px;
+	text-align center; 
+	color #333; 
+	font-size 12px; 
+	tdn(); 
+	latoblack(); 
+	text-transform uppercase;
+	border 3px dashed #cccccc;
+	&:hover
+		tdn(); 
+		border-color #999999;
+	&:active
+		background-color #cccccc
+.btn-grey
+	display inline-block;
+	padding 10px 30px;
+	text-align center; 
+	color #333; 
+	font-size 12px; 
+	tdn(); 
+	latoblack(); 
+	text-transform uppercase;
+	border 3px solid #cccccc;
+	&:hover
+		tdn(); 
+		border-color #999999;
+	&:active
+		background-color #cccccc
 
 color-orange()
 	color #F85800 
+.inline
+	display inline-block
+	margin-right 20px
 
 //	ЛЕВАЯ КОЛОНКА
 // ===============================================
@@ -472,6 +511,17 @@ color-orange()
 				opacity 0.7;
 		li.star
 			background-position -14px 0;
+.irating-service
+	width 450px
+	padding-bottom 20px
+	span 
+		padding-right 30px
+		display table-cell 
+		color #999
+		font-size 16px
+	ul
+		display table-cell 
+		width 150px
 // Описание фото
 .photo-desc-box
 	clearfix()
@@ -549,7 +599,32 @@ img.full
 			background url("../img/icons/search-h.png") center center no-repeat
 		&:active
 			background url("../img/icons/search-p.png") center center no-repeat
-			
+.order-service
+	padding-top 10px
+	display inline-block
+	a
+		padding 10px 25px
+.order-service-cont
+	clearfix()
+	padding 20px 0
+	> a
+		float left
+		padding 10px 40px	
+	.contacts
+		display none
+		float left
+		padding 0px 0 0 20px
+		@extend .event-organizers .contacts
+		span
+			display block
+.reg-black
+	regular()
+	color #333333
+h1.service-title
+	font-size 30px
+	margin-bottom 20px
+.comments-count
+	text-align right
 
 //	ОСНОВНОЙ СЛАЙДЕР
 // ===============================================
@@ -1196,6 +1271,7 @@ img.full
 .box-comments
 	padding-top 20px
 	.bwrite
+		padding-bottom 40px
 		.bname
 			@extend .box-info .bname
 			padding-left 0
@@ -2294,6 +2370,40 @@ footer
 		float right
 	.heading-left
 		float left
+	.heading-left_sort
+		@extend .heading .heading-left
+		color #999
+		font-size 16px
+	.heading-right_sort
+		@extend .heading .heading-right
+		a
+			position relative
+			display inline-block
+			margin-left 20px
+			padding-right 20px
+			color #333
+			font-size 16px
+			cursor pointer
+			&:hover
+				color-orange()
+				tdn() 
+			span
+				top: 49%;
+				right: 0%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-top-color: #ff8c4d;
+				border-width: 5px;
+		a.active
+			color-orange()
+			span
+				top 40%
+				border-top-color transparent
+				border-bottom-color #ff8c4d;	
 //
 .read-time
 	display: inline-block

@@ -1,0 +1,672 @@
+
+<!--	proscom.ru-->
+<!--	Простые Коммуникации-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ИП - Услуга</title>
+    <!-- Meta-->
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Styles-->
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Scripts-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/jquery.supercal.js" type="text/javascript"></script>
+    <script src="js/functions.js" type="text/javascript"></script>
+  </head>
+</html>
+<body>
+  <style>
+    .system-menu {position: fixed; width:auto; bottom:0; z-index: 9999; background: #fff; opacity:.3; overflow:hidden; transition:all 0.3s ease-out;}
+    .system-menu:hover {width:auto; opacity: 1;}
+    .system-menu a {display:block; padding:10px 15px; font-size:12px; color: #000;}
+    .system-menu a:hover {background:#e6e6e6; text-decoration:none;}
+    .system-menu p.sep {margin:0; padding:5px 10px; min-height:2px; font-size:12px; border-top: 2px solid #000;}
+  </style>
+  <div class="system-menu"><a href="analytics.html">Статья</a><a href="articles.html">Статьи</a><a href="docs-item.html">Документ </a><a href="docs.html">Документы </a><a href="events-item.html">Событие </a><a href="events.html">События </a><a href="index.html">Главная </a><a href="info.html">Информация </a><a href="links.html">Ссылки </a><a href="lk.html">ЛК </a><a href="news.html">Новости </a><a href="reports.html">Отчеты</a><a href="requirements.html">Потребности</a><a href="requirements-comment.html">Потребность</a><a href="services-item.html">Услуга</a><a href="services.html">Услуги</a><a href="story-item.html">История/Новость</a></div>
+  <div id="shikarniy">
+    <div class="sidebar">
+      <div class="logo"><a href="#"> </a></div>
+      <div class="menu">
+        <ul>
+          <li class="home"><a href="#" data-menu="home">Рынок услуг</a></li>
+          <li class="info"><a href="#" data-menu="info">Информация</a></li>
+          <li class="events"><a href="#" data-menu="events">События</a></li>
+          <li class="talks"><a href="#" data-menu="home">Обсуждения</a></li>
+          <li class="search"><a href="#" data-menu="home">Поиск</a></li>
+        </ul>
+      </div>
+      <div class="side-extend-fix"></div>
+      <div data-menu="home" class="side-extend">
+        <div class="bname">
+          <h3>Рынок услуг</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav">
+          <ul>
+            <li><a href="#">За неделю</a></li>
+            <li class="active"><a href="#">За месяц</a></li>
+            <li><a href="#">За все время</a></li>
+          </ul>
+        </div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Услуги </a><span>(12)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-menu="info" class="side-extend">
+        <div class="bname">
+          <h3>Информация</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav">
+          <ul>
+            <li class="active"><a href="#">За неделю</a></li>
+            <li><a href="#">За месяц</a></li>
+            <li><a href="#">За все время</a></li>
+          </ul>
+        </div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Услуги </a><span>(12)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">+</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Потребности </a><span>(4)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-1.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Текстильный импортозамещающий комплекс появится в Ростовской…</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-2.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Денис Мантуров принял участие в совещании Дмитрия Медведева… развитию микроэлектроники</a></div>
+                </div>
+                <div class="item">
+                  <div class="iprev"><a href="#"> </a><img src="img/content/60-45-3.jpg" alt=""></div>
+                  <div class="iname"><a href="#">Ростех и «Генфа» будут производить импортозамещающие…</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-menu="events" class="side-extend">
+        <div class="bname">
+          <h3>События</h3><a href="#" class="close hoverbg">
+            <div class="icon">
+              <div class="act"></div>
+            </div></a>
+        </div>
+        <div class="bnav"></div>
+        <div class="bcon">
+          <div class="scroller-box">
+            <div class="bcat open active">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Сегодня </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item active">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Ближайшие </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="bcat">
+              <div class="bcat-name">
+                <div class="name"> <a href="#">Прошедшие </a><span>(2)</span></div>
+                <div class="toogle">-</div>
+              </div>
+              <div class="bcat-con">
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">17</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                </div>
+                <div class="item">
+                  <div class="idate">
+                    <div class="num">14</div>
+                    <div class="day">октября</div>
+                  </div>
+                  <div class="iname"><a href="#">Инновации в торговле</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-page">
+      <div class="topper">
+        <div class="wrap">
+          <div class="menu">
+            <ul>
+              <li><a href="#">Программы по развитию</a></li>
+              <li><a href="#">Отчеты</a></li>
+              <li><a href="#">О проекте</a></li>
+            </ul>
+          </div>
+          <div class="user">
+            <div class="name"><a href="#"> 
+                <div class="title">Алексей Петров</div>
+                <div class="email">petrov.i1975@mail.ru</div></a></div>
+            <div class="pic">
+              <div class="ava"><img src="img/content/ava-1.png" alt=""></div>
+              <div class="count"><a href="#">9</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-width main-wrap">
+        <div class="pathway">
+          <ul>
+            <li><a href="#">События</a></li>
+            <li>></li>
+            <li><a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></li>
+          </ul>
+        </div>
+        <div class="main-left">
+          <div class="box-text-item">
+            <div class="bmeta">
+              <div class="date">19 сентября 2014 года</div>
+              <div class="comments"><a href="#">61</a></div>
+              <div class="views">2726</div>
+            </div>
+            <div class="bcon bcon-text-style">
+              <div class="event-item mar-bot-30">
+                <div class="icon">
+                  <h1 class="service-title">Изготовление деталей</h1>
+                  <div class="irating mar-bot-10 irating-service"><span>Микроскопия, анализ химического состава материалов</span>
+                    <ul>
+                      <li class="star"></li>
+                      <li class="star"></li>
+                      <li class="star"></li>
+                      <li class="star"></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <div class="tags"><a href="#" class="tags-item"><span class="name">Круглый стол</span><span class="count empty"></span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count">388</span></a></div>
+                </div>
+                <div class="iprev"><img src="img/content/180-135-2.jpg" alt=""></div>
+              </div>
+              <p><strong>Выполняемые работы:</strong>
+                <ul> 
+                  <li>оптическая микроскопия</li>
+                  <li>электронная микроскопия</li>
+                  <li>локальный микроанализ химического состава материалов</li>
+                  <li>дюраметрические исследования</li>
+                  <li>изучение прокаливаемости</li>
+                  <li>микро/макро травление для выявления микро/макро структуры</li>
+                  <li>анализ и обработка изображений (структурных составляющих, неметаллических   включений, размер зерна и т.п.)</li>
+                </ul>
+              </p>
+              <p class="grey-without-strong"><strong>Основные возможности: </strong>Исследования образцов и изделий из сплавов черных и цветных металлов.</p>
+              <p class="grey-without-strong"><strong>Производственая мощность: </strong>До 250 исследуемых образцов в месяц</p>
+              <p class="grey-without-strong"><strong>Аккредитация: </strong>есть</p>
+              <p class="grey-without-strong"><strong>Организация (ВУЗ / ГНЦ): </strong>Национальный исследовательский Томский политехнический университет</p>
+            </div>
+            <div class="order-service-cont"><a href="#" class="btn-orange inline">Заказать услугу</a><a href="#" class="btn-grey-dashed js-show-contacts">Показать контакты</a>
+              <div class="contacts js-contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#">email@email.com</a></span></div>
+            </div>
+            <div class="bmetabot">
+              <div class="share"><span>Поделиться</span>
+                <ul>
+                  <li class="vk"><a href="#"></a></li>
+                  <li class="fb"><a href="#"></a></li>
+                  <li class="tw"><a href="#"></a></li>
+                  <li class="in"><a href="#"></a></li>
+                </ul>
+              </div>
+              <div class="comments-count"><a href="#" class="btn-grey">19 комментариев</a></div>
+            </div>
+            <div class="box-interest">
+              <div class="bname">
+                <h3>Похожие услуги</h3>
+              </div>
+              <div class="bcon">
+                <div class="box-articles m-mod">
+                  <div class="item">
+                    <div class="iprev"><img src="img/content/180-135-4.jpg" alt=""></div>
+                    <div class="icon">
+                      <div class="iname"><a href="#">Состояние науки российской федерации</a></div>
+                      <div class="irating mar-bot-10"><span>Изготовление деталей типа тел вращения</span>
+                        <ul>
+                          <li class="star"></li>
+                          <li class="star"></li>
+                          <li class="star"></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="itext"> 
+                        <p> <strong class="reg-black">Описание: </strong>участок станков</p>
+                        <p> <strong class="reg-black">Организация (ВУЗ / ГНЦ): </strong>Национальный исследовательский Томский политехнический</p>
+                      </div>
+                      <div class="tags"><a href="#" class="tags-item"><span class="name">Металлообратобка</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count empty"></span></a></div>
+                      <div class="order-service"><a href="#" class="btn-orange">Заказать услугу</a></div>
+                      <div class="imeta">
+                        <div class="right mar-top-20m">
+                          <div class="comments"><a href="#">51</a></div>
+                          <div class="views"><a href="#">225</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="iprev"><img src="img/content/180-135-4.jpg" alt=""></div>
+                    <div class="icon">
+                      <div class="iname"><a href="#">Состояние науки российской федерации</a></div>
+                      <div class="irating mar-bot-10"><span>Изготовление деталей типа тел вращения</span>
+                        <ul>
+                          <li class="star"></li>
+                          <li class="star"></li>
+                          <li class="star"></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="itext"> 
+                        <p> <strong class="reg-black">Описание: </strong>участок станков</p>
+                        <p> <strong class="reg-black">Организация (ВУЗ / ГНЦ): </strong>Национальный исследовательский Томский политехнический</p>
+                      </div>
+                      <div class="tags"><a href="#" class="tags-item"><span class="name">Металлообратобка</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count empty"></span></a></div>
+                      <div class="order-service"><a href="#" class="btn-orange">Заказать услугу</a></div>
+                      <div class="imeta">
+                        <div class="right mar-top-20m">
+                          <div class="comments"><a href="#">51</a></div>
+                          <div class="views"><a href="#">225</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-comments">
+              <div class="bwrite">
+                <div class="bname">
+                  <h3>Комментарии к статье</h3><a href="#enter-popup">Войти</a>
+                </div>
+                <div class="bcon">
+                  <div class="ava"><img src="img/ava.png" alt=""></div>
+                  <div class="text">
+                    <textarea placeholder=""></textarea>
+                  </div>
+                  <div class="action"><a href="#" class="btn-orange">Оставить комментарий</a></div>
+                </div>
+              </div>
+              <div class="bcomments">
+                <div class="comment">
+                  <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""></a></div>
+                  <div class="ccon">
+                    <div class="name"><a href="#">Konrad Karlovich</a>
+                      <div class="date">1 час назад</div>
+                    </div>
+                    <div class="text">Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.</div>
+                    <div class="answer"><a href="#">Ответить</a></div>
+                  </div>
+                  <div class="comment">
+                    <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""></a></div>
+                    <div class="ccon">
+                      <div class="name"><a href="#">Konrad Karlovich</a>
+                        <div class="pep">
+                           
+                           > <a href="#">Влодко Чорный</a>
+                        </div>
+                        <div class="date">1 час назад</div>
+                      </div>
+                      <div class="text">Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.</div>
+                      <div class="answer"><a href="#">Ответить</a></div>
+                    </div>
+                    <div class="comment">
+                      <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""></a></div>
+                      <div class="ccon">
+                        <div class="name"><a href="#">Konrad Karlovich</a>
+                          <div class="date">1 час назад</div>
+                        </div>
+                        <div class="text">Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.</div>
+                        <div class="answer"><a href="#">Ответить</a></div>
+                      </div>
+                      <div class="comment">
+                        <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""></a></div>
+                        <div class="ccon">
+                          <div class="name"><a href="#">Konrad Karlovich</a>
+                            <div class="date">1 час назад</div>
+                          </div>
+                          <div class="text">Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.</div>
+                          <div class="answer"><a href="#">Ответить</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""></a></div>
+                  <div class="ccon">
+                    <div class="name"><a href="#">Konrad Karlovich</a>
+                      <div class="date">1 час назад</div>
+                    </div>
+                    <div class="text">Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.</div>
+                    <div class="answer"><a href="#">Ответить</a></div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""></a></div>
+                  <div class="ccon">
+                    <div class="name"><a href="#">Konrad Karlovich</a>
+                      <div class="date">1 час назад</div>
+                    </div>
+                    <div class="text">Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.</div>
+                    <div class="answer"><a href="#">Ответить</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="box-news box-right box-news_dotted">
+            <div class="bname">
+              <h3> <a href="#">Похожие события</a></h3>
+            </div>
+            <div class="bcon">
+              <div class="item">
+                <div class="idate">30 Сентября</div>
+                <div class="iname"> <a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
+                <div class="itext">10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.</div>
+                <div class="tags"><a href="#" class="tags-item"><span class="name">Круглый стол</span><span class="count empty"></span></a></div>
+                <div class="address-date">
+                  <div class="ad-address">Москва, ул. Сиреневый бульвар, д.4</div>
+                  <div class="ad-date">27, 28 октября - с 14.00<br>29, 30 октября - с 10.00</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="idate">18 Сентября</div>
+                <div class="iname"> <a href="#">Ивановский государственный политехнический университет</a></div>
+                <div class="itext">10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.</div>
+                <div class="tags"><a href="#" class="tags-item"><span class="name">Выставки</span><span class="count">45</span></a></div>
+                <div class="address-date">
+                  <div class="ad-address">Москва, ул. Сиреневый бульвар, д.4</div>
+                  <div class="ad-date">27, 28 октября - с 14.00<br>29, 30 октября - с 10.00</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="idate">30 Сентября</div>
+                <div class="iname"> <a href="#">Ученые объяснили смертельную </a></div>
+                <div class="itext">10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования.</div>
+                <div class="tags"><a href="#" class="tags-item"><span class="name">Круглый стол</span><span class="count empty"></span></a></div>
+                <div class="address-date">
+                  <div class="ad-address">Москва, ул. Сиреневый бульвар, д.4</div>
+                  <div class="ad-date">27, 28 октября - с 14.00<br>29, 30 октября - с 10.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="ball"><a href="#">Все новости</a></div>
+          </div>
+          <div class="box-support">
+            <div class="bcon">
+              <div class="item"><a href="#"> <img src="img/content/logo-minprom.png" alt=""></a></div>
+              <div class="item"><a href="#"> <img src="img/content/logo-smr.png" alt=""></a></div>
+              <div class="item"><a href="#"> <img src="img/content/logo-ibs.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="main-width">
+          <div class="copy">© 2013-2014 Информационный портал, содействующий развитию инжиниринговой деятельности и&nbsp;промышленного дизайна</div>
+          <div class="social">
+            <ul>
+              <li class="in"><a href="#"></a></li>
+              <li class="vk"><a href="#"></a></li>
+              <li class="fb"><a href="#"></a></li>
+              <li class="tw"><a href="#"></a></li>
+              <li class="od"><a href="#"></a></li>
+              <li class="you"><a href="#"></a></li>
+              <li class="rss"><a href="#"> </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
