@@ -1,0 +1,209 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+block title
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.remodal.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.hide
+		.remodal(data-remodal-id="enter-popup")
+			.ins.login-popup
+				span Авторизуйтесь
+				.social
+					ul
+						li.vk
+							a(href="#")
+						li.fb
+							a(href="#")
+						li.tw
+							a(href="#")
+						li.od
+							a(href="#")
+						li.you
+							a(href="#")
+						li.rss
+							a(href="#") 
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Обсуждения
+				li.sep >
+				li Решение задач методом анализа размерности
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 65
+					.views 2726
+				.bname
+					h1 
+						span.closed Закрытое!  
+						| Решение задач методом анализа размерности
+				.bcon
+					.item-cloud-one
+						.iprev
+							.person
+								.closed-pic
+								.person__img
+									a(href="#")
+										img(src="img/content/ava-100.jpg", alt="img")
+								.person__name 
+									a(href="#") Олег Джагупов
+								ul.person__info 
+									li
+										a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+								.irating
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li
+						.icon
+							.cloud
+								.itext 
+									p Здравствуйте, прошу сообщить, кто из инжиниринговых компаний возьмется за проектирование УПВ-25 (маневренное устройство для передвижения вагонов)?
+									p С уважением, Олег Джагупов.
+								a(href="#").doc-link math.pdf 
+									span (14 mb)`
+							.tags
+								a(href="#").tags-item
+									span.name Выставки
+									span.count 12
+				.box-comments
+					.bwrite
+						.bname
+							h3 Предлагаю обсудить ниже
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------------
+		.main-right
+			.box-talks-2.box-right
+				.bname
+					h3 
+						a(href="#") Сейчас обсуждают
+				.bcon
+					.item
+						.iname
+							span.quot
+							span.name Трудно получить доступ к работе на этом оборудовании
+								.comments
+									a(href="#") 51
+						.itext Вениамин Ивановский в 13:45 <br>к 
+							a(href="#") Станок токарный с ЧПУ 
+							| в разделе 
+							a(href="#") ОБОРУДОВАНИЕ
+					.item
+						.iname
+							span.quot
+							span.name Серия мастер-классов для студентов, аспирантов и молодых ученых по изучению метода анализа размерности
+								.comments
+									a(href="#") 51
+						.itext Вениамин Ивановский в 13:45 <br>к 
+							a(href="#") Станок токарный с ЧПУ 
+							| в разделе 
+							a(href="#") ОБОРУДОВАНИЕ
+					.item
+						.iname
+							span.quot
+							span.name Трудно получить доступ к работе на этом оборудовании
+								.comments
+									a(href="#") 51
+						.itext Вениамин Ивановский в 13:45 <br>k
+							a(href="#")  IX Международная конференция. «Аналитические и численные методы моделирования естественно–научных и социальных проблем» <br>
+							| в разделе 
+							a(href="#") СОБЫТИЯ
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

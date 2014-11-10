@@ -866,6 +866,7 @@ body {
   border-bottom: none;
 }
 .page-name {
+  width: 80%;
   padding-bottom: 40px;
   font-family: 'latolight';
 }
@@ -951,7 +952,8 @@ body {
 .box-news-prev .bmeta .right .comments,
 .box-news-prev-cat .bmeta .comments,
 .box-articles .item .icon .imeta .right .comments,
-.box-text-item .bmeta .comments {
+.box-text-item .bmeta .comments,
+.meta-comments {
   float: left;
   padding-right: 15px;
 }
@@ -959,7 +961,8 @@ body {
 .box-news-prev .bmeta .right .comments a,
 .box-news-prev-cat .bmeta .comments a,
 .box-articles .item .icon .imeta .right .comments a,
-.box-text-item .bmeta .comments a {
+.box-text-item .bmeta .comments a,
+.meta-comments a {
   display: block;
   background: url("../img/icons/comments.png") 0 1px no-repeat;
 }
@@ -977,6 +980,33 @@ body {
 .box-text-item .bmeta .views a {
   display: block;
   background: url("../img/icons/views.png") 0 2px no-repeat;
+}
+.imeta .left-grey,
+.box-news-prev .bmeta .right .left-grey,
+.box-news-prev-cat .bmeta .left-grey,
+.box-articles .item .icon .imeta .right .left-grey,
+.box-text-item .bmeta .left-grey {
+  float: left;
+  font-size: 11px;
+  color: #ccc;
+}
+.imeta .left-grey a,
+.box-news-prev .bmeta .right .left-grey a,
+.box-news-prev-cat .bmeta .left-grey a,
+.box-articles .item .icon .imeta .right .left-grey a,
+.box-text-item .bmeta .left-grey a {
+  padding: 0;
+  color: #f85800;
+}
+.imeta_padside {
+  padding: 0 20px;
+}
+.meta-comments {
+  display: inline-block;
+}
+.meta-comments a {
+  padding-left: 0px;
+  color: #f85800;
 }
 .social {
   display: table-cell;
@@ -1238,6 +1268,9 @@ h1.service-title {
 .black-strong strong {
   color: #333;
   font-weight: 400;
+}
+.closed {
+  color: #ccc;
 }
 .slider-index-wrap {
   position: relative;
@@ -1926,26 +1959,57 @@ h1.service-title {
   color: #333;
   font-weight: normal;
 }
-.box-talks .bcon .item {
+.box-talks .bcon .item,
+.box-talks-2 .bcon .item {
   padding-left: 25px;
   padding-bottom: 20px;
   background: url("../img/quot.png") 0 3px no-repeat;
 }
-.box-talks .bcon .item .iname {
+.box-talks .bcon .item .iname,
+.box-talks-2 .bcon .item .iname {
   padding-bottom: 5px;
   font-size: 14px;
   color: #333;
 }
-.box-talks .bcon .item .iname a {
+.box-talks .bcon .item .iname a,
+.box-talks-2 .bcon .item .iname a {
   display: inline-block;
   text-decoration: none;
   color: #333;
 }
-.box-talks .bcon .item .iname a:hover {
+.box-talks .bcon .item .iname a:hover,
+.box-talks-2 .bcon .item .iname a:hover {
   color: #ff8c4d;
 }
-.box-talks .bcon .item .ititle {
+.box-talks .bcon .item .ititle,
+.box-talks-2 .bcon .item .ititle {
   padding: 5px 0;
+}
+.box-talks-2 .bcon .item {
+  background: none;
+  padding-left: 0;
+}
+.box-talks-2 .bcon .item .iname {
+  background: url("../img/quot.png") 0 3px no-repeat;
+}
+.box-talks-2 .bcon .item .iname span.name {
+  display: inline-block;
+  text-indent: 25px;
+}
+.box-talks-2 .bcon .item .iname .comments {
+  display: inline-block;
+}
+.box-talks-2 .bcon .item .iname .comments a {
+  display: inline-block;
+  padding-left: 20px;
+  margin-left: -20px;
+  font-size: 11px;
+  color: #333;
+  text-indent: 0px;
+  background: url("../img/icons/comments.png") 0 1px no-repeat;
+}
+.box-talks-2 .bcon .item .iname .comments a:hover {
+  color: #f85800;
 }
 .box-events .bcon {
   padding-bottom: 20px;
@@ -2693,7 +2757,8 @@ h1.service-title {
 .box-articles .item,
 .tabs-content .item,
 .item_cloud,
-.item-cloud-one {
+.item-cloud-one,
+.item-cloud-talks {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px dotted #e5e5e5;
@@ -2702,10 +2767,12 @@ h1.service-title {
 .tabs-content .item:before,
 .item_cloud:before,
 .item-cloud-one:before,
+.item-cloud-talks:before,
 .box-articles .item:after,
 .tabs-content .item:after,
 .item_cloud:after,
-.item-cloud-one:after {
+.item-cloud-one:after,
+.item-cloud-talks:after {
   content: "";
   display: table;
   clear: both;
@@ -2713,33 +2780,38 @@ h1.service-title {
 .box-articles .item:last-child,
 .tabs-content .item:last-child,
 .item_cloud:last-child,
-.item-cloud-one:last-child {
+.item-cloud-one:last-child,
+.item-cloud-talks:last-child {
   margin-bottom: 0;
   border-bottom: none;
 }
 .box-articles .item .iprev,
 .tabs-content .item .iprev,
 .item_cloud .iprev,
-.item-cloud-one .iprev {
+.item-cloud-one .iprev,
+.item-cloud-talks .iprev {
   float: left;
   width: 215px;
 }
 .box-articles .item .icon,
 .tabs-content .item .icon,
 .item_cloud .icon,
-.item-cloud-one .icon {
+.item-cloud-one .icon,
+.item-cloud-talks .icon {
   overflow: hidden;
 }
 .box-articles .item .icon .iname,
 .tabs-content .item .icon .iname,
 .item_cloud .icon .iname,
-.item-cloud-one .icon .iname {
+.item-cloud-one .icon .iname,
+.item-cloud-talks .icon .iname {
   padding-bottom: 10px;
 }
 .box-articles .item .icon .iname a,
 .tabs-content .item .icon .iname a,
 .item_cloud .icon .iname a,
-.item-cloud-one .icon .iname a {
+.item-cloud-one .icon .iname a,
+.item-cloud-talks .icon .iname a {
   color: #333;
   font-size: 14px;
   text-decoration: none;
@@ -2747,30 +2819,35 @@ h1.service-title {
 .box-articles .item .icon .iname a:hover,
 .tabs-content .item .icon .iname a:hover,
 .item_cloud .icon .iname a:hover,
-.item-cloud-one .icon .iname a:hover {
+.item-cloud-one .icon .iname a:hover,
+.item-cloud-talks .icon .iname a:hover {
   color: #f85800;
 }
 .box-articles .item .icon .itext,
 .tabs-content .item .icon .itext,
 .item_cloud .icon .itext,
-.item-cloud-one .icon .itext {
+.item-cloud-one .icon .itext,
+.item-cloud-talks .icon .itext {
   padding-bottom: 10px;
   color: #999;
 }
 .box-articles .item .icon .imore,
 .tabs-content .item .icon .imore,
 .item_cloud .icon .imore,
-.item-cloud-one .icon .imore {
+.item-cloud-one .icon .imore,
+.item-cloud-talks .icon .imore {
   padding-bottom: 15px;
 }
 .box-articles .item .icon .imeta:before,
 .tabs-content .item .icon .imeta:before,
 .item_cloud .icon .imeta:before,
 .item-cloud-one .icon .imeta:before,
+.item-cloud-talks .icon .imeta:before,
 .box-articles .item .icon .imeta:after,
 .tabs-content .item .icon .imeta:after,
 .item_cloud .icon .imeta:after,
-.item-cloud-one .icon .imeta:after {
+.item-cloud-one .icon .imeta:after,
+.item-cloud-talks .icon .imeta:after {
   content: "";
   display: table;
   clear: both;
@@ -2778,7 +2855,8 @@ h1.service-title {
 .box-articles .item .icon .imeta .date,
 .tabs-content .item .icon .imeta .date,
 .item_cloud .icon .imeta .date,
-.item-cloud-one .icon .imeta .date {
+.item-cloud-one .icon .imeta .date,
+.item-cloud-talks .icon .imeta .date {
   float: left;
   font-size: 11px;
   color: #ccc;
@@ -2786,7 +2864,8 @@ h1.service-title {
 .box-articles .item .icon .imeta .right,
 .tabs-content .item .icon .imeta .right,
 .item_cloud .icon .imeta .right,
-.item-cloud-one .icon .imeta .right {
+.item-cloud-one .icon .imeta .right,
+.item-cloud-talks .icon .imeta .right {
   float: right;
 }
 .box-interest {
@@ -2977,61 +3056,89 @@ h1.service-title {
   padding-bottom: 15px;
 }
 .item_cloud,
-.item-cloud-one {
+.item-cloud-one,
+.item-cloud-talks {
   overflow: hidden;
 }
 .item_cloud .iprev,
-.item-cloud-one .iprev {
+.item-cloud-one .iprev,
+.item-cloud-talks .iprev {
   margin-right: -10px;
   width: 184px;
 }
 .item_cloud .icon,
-.item-cloud-one .icon {
+.item-cloud-one .icon,
+.item-cloud-talks .icon {
   overflow: hidden;
   padding-left: 10px;
 }
 .item_cloud .icon .cloud,
-.item-cloud-one .icon .cloud {
+.item-cloud-one .icon .cloud,
+.item-cloud-talks .icon .cloud {
   margin-bottom: 22px;
 }
 .item_cloud .itext,
-.item-cloud-one .itext {
+.item-cloud-one .itext,
+.item-cloud-talks .itext {
   margin-bottom: 8px;
   line-height: 1.7;
 }
 .item_cloud .iname,
-.item-cloud-one .iname {
+.item-cloud-one .iname,
+.item-cloud-talks .iname {
   padding-bottom: 10px;
 }
 .item_cloud .iname a,
-.item-cloud-one .iname a {
+.item-cloud-one .iname a,
+.item-cloud-talks .iname a {
   color: #333;
   font-size: 14px;
   text-decoration: none;
 }
 .item_cloud .imeta .btn-add,
-.item-cloud-one .imeta .btn-add {
+.item-cloud-one .imeta .btn-add,
+.item-cloud-talks .imeta .btn-add {
   float: left;
 }
 .item_cloud .imeta .right,
-.item-cloud-one .imeta .right {
+.item-cloud-one .imeta .right,
+.item-cloud-talks .imeta .right {
   float: right;
 }
-.item-cloud-one .iprev {
-  width: 150px;
+.item-cloud-one .iprev,
+.item-cloud-talks .iprev {
+  width: 160px;
 }
-.item-cloud-one .icon {
+.item-cloud-one .icon,
+.item-cloud-talks .icon {
   padding-left: 40px;
 }
-.item-cloud-one .icon .cloud .itext {
+.item-cloud-one .icon .cloud .itext,
+.item-cloud-talks .icon .cloud .itext {
   font-size: 16px;
   color: #333;
   line-height: 20px;
 }
-.item-cloud-one .icon .cloud .itext p {
+.item-cloud-one .icon .cloud .itext p,
+.item-cloud-talks .icon .cloud .itext p {
   margin-bottom: 10px;
 }
+.item-cloud-talks .icon .cloud .itext {
+  padding-bottom: 0;
+  color: #999;
+  font-size: 12px;
+}
+.item-cloud-talks .cloud {
+  padding-bottom: 0;
+}
+.item-cloud-talks .answer {
+  margin-bottom: 10px;
+  padding: 20px 20px 0 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
 .person {
+  position: relative;
   text-align: center;
   -webkit-transition: color 0.3s ease-out;
           transition: color 0.3s ease-out;
@@ -3054,6 +3161,14 @@ h1.service-title {
 .person__img img {
   max-width: 100%;
   border-radius: 50%;
+}
+.closed-pic {
+  position: absolute;
+  right: -5px;
+  top: 35px;
+  width: 21px;
+  height: 31px;
+  background: url("../img/icons/closed.png") no-repeat;
 }
 .person__name {
   margin-bottom: 2px;
@@ -3083,7 +3198,7 @@ h1.service-title {
 .cloud:after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -3202,12 +3317,14 @@ h1.service-title {
           animation: opacity-fade 1s;
 }
 .tags .tags-item {
+  overflow: hidden;
   display: inline-block;
   margin: 0 10px 10px 0;
   background-color: #f8f8f8;
   box-shadow: 0 1px 0 rgba(0,0,0,0.1), inset 0 1px 0 #fff;
   border: 1px solid transparent;
   border-radius: 2px;
+  line-height: 16px;
   overflow: hidden;
 }
 .tags .tags-item:before,

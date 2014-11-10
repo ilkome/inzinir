@@ -416,6 +416,7 @@ color-orange()
 				border-bottom none; 
 // -----------------------------------------------
 .page-name
+	width 80%
 	padding-bottom 40px;
 	latolight();
 	h1
@@ -461,6 +462,21 @@ color-orange()
 		float left; 
 		a
 			display block; background url("../img/icons/views.png") 0 2px no-repeat;
+	.left-grey
+		float left
+		font-size 11px
+		color #ccc
+		a
+			padding 0
+			color-orange()
+.imeta_padside
+	padding 0 20px
+.meta-comments
+	@extend .imeta .comments
+	display inline-block
+	a
+		padding-left 0px
+		color-orange()
 // Социальные кнопки
 .social
 	display table-cell; padding 0 10px 0 20px;
@@ -641,6 +657,10 @@ h1.service-title
 	strong
 		color #333
 		font-weight 400
+.closed
+	color #CCC
+	
+
 
 //	ОСНОВНОЙ СЛАЙДЕР
 // ===============================================
@@ -1093,6 +1113,29 @@ h1.service-title
 						color #ff8c4d;
 			.ititle
 				padding 5px 0;
+.box-talks-2
+	@extend .box-talks
+	.bcon
+		.item
+			background none
+			padding-left 0
+			.iname
+				background url("../img/quot.png") 0 3px no-repeat; 
+				span.name
+					display inline-block
+					text-indent 25px
+				.comments
+					display inline-block
+					a
+						display inline-block
+						padding-left 20px 
+						margin-left -20px
+						font-size 11px
+						color #333
+						text-indent 0px
+						background url("../img/icons/comments.png") 0 1px no-repeat; 
+						&:hover
+							color-orange()
 // -----------------------------------------------
 .box-events
 	.bcon
@@ -1809,7 +1852,7 @@ h1.service-title
 .item-cloud-one
 	@extend .item_cloud
 	.iprev
-		width 150px
+		width 160px
 	.icon
 		padding-left 40px
 	.icon .cloud .itext
@@ -1818,7 +1861,21 @@ h1.service-title
 		line-height 20px
 		p
 			margin-bottom 10px
+.item-cloud-talks
+	@extend .item-cloud-one
+	.icon .cloud .itext
+		padding-bottom 0
+		color #999
+		font-size 12px
+	.cloud
+		padding-bottom 0
+	.answer
+		margin-bottom 10px
+		padding 20px 20px 0 20px
+		border 1px solid #E6E6E6
+		border-radius 5px
 .person
+	position relative
 	text-align center
 	anim-color()
 	a
@@ -1836,7 +1893,14 @@ h1.service-title
 	overflow hidden
 	img
 		max-width 100%
-		border-radius 50% 
+		border-radius 50%
+.closed-pic
+	position absolute 
+	right -5px 
+	top 35px
+	width 21px
+	height 31px
+	background url("../img/icons/closed.png") no-repeat
 .person__name
 	margin-bottom 2px
 	font-size 14px
@@ -1859,7 +1923,7 @@ h1.service-title
 	&:after
 		content "" 
 		position absolute
-		top 50% 
+		top 60px 
 		width 0
 		height 0
 		border-style solid
@@ -1959,12 +2023,14 @@ h1.service-title
 // ===============================================
 .tags
 	.tags-item
+		overflow hidden
 		display inline-block
 		margin 0 10px 10px 0
 		background-color #f8f8f8
 		box-shadow 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #FFF
 		border 1px solid transparent
 		border-radius 2px
+		line-height 16px
 		overflow hidden
 		clearfix() 
 		span.name
