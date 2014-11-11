@@ -38,10 +38,11 @@ $(document).ready(function() {
 	//	Высота блока
 	function sidebarHeight() {
 		var documentH = $(window).height();
-		$(".scroller-box").css("height", documentH-165);
+		var sideHeight = $(".side-extend .bname").outerHeight();
+		console.log(documentH)
+		console.log(sideHeight)
+		$(".scroller-box").css("height", documentH-sideHeight);
 	}
-
-	sidebarHeight()
 
 	//	Ресайз
 	$(window).on("resize", function (e) {
@@ -71,11 +72,15 @@ $(document).ready(function() {
 		e.preventDefault()
 		var thisis = $(this);
 		var menu = thisis.data("menu");
+		
+		sidebarHeight()
+		
 		$(".sidebar .menu li").removeClass("active")
 		thisis.closest("li").addClass("active")
 		$(".side-extend-fix").stop().fadeIn()
 		$('.sidebar .side-extend').stop().fadeOut(500);
 		$('.sidebar .side-extend[data-menu="'+menu+'"]').stop().fadeIn(300)
+
 	})
 
 	// Закрытие второго меню
