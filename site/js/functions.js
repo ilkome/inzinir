@@ -51,7 +51,7 @@ $(document).ready(function() {
 	
 	
 	// Открытие / закрытие блоков
-	$(".side-extend .bcat-name").click(function (e) {
+	$(".side-extend .bcat-name .toogle").click(function (e) {
 		e.preventDefault();
 		var thisis = $(this);
 		var item = thisis.closest(".bcat");
@@ -68,7 +68,7 @@ $(document).ready(function() {
 	});
 
 	// Открытие второго меню
-	$(".sidebar .menu a").on("click", function(e){
+	$('.sidebar .menu a[data-menu]').on("click", function(e){
 		e.preventDefault()
 		var thisis = $(this);
 		var menu = thisis.data("menu");
@@ -384,4 +384,9 @@ $(document).ready(function() {
 			callbackAfter: function ( toggle, anchor ) {}
 		});
 	}
+
+	$('a[href="#"]').on("click", function(e) {
+		e.preventDefault();
+		alert(2)
+	});
 });

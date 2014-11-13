@@ -626,6 +626,7 @@ body {
 .sidebar .side-extend .bcat .bcat-con .item .idate {
   display: table-cell;
   vertical-align: middle;
+  padding-right: 30px;
 }
 .sidebar .side-extend .bcat .bcat-con .item .idate {
   padding-left: 20px;
@@ -639,10 +640,10 @@ body {
 }
 .sidebar .side-extend .bcat .bcat-con .item .iname {
   display: table-cell;
-  padding-left: 30px;
   vertical-align: middle;
 }
 .sidebar .side-extend .bcat .bcat-con .item .iname a {
+  display: block;
   color: #e5e5e5;
   text-decoration: none;
 }
