@@ -385,8 +385,11 @@ $(document).ready(function() {
 		});
 	}
 
-	$('a[href="#"]').on("click", function(e) {
-		e.preventDefault();
-		alert(2)
+	$('.js-open-coming-soon').on("click", function(e) {
+		swal({
+			title: "Раздел в разработке!",
+			type: "info",
+			confirmButtonText: "Закрыть"
+		});
 	});
 });
