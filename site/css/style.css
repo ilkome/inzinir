@@ -9,6 +9,11 @@ body {
   border: 0;
   outline: 0;
 }
+hr {
+  width: 428px;
+  height: 1px;
+  background: #e6e6e6;
+}
 .clear:before,
 .clear:after {
   content: "";
@@ -78,6 +83,20 @@ ul.float li {
 }
 ul.mrno {
   margin: 0;
+}
+ol.inline:before,
+ul.inline:before,
+ol.inline:after,
+ul.inline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ol.inline li,
+ul.inline li {
+  float: left;
+  margin-left: 0;
+  box-sizing: border-box;
 }
 a {
   color: #f85800;
@@ -3896,6 +3915,67 @@ footer .copy {
 }
 .box-text-item .bcon.lh-small p {
   line-height: 16px;
+}
+.tasks {
+  font-family: 'latoregular';
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+}
+.tasks h3 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.tasks li {
+  margin-left: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.made-by p {
+  margin-top: 67px;
+  margin-bottom: 25px;
+}
+.made-by b {
+  color: #333;
+  font-size: 16px;
+  font-family: 'latomedium';
+  font-weight: 700;
+}
+.made-by li {
+  list-style: none;
+  margin: 2px 0 0 0;
+}
+.made-by li a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.made-by ul.inline {
+  margin-top: 35px;
+}
+.made-by ul.inline li {
+  margin-right: 45px;
+}
+.contact-info {
+  margin-bottom: 300px;
+}
+.contact-info hr {
+  margin-top: 55px;
+}
+.contact-info p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  margin: 6px 0;
+}
+.contact-info ul li {
+  color: #333;
+  font-size: 12px;
+  list-style: none;
+  margin-bottom: 2px;
 }
 @-webkit-keyframes opacity-fade {
   0% {
