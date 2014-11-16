@@ -1,0 +1,39 @@
+.remodal(data-remodal-id="register-popup").login-popup.enter-site
+	h1 Регистрация
+	.social
+		ul.inline
+			li.in
+				a(href="#") 
+			li.vk
+				a(href="#")
+			li.fb
+				a(href="#")
+			li.tw
+				a(href="#")
+			li.od
+				a(href="#")
+			li.you
+				a(href="#")
+	.old-way
+		hr
+		.or или
+		form
+			.formgroup
+				label(for="register__name") Имя
+				input(type="password" class="float-right" id="register__name" autofocus)
+			.formgroup
+				label(for="login__email") Эл. почта
+				input(type="password" class="float-right" id="register__email")
+			.formgroup
+				label(for="login__password") Пароль
+				input(type="password" class="float-right" id="register__password")
+			.formgroup
+				input(type="checkbox" id="register__short-session")
+				label(for="register__short-session") Чужой компьютер
+			.formgroup
+				input(type="submit" value="зарегистрироваться")
+			.you-agree Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласия с условиями предоставления услуг 
+				br
+				a(href="#") (пользовательское соглашение)
+	.call-to-register Уже регистрировались? 
+		a(href="#login-popup") Вход

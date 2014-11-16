@@ -1054,6 +1054,125 @@ h1.service-title
 			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
 			&:hover
 				color #ff8c4d; 
+
+//	ОКОШКИ
+// ===============================================
+.login-popup
+	&.enter-site
+		box-sizing border-box
+		width 400px
+		padding 40px 60px!important
+	h1 
+		color #333
+		font-size 14px
+		latoblack()
+		text-transform uppercase
+		margin 0
+		margin-bottom 28px 
+		text-align center
+	span
+		display table-cell
+		vertical-align middle
+		color #F85800
+		font-size 16px
+		text-transform uppercase
+	.social
+		width auto
+		vertical-align middle
+		padding 0!important
+		li
+			padding 0!important
+			margin-right 17px 
+			&:last-of-type
+				margin-right 0
+	.old-way
+		hr
+			width 100%
+			margin-top 17px
+		.or
+			position relative
+			top -8px
+			width 52px
+			text-align center
+			margin 0 auto
+			background #fff
+			line-height 1
+			margin-bottom 8px
+		form
+			.forgot-pass
+				line-height 40px 
+			.formgroup
+				clearfix()
+			label 
+				color #333
+				font-size 14px
+				line-height 40px
+			input 
+				full()
+				width 210px
+				height 40px
+				background-color #FFF
+				border 1px solid #e5e5e5
+				&:focus
+					box-shadow inset 0 0 5px rgba(204, 204, 204, 0.75)
+				&[type="submit"]
+					box-shadow none
+					width 280px
+					height 50px
+					border 3px solid #ff8c4d
+					color #333
+					font-size 16px
+					line-height 46px
+					padding 0 
+					latoblack()
+					text-transform uppercase
+					&:hover
+						border-color #f85800
+					&:active
+						border-color #f85800
+						background #f85800
+				&[type="checkbox"]+label
+					line-height 15px
+					color #999
+					font-size 12px
+					font-weight 400
+					margin-top 8px
+					margin-bottom 30px
+		.you-agree
+			width 252px
+			margin 0 auto
+			text-align center
+			margin-top 25px
+			a
+				color #999
+				text-decoration underline
+	.call-to-register
+		position absolute
+		bottom -40px
+		left 0
+		width 400px
+		text-align center
+		latoblack()
+		font-size 14px
+		text-transform uppercase
+		text-shadow 0 1px 2px rgba(1, 1, 1, 0.2)
+		color #FFF
+.remodal-overlay
+	background alpha(#000, .2)
+	.remodal-close
+		position absolute 
+		right -40px 
+		top -40px
+		width 46px
+		height 46px
+		background url("../img/icons/close.png") no-repeat
+	.remodal
+		width auto
+		margin 0 auto
+		background #fff
+		padding 60px 40px
+		border 2px solid #1a1a1a
+
 // -----------------------------------------------
 .box-news
 	.bcon
@@ -2076,33 +2195,6 @@ footer
 				width 5px; height 100%; margin 0px auto;
 				
 
-//	ОКОШКИ
-// ===============================================
-.login-popup
-	span
-		display table-cell
-		vertical-align middle
-		color #F85800
-		font-size 16px
-		text-transform uppercase
-	.social
-		width auto
-		vertical-align middle
-.remodal-overlay
-	background alpha(#000, .2)
-	.remodal-close
-		position absolute 
-		right -40px 
-		top -40px
-		width 46px
-		height 46px
-		background url("../img/icons/close.png") no-repeat
-	.remodal
-		width auto
-		margin 0 auto
-		background #fff
-		padding 60px 40px
-		border 2px solid #1a1a1a
 
 
 //	АНИМАЦИЯ

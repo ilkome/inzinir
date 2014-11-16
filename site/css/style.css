@@ -1922,6 +1922,144 @@ h1.service-title {
 .box-right .ball a:hover {
   color: #ff8c4d;
 }
+.login-popup.enter-site {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 40px 60px !important;
+}
+.login-popup h1 {
+  color: #333;
+  font-size: 14px;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.login-popup span {
+  display: table-cell;
+  vertical-align: middle;
+  color: #f85800;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.login-popup .social {
+  width: auto;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+.login-popup .social li {
+  padding: 0 !important;
+  margin-right: 17px;
+}
+.login-popup .social li:last-of-type {
+  margin-right: 0;
+}
+.login-popup .old-way hr {
+  width: 100%;
+  margin-top: 17px;
+}
+.login-popup .old-way .or {
+  position: relative;
+  top: -8px;
+  width: 52px;
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.login-popup .old-way form .forgot-pass {
+  line-height: 40px;
+}
+.login-popup .old-way form .formgroup:before,
+.login-popup .old-way form .formgroup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.login-popup .old-way form label {
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+}
+.login-popup .old-way form input {
+  box-sizing: border-box;
+  width: 210px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+.login-popup .old-way form input:focus {
+  box-shadow: inset 0 0 5px rgba(204,204,204,0.75);
+}
+.login-popup .old-way form input[type="submit"] {
+  box-shadow: none;
+  width: 280px;
+  height: 50px;
+  border: 3px solid #ff8c4d;
+  color: #333;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+}
+.login-popup .old-way form input[type="submit"]:hover {
+  border-color: #f85800;
+}
+.login-popup .old-way form input[type="submit"]:active {
+  border-color: #f85800;
+  background: #f85800;
+}
+.login-popup .old-way form input[type="checkbox"]+label {
+  line-height: 15px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.login-popup .old-way .you-agree {
+  width: 252px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.login-popup .old-way .you-agree a {
+  color: #999;
+  text-decoration: underline;
+}
+.login-popup .call-to-register {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 400px;
+  text-align: center;
+  font-family: 'latoblack';
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(1,1,1,0.2);
+  color: #fff;
+}
+.remodal-overlay {
+  background: rgba(0,0,0,0.2);
+}
+.remodal-overlay .remodal-close {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 46px;
+  height: 46px;
+  background: url("../img/icons/close.png") no-repeat;
+}
+.remodal-overlay .remodal {
+  width: auto;
+  margin: 0 auto;
+  background: #fff;
+  padding: 60px 40px;
+  border: 2px solid #1a1a1a;
+}
 .box-news .bcon {
   padding: 0 20px;
 }
@@ -3435,35 +3573,6 @@ footer .copy {
   width: 5px;
   height: 100%;
   margin: 0px auto;
-}
-.login-popup span {
-  display: table-cell;
-  vertical-align: middle;
-  color: #f85800;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-.login-popup .social {
-  width: auto;
-  vertical-align: middle;
-}
-.remodal-overlay {
-  background: rgba(0,0,0,0.2);
-}
-.remodal-overlay .remodal-close {
-  position: absolute;
-  right: -40px;
-  top: -40px;
-  width: 46px;
-  height: 46px;
-  background: url("../img/icons/close.png") no-repeat;
-}
-.remodal-overlay .remodal {
-  width: auto;
-  margin: 0 auto;
-  background: #fff;
-  padding: 60px 40px;
-  border: 2px solid #1a1a1a;
 }
 .box-info .bcon-mod {
   padding: 0 20px;

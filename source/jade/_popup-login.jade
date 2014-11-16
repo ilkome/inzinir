@@ -1,0 +1,34 @@
+.remodal(data-remodal-id="login-popup").login-popup.enter-site
+	h1 Вход на сайт
+	.social
+		ul.inline
+			li.in
+				a(href="#") 
+			li.vk
+				a(href="#")
+			li.fb
+				a(href="#")
+			li.tw
+				a(href="#")
+			li.od
+				a(href="#")
+			li.you
+				a(href="#")
+	.old-way
+		hr
+		.or или
+		form
+			.formgroup
+				label(for="login__email") Эл. почта
+				input(type="password" class="float-right" id="login__email" autofocus)
+			.formgroup
+				label(for="login__password") Пароль
+				input(type="password" class="float-right" id="login__password")
+			.formgroup
+				input(type="checkbox" id="login__short-session")
+				label(for="login__short-session") Чужой компьютер
+				a(href="#" class="forgot-pass float-right") Забыли пароль?
+			.formgroup
+				input(type="submit" value="Войти")
+	.call-to-register Еще не зарегистрированы? 
+		a(href="#register-popup") Регистрация
