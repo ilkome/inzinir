@@ -1146,6 +1146,9 @@ h1.service-title
 			a
 				color #999
 				text-decoration underline
+				&:hover
+					color-orange()
+					tdn() 
 	.call-to-register
 		position absolute
 		bottom -40px
@@ -2629,6 +2632,11 @@ footer
 	p
 		margin-top 67px 
 		margin-bottom 25px 
+	a
+		text-decoration underline
+		&:hover
+			tdn() 
+			color-orange()
 	b
 		color #333
 		font-size 16px
@@ -2641,13 +2649,12 @@ footer
 			color #333
 			font-size 16px
 			font-weight 400
-			text-decoration underline
 	ul.inline
 		margin-top 35px 
 		li
 			margin-right 45px
 .contact-info 
-	margin-bottom 300px 
+	margin-bottom 30px 
 	hr
 		margin-top 55px 
 	p
