@@ -388,7 +388,10 @@ $(document).ready(function() {
 		});
 	}
 
+	//	Раздел в разработке
+	// ==================================================
 	$('.js-open-coming-soon').on("click", function(e) {
+		e.preventDefault();
 		swal({
 			title: "Раздел в разработке!",
 			type: "info",
