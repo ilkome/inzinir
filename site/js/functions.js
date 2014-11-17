@@ -1,21 +1,25 @@
 
 /*
 	proscom.ru
-	Простые Коммуникации
+	Simple Communication
 */
 
 
 $(document).ready(function() {
+	
+	//	Page article content nav
+	// ==================================================
 	$(".box-page-nav a").on("click", function(e){
+		console.log("this");
 		var thisis = $(this);
 		var currentLi = thisis.closest("li");
 		var child = thisis.closest("li").find("ol li");
 		target = $(e.target);
-			e.preventDefault();
+		//e.preventDefault();
 
 		if(target.hasClass("cat")) {
 			if(thisis.closest("li").hasClass("open")) {
-				currentLi.removeClass("close")
+				currentLi.removeClass("close open")
 				child.slideUp();
 			} else {
 				currentLi.addClass("open")
@@ -39,8 +43,6 @@ $(document).ready(function() {
 	function sidebarHeight() {
 		var documentH = $(window).height();
 		var sideHeight = $(".side-extend .bname").outerHeight();
-		console.log(documentH)
-		console.log(sideHeight)
 		$(".scroller-box").css("height", documentH-sideHeight);
 	}
 
@@ -373,22 +375,8 @@ $(document).ready(function() {
 	});
 
 
-	
-	// ==================================================
-	//	smoothScroll
-	// ==================================================
-	if ( $.isFunction($.fn.smoothScroll) ) {
-		smoothScroll.init({
-			speed: 1000,
-			easing: 'easeInOutCubic',
-			offset: 69,
-			updateURL: true,
-			callbackBefore: function ( toggle, anchor ) {},
-			callbackAfter: function ( toggle, anchor ) {}
-		});
-	}
 
-	//	Раздел в разработке
+	//	Popup page development
 	// ==================================================
 	$('.js-open-coming-soon').on("click", function(e) {
 		e.preventDefault();
