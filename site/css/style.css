@@ -2030,6 +2030,10 @@ h1.service-title {
   color: #999;
   text-decoration: underline;
 }
+.login-popup .old-way .you-agree a:hover {
+  color: #f85800;
+  text-decoration: none;
+}
 .login-popup .call-to-register {
   position: absolute;
   bottom: -40px;
@@ -4046,6 +4050,13 @@ footer .copy {
   margin-top: 67px;
   margin-bottom: 25px;
 }
+.made-by a {
+  text-decoration: underline;
+}
+.made-by a:hover {
+  text-decoration: none;
+  color: #f85800;
+}
 .made-by b {
   color: #333;
   font-size: 16px;
@@ -4060,7 +4071,6 @@ footer .copy {
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  text-decoration: underline;
 }
 .made-by ul.inline {
   margin-top: 35px;
@@ -4069,7 +4079,7 @@ footer .copy {
   margin-right: 45px;
 }
 .contact-info {
-  margin-bottom: 300px;
+  margin-bottom: 30px;
 }
 .contact-info hr {
   margin-top: 55px;
