@@ -4086,6 +4086,31 @@ footer .copy {
   list-style: none;
   margin-bottom: 2px;
 }
+.edit-interface .add {
+  display: block;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  color: #333;
+  font-family: "Lato";
+  font-size: 21px;
+  font-family: 'latoblack';
+  text-transform: uppercase;
+  border: 5px solid #ccc;
+}
+.edit-interface .add:hover {
+  border-color: #999;
+  text-decoration: none;
+}
+.edit-interface .add:active {
+  background: #ccc;
+}
+.edit-interface form {
+  margin-top: 30px;
+}
+.edit-interface .search-con {
+  width: 40%;
+}
 @-webkit-keyframes opacity-fade {
   0% {
     opacity: 0.5;
