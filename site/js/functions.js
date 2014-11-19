@@ -59,12 +59,12 @@ $(document).ready(function() {
 		var item = thisis.closest(".bcat");
 
 		if(item.hasClass("active")) {
-			thisis.text("+");
+			thisis.find(".toogle").text("+");
 			item.removeClass("active");
 			item.find(".bcat-con").slideUp();
 		} else {
 			item.addClass("active");
-			thisis.text("-");
+			thisis.find(".toogle").text("-");
 			item.find(".bcat-con").slideDown();
 		}
 	});
