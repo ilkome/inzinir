@@ -1,0 +1,73 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Сообщения
+		//------------------------------------------------
+		.main-full
+			.messages
+				.comment
+					.comment-prev
+						img(src="img/content/ava-2.jpg", alt="")
+					.comment-meta
+						.user
+							a(href="#") Влодко Чорный
+						.date 1 час назад
+					.comment-text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+				.comment
+					.comment-prev
+						img(src="img/ava.png", alt="")
+						.online
+					.comment-meta
+						.user
+							a(href="#") Александр Денисов
+						.date 2 час назад
+					.comment-text Когда Iphone выпустил первый Ipad тоже все смеялись, а оно вот как все повернулось. Так что не будем забегать вперед, товарищ.
+				.comment
+					.comment-prev
+						img(src="img/content/ava-1.png", alt="")
+						.online
+					.comment-meta
+						.user
+							a(href="#") Александр Денисов
+						.date 1 час назад
+					.comment-text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+				.comment
+					.comment-prev
+						img(src="img/content/ava-2.jpg", alt="")
+					.comment-meta
+						.user
+							a(href="#") Влодко Чорный
+						.date 1 час назад
+					.comment-text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+				.comment
+					.comment-prev
+						img(src="img/ava.png", alt="")
+					.comment-meta
+						.user
+							a(href="#") Александр Денисов
+						.date 2 час назад
+					.comment-text Когда Iphone выпустил первый Ipad тоже все смеялись, а оно вот как все повернулось. Так что не будем забегать вперед, товарищ.
+				.comment
+					.comment-prev
+						img(src="img/content/ava-1.png", alt="")
+					.comment-meta
+						.user
+							a(href="#") Александр Денисов
+						.date 1 час назад
+					.comment-text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+				.comment-write
+					.text
+						.ava
+							img(src="img/ava.png", alt="")
+						textarea(placeholder="")
+					.action
+						a(href="#").btn-orange Ответить
+						a(href="#").atach Прикрепить файл

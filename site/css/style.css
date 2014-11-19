@@ -1747,6 +1747,203 @@ h1.service-title {
 .graph-box_mwidth {
   max-width: 200px;
 }
+.messages {
+  position: relative;
+}
+.messages .comment {
+  padding: 30px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+.messages .comment:before,
+.messages .comment:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.messages .comment .comment-prev {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 20px;
+  width: 40px;
+}
+.messages .comment .comment-prev .online {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  width: 6px;
+  height: 6px;
+  background: #19c0f7;
+  border-radius: 3px;
+}
+.messages .comment .comment-meta {
+  display: table-cell;
+  width: 25%;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.messages .comment .comment-meta .user {
+  padding-bottom: 10px;
+}
+.messages .comment .comment-meta .user a {
+  color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.messages .comment .comment-meta .date {
+  color: #ccc;
+}
+.messages .comment .comment-text {
+  display: table-cell;
+  width: 100%;
+  vertical-align: top;
+  color: #999;
+  font-size: 14px;
+}
+.messages .comment-write {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  padding: 30px 30px 30px 250px;
+  background: #fafafa;
+}
+.messages .comment-write:before,
+.messages .comment-write:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.messages .comment-write .ava {
+  position: absolute;
+  left: -60px;
+  top: 0px;
+  z-index: 10;
+}
+.messages .comment-write .text {
+  position: relative;
+  margin-left: 60px;
+}
+.messages .comment-write .text:after,
+.messages .comment-write .text:before {
+  right: 100%;
+  top: 22px;
+  margin-right: -1px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.messages .comment-write .text:after {
+  border-right-color: #fff;
+  border-width: 9px;
+  margin-top: -9px;
+}
+.messages .comment-write .text:before {
+  border-right-color: #e5e5e5;
+  border-width: 10px;
+  margin-top: -10px;
+}
+.messages .comment-write .text textarea {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.messages .comment-write .action {
+  padding-top: 20px;
+  padding-left: 60px;
+}
+.messages .comment-write .action a.btn-orange {
+  display: inline-block;
+  padding: 10px 70px;
+}
+.messages .comment-write .action a.atach {
+  margin-top: 10px;
+  float: right;
+  font-size: 14px;
+  padding-left: 30px;
+  padding-top: 3px;
+  background: url("../img/icons/attach.png") no-repeat;
+}
+.notifybox {
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+}
+.notifybox .notify {
+  margin-bottom: 20px;
+  border: 1px solid #e6e6e6;
+}
+.notifybox .notify .notify-prev {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+.notifybox .notify .notify-prev img {
+  display: block;
+}
+.notifybox .notify .notify-meta {
+  display: table-cell;
+  width: 100%;
+  padding: 15px 30px;
+  vertical-align: top;
+  color: #333;
+  font-size: 14px;
+}
+.notifybox .notify .notify-meta a {
+  color: #f85800;
+}
+.notifybox .notify .notify-meta .date {
+  color: #ccc;
+  font-size: 11px;
+}
+.admin-box {
+  position: absolute;
+  right: 20px;
+  top: -30px;
+  margin: 0;
+  list-style: none;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+}
+.admin-box li {
+  margin: 0;
+  list-style: none;
+}
+.admin-box li {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.admin-box li:after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background: #e5e5e5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.admin-box li:hover {
+  cursor: pointer;
+}
+.admin-box li.admin-edit {
+  background: url("../img/icons/edit.png") center no-repeat;
+}
+.admin-box li.admin-edit:hover {
+  background: url("../img/icons/edit-h.png") center no-repeat;
+}
+.admin-box li.admin-delete {
+  background: url("../img/icons/delete.png") center no-repeat;
+}
+.admin-box li.admin-delete:hover {
+  background: url("../img/icons/delete-h.png") center no-repeat;
+}
 .slider-index-wrap {
   position: relative;
   margin-top: -20px;
@@ -3574,6 +3771,7 @@ h1.service-title {
   width: 25%;
 }
 .box-text-item {
+  position: relative;
   padding: 20px;
   border: 1px solid #e5e5e5;
 }
@@ -4845,16 +5043,16 @@ footer .copy {
 .articles__edit label {
   color: #333;
   font-size: 14px;
-  font-family: 'latoblack';
   padding-left: 18px;
 }
 .articles__edit textarea {
   box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   border: 1px solid #e5e5e5;
   margin-top: 9px;
   margin-bottom: 25px;
-  resize: horizontal;
+  resize: vertical;
   padding: 11px 17px !important;
   color: #333;
   font-size: 14px;

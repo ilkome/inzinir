@@ -705,6 +705,158 @@ h1.service-title
 .graph-box_mwidth
 	max-width 200px
 
+.messages
+	position relative
+	.comment
+		padding 30px
+		border 1px solid #e6e6e6
+		border-bottom none
+		clearfix() 
+		.comment-prev
+			position relative
+			display table-cell 
+			vertical-align top
+			padding-right 20px
+			width 40px
+			.online
+				position absolute 
+				right 0px 
+				top 3px	
+				width 6px
+				height 6px
+				background #19c0f7
+				border-radius 3px		
+		.comment-meta
+			display table-cell
+			width 25% 
+			vertical-align top
+			padding-left 10px
+			padding-right 30px
+			.user
+				padding-bottom 10px
+				a
+					color #333
+					font-size 12px
+					text-transform uppercase
+					font-weight 900
+			.date
+				color #ccc
+		.comment-text
+			display table-cell 
+			width 100%
+			vertical-align top
+			color #999
+			font-size 14px
+	.comment-write
+		position relative
+		border 1px solid #e6e6e6
+		padding 30px 30px 30px 250px
+		background #fafafa
+		clearfix() 
+		.ava
+			position absolute 
+			left -60px 
+			top 0px
+			z-index 10
+		.text
+			position relative
+			margin-left 60px
+			&:after, 
+			&:before
+				right 100%
+				top 22px
+				margin-right -1px
+				border solid transparent
+				content " "
+				height 0
+				width 0
+				position absolute
+				pointer-events none
+			&:after
+				border-right-color #fff
+				border-width 9px
+				margin-top -9px
+			&:before
+				border-right-color #e5e5e5
+				border-width 10px
+				margin-top -10px
+			textarea
+				position relative
+				width 100%
+				full()
+		.action
+			padding-top 20px
+			padding-left 60px
+			a.btn-orange
+				display inline-block
+				padding 10px 70px
+			a.atach
+				margin-top 10px
+				float right
+				font-size 14px
+				padding-left 30px
+				padding-top 3px
+				background url("../img/icons/attach.png") no-repeat
+
+.notifybox
+	padding 20px
+	border 1px solid #e6e6e6
+	.notify
+		margin-bottom 20px
+		border 1px solid #e6e6e6
+		.notify-prev
+			position relative
+			display table-cell 
+			vertical-align top	
+			img
+				display block
+		.notify-meta
+			display table-cell 
+			width 100%
+			padding 15px 30px
+			vertical-align top
+			color #333
+			font-size 14px
+			a
+				color-orange()
+			.date
+				color #CCC
+				font-size 11px
+
+.admin-box
+	position absolute 
+	right 20px 
+	top -30px
+	lino()
+	background #FAFAFA
+	border 1px solid #E5E5E5 
+	li
+		display inline-block
+		position relative
+		width 60px
+		height 60px
+		&:after
+			content ""
+			width 1px
+			height 30px
+			background #E5E5E5 
+			position absolute
+			right 0
+			top 0
+			bottom 0
+			margin auto
+		&:hover
+			cursor pointer
+	li.admin-edit
+		background url("../img/icons/edit.png") center no-repeat;
+		&:hover
+			background url("../img/icons/edit-h.png") center no-repeat;
+	li.admin-delete
+		background url("../img/icons/delete.png") center no-repeat;
+		&:hover 
+			background url("../img/icons/delete-h.png")	center no-repeat;		
+				
+
 //	ОСНОВНОЙ СЛАЙДЕР
 // ===============================================
 .slider-index-wrap
@@ -1911,6 +2063,7 @@ h1.service-title
 
 
 .box-text-item
+	position relative
 	padding 20px;
 	border 1px solid #E5E5E5;
 	.bmeta
@@ -1990,10 +2143,8 @@ h1.service-title
 	.tags
 		padding-bottom 15px
 		
-
-
-//	ПОТРЕБНОСТИ
 // ===============================================
+
 .item_cloud
 	overflow hidden
 	@extend .box-articles .item
@@ -2141,9 +2292,8 @@ h1.service-title
 	.irating
 		float right 
 
-
-//	ТАБЫ
 // ===============================================
+
 .tabs
 	display table
 	position relative
@@ -2188,9 +2338,8 @@ h1.service-title
 	display block
 	animation opacity-fade 1s
 
-
-// ОБЩЕЕ
 // ===============================================
+
 .tags
 	.tags-item
 		overflow hidden
@@ -2258,8 +2407,8 @@ h1.service-title
 	a
 		color-orange()
 
-//	ПОДВАЛ
 // ===============================================
+
 footer
 	padding-top 40px;
 	clearfix();
@@ -2926,15 +3075,15 @@ footer
 		label
 			color #333
 			font-size 14px
-			latoblack()
 			padding-left 18px 
 		textarea
 			full()
 			width 100%
+			max-width 100%
 			border 1px solid #e5e5e5
 			margin-top 9px
 			margin-bottom 25px
-			resize horizontal
+			resize vertical
 			padding 11px 17px!important
 			color #333
 			font-size 14px
