@@ -24,7 +24,7 @@ body
 	p.photo-desc
 		font-size 11px; color #B2B2B2
 	p
-		color #333; font-size 16px; line-height 20px;
+		color #333; font-size 16px; line-height 24px;
 		&.grey
 			color #999;
 		&.grey-without-strong
@@ -53,6 +53,9 @@ body
 .btn-orange-big
 	@extend .btn-orange
 	padding 15px 35px
+	font-size 15px
+.btn-orange-bigm
+	padding 15px 70px
 	font-size 15px
 .btn
 	border-width 2px;
@@ -557,6 +560,10 @@ color-orange()
 	margin-bottom 20px
 	ul
 		margin 0
+.irating_margin2
+	margin-bottom 10px
+	ul
+		margin 0
 
 .photo-desc-box
 	clearfix()
@@ -695,7 +702,8 @@ h1.service-title
 		clear both;
 		padding-top 10px; 
 		color #333; 
-
+.graph-box_mwidth
+	max-width 200px
 
 //	ОСНОВНОЙ СЛАЙДЕР
 // ===============================================
@@ -1227,7 +1235,8 @@ h1.service-title
 				padding-bottom 5px; font-size 14px; 
 				a
 					line-height 20px;
-					
+			.iprev
+				padding-bottom 10px		
 			.itext
 				padding-bottom 15px;
 				color #999; font-size 12px
@@ -1235,10 +1244,23 @@ h1.service-title
 					color #999999;
 				p 
 					margin-bottom 10px;
+			.itext-ext
+				padding-bottom 10px
+				color #333
+				.grey
+					color #999	
+				a
+					color-orange()
+					&:hover
+						text-decoration underline
+				
 .box-news_dotted
 	.item
 		margin-bottom 30px
 		border-bottom 1px dotted #E5E5E5
+		&:last-child
+			margin-bottom 0
+			border-bottom 0
 .box-news_dotted-sm
 	.item
 		margin-bottom 30px
@@ -1851,7 +1873,9 @@ h1.service-title
 	border-bottom 1px dotted #E5E5E5;
 	clearfix() 
 	&:last-child
-		margin-bottom 0; border-bottom none; 
+		margin-bottom 0; 
+		padding-bottom 0
+		border-bottom none; 
 	.iprev
 		display table-cell
 		full() 
@@ -1958,6 +1982,7 @@ h1.service-title
 	.iprev
 		display table-cell
 		vertical-align top 
+		padding-left 30px
 	.icon
 		display table-cell 
 		vertical-align top

@@ -692,7 +692,7 @@ body {
 .bcon-text-style p {
   color: #333;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
 }
 .bcon-text-style p.grey {
   color: #999;
@@ -727,6 +727,10 @@ body {
 }
 .btn-orange-big {
   padding: 15px 35px;
+  font-size: 15px;
+}
+.btn-orange-bigm {
+  padding: 15px 70px;
   font-size: 15px;
 }
 .btn,
@@ -1540,6 +1544,12 @@ body {
 .irating_margin ul {
   margin: 0;
 }
+.irating_margin2 {
+  margin-bottom: 10px;
+}
+.irating_margin2 ul {
+  margin: 0;
+}
 .photo-desc-box {
   padding-bottom: 20px;
   color: #999;
@@ -1733,6 +1743,9 @@ h1.service-title {
   clear: both;
   padding-top: 10px;
   color: #333;
+}
+.graph-box_mwidth {
+  max-width: 200px;
 }
 .slider-index-wrap {
   position: relative;
@@ -2531,6 +2544,9 @@ h1.service-title {
 .box-news .bcon .item .iname a {
   line-height: 20px;
 }
+.box-news .bcon .item .iprev {
+  padding-bottom: 10px;
+}
 .box-news .bcon .item .itext {
   padding-bottom: 15px;
   color: #999;
@@ -2542,9 +2558,26 @@ h1.service-title {
 .box-news .bcon .item .itext p {
   margin-bottom: 10px;
 }
+.box-news .bcon .item .itext-ext {
+  padding-bottom: 10px;
+  color: #333;
+}
+.box-news .bcon .item .itext-ext .grey {
+  color: #999;
+}
+.box-news .bcon .item .itext-ext a {
+  color: #f85800;
+}
+.box-news .bcon .item .itext-ext a:hover {
+  text-decoration: underline;
+}
 .box-news_dotted .item {
   margin-bottom: 30px;
   border-bottom: 1px dotted #e5e5e5;
+}
+.box-news_dotted .item:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
 }
 .box-news_dotted-sm .item {
   margin-bottom: 30px;
@@ -3484,6 +3517,7 @@ h1.service-title {
 }
 .item-3col:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
   border-bottom: none;
 }
 .item-3col .iprev {
@@ -3657,6 +3691,7 @@ h1.service-title {
 .event-item .iprev {
   display: table-cell;
   vertical-align: top;
+  padding-left: 30px;
 }
 .event-item .icon {
   display: table-cell;

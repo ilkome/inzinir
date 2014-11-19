@@ -1,0 +1,336 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Оборудование
+	
+block scripts
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") События
+				li >
+				li: a(href="#") ОБОРУДОВАНИЕ
+				li >
+				li Станок токарный с ЧПУ
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 61
+					.views 2726
+				.bcon.bcon-text-style
+					.event-item.mar-bot-30
+						.icon
+							h1 ЗАО «Научно-производственный центр “Модуль”»
+							.graph-name Рейтинг НТП 73 %
+							.graph-box.graph-box_mwidth
+								.graph-inner(style='width:73%;')
+							.irating.irating_margin
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+						.iprev
+							img(src="img/content/120-85-1.jpg", alt="")
+						p.grey
+							| Оборудование: 78% <br>
+							| Услуги: 67% <br>
+							| Программное обеспечние: 68% <br> 
+							| Результаты интеллектуальной деятельности: 64% <br>
+						p
+							strong Вид деятельности: 
+							| проведение исследований, измерение <br>
+							strong Расположение: 
+							| Московская область, Протвино <br>
+							strong Контакты: 
+							| email@email.com, +7 495 675 87 98
+						.inline
+							a(href="#").btn-orange.btn-orange-bigm Свзяаться
+				.bmetabot
+					.share
+						span Поделиться
+						ul
+							li.vk
+								a(href="#")
+							li.fb
+								a(href="#")
+							li.tw
+								a(href="#")
+							li.in
+								a(href="#")
+					.comments-count
+						a(href="#").btn-grey 19 комментариев
+				.box-interest
+					.bname
+						h3 Похожие рекомендации
+					.bcon
+						.box-articles.m-mod
+							.item-3col
+								.iprev
+									img(src="img/content/120-85-2.jpg", alt="")
+								.icon
+									.iname
+										a(href="#") Московский государственный университет им. М.В.Ломоносова
+									.itext.lh-small
+										p Оборудование: 78% <br>
+											| Услуги: 67% <br>
+											| Программное обеспечние: 68% <br> 
+											| Результаты интеллектуальной деятельности: 64% <br>
+										a(href="#").btn-orange-empty Связаться
+								.iconright
+									.graph-name Рейтинг НТП 98 %
+									.graph-box
+										.graph-inner(style='width:98%;')
+									.irating.irating_margin
+										ul
+											li.star
+											li.star
+											li.star
+											li
+											li
+									.imeta
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+							.item-3col
+								.iprev
+									img(src="img/content/120-85-1.jpg", alt="")
+								.icon
+									.iname
+										a(href="#") Санкт-Петербургский государственный университет аэрокосмического приборостроения
+									.itext.lh-small
+										p Оборудование: 78% <br>
+											| Услуги: 67% <br>
+											| Программное обеспечние: 68% <br> 
+											| Результаты интеллектуальной деятельности: 64% <br>
+										a(href="#").btn-orange-empty Связаться
+								.iconright
+									.graph-name Рейтинг НТП 53 %
+									.graph-box
+										.graph-inner(style='width:53%;')
+									.irating.irating_margin
+										ul
+											li.star
+											li.star
+											li.star
+											li
+											li
+									.imeta
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+				.box-comments
+					.bwrite
+						.bname
+							h3 Обсуждаем станок токарный с чпу
+							a(href="#enter-popup") Войти
+						.bcon
+							.ava
+								img(src="img/ava.png", alt="")
+							.text
+								textarea(placeholder="")
+							.action
+								a(href="#").btn-orange Оставить комментарий
+					.bcomments
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-2.jpg", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
+								.answer
+									a(href="#") Ответить
+							.comment
+								.cprev
+									a(href="#") 
+										img(src="img/content/ava-2.jpg", alt="")
+								.ccon
+									.name
+										a(href="#") Konrad Karlovich
+										.pep 
+											|  > 
+											a(href="#") Влодко Чорный
+										.date 1 час назад
+									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+									.answer
+										a(href="#") Ответить
+								.comment
+									.cprev
+										a(href="#") 
+											img(src="img/ava.png", alt="")
+									.ccon
+										.name
+											a(href="#") Konrad Karlovich
+											.date 1 час назад
+										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+										.answer
+											a(href="#") Ответить
+									.comment
+										.cprev
+											a(href="#") 
+												img(src="img/content/ava-1.png", alt="")
+										.ccon
+											.name
+												a(href="#") Konrad Karlovich
+												.date 1 час назад
+											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+											.answer
+												a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/ava.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
+								.answer
+									a(href="#") Ответить
+						.comment
+							.cprev
+								a(href="#") 
+									img(src="img/content/ava-1.png", alt="")
+							.ccon
+								.name
+									a(href="#") Konrad Karlovich
+									.date 1 час назад
+								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
+								.answer
+									a(href="#") Ответить
+		//------------------------------------------------
+		.main-right
+			.box-news.box-right.box-news_dotted
+				.bname
+					h3 
+						a(href="#") Популярное оборудование
+				.bcon
+					.item
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.irating.mar-bot-10
+							span EBV-23
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования. <br>
+						.itext-ext
+							span.dark Организация (ВУЗ / ГНЦ): 
+							a(href="#") Национальный исследовательский Томский политехнический университет
+						.tags
+							a(href="#").tags-item
+								span.name Машиностроение
+								span.count 12
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count.empty
+					.item
+						.iprev
+							img(src="img/content/equip-2.jpg", alt="")
+						.iname 
+							a(href="#") Станок токарный с ЧПУ
+						.irating.mar-bot-10
+							span EBV-23
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования. <br>
+						.itext-ext
+							span.dark Организация (ВУЗ / ГНЦ): 
+							a(href="#") Национальный исследовательский Томский политехнический университет
+						.tags
+							a(href="#").tags-item
+								span.name Машиностроение
+								span.count 12
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count.empty
+				.ball
+					a(href="#") Все оборудование
+			//------------------------------------------------
+			.box-news.box-right.box-news_dotted
+				.bname
+					h3 
+						a(href="#") Популярные услуги
+				.bcon
+					.item
+						.iname 
+							a(href="#") Выставка научного оборудования НИИ спорта РГУФКСМиТ
+						.irating.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования. <br>
+						.itext-ext
+							span.dark Организация (ВУЗ / ГНЦ): 
+							a(href="#") Национальный исследовательский Томский политехнический университет
+						.tags
+							a(href="#").tags-item
+								span.name Машиностроение
+								span.count 12
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count.empty
+					.item
+						.iname 
+							a(href="#") Станок токарный с ЧПУ
+						.itext Микроскопия, анализ химического состава
+						.irating.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext 10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования. <br>
+						.itext-ext
+							span.dark  Организация: 
+							span.grey (ВУЗ / ГНЦ): 
+							a(href="#") Национальный исследовательский Томский политехнический университет
+						.tags
+							a(href="#").tags-item
+								span.name Машиностроение
+								span.count 12
+							a(href="#").tags-item
+								span.name Металлообработка
+								span.count.empty
+				.ball
+					a(href="#") Все оборудование
+			//------------------------------------------------
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")
