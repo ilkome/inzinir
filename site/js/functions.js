@@ -386,4 +386,7 @@ $(document).ready(function() {
 			confirmButtonText: "Закрыть"
 		});
 	});
+
+	// Summernote
+	$('.summernote').summernote();
 });

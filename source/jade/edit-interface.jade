@@ -1,0 +1,235 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Редактирование контента
+	
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
+	link(href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet")
+	link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet")
+block scripts
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
+	script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js")
+	script(src="js/summernote.min.js", type="text/javascript")
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Редактирование контента
+		//------------------------------------------------
+		.main-left
+			//------------------------------------------------
+			.tabs-box.edit-interface
+				ul.tabs.js-tabs
+					li.tabs__item
+						a.tabs__link(href="#js-tab-news") Новости
+					li.tabs__item
+						a.tabs__link(href="#js-tab-success") Истории успеха
+					li.tabs__item
+						a.tabs__link(href="#js-tab-analytics") Аналитические статьи
+					li.tabs__item
+						a.tabs__link(href="#js-tab-documents") Документы
+					li.tabs__item
+						a.tabs__link(href="#js-tab-links") Ссылки
+				//------------------------------------------------
+				.tabs-wrapper
+					.tabs-content.js-tabs-content(data-id="#js-tab-news")
+						a.add(href="#") + Добавить новость
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.sort-articles По дате добавления новости
+						ul.articles
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__edit
+								form(action="#").block
+									.formgroup.articles__edit-title
+										label Заголовок
+										textarea Денис Мантуров принял участие в совещании Дмитрия Медведева по развитию микроэлектроники
+									.formgroup.articles__edit-lead
+										label Лид
+										textarea В пригороде Ростова-на-Дону, в районе аэродрома Батайск, будет создан вертолетный кластер. Он включит в себя летно-испытательный комплекс, сборочное производство вертолетов типа Ми-26, Ми-28, Ми-35 и перспективного среднего вертолета, а также центр по производству композитных лопастей и целый ряд других подразделений. О проекте пишет «Российская газета».
+									.formgroup.articles__edit-text
+										label Текст
+										.summernote Участники совещания обсудили ход подготовки к ВИИФ-2014, основные мероприятия программы российского участия в выставке, а также формирование экспозиции. ВИИФ-2014 является крупнейшей многоотраслевой выставкой в Юго-Восточной Азии и проводится ежегодно Вьетнамским выставочно-ярмарочным центром VEFAC при поддержке правительства Социалистической Республики Вьетнам. Участие России в выставке направлено на развитие и укрепление торгово-экономических связей между Россией и Вьетнамом. Это позволит расширить инвестиционное сотрудничество по приоритетным направлениям, среди которых нефтегазовая отрасль, энергетика, добыча полезных ископаемых, туристическая недвижимость и другие сферы. Кроме этого, участие в выставке способствует расширению сотрудничества в сфере промышленного производства, увеличению объема экспорта, диверсификации форм и направлений международного экономического сотрудничества. Программа мероприятий российской экспозиции включает Российско-Вьетнамский бизнес-форум, тематические круглые столы, презентации компаний-экспонентов, двусторонние встречи с представителями официальных, деловых и финансовых кругов, посещение крупнейших государственных корпораций и объединений, самой большой промышленной зоны Северного Вьетнама Thang Long и технопарка высоких технологий. 
+									.formgroup.articles__edit-images
+										label Изображение
+										ul.articles__edit-images-list.inline
+											li.articles__edit-images-list-item(style='background: url("img/content/edit-page/1.png")')
+												.articles__edit-images-list-item--edit
+											li.articles__edit-images-list-item--add
+												.articles__edit-images-list-item--add-icon
+												.articles__edit-images-list-item--add-text добавить изображение
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+							li.articles__item.inline
+								.articles__item-thumb(style='background: url("img/content/edit-page/1.png")')
+								.articles__item-info
+									.articles__item-date-added Добавлен: 13 октября 2012
+									.articles__item-title Текстильный импортозамещающий комплекс <br> появится в Ростовской области
+									.imeta.articles__item-stats
+										.comments
+											a(href='#') 51
+										.views
+											a(href='#') 225
+								ul.articles__item-controls.inline
+									li.articles__item-controls-edit
+									li.articles__item-controls-delete
+					.tabs-content.js-tabs-content(data-id="#js-tab-success")
+						a.add(href="#") + Добавить историю успеха
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.sort-articles По дате добавления новости
+					.tabs-content.js-tabs-content(data-id="#js-tab-analytics")
+						a.add(href="#") + Добавить аналитическую статью
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.sort-articles По дате добавления новости
+					.tabs-content.js-tabs-content(data-id="#js-tab-documents")
+						a.add(href="#") + Добавить документ
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.sort-articles По дате добавления новости
+					.tabs-content.js-tabs-content(data-id="#js-tab-links")
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.sort-articles По дате добавления новости
