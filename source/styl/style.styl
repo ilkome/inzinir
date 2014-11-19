@@ -123,12 +123,20 @@ body
 		border-color #999999;
 	&:active
 		background-color #cccccc
+.btn-orange-empty
+	margin-top 10px
+	display inline-block
+	color-orange()
+	font-size 12px
+	text-transform uppercase
 
 color-orange()
 	color #F85800 
 .inline
 	display inline-block
 	margin-right 20px
+
+
 
 //	ЛЕВАЯ КОЛОНКА
 // ===============================================
@@ -245,7 +253,9 @@ color-orange()
 						color #f85800;
 				.toogle
 					float right;
-					width 17px; height 15px; text-align center; color #f85800; 
+					min-width 7px
+					padding 2px 7px
+					text-align center; color #f85800; 
 					border 1px solid #f85800; border-radius 2px;
 					cursor pointer;
 					anim-op(); 						
@@ -385,6 +395,8 @@ color-orange()
 			&:hover
 				color-orange()
 
+.main-full 
+	display block
 .main-page
 	padding 90px 40px 50px 240px;
 	@media min-width
@@ -397,7 +409,7 @@ color-orange()
 	@media min-width
 		padding 0 0 40px 0;
 		box-shadow none;
-// -----------------------------------------------
+
 .pathway
 	padding-bottom 40px;
 	margin-left -2px;
@@ -416,7 +428,6 @@ color-orange()
 		li.nound
 			a
 				border-bottom none; 
-// -----------------------------------------------
 .page-name
 	width 80%
 	padding-bottom 40px;
@@ -426,7 +437,6 @@ color-orange()
 		font-size 72px; latolight();
 	p
 		margin 0; latolight(); font-size 18px; 
-// -----------------------------------------------
 .main-left
 	width 75%; display table-cell;
 	vertical-align top;
@@ -434,11 +444,13 @@ color-orange()
 	position relative;
 	padding-left 20px; display table-cell;
 	vertical-align top;
+
 .sep-black
 	margin 30px 0;
 	background #1a1a1a; height 3px;
 .sep-space
 	height 30px
+
 .mar-bot-20
 	margin-bottom 20px
 .mar-bot-30
@@ -447,6 +459,7 @@ color-orange()
 	margin-bottom 10px
 .mar-top-20m
 	margin-top -15px
+
 .imeta
 	clearfix(); 
 	a.btn-add
@@ -479,7 +492,7 @@ color-orange()
 	a
 		padding-left 0px
 		color-orange()
-// Социальные кнопки
+
 .social
 	display table-cell; padding 0 10px 0 20px;
 	width 40%;
@@ -513,7 +526,7 @@ color-orange()
 		li.rss
 			a
 				background url("../img/footer/rss.png") no-repeat; 
-// Рейтинг
+
 .irating
 	span
 		font-size 11px; color #ccc;
@@ -540,7 +553,11 @@ color-orange()
 	ul
 		display table-cell 
 		width 150px
-// Описание фото
+.irating_margin
+	margin-bottom 20px
+	ul
+		margin 0
+
 .photo-desc-box
 	clearfix()
 	padding-bottom 20px;
@@ -661,7 +678,23 @@ h1.service-title
 		font-weight 400
 .closed
 	color #CCC
-	
+
+.graph-name
+	color #333
+.graph-box
+	height 8px;
+	margin-top 5px;
+	background-color #E5E5E5;
+	border-radius 8px;
+	margin-bottom 20px
+	.graph-inner
+		height 8px;
+		background-color #FF8C4D
+		border-radius 8px;
+	.graph-text
+		clear both;
+		padding-top 10px; 
+		color #333; 
 
 
 //	ОСНОВНОЙ СЛАЙДЕР
@@ -1603,10 +1636,9 @@ h1.service-title
 		top 10px
 		text-align right
 		width 20px
-// -----------------------------------------------
 
-//	ДОКУМЕНТЫ
 // ===============================================
+
 .box-docs
 	.item
 		margin-bottom 20px;
@@ -1653,9 +1685,8 @@ h1.service-title
 		p
 			font-size 24px;
 
-
-//	НОВОСТИ
 // ===============================================
+
 .box-news-prev
 	padding 20px;
 	border 1px solid #E5E5E5;
@@ -1727,10 +1758,9 @@ h1.service-title
 			a
 				padding 0
 				color #F85800
-		
-
-//	СТАТЬИ 
+ 
 // ===============================================
+
 .box-articles
 	padding 20px;
 	border 1px solid #E5E5E5;
@@ -1814,9 +1844,48 @@ h1.service-title
 				font-size 11px; color #CCC;
 
 
+// Items with 3 collums
+.item-3col
+	width 100%
+	margin-bottom 20px; padding-bottom 20px;
+	border-bottom 1px dotted #E5E5E5;
+	clearfix() 
+	&:last-child
+		margin-bottom 0; border-bottom none; 
+	.iprev
+		display table-cell
+		full() 
+		padding-right 30px
+		width 15% 
+		vertical-align top
+	.icon
+		display table-cell
+		//width 60%
+		vertical-align top 
+		clearfix() 
+		.iname
+			padding-bottom 10px;
+			a
+				color #333; font-size 14px; tdn();
+				&:hover
+					color #f85800;
+		.itext
+			padding-bottom 10px; 
+			color #999;
+		.imore
+			padding-bottom 15px;
+		.imeta
+			clearfix(); 
+			.date
+				float left; font-size 11px; color #CCC;
+			.right
+				float right;
+				@extend .imeta		
+	.iconright
+		display table-cell
+		width 25%
 
-//	СТАТЬИЯ, НОВОСТЬ, СОБЫТИЕ
-// ===============================================
+
 .box-text-item
 	padding 20px;
 	border 1px solid #E5E5E5;
@@ -2519,7 +2588,7 @@ footer
 	.heading-left_sort
 		@extend .heading .heading-left
 		color #999
-		font-size 16px
+		font-size 16px			
 	.heading-right_sort
 		@extend .heading .heading-right
 		a
@@ -2550,7 +2619,12 @@ footer
 				top 40%
 				border-top-color transparent
 				border-bottom-color #ff8c4d;	
-//
+	.heading-left_sort-fl
+		@extend .heading .heading-left_sort
+		@extend .heading .heading-right_sort
+		a
+			margin-left 40px
+
 .read-time
 	display: inline-block
 	color #F85800
@@ -2671,7 +2745,6 @@ footer
 			margin-bottom 2px 
 
 // edit-interface.jade
-
 .edit-interface
 	.inline
 		margin 0
