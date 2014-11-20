@@ -33,7 +33,8 @@ body
 				color #333
 	li
 		font-size 16px
-			
+i 
+	font-style normal
 
 //	КНОПКИ
 // ===============================================
@@ -849,13 +850,87 @@ h1.service-title
 			cursor pointer
 	li.admin-edit
 		background url("../img/icons/edit.png") center no-repeat;
-		&:hover
+		&:before, &:hover
+			content " "
 			background url("../img/icons/edit-h.png") center no-repeat;
 	li.admin-delete
 		background url("../img/icons/delete.png") center no-repeat;
-		&:hover 
-			background url("../img/icons/delete-h.png")	center no-repeat;		
-				
+		&:before, &:hover 
+			content " "
+			background url("../img/icons/delete-h.png")	center no-repeat;
+	.admin-orders
+		background url("../img/icons/list.png") center no-repeat	
+			
+
+.orders-box
+	z-index 3
+	position absolute 
+	left -1px 
+	top -30px
+	width 523px
+	padding 15px 20px
+	full()
+	background-color #FFF
+	border 1px solid #E5E5E5
+	box-shadow 0 1px 15px rgba(1, 1, 1, 0.1)			
+	h3.bname
+		padding-bottom 15px	
+		margin 0;
+		font-size 14px; text-transform uppercase;
+		color: #4E5255; tdn(); 
+	.order-item
+		margin-bottom 10px
+		padding 10px 20px
+		background-color #FAFAFA
+		border 1px solid #E5E5E5
+		color #333
+		font-size 14px
+		line-height 24px
+		&.is-active
+			background-color #FFF
+			border 1px solid #FF8C4D
+		&:last-of-type
+			padding-bottom 20px
+			margin-bottom 20px
+	.order-date
+		padding-bottom 5px
+		font-size 11px
+		color #ccc
+	.order-meta
+		.contacts
+			color #999
+			span
+				color #333
+				font-weight 800
+	.order-count
+		z-index 2 
+		position absolute 
+		display inline-block
+		right -5px 
+		top -10px
+		width 20px
+		height 20px
+		border-radius 10px
+		background #333
+		color #fff
+		font-size 12px
+		vertical-align baseline
+		text-align center
+		i
+			display inline-block
+			padding-top 2px
+			
+.show-all
+	padding-top 10px
+	clear both
+	text-align right;
+	a
+		font-size 11px
+		text-transform uppercase
+		color #3f3f3f
+		tdn()
+		&:hover
+			color #ff8c4d;
 
 //	ОСНОВНОЙ СЛАЙДЕР
 // ===============================================

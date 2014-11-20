@@ -706,6 +706,9 @@ body {
 .bcon-text-style li {
   font-size: 16px;
 }
+i {
+  font-style: normal;
+}
 .btn-orange,
 .btn-orange-big,
 .box-sort-docs .action a {
@@ -1935,14 +1938,103 @@ h1.service-title {
 .admin-box li.admin-edit {
   background: url("../img/icons/edit.png") center no-repeat;
 }
+.admin-box li.admin-edit:before,
 .admin-box li.admin-edit:hover {
+  content: " ";
   background: url("../img/icons/edit-h.png") center no-repeat;
 }
 .admin-box li.admin-delete {
   background: url("../img/icons/delete.png") center no-repeat;
 }
+.admin-box li.admin-delete:before,
 .admin-box li.admin-delete:hover {
+  content: " ";
   background: url("../img/icons/delete-h.png") center no-repeat;
+}
+.admin-box .admin-orders {
+  background: url("../img/icons/list.png") center no-repeat;
+}
+.orders-box {
+  z-index: 3;
+  position: absolute;
+  left: -1px;
+  top: -30px;
+  width: 523px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 15px rgba(1,1,1,0.1);
+}
+.orders-box h3.bname {
+  padding-bottom: 15px;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #4e5255;
+  text-decoration: none;
+}
+.orders-box .order-item {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+}
+.orders-box .order-item.is-active {
+  background-color: #fff;
+  border: 1px solid #ff8c4d;
+}
+.orders-box .order-item:last-of-type {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.orders-box .order-date {
+  padding-bottom: 5px;
+  font-size: 11px;
+  color: #ccc;
+}
+.orders-box .order-meta .contacts {
+  color: #999;
+}
+.orders-box .order-meta .contacts span {
+  color: #333;
+  font-weight: 800;
+}
+.orders-box .order-count {
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  right: -5px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: baseline;
+  text-align: center;
+}
+.orders-box .order-count i {
+  display: inline-block;
+  padding-top: 2px;
+}
+.show-all {
+  padding-top: 10px;
+  clear: both;
+  text-align: right;
+}
+.show-all a {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  text-decoration: none;
+}
+.show-all a:hover {
+  color: #ff8c4d;
 }
 .slider-index-wrap {
   position: relative;

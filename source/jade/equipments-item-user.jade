@@ -17,7 +17,28 @@ block append content
 		//------------------------------------------------
 		.main-left
 			.box-text-item
+				.orders-box.js-orders-pop
+					h3.bname Заказывали недавно
+					.order-count 
+						i 2
+					.order-item.is-active
+						.order-date 13 октября 2012
+						.order-meta
+							.text Поволжский государственный технологический университет
+							.contacts 
+								span Контакты: 
+								| email@email.com, +7 495 675 87 98
+					.order-item
+						.order-date 13 октября 2012
+						.order-meta
+							.text Поволжский государственный технологический университет
+							.contacts 
+								span Контакты: 
+								| email@email.com, +7 495 675 87 98
+					.show-all
+						a(href="#") История заказов
 				ul.admin-box
+					li.admin-orders.js-show-orders
 					li.admin-edit
 					li.admin-delete
 				.bmeta

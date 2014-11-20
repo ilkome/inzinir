@@ -6,7 +6,12 @@
 
 
 $(document).ready(function() {
-	
+	$(".js-show-orders").on("click", function(e) {
+		$(".js-orders-pop").fadeIn();
+		$(this).toggleClass("active")
+	});
+
+
 	//	Page article content nav
 	// ==================================================
 	$(".box-page-nav a").on("click", function(e){
@@ -104,14 +109,26 @@ $(document).ready(function() {
 		}
 	})
 
+
+
 	// Закрытие по клику в любой части экрана
+	// ==================================================
 	$(document).click(function(e){
 		if ($('.sidebar .side-extend:visible').length && !$(e.target).closest('.sidebar').length){
 			$(".side-extend-fix").stop().fadeOut()		
 			$(".sidebar .menu li").removeClass("active")
 			$(".sidebar .side-extend").stop().fadeOut()
 		}
+
+		if( $('.js-orders-pop:visible').length && 
+			!$(e.target).closest('.js-orders-pop').length && 
+			!$(e.target).closest('.js-show-orders').length ) {
+			$(".js-orders-pop").fadeOut();
+		}
 	})
+
+
+
 
 
 
@@ -126,31 +143,8 @@ $(document).ready(function() {
 		}
 	)
 
-
-
 	// ==================================================
-	//	Свитчер
-	// ==================================================
-	$("ul.switch").on("click", function(e){
-		e.preventDefault()
-		thisis = $(this).find(".switch-con")
-		box = thisis.closest("ul.switch")
-		target = $(e.target)
-		//if(target.parent().hasClass("active")) return
-		if(thisis.hasClass("right")) {
-			box.find(".item").removeClass("active")
-			box.find(".item span").text("выкл")
-			thisis.removeClass("right")
-		} else {
-			box.find(".item").addClass("active")
-			thisis.addClass("right")
-			box.find(".item span").text("вкл")
-		}
-	})
-
-	// ==================================================
-	//	Свитчер
-	// ==================================================
+	
 	$(".js-show-contacts").on("click", function(e){
 		e.preventDefault()
 		var thisis = $(this);
@@ -160,10 +154,8 @@ $(document).ready(function() {
 		$(".js-contacts-box").fadeIn();
 	})
 
-
 	// ==================================================
-	//	КАЛЕНДАРЬ
-	// ==================================================
+	
 	if ( $.isFunction($.fn.datetimepicker) ) {
 		$('.calendar-widget-pop').datetimepicker({
 			lang:'ru',
@@ -388,5 +380,5 @@ $(document).ready(function() {
 	});
 
 	// Summernote
-	$('.summernote').summernote();
+	//$('.summernote').summernote();
 });
