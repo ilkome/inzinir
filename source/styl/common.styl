@@ -218,56 +218,43 @@ textarea
 	&.valid
 		border-color #3ac020;
 
-input[type="checkbox"]
-	display:none;
-input[type="checkbox"] + label
-	position relative;
+input[type=checkbox]
+	overflow hidden; 
+	display  none;
+	position absolute; width 10px; height 10px; margin 0; padding 0; border 0;
+input[type=checkbox] + label
 	display inline-block;
-	cursor:pointer
-	line-height:16px; margin:0px 10px 0px 0px; padding 4px 0 0 30px; font-size 14px; color #333333;
-input[type="checkbox"] + label::before
-	content:""; position absolute; left 0px; top 0px; height:22px; width:22px; margin:0 10px -3px 0; 
-	background:url("../img/checkbox.png") no-repeat;
-input[type="checkbox"]:disabled + label
-	cursor:default;
-input[type="checkbox"] + label:hover
-	opacity 0.8;
-input[type="checkbox"] + label:hover::before
-	background-position:0px 0px;
-input[type="checkbox"]:checked + label
-	opacity 1;
-input[type="checkbox"]:checked + label::before
-	background-position:0px -22px;
-input[type="checkbox"]:checked + label:hover::before
-	background-position:0px -22px;
-input[type="checkbox"]:disabled + label::before
-	background-position:0px 0px;
-input[type="checkbox"]:checked:disabled + label::before
-	background-position:0px -22px;
+	height 22px; padding-left 30px;
+	font-size 14px; line-height 21px; vertical-align middle;
+	cursor pointer;
+	background url("../img/checkbox.png") no-repeat;
+input[type=checkbox].lightblue + label
+	background url("../img/checkbox4.png") no-repeat;
+input[type=checkbox].light + label
+	background url("../img/checkbox3.png") no-repeat;
+input[type=checkbox] + label:hover
+	background-position 0 0; 
+input[type=checkbox]:checked + label
+	background-position 0 -22px;
 
-/*
+	
 input[type="radio"] + label 
-	cursor:pointer; font-size:20px; line-height:30px; margin:0px 20px 0px 0px;
+	cursor:pointer; font-size:14px; line-height:30px; margin:0px 20px 0px 0;
 input[type="radio"] + label::before 
-	content:""; display:inline-block; height:20px; width:16px; margin:0 8px -3px 0px; 
+	content:""; display:inline-block; height:22px; width:22px; margin:0 10px -5px 0px; 
 	background:url("../img/radio.png") no-repeat;
-input[type="radio"] 
-	display:none;
-input[type="radio"]:disabled 
+input[type="radio"]
 	display:none;
 input[type="radio"]:disabled + label 
 	cursor:default;
 input[type="radio"] + label:hover::before
-	opacity 0.8;
-input[type="radio"] + label::before 
-	background-position:0px 0px;
+	background-position 0px 0px;
 input[type="radio"]:checked + label::before 
-	background-position:0px -17px;
+	background-position 0 -22px;
 input[type="radio"]:disabled + label::before 
 	background-position:0px 0px;
 input[type="radio"]:checked:disabled + label::before 
-	background-position:0px -17px;
-*/
+	background-position 0px -22px;
 
 
 
@@ -277,5 +264,3 @@ table
 	width 100%;
 	td
 		vertical-align top;
-		
-

@@ -1,0 +1,51 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Расширенный поиск
+		//------------------------------------------------
+		.main-full
+			.advsearch
+				.advsearch-config
+					.where
+						.filed
+							input(type="text", placeholder="Программы").inp-filed
+							.words
+								a(href="#").active Все слова
+								a(href="#") Любое слово
+							.select
+								input(id="radio-val-1" type="radio" name="radio" checked)
+								label(for="radio-val-1") Только в названиях
+								input(id="radio-val-2" type="radio" name="radio")
+								label(for="radio-val-2") Во всех текстах
+					.cats
+						h3 
+							| В раздеалах
+							span (4)
+						.l-col4
+							.check
+								input(id="checkbox-val-3" type="checkbox" name="radio")
+								label(for="checkbox-val-3") Аналитические статьи
+							.check
+								input(id="checkbox-val-4" type="checkbox" name="radio")
+								label(for="checkbox-val-4") Дискусси
+							.check
+								input(id="checkbox-val-5" type="checkbox" name="radio")
+								label(for="checkbox-val-5") Документы
+					.action
+						a(href="#").btn-orange-wide.inline Искать
+				.advsearch-results-info
+					span.font-black.fz14 Результатов: примерно 10 345 (0,45 сек.) <br>
+					span Показаны результаты по запросу 
+						a(href="#") Программы <br>
+					span Искать вместо этого 
+						a(href="#") Программы вернут
+				.advsearch-results
+					.advsearch-result
