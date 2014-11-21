@@ -399,5 +399,7 @@ $(document).ready(function() {
 	});
 
 	// Summernote
-	//$('.summernote').summernote();
+	if ( $.isFunction($.fn.summernote) ) {
+		$('.summernote').summernote();
+	}
 });

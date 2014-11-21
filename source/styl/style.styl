@@ -145,6 +145,8 @@ color-orange()
 	color #000
 .fz14
 	font-size 14px
+.fz11
+	font-size 11px
 .inline
 	display inline-block
 	margin-right 20px
@@ -815,27 +817,100 @@ h1.service-title
 .notifybox
 	padding 20px
 	border 1px solid #e6e6e6
-	.notify
-		margin-bottom 20px
-		border 1px solid #e6e6e6
-		.notify-prev
-			position relative
+.notify
+	margin-bottom 20px
+	border 1px solid #e6e6e6
+	.notify-prev
+		position relative
+		display table-cell 
+		vertical-align top	
+		img
+			display block
+	.notify-meta
+		display table-cell 
+		width 100%
+		padding 15px 30px
+		vertical-align top
+		color #333
+		font-size 14px
+		a
+			color-orange()
+		.date
+			color #CCC
+			font-size 11px
+
+.editbox
+	margin-bottom 20px
+	border 1px solid #e6e6e6
+	.editbox-prev
+		position relative
+		display table-cell 
+		vertical-align top
+		border-right 1px solid #e6e6e6
+		img
+			display block
+	.editbox-meta
+		display table-cell 
+		width 100%
+		padding 15px 0px 15px 10px
+		vertical-align top
+		color #333
+		font-size 14px
+		.col-2
 			display table-cell 
-			vertical-align top	
-			img
-				display block
-		.notify-meta
-			display table-cell 
-			width 100%
-			padding 15px 30px
 			vertical-align top
-			color #333
+			padding 0 20px
+			width 60%
+			full() 
+		.col-2.valign
+			vertical-align top
+			padding-top 15px
+		.user
 			font-size 14px
-			a
+		.date
+			color #CCC
+			font-size 11px
+	.editbox-admin
+		position relative
+		display table-cell
+		background #fafafa
+		vertical-align middle
+		border-left 1px solid #e6e6e6
+		a
+			padding 60px 20px 30px 20px
+			display table-cell 
+			color #CCC
+			vertical-align middle
+			tdn() 
+			&:hover
 				color-orange()
-			.date
-				color #CCC
-				font-size 11px
+		a.ok
+			background url("../img/icons/prove.png")  center 40% no-repeat
+			&:hover, &:after
+				background url("../img/icons/prove-a.png") center 40% no-repeat
+		a.cancel
+			background url("../img/icons/delete.png") center 40% no-repeat
+			&:hover, &:after
+				background url("../img/icons/delete-h.png") center 40% no-repeat
+		.sep
+			display table-cell 
+			height 10px
+			border-right 1px solid #e6e6e6
+			width 1px
+			font-size 10px
+			content " "
+			margin-bottom -30px
+					
+a.link-black
+	color #333
+	&:hover
+		color-orange()
+a.link-orange
+	color-orange()
+	&:hover
+		color alpha(#F85800, .7)
+.font-grey
+	color #999
 
 .admin-box
 	position absolute 
@@ -2492,11 +2567,14 @@ h1.service-title
 		border-bottom-color #fff 
 		background #fff 
 		color #f85800 
+		a
+			color #f85800 
+			
 	&:first-child
 		border-left: 0
 .tabs__link
 	display block
-	padding 18px 28px 16px
+	padding 18px 18px 16px 18px
 	color #333
 	font-size 14px
 	text-transform uppercase  
@@ -3327,7 +3405,6 @@ footer
 		&-title
 			color #333
 			font-size 14px
-			// margin-top 5px
 			line-height 20px
 		&-stats
 			margin-top 5px
@@ -3409,7 +3486,7 @@ footer
 					&:hover
 						cursor pointer
 						background url(../img/icons/circular-delete-h.png) no-repeat center, #000
-					transition all 0.4s ease-in-out
+						transition all 0.4s ease-in-out
 				&:hover &--edit
 					left 0
 				&--add

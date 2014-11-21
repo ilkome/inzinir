@@ -1,0 +1,376 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
+
+block scripts
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
+
+
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Заявки на добавление
+		.main-full
+			.tabs-box.edit-interface
+				ul.tabs.js-tabs
+					li.tabs__item
+						a.tabs__link(href="#js-tab-1") Оборудование
+					li.tabs__item
+						a.tabs__link(href="#js-tab-2") Услуги
+					li.tabs__item
+						a.tabs__link(href="#js-tab-3") ПО
+					li.tabs__item
+						a.tabs__link(href="#js-tab-4") Потребности
+					li.tabs__item
+						a.tabs__link(href="#js-tab-5") Рид
+					li.tabs__item
+						a.tabs__link(href="#js-tab-6") Обсуждения
+					li.tabs__item
+						a.tabs__link(href="#js-tab-7") События
+					li.tabs__item
+						a.tabs__link(href="#js-tab-8") Документы
+				//------------------------------------------------
+				.tabs-wrapper
+					.tabs-content.js-tabs-content(data-id="#js-tab-1")
+						.mar-bot-30
+							input(id="radio-val-1" type="radio" name="radio" checked)
+							label(for="radio-val-1") Все заявки
+							input(id="radio-val-2" type="radio" name="radio")
+							label(for="radio-val-2") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить					
+					.tabs-content.js-tabs-content(data-id="#js-tab-2")
+						.mar-bot-30
+							input(id="radio-val-1-2" type="radio" name="radio" checked)
+							label(for="radio-val-1-2") Все заявки
+							input(id="radio-val-2-3" type="radio" name="radio")
+							label(for="radio-val-2-3") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+					.tabs-content.js-tabs-content(data-id="#js-tab-3")
+						.mar-bot-30
+							input(id="radio-val-1-2" type="radio" name="radio" checked)
+							label(for="radio-val-1") Все заявки
+							input(id="radio-val-2" type="radio" name="radio")
+							label(for="radio-val-2") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить					
+					.tabs-content.js-tabs-content(data-id="#js-tab-4")
+						.mar-bot-30
+							input(id="radio-val-1" type="radio" name="radio" checked)
+							label(for="radio-val-1") Все заявки
+							input(id="radio-val-2" type="radio" name="radio")
+							label(for="radio-val-2") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+					.tabs-content.js-tabs-content(data-id="#js-tab-5")
+						.mar-bot-30
+							input(id="radio-val-1" type="radio" name="radio" checked)
+							label(for="radio-val-1") Все заявки
+							input(id="radio-val-2" type="radio" name="radio")
+							label(for="radio-val-2") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить					
+					.tabs-content.js-tabs-content(data-id="#js-tab-6")
+						.mar-bot-30
+							input(id="radio-val-1" type="radio" name="radio" checked)
+							label(for="radio-val-1") Все заявки
+							input(id="radio-val-2" type="radio" name="radio")
+							label(for="radio-val-2") Только не прочитанные заявки
+						form.inline.form-top
+							.search-con
+								input.inp-text(type="text" placeholder="Найти новость")
+							.dates.inline
+								span с
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+								a(href="#").js-open-cal.cal
+								span до
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+								a(href="#").js-open-cal.cal
+							input(type="submit" value="Найти")
+						.mar-bot-30
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange ООО «Амфора»
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
+						.editbox
+							.editbox-prev
+								img(src="img/content/180-135-3-no-bd.jpg", alt="")
+							.editbox-meta
+								.col-2
+									.date 13 октября 2014
+									.text.font-grey
+										a(href="#").link-black Изготовление деталей
+										p Изготовление деталей типа тел вращения
+										p
+											span.font-black Описание: 
+											| участок станков
+								.col-2.valign
+									.user: a(href="#").link-orange Константин <br>Константинопольский
+									.all: a(href="#").font-grey.fz11 Все заявки этого пользователя
+							.editbox-admin
+								a(href="#").ok Одобрить
+								.sep &nbsp;
+								a(href="#").cancel Отклонить
