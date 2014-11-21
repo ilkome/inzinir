@@ -109,6 +109,25 @@ $(document).ready(function() {
 		}
 	})
 
+	// ==================================================
+	
+	$(".js-show-objects").click(function (e) {
+		e.preventDefault();
+		var thisis = $(this);
+		var item = thisis.closest(".js-object-box");
+		var content = item.find(".js-object-con");
+		
+		console.log(item)
+		console.log(content)
+
+		if(item.hasClass("active")) {
+			item.removeClass("active");
+			content.slideUp();
+		} else {
+			item.addClass("active");
+			content.slideDown();
+		}
+	});
 
 
 	// Закрытие по клику в любой части экрана
