@@ -3,8 +3,7 @@
 <!--	Simple Communication-->
 <html>
   <head>
-    <title>ИП 
-    </title>
+    <title>ИП - Главная</title>
     <!-- Meta-->
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -13,10 +12,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/sweet-alert.css" rel="stylesheet">
+    <link href="css/lightSlider.css" rel="stylesheet">
+    <link href="css/jquery.datetimepicker.css" rel="stylesheet">
     <!-- Scripts-->
     <script src="js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/jquery.lightSlider.min.js" type="text/javascript"></script>
+    <script src="js/jquery.datetimepicker.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
   </head>
   <body>
@@ -375,50 +378,83 @@
         <div class="main-width main-wrap">
           <div class="pathway">
             <ul>
-              <li><a href="#">Расширенный поиск</a></li>
+              <li>
+                <!--TODO: change to button--><a href="#">Расширенный поиск</a>
+              </li>
             </ul>
           </div>
-          <div class="main-full">
-            <div class="advsearch">
-              <div class="advsearch-config">
-                <div class="where">
-                  <div class="filed">
-                    <input type="text" placeholder="Программы" class="inp-filed">
-                    <div class="words"><a href="#" class="active">Все слова</a><a href="#">Любое слово</a></div>
-                    <div class="select">
-                      <input id="radio-val-1" type="radio" name="radio" checked>
-                      <label for="radio-val-1">Только в названиях</label>
-                      <input id="radio-val-2" type="radio" name="radio">
-                      <label for="radio-val-2">Во всех текстах</label>
-                    </div>
-                  </div>
+          <div class="form-holder">
+            <form name="search-form" action="/search" method="post">
+              <div class="form-filter-1">
+                <input type="text" name="search-query" placeholder="Поиск">
+                <input id="radio-val-1" type="radio" name="radio" checked>
+                <label for="radio-val-1">Только в названиях</label>
+                <input id="radio-val-2" type="radio" name="radio">
+                <label for="radio-val-2">Во всех текстах</label>
+                <div class="input-holder">
+                  <input type="radio" id="all-words" name="radio-2" checked>
+                  <label for="all-words">Все слова</label>
+                  <input type="radio" id="any-words" name="radio-2">
+                  <label for="any-words">Любое из слов</label>
                 </div>
-                <div class="cats">
-                  <h3>
-                     
-                    В раздеалах<span>(4)</span>
-                  </h3>
-                  <div class="l-col4">
-                    <div class="check">
-                      <input id="checkbox-val-3" type="checkbox" name="radio">
-                      <label for="checkbox-val-3">Аналитические статьи</label>
-                    </div>
-                    <div class="check">
-                      <input id="checkbox-val-4" type="checkbox" name="radio">
-                      <label for="checkbox-val-4">Дискусси</label>
-                    </div>
-                    <div class="check">
-                      <input id="checkbox-val-5" type="checkbox" name="radio">
-                      <label for="checkbox-val-5">Документы</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="action"><a href="#" class="btn-orange-wide inline">Искать</a></div>
               </div>
-              <div class="advsearch-results-info"><span class="font-black fz14">Результатов: примерно 10 345 (0,45 сек.) <br></span><span>Показаны результаты по запросу <a href="#">Программы <br></a></span><span>Искать вместо этого <a href="#">Программы вернут</a></span></div>
-              <div class="advsearch-results">
-                <div class="advsearch-result"></div>
-              </div>
+              <div class="form-filter-2">
+                <h4>В разделах <a href="#">(4)</a></h4>
+                <input id="analytic-article" type="checkbox" name="radio">
+                <label for="analytic-article">Аналитические статьи</label>
+                <input id="successful-history" type="checkbox" name="radio">
+                <label for="successful-history">Истории успеха</label>
+                <input id="organizations" type="checkbox" name="radio">
+                <label for="organizations">Организации</label>
+                <input id="developments" type="checkbox" name="radio">
+                <label for="developments">События</label>
+                <input id="discussion" type="checkbox" name="radio">
+                <label for="discussion">Дискуссии</label>
+                <input id="news" type="checkbox" name="radio">
+                <label for="news">Новости</label>
+                <input id="needs" type="checkbox" name="radio">
+                <label for="needs">Потребности</label>
+                <input id="links" type="checkbox" name="radio">
+                <label for="links">Ссылки</label>
+                <input id="documents" type="checkbox" name="radio">
+                <label for="documents">Документы</label>
+                <input id="equipment" type="checkbox" name="radio">
+                <label for="equipment">Оборудование</label>
+                <input id="rid" type="checkbox" name="radio">
+                <label for="rid">РИД</label>
+                <input id="services" type="checkbox" name="radio">
+                <label for="services">Услуги</label>
+              </div><a href="#" class="btn-orange-wide inline">Искать</a>
+            </form>
+          </div>
+          <div class="serp-holder">
+            <div class="serp-info">
+              <h5>Результатов: примерно 10 345 (0,45 сек)</h5>
+              <p>Показаны результаты по запросу<a href="#"> Програмы</a></p>
+              <p>Искать вместо этого<a href="#"> Програмы вернут</a></p>
+            </div>
+            <div class="serp-result">
+              <ul>
+                <!--TODO make in loop-->
+                <li>
+                  <h4>В разделе «Новости»<a href="#"> (23)</a></h4>
+                  <p>в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей</p>
+                  <p><a href="#">новые программы вернут рынок национальным производителям</a></p>
+                  <p>ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии</p><a href="#" class="show-all-link">Смотреть все</a>
+                </li>
+                <li>
+                  <h4>В разделе «Новости»<a href="#"> (23)</a></h4>
+                  <p>в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей</p>
+                  <p><a href="#">новые программы вернут рынок национальным производителям</a></p>
+                  <p>ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии</p><a href="#" class="show-all-link">Смотреть все</a>
+                </li>
+                <li>
+                  <h4>В разделе «Новости»<a href="#"> (23)</a></h4>
+                  <p>в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей</p>
+                  <p><a href="#">новые программы вернут рынок национальным производителям</a></p>
+                  <p>ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии</p><a href="#" class="show-all-link">Смотреть все</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

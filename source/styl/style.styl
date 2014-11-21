@@ -3226,3 +3226,104 @@ footer
 						background url(../img/icons/circular-add-h.png) no-repeat center
 					&:hover	&-text
 						color #999
+						
+
+
+.form-holder
+	padding 30px
+	background #fafafa
+	border 1px solid #e6e6e6
+	.form-filter-1
+		input[name="search-query"]
+			width 510px
+			border 1px solid #cdcdcd
+			font-weight bold
+			margin 0 30px 0 0
+			font-size 18px
+			&:hover, &:focus
+				box-shadow 1px 1px 5px rgba(204, 204, 204, 0.75) inset
+		#radio-val-1 + label
+			margin-right 40px
+		.input-holder
+			width 510px
+			text-align right
+			[name="radio-2"] + label
+				font-size 10px
+				line-height 18px
+				margin 0 0 0 25px
+			[name="radio-2"]:checked + label
+				color: #ff5700
+				border-bottom  1px dotted #ff5700
+			label
+				&:before
+					display none
+	.form-filter-2
+		h4
+			text-transform uppercase
+			color #3e3e3e
+			margin 20px 0 15px 0
+			mediumfont()
+			font-size 12pt
+		input[type="checkbox"] + label
+			width 195px
+			margin-bottom 10px
+	.btn-orange-wide
+		margin-top 25px
+.serp-holder
+	padding 30px 30px 10px 30px
+	border-right 1px solid #e6e6e6
+	border-left  1px solid #e6e6e6
+	border-bottom 1px solid #e6e6e6
+	.serp-info
+		padding 0px 0 30px 0
+		border-bottom 1px solid #f8f8f8
+		h5
+			font-size 14px
+			mainfont()
+			line-height 20px
+			margin-bottom 0
+			font-weight bold
+			color: #090909
+		p
+			font-size 12px
+			line-height 16px
+			margin-bottom 0
+  .serp-result
+		li
+			list-style none
+			margin 0
+			padding-bottom 15px
+			border-bottom: 1px solid #f8f8f8
+			&:last-child
+				border none
+		h4
+			mediumfont()
+			font-size 16px
+			line-height 20px
+			margin 30px 0 25px 0
+			color: #303030
+		p
+			font-size 14px
+			line-height 16px
+			margin 0 0 10px 0
+			&:before
+				content "..."
+			&:after
+				content "..."
+			.bold
+				font-weight: bold
+				color: #303030
+		.show-all-link
+			mainfont()
+			line-height 20px
+			display inline-block
+			margin 15px 0 0 0
+			font-size: 14px;
+			&:before
+				content ""
+				height 15px
+				width 17px
+				background url('../img/icons/plus-square.png') 0 0 no-repeat
+				display inline-block
+				margin-right 10px
+				margin-bottom -3px
