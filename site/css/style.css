@@ -2953,7 +2953,7 @@ h1.service-title {
 .box-talks-2 .bcon .item .iname {
   background: url("../img/quot.png") 0 3px no-repeat;
 }
-.box-talks-2 .bcon .item .iname span.name {
+.box-talks-2 .bcon .item .iname .name {
   display: inline-block;
   text-indent: 25px;
 }
