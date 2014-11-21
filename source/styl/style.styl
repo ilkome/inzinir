@@ -36,8 +36,8 @@ body
 i 
 	font-style normal
 
-//	КНОПКИ
 // ===============================================
+
 .btn-orange
 	display block;
 	padding 10px 10px;
@@ -471,7 +471,11 @@ color-orange()
 	margin-bottom 10px
 .mar-top-20m
 	margin-top -15px
-
+.sm-mar
+	margin-bottom 10px
+	&:last-child
+		margin-bottom 0
+		
 .imeta
 	clearfix(); 
 	a.btn-add
@@ -939,15 +943,110 @@ h1.service-title
 		&:hover
 			color #ff8c4d;
 
-.advsearch-results-info
-	line-height 16px
-	.font-black
-		line-height 20px
+.form-holder
+	padding 30px
+	background #fafafa
+	border 1px solid #e6e6e6
+	.form-filter-1
+		input[name="search-query"]
+			width 510px
+			border 1px solid #cdcdcd
+			font-weight bold
+			margin 0 30px 0 0
+			font-size 18px
+			&:hover, &:focus
+				box-shadow 1px 1px 5px rgba(204, 204, 204, 0.75) inset
+		#radio-val-1 + label
+			margin-right 40px
+		.input-holder
+			width 510px
+			text-align right
+			[name="radio-2"] + label
+				font-size 10px
+				line-height 18px
+				margin 0 0 0 25px
+			[name="radio-2"]:checked + label
+				color: #ff5700
+				border-bottom  1px dotted #ff5700
+			label
+				&:before
+					display none
+	.form-filter-2
+		.col
+			width 25%
+			display table-cell 
+			vertical-align top
+		h4
+			text-transform uppercase
+			color #3e3e3e
+			margin 20px 0 15px 0
+			mediumfont()
+			font-size 12pt
+		input[type="checkbox"] + label
+			width 195px
+			margin-bottom 10px
+	.btn-orange-wide
+		margin-top 25px
+.serp-holder
+	padding 30px 30px 10px 30px
+	border-right 1px solid #e6e6e6
+	border-left  1px solid #e6e6e6
+	border-bottom 1px solid #e6e6e6
+	.serp-info
+		padding 0px 0 30px 0
+		border-bottom 1px solid #f8f8f8
+		h5
+			font-size 14px
+			mainfont()
+			line-height 20px
+			margin-bottom 0
+			font-weight bold
+			color: #090909
+		p
+			font-size 12px
+			line-height 16px
+			margin-bottom 0
+  .serp-result
+		li
+			list-style none
+			margin 0
+			padding-bottom 15px
+			border-bottom: 1px solid #f8f8f8
+			&:last-child
+				padding-bottom 0
+				border none
+		h4
+			mediumfont()
+			font-size 14px
+			line-height 20px
+			margin 30px 0 25px 0
+			color: #303030
+		p
+			font-size 14px
+			line-height 16px
+			margin 0 0 10px 0
+			&:before
+				content "..."
+			&:after
+				content "..."
+			.bold
+				font-weight: bold
+				color: #303030
+		.show-all-link
+			mainfont()
+			line-height 20px
+			display inline-block
+			margin 15px 0 0 0
+			font-size: 14px;
+			&:before
+				content ""
+				height 15px
+				width 17px
+				background url('../img/icons/plus-square.png') 0 0 no-repeat
+				display inline-block
+				margin-right 10px
+				margin-bottom -3px
 
-
-
-//	ОСНОВНОЙ СЛАЙДЕР
-// ===============================================
 .slider-index-wrap
 	position relative;
 	margin-top -20px;
@@ -998,9 +1097,6 @@ h1.service-title
 				right 25px;
 				transform rotate(-180deg);
 
-
-//	ВЕЛКОМ
-// ===============================================
 .organ-info
 	position relative;
 	//margin-top -20px;
@@ -1063,7 +1159,7 @@ h1.service-title
 			color #f85800;
 			border-color #f85800;  
 			background url("../img/icons/plus-big-a.png") center 40px no-repeat;
-// -----------------------------------------------
+
 .box-info
 	margin-bottom 20px;
 	padding-bottom 10px;
@@ -1123,7 +1219,7 @@ h1.service-title
 		.sep
 			margin 0 15px 10px 15px;
 			border-bottom 1px dotted #E5E5E5;
-// -----------------------------------------------
+
 .box-info-graph
 	margin-bottom 20px;
 	padding-bottom 10px;
@@ -1201,7 +1297,7 @@ h1.service-title
 			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
 			&:hover
 				color #ff8c4d;
-// -----------------------------------------------
+
 .box-info-one
 	margin-bottom 20px;
 	padding-bottom 10px;
@@ -1257,7 +1353,7 @@ h1.service-title
 			font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
 			&:hover
 				color #ff8c4d;
-// -----------------------------------------------
+
 .box-links
 	.item
 		margin-bottom 20px;
@@ -1284,7 +1380,7 @@ h1.service-title
 				background #fafafa url("../img/link.jpg") center center no-repeat;
 				&:hover
 					opacity .7;
-// -----------------------------------------------
+
 .box-doc-lnks
 	clearfix() 
 	width 100%
@@ -1313,6 +1409,7 @@ h1.service-title
 			padding-left 20px
 	
 
+
 //	ИНФО-БЛОКИ ПРАВОЙ КОЛОНКИ
 // ===============================================
 .box-right
@@ -1338,128 +1435,6 @@ h1.service-title
 			&:hover
 				color #ff8c4d; 
 
-//	ОКОШКИ
-// ===============================================
-.login-popup
-	&.enter-site
-		box-sizing border-box
-		width 400px
-		padding 40px 60px!important
-	h1 
-		color #333
-		font-size 14px
-		latoblack()
-		text-transform uppercase
-		margin 0
-		margin-bottom 28px 
-		text-align center
-	span
-		display table-cell
-		vertical-align middle
-		color #F85800
-		font-size 16px
-		text-transform uppercase
-	.social
-		width auto
-		vertical-align middle
-		padding 0!important
-		li
-			padding 0!important
-			margin-right 17px 
-			&:last-of-type
-				margin-right 0
-	.old-way
-		hr
-			width 100%
-			margin-top 17px
-		.or
-			position relative
-			top -8px
-			width 52px
-			text-align center
-			margin 0 auto
-			background #fff
-			line-height 1
-			margin-bottom 8px
-		form
-			.forgot-pass
-				line-height 40px 
-			.formgroup
-				clearfix()
-			label 
-				color #333
-				font-size 14px
-				line-height 40px
-			input 
-				full()
-				width 210px
-				height 40px
-				background-color #FFF
-				border 1px solid #e5e5e5
-				&:focus
-					box-shadow inset 0 0 5px rgba(204, 204, 204, 0.75)
-				&[type="submit"]
-					box-shadow none
-					width 280px
-					height 50px
-					border 3px solid #ff8c4d
-					color #333
-					font-size 16px
-					line-height 46px
-					padding 0 
-					latoblack()
-					text-transform uppercase
-					&:hover
-						border-color #f85800
-					&:active
-						border-color #f85800
-						background #f85800
-				&[type="checkbox"]+label
-					line-height 15px
-					color #999
-					font-size 12px
-					font-weight 400
-					margin-top 8px
-					margin-bottom 30px
-		.you-agree
-			width 252px
-			margin 0 auto
-			text-align center
-			margin-top 25px
-			a
-				color #999
-				text-decoration underline
-				&:hover
-					color-orange()
-					tdn() 
-	.call-to-register
-		position absolute
-		bottom -40px
-		left 0
-		width 400px
-		text-align center
-		latoblack()
-		font-size 14px
-		text-transform uppercase
-		text-shadow 0 1px 2px rgba(1, 1, 1, 0.2)
-		color #FFF
-.remodal-overlay
-	background alpha(#000, .2)
-	.remodal-close
-		position absolute 
-		right -40px 
-		top -40px
-		width 46px
-		height 46px
-		background url("../img/icons/close.png") no-repeat
-	.remodal
-		width auto
-		margin 0 auto
-		background #fff
-		padding 60px 40px
-		border 2px solid #1a1a1a
-
-// -----------------------------------------------
 .box-news
 	.bcon
 		padding 0 20px;
@@ -1517,7 +1492,7 @@ h1.service-title
 			strong
 				color #333
 				font-weight normal
-// -----------------------------------------------
+
 .box-talks
 	.bcon
 		.item
@@ -1556,7 +1531,7 @@ h1.service-title
 						background url("../img/icons/comments.png") 0 1px no-repeat; 
 						&:hover
 							color-orange()
-// -----------------------------------------------
+
 .box-events
 	.bcon
 		padding-bottom 20px;
@@ -1578,7 +1553,7 @@ h1.service-title
 	background #fff;
 	position relative; 
 	overflow hidden;
-// -----------------------------------------------
+
 .box-support
 	height 270px;
 	.bcon
@@ -1590,7 +1565,7 @@ h1.service-title
 				display block;
 			a:hover
 				transform scale(1.2); 
-// -----------------------------------------------
+
 .box-sort-docs
 	position relative;
 	margin-bottom 20px;
@@ -1622,7 +1597,7 @@ h1.service-title
 		opacity .6; 
 		&:hover
 			opacity 1;
-// -----------------------------------------------
+
 .box-simular-docs
 	.bcon
 		padding-bottom 20px;
@@ -1644,7 +1619,7 @@ h1.service-title
 						color #ff8c4d;
 			.subitext
 				font-size 11px;
-// -----------------------------------------------
+
 .boxside-docs
 	.bcon
 		padding-bottom 20px;
@@ -1673,7 +1648,7 @@ h1.service-title
 			background url("../img/icons/document-add.png") 0 center no-repeat; 
 			&:hover
 				opacity .7;
-// -----------------------------------------------
+
 .boxside-links
 	background #fff;
 	.bcon
@@ -1703,7 +1678,7 @@ h1.service-title
 			color #f85800; 
 			&:hover
 				opacity .7;
-// -----------------------------------------------
+
 .boxside-sort-cat
 	.bcon
 		padding-bottom 10px;
@@ -1717,10 +1692,10 @@ h1.service-title
 			li.selected
 				a
 					color #333;
-// -----------------------------------------------
+
 .boxside-btns
 	padding-bottom 20px;
-// -----------------------------------------------
+
 .boxside-news
 	padding 25px 0 0 0;
 	background 0; 
@@ -1758,7 +1733,7 @@ h1.service-title
 			border none
 		.item:hover
 			border none
-// -----------------------------------------------
+
 .box-comments
 	padding-top 20px
 	.bwrite
@@ -1850,7 +1825,7 @@ h1.service-title
 					padding-top 15px
 					a
 						color #C33
-// -----------------------------------------------
+
 .box-page-nav
 	background #FAFAFA
 	border 1px solid #e5e5e5
@@ -1899,6 +1874,29 @@ h1.service-title
 		top 10px
 		text-align right
 		width 20px
+
+.contacts-box
+	padding 0px 0 10px 0px
+	color #999
+	span
+		display inline-block
+		padding-top 4px
+		padding-left 30px
+		padding-right 40px
+		margin-bottom 4px
+		a
+			color #999
+			tdn() 
+			&:hover
+				color-orange()
+	span.phone
+		background url("../img/icons/phone.png") no-repeat
+	span.email
+		background url("../img/icons/email.png") 2px 5px no-repeat
+		a.grey-link
+			color #999
+			&:hover
+				color-orange()
 
 // ===============================================
 
@@ -2540,7 +2538,127 @@ footer
 		opacity: .5;
 	100%
 		opacity: 1;
-		
+
+// ===============================================
+
+.login-popup
+	&.enter-site
+		box-sizing border-box
+		width 400px
+		padding 40px 60px!important
+	h1 
+		color #333
+		font-size 14px
+		latoblack()
+		text-transform uppercase
+		margin 0
+		margin-bottom 28px 
+		text-align center
+	span
+		display table-cell
+		vertical-align middle
+		color #F85800
+		font-size 16px
+		text-transform uppercase
+	.social
+		width auto
+		vertical-align middle
+		padding 0!important
+		li
+			padding 0!important
+			margin-right 17px 
+			&:last-of-type
+				margin-right 0
+	.old-way
+		hr
+			width 100%
+			margin-top 17px
+		.or
+			position relative
+			top -8px
+			width 52px
+			text-align center
+			margin 0 auto
+			background #fff
+			line-height 1
+			margin-bottom 8px
+		form
+			.forgot-pass
+				line-height 40px 
+			.formgroup
+				clearfix()
+			label 
+				color #333
+				font-size 14px
+				line-height 40px
+			input 
+				full()
+				width 210px
+				height 40px
+				background-color #FFF
+				border 1px solid #e5e5e5
+				&:focus
+					box-shadow inset 0 0 5px rgba(204, 204, 204, 0.75)
+				&[type="submit"]
+					box-shadow none
+					width 280px
+					height 50px
+					border 3px solid #ff8c4d
+					color #333
+					font-size 16px
+					line-height 46px
+					padding 0 
+					latoblack()
+					text-transform uppercase
+					&:hover
+						border-color #f85800
+					&:active
+						border-color #f85800
+						background #f85800
+				&[type="checkbox"]+label
+					line-height 15px
+					color #999
+					font-size 12px
+					font-weight 400
+					margin-top 8px
+					margin-bottom 30px
+		.you-agree
+			width 252px
+			margin 0 auto
+			text-align center
+			margin-top 25px
+			a
+				color #999
+				text-decoration underline
+				&:hover
+					color-orange()
+					tdn() 
+	.call-to-register
+		position absolute
+		bottom -40px
+		left 0
+		width 400px
+		text-align center
+		latoblack()
+		font-size 14px
+		text-transform uppercase
+		text-shadow 0 1px 2px rgba(1, 1, 1, 0.2)
+		color #FFF
+.remodal-overlay
+	background alpha(#000, .2)
+	.remodal-close
+		position absolute 
+		right -40px 
+		top -40px
+		width 46px
+		height 46px
+		background url("../img/icons/close.png") no-repeat
+	.remodal
+		width auto
+		margin 0 auto
+		background #fff
+		padding 60px 40px
+		border 2px solid #1a1a1a
 
 
 //	.bcon-mod
@@ -3226,109 +3344,3 @@ footer
 						background url(../img/icons/circular-add-h.png) no-repeat center
 					&:hover	&-text
 						color #999
-						
-
-
-.form-holder
-	padding 30px
-	background #fafafa
-	border 1px solid #e6e6e6
-	.form-filter-1
-		input[name="search-query"]
-			width 510px
-			border 1px solid #cdcdcd
-			font-weight bold
-			margin 0 30px 0 0
-			font-size 18px
-			&:hover, &:focus
-				box-shadow 1px 1px 5px rgba(204, 204, 204, 0.75) inset
-		#radio-val-1 + label
-			margin-right 40px
-		.input-holder
-			width 510px
-			text-align right
-			[name="radio-2"] + label
-				font-size 10px
-				line-height 18px
-				margin 0 0 0 25px
-			[name="radio-2"]:checked + label
-				color: #ff5700
-				border-bottom  1px dotted #ff5700
-			label
-				&:before
-					display none
-	.form-filter-2
-		.col
-			width 25%
-			display table-cell 
-			vertical-align top
-		h4
-			text-transform uppercase
-			color #3e3e3e
-			margin 20px 0 15px 0
-			mediumfont()
-			font-size 12pt
-		input[type="checkbox"] + label
-			width 195px
-			margin-bottom 10px
-	.btn-orange-wide
-		margin-top 25px
-.serp-holder
-	padding 30px 30px 10px 30px
-	border-right 1px solid #e6e6e6
-	border-left  1px solid #e6e6e6
-	border-bottom 1px solid #e6e6e6
-	.serp-info
-		padding 0px 0 30px 0
-		border-bottom 1px solid #f8f8f8
-		h5
-			font-size 14px
-			mainfont()
-			line-height 20px
-			margin-bottom 0
-			font-weight bold
-			color: #090909
-		p
-			font-size 12px
-			line-height 16px
-			margin-bottom 0
-  .serp-result
-		li
-			list-style none
-			margin 0
-			padding-bottom 15px
-			border-bottom: 1px solid #f8f8f8
-			&:last-child
-				padding-bottom 0
-				border none
-		h4
-			mediumfont()
-			font-size 14px
-			line-height 20px
-			margin 30px 0 25px 0
-			color: #303030
-		p
-			font-size 14px
-			line-height 16px
-			margin 0 0 10px 0
-			&:before
-				content "..."
-			&:after
-				content "..."
-			.bold
-				font-weight: bold
-				color: #303030
-		.show-all-link
-			mainfont()
-			line-height 20px
-			display inline-block
-			margin 15px 0 0 0
-			font-size: 14px;
-			&:before
-				content ""
-				height 15px
-				width 17px
-				background url('../img/icons/plus-square.png') 0 0 no-repeat
-				display inline-block
-				margin-right 10px
-				margin-bottom -3px
