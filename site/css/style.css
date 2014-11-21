@@ -5282,6 +5282,11 @@ footer .copy {
 .form-holder .form-filter-1 .input-holder label:before {
   display: none;
 }
+.form-holder .form-filter-2 .col {
+  width: 25%;
+  display: table-cell;
+  vertical-align: top;
+}
 .form-holder .form-filter-2 h4 {
   text-transform: uppercase;
   color: #3e3e3e;
@@ -5326,11 +5331,12 @@ footer .copy {
   border-bottom: 1px solid #f8f8f8;
 }
 .serp-result li:last-child {
+  padding-bottom: 0;
   border: none;
 }
 .serp-result h4 {
   font-family: 'latomedium';
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin: 30px 0 25px 0;
   color: #303030;

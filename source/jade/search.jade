@@ -21,7 +21,6 @@ block append content
 		.pathway
 			ul
 				li
-					//TODO: change to button
 					a(href="#") Расширенный поиск
 		//------------------------------------------------
 		.form-holder
@@ -40,30 +39,35 @@ block append content
 						label(for="any-words") Любое из слов
 				.form-filter-2
 					h4 В разделах <a href="#">(4)</a>
-					input(id="analytic-article" type="checkbox" name="radio")
-					label(for="analytic-article") Аналитические статьи
-					input(id="successful-history" type="checkbox" name="radio")
-					label(for="successful-history") Истории успеха
-					input(id="organizations" type="checkbox" name="radio")
-					label(for="organizations") Организации
-					input(id="developments" type="checkbox" name="radio")
-					label(for="developments") События
-					input(id="discussion" type="checkbox" name="radio")
-					label(for="discussion") Дискуссии
-					input(id="news" type="checkbox" name="radio")
-					label(for="news") Новости
-					input(id="needs" type="checkbox" name="radio")
-					label(for="needs") Потребности
-					input(id="links" type="checkbox" name="radio")
-					label(for="links") Ссылки
-					input(id="documents" type="checkbox" name="radio")
-					label(for="documents") Документы
-					input(id="equipment" type="checkbox" name="radio")
-					label(for="equipment") Оборудование
-					input(id="rid" type="checkbox" name="radio")
-					label(for="rid") РИД
-					input(id="services" type="checkbox" name="radio")
-					label(for="services") Услуги
+					.col
+						input(id="analytic-article" type="checkbox" name="radio")
+						label(for="analytic-article") Аналитические статьи
+						input(id="discussion" type="checkbox" name="radio")
+						label(for="discussion") Дискуссии
+						input(id="documents" type="checkbox" name="radio")
+						label(for="documents") Документы
+					.col
+						input(id="successful-history" type="checkbox" name="radio")
+						label(for="successful-history") Истории успеха
+						input(id="news" type="checkbox" name="radio")
+						label(for="news") Новости
+						input(id="equipment" type="checkbox" name="radio")
+						label(for="equipment") Оборудование
+					.col
+						input(id="organizations" type="checkbox" name="radio")
+						label(for="organizations") Организации
+						input(id="needs" type="checkbox" name="radio")
+						label(for="needs") Потребности
+						input(id="rid" type="checkbox" name="radio")
+						label(for="rid") РИД
+					.col
+						input(id="developments" type="checkbox" name="radio")
+						label(for="developments") События
+						input(id="links" type="checkbox" name="radio")
+						label(for="links") Ссылки
+						input(id="services" type="checkbox" name="radio")
+						label(for="services") Услуги
+
 				a(href="#").btn-orange-wide.inline Искать
 		//------------------------------------------------
 		.serp-holder
@@ -75,7 +79,6 @@ block append content
 					a(href="#")  Програмы вернут
 			.serp-result
 				ul
-					//TODO make in loop
 					li
 						h4 В разделе «Новости»
 							a(href="#")  (23)
