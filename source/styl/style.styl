@@ -117,6 +117,10 @@ i
 		border-color #999999;
 	&:active
 		background-color #cccccc
+.btn-grey-dashed-big
+	@extend .btn-grey-dashed
+	padding 15px 35px
+	font-size 15px
 .btn-grey
 	display inline-block;
 	padding 10px 30px;
@@ -680,6 +684,26 @@ img.full
 		@extend .event-organizers .contacts
 		span
 			display block
+
+.order-service-cont_fl
+	@extend .order-service-cont	
+	float right
+	margin-right -20px
+	.btn-grey-dashed-big
+		width 260px
+		full() 
+	.contacts
+		@extend .event-organizers .contacts
+		width 260px
+		display none
+		float left
+		padding 5px 0 0 20px
+		text-align center
+		span
+			display block	
+		.contacts-in
+			display inline-block
+			text-align right
 .reg-black
 	regular()
 	color #333333
