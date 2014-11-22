@@ -231,7 +231,7 @@ input[type=checkbox] + label {
   height: 22px;
   padding-left: 30px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
   vertical-align: middle;
   cursor: pointer;
   background: url("../img/checkbox.png") no-repeat;
