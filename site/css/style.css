@@ -3234,7 +3234,7 @@ a.link-orange:hover {
 }
 .boxside-docs .badd a {
   display: block;
-  padding: 10px 40px;
+  padding: 10px 20px 10px 40px;
   font-size: 14px;
   text-decoration: none;
   color: #f85800;
