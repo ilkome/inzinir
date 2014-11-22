@@ -162,6 +162,45 @@ block append content
 									a(href="#") 225
 		//------------------------------------------`------
 		.main-right
+			.box-sort-docs.box-right
+				.bname
+					h3 Показать статьи
+				.bcon
+					.dates
+						.legend c датой публикации
+						.line
+							.td
+								span от
+							.td
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+							.td
+								a(href="#").js-open-cal.cal
+						.line
+							.td
+								span до
+							.td
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+							.td
+								a(href="#").js-open-cal.cal
+					.checks
+						.legend Тип мероприятия
+						.line
+							input(id="check-type-2" type="checkbox" name="radio" checked)
+							label(for="check-type-2") Конференция
+						.line
+							input(id="check-type-3" type="checkbox" name="radio")
+							label(for="check-type-3") Мастер-класс
+					.checks
+						.legend В городе
+						.line
+							input(id="check-city-2" type="checkbox" name="radio")
+							label(for="check-city-2") Москва
+						.line
+							input(id="check-city-3" type="checkbox" name="radio")
+							label(for="check-city-3") Пермь
+				.action
+					a(href="#") Показать
+
 			.box-news.box-right.box-news_dotted
 				.bname
 					h3 
