@@ -210,6 +210,12 @@ textarea {
   -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
 }
+textarea:hover {
+  box-shadow: 1px 1px 5px rgba(204,204,204,0.75) inset;
+}
+textarea:focus {
+  box-shadow: 1px 1px 5px rgba(204,204,204,0.75) inset;
+}
 textarea.error {
   border-color: #f00;
 }
@@ -847,7 +853,8 @@ i {
   padding: 15px 35px;
   font-size: 15px;
 }
-.btn-grey {
+.btn-grey,
+.btn-grey-wide {
   display: inline-block;
   padding: 10px 30px;
   text-align: center;
@@ -858,12 +865,18 @@ i {
   text-transform: uppercase;
   border: 3px solid #ccc;
 }
-.btn-grey:hover {
+.btn-grey:hover,
+.btn-grey-wide:hover {
   text-decoration: none;
   border-color: #999;
 }
-.btn-grey:active {
+.btn-grey:active,
+.btn-grey-wide:active {
   background-color: #ccc;
+}
+.btn-grey-wide {
+  padding: 10px 70px;
+  font-size: 15px;
 }
 .btn-orange-empty {
   margin-top: 10px;
@@ -883,6 +896,28 @@ i {
 .inline {
   display: inline-block;
   margin-right: 20px;
+}
+.textarea-full {
+  box-sizing: border-box;
+  width: 100%;
+}
+.refusal-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.refusal-text {
+  padding-bottom: 20px;
+}
+.refusal-text textarea {
+  width: 500px;
+  height: 150px;
+}
+.refusal-action {
+  text-align: right;
+}
+.refusal-action .inline {
+  margin: 0;
 }
 .sidebar {
   z-index: 101;
@@ -1511,7 +1546,7 @@ i {
 .social {
   display: table-cell;
   padding: 0 10px 0 20px;
-  width: 40%;
+  width: 45%;
   text-align: right;
   vertical-align: top;
 }

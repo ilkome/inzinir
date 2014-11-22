@@ -1,0 +1,92 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.remodal.js", type="text/javascript")
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.hide
+		.remodal(data-remodal-id="reasons-refusal").login-popup
+			h3.center.refusal-name Причина отказа
+			.refusal-text
+				textarea.textarea-full
+			.refusal-action
+				a(href="#").btn-orange-wide.inline.remodal-ok Отклонить
+	//------------------------------------------------
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") События
+				li >
+				li: a(href="#") ОБОРУДОВАНИЕ
+				li >
+				li Станок токарный с ЧПУ
+		//------------------------------------------------
+		.main-left
+			.box-text-item
+				.bmeta
+					.date 19 сентября 2014 года
+					.comments
+						a(href="#") 61
+					.views 2726
+				.bcon.bcon-text-style
+					.event-item.mar-bot-30
+						.icon
+							h1.service-title Станок токарный с ЧПУ
+							.irating.mar-bot-10.irating-service
+								span DELTAMAB 400
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+							.tags
+								a(href="#").tags-item.js-open-coming-soon
+									span.name Машиностроение
+									span.count.empty
+								a(href="#").tags-item.js-open-coming-soon
+									span.name Металлообработка
+									span.count 388
+						.iprev
+							img(src="img/content/equip-1.jpg", alt="")
+					p.grey-without-strong
+						strong Назначение <br>
+						| Изготовление деталей типа тел вращения
+					p.grey-without-strong
+						strong Описание <br>
+						| Прецизионный токарный станок с ЧПУ выполнен по прогрессивной схеме компоновки с расположением револьверной головки на наклонных направляющих, что увеличивает жесткость конструкции, позволяет уменьшить размеры станка по ширине и оптимально распределить по направляющим нагрузки, образующиеся в процессе резания.
+					p.grey-without-strong
+						strong Основные характеристики <br>
+						| Наибольший диаметр обрабатываемого изделия – 600 мм <br>Число управляемых координат – 2
+					p.grey-without-strong
+						strong Год выпуска: 
+						| 2012
+					p.grey-without-strong
+						strong Производитель:
+						| SOMAB, Франция
+					p.grey-without-strong
+						strong Контакты: 
+						| +7 495 342-3424, mail@mail.ru
+					p &nbsp;
+					.inline
+						a(href="#").btn-orange-wide.inline Одобрить
+						a(href="#reasons-refusal").btn-grey-wide Отклонить
+
+		.main-right
+			.box-support
+				.bcon
+					.item
+						a(href="#") 
+							img(src="img/content/logo-minprom.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-smr.png", alt="")
+					.item
+						a(href="#") 
+							img(src="img/content/logo-ibs.png", alt="")

@@ -136,6 +136,10 @@ i
 		border-color #999999;
 	&:active
 		background-color #cccccc
+.btn-grey-wide
+	@extend .btn-grey
+	padding 10px 70px
+	font-size 15px
 .btn-orange-empty
 	margin-top 10px
 	display inline-block
@@ -154,8 +158,23 @@ color-orange()
 .inline
 	display inline-block
 	margin-right 20px
+.textarea-full
+	full() 
+	width 100%
 
-
+.refusal-name
+	font-size 14px
+	text-transform uppercase
+	margin-bottom 30px
+.refusal-text
+	padding-bottom 20px
+	textarea
+		width 500px
+		height 150px
+.refusal-action
+	text-align right
+	.inline
+		margin 0
 
 //	ЛЕВАЯ КОЛОНКА
 // ===============================================
@@ -520,7 +539,7 @@ color-orange()
 
 .social
 	display table-cell; padding 0 10px 0 20px;
-	width 40%;
+	width 45%;
 	text-align right; vertical-align top;
 	ul
 		lino();
@@ -1204,7 +1223,6 @@ a.link-orange
 
 .organ-info
 	position relative;
-	//margin-top -20px;
 	margin-bottom 20px;
 	.prev
 		img
