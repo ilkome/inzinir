@@ -15,7 +15,6 @@ $(document).ready(function() {
 	//	Page article content nav
 	// ==================================================
 	$(".box-page-nav a").on("click", function(e){
-		console.log("this");
 		var thisis = $(this);
 		var currentLi = thisis.closest("li");
 		var child = thisis.closest("li").find("ol li");
@@ -111,14 +110,44 @@ $(document).ready(function() {
 
 	// ==================================================
 	
+	$(".js-edit-link").click(function (e) {
+		e.preventDefault();
+		var thisis = $(this);
+		var box = thisis.closest(".js-edit-item-box");
+		var item = box.find(".js-edit-item");
+
+		if(item.is(':visible')) {
+			item.slideUp();
+		} else {
+			item.slideDown();
+		}
+	});
+
+	// ==================================================
+
+	$(".js-edit-link-replace").click(function (e) {
+		e.preventDefault();
+		var thisis = $(this);
+		var box = thisis.closest(".js-edit-item-box");
+		var edit = box.find(".js-edit-item");
+		var item = box.find(".js-item");
+
+		if(edit.is(':visible')) {
+			edit.hide();
+			item.css({display: "table"});
+		} else {
+			edit.css({display: "table"});
+			item.hide();
+		}
+	});
+
+	// ==================================================
+	
 	$(".js-show-objects").click(function (e) {
 		e.preventDefault();
 		var thisis = $(this);
 		var item = thisis.closest(".js-object-box");
 		var content = item.find(".js-object-con");
-		
-		console.log(item)
-		console.log(content)
 
 		if(item.hasClass("active")) {
 			item.removeClass("active");
@@ -298,9 +327,9 @@ $(document).ready(function() {
 			selectedContent.addClass("tab-active");
 			slectedContentHeight = selectedContent.innerHeight();
 
-			selectedContent.closest(".tabs-wrapper").animate({
-				'height': slectedContentHeight
-			}, 200);
+			//selectedContent.closest(".tabs-wrapper").animate({
+			//	'height': slectedContentHeight
+			//}, 200);
 
 			window.location.hash = this.hash;
 			return false;
@@ -400,6 +429,19 @@ $(document).ready(function() {
 
 	// Summernote
 	if ( $.isFunction($.fn.summernote) ) {
-		$('.summernote').summernote();
+		$('.summernote').summernote(
+			{
+			  toolbar: [
+			    //[groupname, [button list]]
+			     
+			    ['style', ['bold', 'italic', 'underline', 'clear']],
+			    ['font', ['strikethrough']],
+			    ['fontsize', ['fontsize']],
+			    ['color', ['color']],
+			    ['para', ['ul', 'ol', 'paragraph']],
+			    ['height', ['height']],
+			  ]
+			}
+		);
 	}
 });
