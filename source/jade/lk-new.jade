@@ -1,0 +1,412 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Моя организация
+
+
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Информация
+				li.sep >
+				li
+					a(href="#") Моя организация
+		//------------------------------------------------
+		.organ-info
+			ul.admin-box--column
+				li.admin-edit
+				li.admin-delete
+			.prev
+				img(src="img/content/pic.png", alt="")
+			.pic
+				img(src="img/content/logo-inz.png", alt="")
+			.info
+				.name ООО «ГСИ»
+				.desc Отраслевые компетенции Компании — нефтяная и газовая промышленность, нефтехимическая и химическая промышленность, черная и цветная.
+			.contacts
+				.td
+					ul
+						li.phone +7 (495) 258-84-20
+						li.fax +7 (495) 258-60-64
+						li.email 
+							a(href="#") info@vebeng.ru
+				.td
+					ul
+						li.map 107078, Россия, Москва, <br>ул. Маши Порываевой, д.7, стр. 2.
+		//------------------------------------------------
+		.main-full
+			.box-info
+				.box
+					.bname
+						h3 
+							a(href="#") Оборудование
+					.bcon.bcon--padding
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iprev
+									a(href="#") 
+										img(src="img/content/200-120-1.jpg", alt="")
+								.iname
+									a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+								.itext Национальный исследовательский Томский политехнический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iprev
+									a(href="#") 
+										img(src="img/content/200-120-2.jpg", alt="")
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext Кубанский государственный технологический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li
+						.col-3_sep
+						.col-3_border.item-adder
+							a(href="#").item-adder--link + <br>Добавить оборудование																	
+						.clear
+						.all_full
+							a(href="#") Все оборудование
+						.sep_full
+				//----------------------------
+				.box
+					.bname
+						h3 
+							a(href="#") Высокотехнологичные Услуги
+					.bcon.bcon--padding
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+								.itext Национальный исследовательский Томский политехнический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext Кубанский государственный технологический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li
+						.col-3_sep
+						.col-3_border.item-adder
+							a(href="#").item-adder--link + <br>Добавить услугу
+						.clear
+						.all_full
+							a(href="#") Все услуги
+						.sep_full
+				//----------------------------
+				.box
+					.bname
+						h3 
+							a(href="#") Программное обеспечение
+					.bcon.bcon--padding
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Разработка систем диспетчерского контроля и управления
+								.itext ЗАО Самфинг <br>
+									a(href="#") http://elesy.ru/engineering/services
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext ЗАО «ЭлеСи» <br>
+									a(href="#") http://elesy.ru/engineering/services
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border.item-adder
+							a(href="#").item-adder--link + <br>Добавить программное обеспечение
+						.clear
+						.all_full
+							a(href="#") Все программы
+						.sep_full
+			//------------------------------------------------
+			.box-info.orange
+				.box
+					.bname
+						h3 
+							a(href="#") Потребности в услугах и оборудовании
+					.bcon.bcon--padding
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.idate 19 сентября 2014 года
+								.iname
+									a(href="#") Разработка систем диспетчерского контроля и управления
+								.itext 	
+									p
+										b Описание задачи: 
+										| Здравствуйте, прошу сообщить о возможности проектирования грейферов.
+									p С уважением, Олег Джагупов
+									p
+										b Контакт: 
+										| Djagupovol@mzmo.ru
+								.isuggest
+									a(href="#") Предложить решение
+						.col-3_sep
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.idate 19 сентября 2014 года
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext 	
+									p
+										b Описание задачи: 
+										| Здравствуйте, прошу сообщить о возможности проектирования грейферов.
+									p С уважением, Олег Джагупов
+									p
+										b Контакт: 
+										| Djagupovol@mzmo.ru
+								.isuggest
+									a(href="#") Предложить решение
+						.col-3_sep
+						.col-3_border.item-adder
+							a(href="#").item-adder--link + <br>Добавить потребность
+						.clear
+						.all_full
+							a(href="#") Все потребности
+			//------------------------------------------------
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Результаты интеллектуальной деятельности
+				.bcon
+					.item.item--edit_border
+						ul.admin-box--column
+							li.admin-edit
+							li.admin-delete
+						.iname
+							a(href="#") Эскизные проекты роторов низкого давления тихоходной турбины мощностью свыше 1200 МВт с двумя ЦНД
+						.itext
+							p
+								b Наименование компании: 
+								| ООО «ГСИ»
+							p
+								b Вид РИД (РНТД): 
+								| Изобретение
+							p
+								b Наименование РИД (РНТД): 
+								| Микроэмульсионные композиции для создания трансдермальных и трансмукозальных форм фармацевтических средств и косметических препаратов, и способ их получения.
+							p
+								b Охранный документ:
+								| Патент №2481822 от 21.02.2012
+					.item-adder
+						a(href="#").item-adder--link + Добавить результат интеллектуальной деятельности
+					.clear
+					.all_full
+						a(href="#") Все результаты
+			//------------------------------------------------
+			.box-articles
+				.bname_norm
+					h3 
+						a(href="#") Результаты интеллектуальной деятельности
+				.item.item--edit_border
+					ul.admin-box--column
+						li.admin-edit
+						li.admin-delete
+					.item-cloud-talks_min.w80p
+						.iprev
+							.person
+								.closed-pic
+								.person__img
+									a(href="#")
+										img(src="img/content/ava-100.jpg", alt="img")
+								.person__name 
+									a(href="#") Олег Джагупов
+								ul.person__info 
+									li
+										a(href="mailto:Djagupovol@mzmo.ru") Djagupovol@mzmo.ru
+								.irating
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li
+						.icon
+							.cloud
+								.iname
+									span.closed ЗАКРЫТОЕ ! 
+									a(href="#") Решение задач методом анализа размерности
+								.itext 
+									p Серия мастер-классов для студентов, аспирантов и молодых ученых по изучению метода анализа размерности и решения задач этим методом.
+									.tags
+										a(href="#").tags-item
+											span.name Круглый стол
+											span.count 12
+							.answer 
+								p Обсуждение современные тенденции развития инноваций в сфере торговли основные принципы, функции и инструменты инновационного маркетинга...
+							.imeta.imeta_padside
+								.left-grey
+									| Обновлено 19 октября 2014 в 18:48 
+									a(href="#") Константином Заруцким
+								.right
+									.comments
+										a(href="#") 51
+									.views
+										a(href="#") 225
+				.item-adder
+						a(href="#").item-adder--link + Добавить обсуждение
+					.clear
+					.all_full
+						a(href="#") Все обсуждения
+			//------------------------------------------------
+			.box-articles
+				.bname_norm
+					h3 
+						a(href="#") События
+				.bcon
+					.item.item--edit_border
+						ul.admin-box--column
+							li.admin-edit
+							li.admin-delete
+						.item--edit--in.w80p
+							.iprev
+								img(src="img/content/180-135-1.jpg", alt="")
+							.icon
+								.iname
+									a(href="#") Состояние науки российской федерации
+								.itext С 27 по 31 октября 2014 года пройдет серия мастер-классов для студентов, аспирантов и молодых ученых по изучению метода анализа размерности и решения задач этим методом. На лекциях выступит профессор
+								.imore 
+									a(href="#") Читать полностью
+								.tags
+									a(href="#").tags-item
+										span.name Круглый стол
+										span.count.empty
+								.address-date
+									.ad-address Москва, ул. Сиреневый бульвар, д.4
+									.ad-date 27, 28 октября - с 14.00 до 16.00, <br>29, 30 октября - с 10.00 до 12.00
+								.imeta
+									.right.mar-top-20m
+										.comments
+											a(href="#") 51
+										.views
+											a(href="#") 225
+					.item-adder
+							a(href="#").item-adder--link + Добавить событие
+						.clear
+						.all_full
+							a(href="#") Все события
+			//------------------------------------------------
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Проекты
+				.bcon
+					.box-docs
+						.item.item--edit_pad
+							ul.admin-box--column
+								li.admin-edit
+								li.admin-delete
+							.file-list_nobg
+								a(href="#") JPG - 7 Мб
+								a(href="#") PDF - 12 Мб
+							.file-desc
+								.date Добавлен: 13 октября 2012
+								.text Свидетельство о государственной регистрации программы для ЭВМ № 2013610190 от 09.01.2013 (заявка № 2012619800).
+								.subtext Аспирант Назимов Алексей Игоревич, физический факультет, 2 год обучения
+								.tags
+									a(href="#").tags-item
+										span.name Выставки
+										span.count 12
+									a(href="#").tags-item
+										span.name Машиностроение
+										span.count.empty
+						.item-adder
+							a(href="#").item-adder--link + Добавить документ
+						.clear
+						.all_full
+							a(href="#") Все документы
+			//------------------------------------------------
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Статистика нТП
+				.bcon.table.w100p.pad-top-20
+					.col.w50p
+						img(src="img/content/graph.jpg", alt="")
+					.col
+						.ntp
+							.ntp__num
+								.ntp-line 
+									i.icon-ntp.icon-ntp_green
+									| +2,045.71
+								.ntp-line.ntp-line_down
+									i.icon-ntp.icon-ntp_orange
+									| +1,207.0
+							.ntp__info
+								.info-head Текущий НТП: 17%
+								.info-text Оборудование: 56 % <br>Услуги: 23 %<br>Программное обеспечение: 49 %<br>Результаты интеллектальной деятельности: 58 %

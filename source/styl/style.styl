@@ -1,7 +1,10 @@
 @import "common.styl"
 @import "_summernote.styl"
+
+
 min-height = "screen and (min-height: 768px)"
 min-width = "screen and (max-width 1350px)"
+
 
 body
 	position relative;
@@ -37,8 +40,10 @@ i
 	font-style normal
 .center
 	text-align center
-// ===============================================
 
+
+//	BTNs
+// ===============================================
 .btn-orange
 	display block;
 	padding 10px 10px;
@@ -147,6 +152,9 @@ i
 	font-size 12px
 	text-transform uppercase
 
+
+//	TEXT
+// ===============================================
 color-orange()
 	color #F85800 
 .font-black
@@ -155,12 +163,12 @@ color-orange()
 	font-size 14px
 .fz11
 	font-size 11px
-.inline
-	display inline-block
-	margin-right 20px
+	
 .textarea-full
 	full() 
 	width 100%
+
+// ===============================================
 
 .refusal-name
 	font-size 14px
@@ -175,6 +183,42 @@ color-orange()
 	text-align right
 	.inline
 		margin 0
+
+
+//	LAYOUT
+// ===============================================
+.table
+	display table
+.col
+	display table-cell 
+	vertical-align top
+.col-3
+	display table-cell 
+	table-layout fixed
+	width 32%
+	vertical-align top
+	// mod
+	&_sep
+		@extend .col-3
+		width 200px
+	&_border
+		@extend .col-3
+		border 1px solid #e5e5e5	
+.w100p
+	width 100%
+.w50p
+	width 50%
+.w80p
+	width 80%
+.inline
+	display inline-block
+	margin-right 20px
+	
+// ===============================================	
+
+.box-info .bcon.bcon--padding
+	padding 0 20px
+	
 
 //	ЛЕВАЯ КОЛОНКА
 // ===============================================
@@ -489,6 +533,8 @@ color-orange()
 .sep-space
 	height 30px
 
+//	PADs MARGs
+// ===============================================
 .mar-bot-20
 	margin-bottom 20px
 .mar-bot-30
@@ -503,7 +549,13 @@ color-orange()
 		margin-bottom 0
 .mar-left-30
 	margin-left 30px
-	
+.pad-top-20
+	padding-top 20px
+.box-info-one .bcon.pad-top-20
+	padding-top 20px
+
+// ===============================================
+
 .imeta
 	clearfix(); 
 	a.btn-add
@@ -918,37 +970,38 @@ h1.service-title
 		.date
 			color #CCC
 			font-size 11px
-	.editbox-admin
-		position relative
-		display table-cell
-		background #fafafa
+.editbox-admin
+	position relative
+	display table-cell
+	background #fafafa
+	vertical-align middle
+	border-left 1px solid #e6e6e6
+	a
+		padding 60px 20px 30px 20px
+		display table-cell 
+		color #CCC
 		vertical-align middle
-		border-left 1px solid #e6e6e6
-		a
-			padding 60px 20px 30px 20px
-			display table-cell 
-			color #CCC
-			vertical-align middle
-			tdn() 
-			&:hover
-				color-orange()
-		a.ok
-			background url("../img/icons/prove.png")  center 40% no-repeat
-			&:hover, &:after
-				background url("../img/icons/prove-a.png") center 40% no-repeat
-		a.cancel
-			background url("../img/icons/delete.png") center 40% no-repeat
-			&:hover, &:after
-				background url("../img/icons/delete-h.png") center 40% no-repeat
-		.sep
-			display table-cell 
-			height 10px
-			border-right 1px solid #e6e6e6
-			width 1px
-			font-size 10px
-			content " "
-			margin-bottom -30px
-					
+		tdn() 
+		&:hover
+			color-orange()
+	a.ok
+		background url("../img/icons/prove.png")  center 40% no-repeat
+		&:hover, &:after
+			background url("../img/icons/prove-a.png") center 40% no-repeat
+	a.cancel
+		background url("../img/icons/delete.png") center 40% no-repeat
+		&:hover, &:after
+			background url("../img/icons/delete-h.png") center 40% no-repeat
+	.sep
+		display table-cell 
+		height 10px
+		border-right 1px solid #e6e6e6
+		width 1px
+		font-size 10px
+		content " "
+		margin-bottom -30px
+
+				
 a.link-black
 	color #333
 	&:hover
@@ -961,6 +1014,7 @@ a.link-orange
 	color #999
 
 .admin-box
+	z-index 10
 	position absolute 
 	right 20px 
 	top -30px
@@ -968,8 +1022,8 @@ a.link-orange
 	background #FAFAFA
 	border 1px solid #E5E5E5 
 	li
-		display inline-block
 		position relative
+		display inline-block
 		width 60px
 		height 60px
 		&:after
@@ -996,6 +1050,78 @@ a.link-orange
 			background url("../img/icons/delete-h.png")	center no-repeat;
 	.admin-orders
 		background url("../img/icons/list.png") center no-repeat	
+	
+	// mod
+	&--column
+		@extend .admin-box
+		top 10px 
+		right 0
+		border-right 0
+		li
+			display block
+			&:after
+				width 30px
+				height 1px
+				right 0
+				left 0
+				top 60px
+	&--columnpad
+		@extend .admin-box--column
+		right -10px
+
+
+
+.bcon--edit
+	display table
+.item--edit
+	position relative
+	float none
+	width auto
+	full() 
+	margin 0 10px
+	padding 10px 50px 10px 10px
+	//mod
+	&_border
+		@extend .item--edit
+		margin 0
+		border 1px solid #e5e5e5 !important
+	&_pad
+		@extend .item--edit
+		margin 0
+.item-adder
+	vertical-align middle
+	border 3px solid #cccccc
+	&--link
+		display inline-block
+		width 100%
+		full() 
+		padding 20px 20px
+		text-align center
+		color #333
+		font-size 21px
+		text-transform uppercase
+		font-weight 900
+		&:hover
+			tdn() 
+			color-orange()
+.box-info .bcon .item.item--edit
+	@extend .item--edit
+.box-info .bcon .item.item--edit_border
+	@extend .item--edit_border
+	
+.all_full
+	clear both;
+	padding 20px 0px 10px 0;
+	text-align right;
+	a
+		font-size 11px; text-transform uppercase; color #3f3f3f; tdn();
+		&:hover
+			color #ff8c4d; 
+.sep_full
+	margin 0 0px 10px 0px;
+	border-bottom 1px dotted #E5E5E5;
+		
+
 
 .orders-box
 	z-index 3
@@ -1264,6 +1390,37 @@ a.link-orange
 			li.map
 				background url("../img/icons/map.png") 0 0 no-repeat;
 						
+.ntp
+	// elem
+	&__num
+		height 100px
+		.ntp-line
+			display inline-block
+			margin-right 20px
+			font-size 14px
+			color #333	
+	&__info
+		.info-head
+			padding-bottom 20px
+			font-size 14px
+			color #333
+			line-height 16px
+				
+			
+		
+.icon-ntp
+	display inline-block
+	margin-top -1px
+	margin-right 10px
+	width 16px
+	height 16px
+	vertical-align middle
+	// mod
+	&_green
+		background url("../img/ntp-up.png") no-repeat
+	&_orange
+		background url("../img/ntp-down.png") no-repeat
+	
 
 //	ИНФО-БЛОКИ ЛЕВОЙ КОЛОНКИ
 // ===============================================
@@ -2025,6 +2182,7 @@ a.link-orange
 
 .box-docs
 	.item
+		position relative
 		margin-bottom 20px;
 		border 1px solid #E5E5E5;
 		.file-list
@@ -2040,6 +2198,11 @@ a.link-orange
 				background url("../img/icons/document.png") 0 center no-repeat;
 				&:hover
 					opacity .7; 
+			// mod
+			&_nobg
+				@extend .box-docs .item .file-list
+				width 22%
+				background none
 		.file-desc
 			display table-cell; padding 10px 20px;
 			vertical-align middle;
@@ -2148,11 +2311,16 @@ a.link-orange
 // ===============================================
 
 .box-articles
+	position relative
 	padding 20px;
 	border 1px solid #E5E5E5;
 	.bname
 		@extend .box-info .bname
 		margin -20px -20px 10px -20px
+		// mod
+		&_norm
+			@extend .box-info .bname
+			margin -20px -20px 0px -20px
 	.bcat
 		@extend .box-news-prev-cat .bcat
 	.item
@@ -2495,6 +2663,7 @@ a.link-orange
 		p
 			margin-bottom 10px
 .item-cloud-talks
+	position relative
 	@extend .item-cloud-one
 	.icon .cloud .itext
 		padding-bottom 0
@@ -2603,7 +2772,10 @@ a.link-orange
 		font-size 12px
 	.irating
 		float right 
-
+.item-cloud-talks_min
+	@extend .item-cloud-talks
+		border-bottom none
+		
 // ===============================================
 
 .tabs
