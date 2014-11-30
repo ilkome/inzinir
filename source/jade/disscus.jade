@@ -23,6 +23,10 @@ block append content
 			p Все заведенные темы, которые можно найти по тегам, все последние комментарии, комментарии к разделам и т. д.
 		//------------------------------------------------
 		.main-left
+			.search-con
+				form(action="#")
+					input(type="text", placeholder="Быстрый поиск по обсуждениям").inp-text
+					input(type="submit", value="").inp-submit
 			.box-articles
 				.item-cloud-talks
 					.iprev
