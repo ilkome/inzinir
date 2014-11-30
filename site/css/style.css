@@ -5349,6 +5349,14 @@ i {
 .btn-center-or {
   display: inline-block;
 }
+.width240 {
+  width: 240px;
+  box-sizing: border-box;
+}
+.width175 {
+  width: 175px;
+  box-sizing: border-box;
+}
 .font-black {
   color: #000;
 }
