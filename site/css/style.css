@@ -5358,6 +5358,14 @@ i {
 .fz11 {
   font-size: 11px;
 }
+.text_lh16 {
+  line-height: 16px;
+  margin-bottom: 0;
+}
+.text_lh16 p {
+  line-height: 16px;
+  margin-bottom: 10px;
+}
 .textarea-full {
   box-sizing: border-box;
   width: 100%;
@@ -5835,7 +5843,7 @@ i {
 .main-page {
   padding: 90px 40px 50px 240px;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
   .main-page {
     background: #fff;
   }
@@ -5846,7 +5854,7 @@ i {
   box-shadow: 0 0 10px rgba(1,1,1,0.15);
   background: #fff url("../img/main-bg-b.png") 0 bottom repeat-x;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
   .main-wrap {
     padding: 0 0 40px 0;
     box-shadow: none;
@@ -5886,7 +5894,6 @@ i {
   border-bottom: none;
 }
 .page-name {
-  width: 80%;
   padding-bottom: 40px;
   font-family: 'latolight';
 }
@@ -5896,6 +5903,7 @@ i {
   font-family: 'latolight';
 }
 .page-name p {
+  width: 80%;
   margin: 0;
   font-family: 'latolight';
   font-size: 18px;
@@ -6830,7 +6838,7 @@ a.link-orange:hover {
   border-bottom: 1px dotted #e5e5e5;
 }
 .orders-box {
-  z-index: 3;
+  z-index: 12;
   position: absolute;
   left: -1px;
   top: -30px;
