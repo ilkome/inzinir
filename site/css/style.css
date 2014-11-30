@@ -6293,6 +6293,7 @@ img.full {
 .order-service-cont,
 .order-service-cont_fl {
   padding: 20px 0;
+  height: 40px;
 }
 .order-service-cont:before,
 .order-service-cont_fl:before,
@@ -6358,7 +6359,7 @@ h1.service-title {
   width: 11px;
   height: 16px;
   margin: 0 0 0 5px;
-  vertical-align: bottom;
+  vertical-align: middle;
   background: url("../img/icons/updade-black.png") 0 center no-repeat;
 }
 .updade-black:hover {
@@ -8132,6 +8133,7 @@ textarea.inp-full {
 }
 .boxside-sort-cat .bcon ul li.selected a {
   color: #333;
+  font-weight: 600;
 }
 .boxside-btns {
   padding-bottom: 20px;
