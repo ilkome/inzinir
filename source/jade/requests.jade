@@ -1,0 +1,88 @@
+extends _layout
+
+block scripts
+	script(src="js/jquery.remodal.js", type="text/javascript")
+
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Заявки
+		//------------------------------------------------
+		.hide 
+			.remodal(data-remodal-id="popdecline")
+				.order-accept
+					.order-accept__name Заявка № 2123423
+					.order-accept__text
+						p
+							strong К сожалению Вам отказано в публикации данного контента
+						p Ваш контент противоречит законодательству РФ ст.2 п. 4 р. 56
+						p &nbsp;
+						a(href="#").btn-orange-wide.inline Согласен
+		.main-full
+			.requests
+				.requests__top
+					.td
+						a(href="#").requests__top__title Дата отправки
+					.td
+						a(href="#").requests__top__title Статус
+					.td
+						a(href="#").requests__top__title Раздел
+					.td
+						a(href="#").requests__top__title Название
+					.td
+						a(href="#").requests__top__title.right  Номер заявки
+				.requests__item
+					.td
+						.requests__item__text 3 ноября 2041
+						.requests__item__time в 10:34
+					.td
+						.requests__item__status_ok Одобрено
+					.td
+						.requests__item__text Оборудование
+					.td
+						.requests__item__text Станок токарынй с ЧПУ
+					.td
+						.requests__item__text_grey 3 469
+				
+				.requests__item
+					.td
+						.requests__item__text 3 ноября 2041
+						.requests__item__time в 10:34
+					.td
+						.requests__item__status_ok Одобрено
+					.td
+						.requests__item__text Услуги
+					.td
+						.requests__item__text Изготовление деталей
+					.td
+						.requests__item__text_grey 3 469
+
+				.requests__item
+					.td
+						.requests__item__text 3 ноября 2041
+						.requests__item__time в 10:34
+					.td
+						.requests__item__status_wait На рассмотрении
+					.td
+						.requests__item__text Оборудование
+					.td
+						.requests__item__text Станок токарынй с ЧПУ
+					.td
+						.requests__item__text_grey 3 469
+
+				.requests__item
+					.td
+						.requests__item__text 3 ноября 2041
+						.requests__item__time в 10:34
+					.td
+						a(href="#popdecline").requests__item__status_decl Отказано
+					.td
+						.requests__item__text Оборудование
+					.td
+						.requests__item__text Станок токарынй с ЧПУ
+					.td
+						.requests__item__text_grey 3 469

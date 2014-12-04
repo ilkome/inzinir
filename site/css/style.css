@@ -6719,12 +6719,14 @@ a.link-black:hover {
 }
 a.link-orange,
 .box-info .bcon .item .itext a.link-orange,
-.l-boxgrey .item-object a.link-orange {
+.l-boxgrey .item-object a.link-orange,
+.requests__item__status_decl {
   color: #f85800;
 }
 a.link-orange:hover,
 .box-info .bcon .item .itext a.link-orange:hover,
-.l-boxgrey .item-object a.link-orange:hover {
+.l-boxgrey .item-object a.link-orange:hover,
+.requests__item__status_decl:hover {
   color: rgba(248,88,0,0.7);
 }
 .font-grey {
@@ -10837,6 +10839,87 @@ input.inp-radio + label {
 }
 .con-dess-lines_small p strong {
   font-weight: normal;
+}
+.requests {
+  display: table;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+.requests .td {
+  display: table-cell;
+  vertical-align: top;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 40px;
+}
+.requests .td .right {
+  float: right;
+}
+.requests__item {
+  display: table-row;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  padding: 25px 40px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.requests__item__text {
+  font-weight: 400;
+  color: #333;
+  font-size: 14px;
+}
+.requests__item__time {
+  padding-top: 10px;
+  color: #ccc;
+  font-size: 11px;
+}
+.requests__item__status_ok {
+  color: #65e001;
+}
+.requests__item__status_wait {
+  color: #ccc;
+}
+.requests__item__status_decl {
+  display: inline-block;
+  border-bottom: 1px dashed #f85800;
+}
+.requests__item__status_decl:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+.requests__item__text_grey {
+  color: #ccc;
+  text-align: right;
+}
+.requests__top {
+  display: table-row;
+  width: 100%;
+  box-sizing: border-box;
+}
+.requests__top__title {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+.requests__top__title:hover {
+  color: #f85800;
+  text-decoration: none;
+}
+.requests__top__title:after {
+  top: 49%;
+  right: 0%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #ff8c4d;
+  border-width: 5px;
 }
 @-webkit-keyframes opacity-fade {
   0% {

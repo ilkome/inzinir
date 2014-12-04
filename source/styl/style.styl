@@ -4008,3 +4008,73 @@ input.inp-radio + label
 		margin-bottom 10px
 		strong
 			font-weight normal
+			
+//	#requests
+.requests 
+	display table
+	width 100%
+	border 1px solid #e5e5e5
+	border-bottom none
+	.td
+		display table-cell 
+		vertical-align top
+		border-bottom 1px solid #e5e5e5
+		padding 25px 40px	
+		.right
+			float right
+	&__item
+		display table-row
+		width 100%
+		border 1px solid #e5e5e5
+		border-top none
+		padding 25px 40px
+		font-size 14px
+		full()
+		&__text
+			font-weight 400
+			color #333
+			font-size 14px
+		&__time
+			padding-top 10px
+			color #CCC
+			font-size 11px
+		&__status_ok
+			color #65E001
+		&__status_wait
+			color #CCC
+		&__status_decl
+			display inline-block
+			@extend a.link-orange
+			border-bottom 1px dashed #f85800
+			&:hover
+				border-bottom none
+				tdn() 
+		&__text_grey
+			color #CCC
+			text-align right
+	&__top
+		display table-row
+		width 100%
+		
+		full()
+		&__title
+			position relative
+			display inline-block
+			padding-right 20px
+			color #333
+			font-size 16px
+			cursor pointer
+			&:hover
+				color-orange()
+				tdn() 
+			&:after
+				top: 49%;
+				right: 0%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-top-color: #ff8c4d;
+				border-width: 5px;
