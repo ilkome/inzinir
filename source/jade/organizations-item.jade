@@ -25,7 +25,7 @@ block append content
 				.bcon.bcon-text-style
 					.event-item.mar-bot-30
 						.icon
-							h1 ЗАО «Научно-производственный центр “Модуль”»
+							h1.service-title ЗАО «Научно-производственный центр “Модуль”»
 							.graph-name Рейтинг НТП 73 %
 							.graph-box.graph-box_mwidth
 								.graph-inner(style='width:73%;')
@@ -42,6 +42,7 @@ block append content
 							| Оборудование: 78% <br>
 							| Услуги: 67% <br>
 							| Программное обеспечние: 68% <br> 
+							| Объекты научного технического потенциала - 28% <br> 
 							| Результаты интеллектуальной деятельности: 64% <br>
 						p
 							strong Вид деятельности: 
@@ -66,160 +67,406 @@ block append content
 								a(href="#")
 					.comments-count
 						a(href="#").btn-grey 19 комментариев
+				
 				.box-interest
 					.bname
 						h3 Похожие рекомендации
 					.bcon
 						.box-articles.m-mod
-							.item-3col
-								.iprev
-									img(src="img/content/120-85-2.jpg", alt="")
-								.icon
-									.iname
-										a(href="#") Московский государственный университет им. М.В.Ломоносова
-									.itext.lh-small
-										p Оборудование: 78% <br>
-											| Услуги: 67% <br>
-											| Программное обеспечние: 68% <br> 
-											| Результаты интеллектуальной деятельности: 64% <br>
-										a(href="#").btn-orange-empty Связаться
-								.iconright
-									.graph-name Рейтинг НТП 98 %
-									.graph-box
-										.graph-inner(style='width:98%;')
-									.irating.irating_margin
-										ul
-											li.star
-											li.star
-											li.star
-											li
-											li
-									.imeta
-										.comments
-											a(href="#") 51
-										.views
-											a(href="#") 225
-							.item-3col
-								.iprev
-									img(src="img/content/120-85-1.jpg", alt="")
-								.icon
-									.iname
-										a(href="#") Санкт-Петербургский государственный университет аэрокосмического приборостроения
-									.itext.lh-small
-										p Оборудование: 78% <br>
-											| Услуги: 67% <br>
-											| Программное обеспечние: 68% <br> 
-											| Результаты интеллектуальной деятельности: 64% <br>
-										a(href="#").btn-orange-empty Связаться
-								.iconright
-									.graph-name Рейтинг НТП 53 %
-									.graph-box
-										.graph-inner(style='width:53%;')
-									.irating.irating_margin
-										ul
-											li.star
-											li.star
-											li.star
-											li
-											li
-									.imeta
-										.comments
-											a(href="#") 51
-										.views
-											a(href="#") 225
-				.box-comments
-					.bwrite
-						.bname
-							h3 Обсуждаем станок токарный с чпу
-							a(href="#enter-popup") Войти
-						.bcon
-							.ava
-								img(src="img/ava.png", alt="")
-							.text
-								textarea(placeholder="")
-							.action
-								a(href="#").btn-orange Оставить комментарий
-					.bcomments
-						.comment
-							.cprev
-								a(href="#") 
-									img(src="img/content/ava-2.jpg", alt="")
-							.ccon
-								.name
-									a(href="#") Konrad Karlovich
-									.date 1 час назад
-								.text Я эту штуку не куплю. Работаю с Microsoft Office -- он умнее, чем я.
-								.answer
-									a(href="#") Ответить
-							.comment
-								.cprev
-									a(href="#") 
-										img(src="img/content/ava-2.jpg", alt="")
-								.ccon
-									.name
-										a(href="#") Konrad Karlovich
-										.pep 
-											|  > 
-											a(href="#") Влодко Чорный
-										.date 1 час назад
-									.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
-									.answer
-										a(href="#") Ответить
-								.comment
-									.cprev
-										a(href="#") 
-											img(src="img/ava.png", alt="")
-									.ccon
-										.name
-											a(href="#") Konrad Karlovich
-											.date 1 час назад
-										.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
-										.answer
-											a(href="#") Ответить
-									.comment
-										.cprev
-											a(href="#") 
-												img(src="img/content/ava-1.png", alt="")
-										.ccon
-											.name
-												a(href="#") Konrad Karlovich
-												.date 1 час назад
-											.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
-											.answer
-												a(href="#") Ответить
-						.comment
-							.cprev
-								a(href="#") 
-									img(src="img/ava.png", alt="")
-							.ccon
-								.name
-									a(href="#") Konrad Karlovich
-									.date 1 час назад
-								.text Из всего перечня именитых контор Мелкомягкие дали фору абсолютно всем, посмотрели на представленный продукт.
-								.answer
-									a(href="#") Ответить
-						.comment
-							.cprev
-								a(href="#") 
-									img(src="img/content/ava-1.png", alt="")
-							.ccon
-								.name
-									a(href="#") Konrad Karlovich
-									.date 1 час назад
-								.text Кто вам сказал, что Surface 2 провал? Вполне нормально берут, конкурентов с таким функционалом просто нет в этом сегменте.
-								.answer
-									a(href="#") Ответить
+							mixin item(name, pic, rating)
+								.item-3col.js-object-box
+									.iprev
+										img(src="img/content/#{pic}", alt="")
+										a(href="#").feedback Связаться
+									.icon
+										.iname
+											a(href="#")= name
+										div.iobjects
+											a(href="#").js-show-objects Предложения организации
+										.itext.lh-small
+											p Оборудование: 78% <br>
+												| Услуги: 67% <br>
+												| Программное обеспечние: 68% <br> 
+												| Объекты научного технического потенциала: - 28% <br> 
+												| Результаты интеллектуальной деятельности: 64% <br>
+									.iconright
+										.graph-name Рейтинг НТП #{rating} %
+										.graph-box
+											.graph-inner(style='width:#{rating}%;')
+										.irating.irating_margin
+											ul
+												li.star
+												li.star
+												li.star
+												li
+												li
+										.imeta
+											.comments
+												a(href="#") 51
+											.views
+												a(href="#") 225
+									.l-boxgrey.js-object-con
+										.boxgrey-name.js-show-objects
+											a(href="#").close
+											h3 Объекты научно-технического потенциала
+										.boxgrey-con.js-show-more-box
+											.row
+												.col-4-sep
+												.col-4.col-4_white.w33
+													.item-object
+														.iname 
+															a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Выполняемые работы<br> 
+																span.grey Оптическая микроскопия.
+															p.sm-mar 
+																span.dark Основные характеристики<br> 
+																span.grey Исследования сплавов черных и цветных металлов.
+															p.sm-mar 
+																span.dark Производственная мощность<br> 
+																span.grey До 250 исследуемых образцов в месяц
+															p.sm-mar 
+																span.dark Аккредитация: 
+																span.grey Есть
+															p.sm-mar 
+																span.dark Организация (ВУЗ / ГНЦ): 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.contacts-box
+															span.phone +7 495 675 87 98
+															span.email
+																a(href="#").link-orange email@email.com
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33
+													.item-object
+														.ipic: img(src="img/content/equip-2.jpg", alt="")
+														.iname 
+															a(href="#") Станок токарный с ЧПУ
+														.irating.irating_sm.mar-bot-10
+															span DELTAMAB 400
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar Изготовление деталей типа тел вращения
+															p.sm-mar
+																span.dark  Организация (ВУЗ / ГНЦ): <br> 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33 
+													.item-object
+														.iname 
+															a(href="#") Металлографические исследования
+														.grey Микроскопия, анализ химического состава материалов
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Описание: 
+																span.grey лаборатория
+															p.sm-mar
+																span.dark Организация (ВУЗ / ГНЦ): <br>
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+											.row.hide
+												.col-4-sep
+												.col-4.col-4_white.w33
+													.item-object
+														.iname 
+															a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Выполняемые работы<br> 
+																span.grey Оптическая микроскопия.
+															p.sm-mar 
+																span.dark Основные характеристики<br> 
+																span.grey Исследования сплавов черных и цветных металлов.
+															p.sm-mar 
+																span.dark Производственная мощность<br> 
+																span.grey До 250 исследуемых образцов в месяц
+															p.sm-mar 
+																span.dark Аккредитация: 
+																span.grey Есть
+															p.sm-mar 
+																span.dark Организация (ВУЗ / ГНЦ): 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.contacts-box
+															span.phone +7 495 675 87 98
+															span.email
+																a(href="#").link-orange email@email.com
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33
+													.item-object
+														.ipic: img(src="img/content/equip-2.jpg", alt="")
+														.iname 
+															a(href="#") Станок токарный с ЧПУ
+														.irating.irating_sm.mar-bot-10
+															span DELTAMAB 400
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar Изготовление деталей типа тел вращения
+															p.sm-mar
+																span.dark  Организация (ВУЗ / ГНЦ): <br> 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33 
+													.item-object
+														.iname 
+															a(href="#") Металлографические исследования
+														.grey Микроскопия, анализ химического состава материалов
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Описание: 
+																span.grey лаборатория
+															p.sm-mar
+																span.dark Организация (ВУЗ / ГНЦ): <br>
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+											.row.hide
+												.col-4-sep
+												.col-4.col-4_white.w33
+													.item-object
+														.iname 
+															a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Выполняемые работы<br> 
+																span.grey Оптическая микроскопия.
+															p.sm-mar 
+																span.dark Основные характеристики<br> 
+																span.grey Исследования сплавов черных и цветных металлов.
+															p.sm-mar 
+																span.dark Производственная мощность<br> 
+																span.grey До 250 исследуемых образцов в месяц
+															p.sm-mar 
+																span.dark Аккредитация: 
+																span.grey Есть
+															p.sm-mar 
+																span.dark Организация (ВУЗ / ГНЦ): 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.contacts-box
+															span.phone +7 495 675 87 98
+															span.email
+																a(href="#").link-orange email@email.com
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33
+													.item-object
+														.ipic: img(src="img/content/equip-2.jpg", alt="")
+														.iname 
+															a(href="#") Станок токарный с ЧПУ
+														.irating.irating_sm.mar-bot-10
+															span DELTAMAB 400
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar Изготовление деталей типа тел вращения
+															p.sm-mar
+																span.dark  Организация (ВУЗ / ГНЦ): <br> 
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+												.col-4-sep &nbsp;
+												.col-4.col-4_white.w33 
+													.item-object
+														.iname 
+															a(href="#") Металлографические исследования
+														.grey Микроскопия, анализ химического состава материалов
+														.irating.mar-bot-10
+															span Лаборатория
+															ul
+																li.star
+																li.star
+																li.star
+																li
+																li
+														.itext-ext
+															p.sm-mar
+																span.dark Описание: 
+																span.grey лаборатория
+															p.sm-mar
+																span.dark Организация (ВУЗ / ГНЦ): <br>
+																span.grey ЗАО «Научно-производственный центр “Модуль”»
+														.tags
+															a(href="#").tags-item
+																span.name Машиностроение
+																span.count 12
+															a(href="#").tags-item
+																span.name Металлообработка
+																span.count.empty
+											.show-more.js-show-more
+												a(href="#") Показать еще
+							
+							+item("ЗАО «Научно-производственный центр “Модуль”»", "120-85-2.jpg", "75")
+							+item("Санкт-Петербургский государственный университет аэрокосмического приборостроения", "120-85-1.jpg", "91")
+							//-
+								.item-3col
+									.iprev
+										img(src="img/content/120-85-2.jpg", alt="")
+									.icon
+										.iname
+											a(href="#") Московский государственный университет им. М.В.Ломоносова
+										.itext.lh-small
+											p Оборудование: 78% <br>
+												| Услуги: 67% <br>
+												| Программное обеспечние: 68% <br> 
+												| Результаты интеллектуальной деятельности: 64% <br>
+											a(href="#").btn-orange-empty Связаться
+									.iconright
+										.graph-name Рейтинг НТП 98 %
+										.graph-box
+											.graph-inner(style='width:98%;')
+										.irating.irating_margin
+											ul
+												li.star
+												li.star
+												li.star
+												li
+												li
+										.imeta
+											.comments
+												a(href="#") 51
+											.views
+												a(href="#") 225
+								.item-3col
+									.iprev
+										img(src="img/content/120-85-1.jpg", alt="")
+									.icon
+										.iname
+											a(href="#") Санкт-Петербургский государственный университет аэрокосмического приборостроения
+										.itext.lh-small
+											p Оборудование: 78% <br>
+												| Услуги: 67% <br>
+												| Программное обеспечние: 68% <br> 
+												| Результаты интеллектуальной деятельности: 64% <br>
+											a(href="#").btn-orange-empty Связаться
+									.iconright
+										.graph-name Рейтинг НТП 53 %
+										.graph-box
+											.graph-inner(style='width:53%;')
+										.irating.irating_margin
+											ul
+												li.star
+												li.star
+												li.star
+												li
+												li
+										.imeta
+											.comments
+												a(href="#") 51
+											.views
+												a(href="#") 225
+				+comment-block
 		//------------------------------------------------
 		.main-right
 			.box-news.box-right.box-news_dotted
 				.bname
-					h3 
-						a(href="#") Популярное оборудование
+					h3: a(href="#") Популярные объекты научно-технического потенциала
 				.bcon
 					.item
 						.iname 
-							a(href="#") Станок токарный с ЧПУ
-						.itext Микроскопия, анализ химического состава
+							a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
 						.irating.mar-bot-10
 							span Лаборатория
 							ul
@@ -230,11 +477,20 @@ block append content
 								li
 						.itext-ext
 							p.sm-mar
-								span.dark  Выполняемые работы<br> 
+								span.dark Выполняемые работы<br> 
 								span.grey Оптическая микроскопия.
 							p.sm-mar 
-								span.dark  Выполняемые работы<br> 
-								span.grey Оптическая микроскопия.
+								span.dark Основные характеристики<br> 
+								span.grey Исследования сплавов черных и цветных металлов.
+							p.sm-mar 
+								span.dark Производственная мощность<br> 
+								span.grey До 250 исследуемых образцов в месяц
+							p.sm-mar 
+								span.dark Аккредитация: 
+								span.grey Есть
+							p.sm-mar 
+								span.dark Организация (ВУЗ / ГНЦ): 
+								span.grey ЗАО «Научно-производственный центр “Модуль”»
 						.itext-ext
 							a(href="#") Национальный исследовательский Томский политехнический университет
 						.contacts-box
@@ -296,8 +552,8 @@ block append content
 								span.count.empty
 				.ball
 					a(href="#") Все оборудование
-			//------------------------------------------------
-			.box-news.box-right.box-news_dotted
+			
+			//-.box-news.box-right.box-news_dotted
 				.bname
 					h3 
 						a(href="#") Популярные услуги
@@ -325,15 +581,5 @@ block append content
 								span.count.empty
 				.ball
 					a(href="#") Все оборудование
-			//------------------------------------------------
-			.box-support
-				.bcon
-					.item
-						a(href="#") 
-							img(src="img/content/logo-minprom.png", alt="")
-					.item
-						a(href="#") 
-							img(src="img/content/logo-smr.png", alt="")
-					.item
-						a(href="#") 
-							img(src="img/content/logo-ibs.png", alt="")
+			
+			+support-block

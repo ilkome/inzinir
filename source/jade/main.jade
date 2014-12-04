@@ -1,5 +1,3 @@
-//- Шаблон
-//------------------------------------------------
 extends _layout
 
 //- Загаловок страницы
@@ -39,8 +37,7 @@ block append content
 			.box-info
 				.box
 					.bname
-						h3 
-							a(href="#") Оборудование
+						h3: a(href="#") Оборудование
 					.bcon
 						.item
 							.iprev
@@ -93,8 +90,7 @@ block append content
 						.sep
 				.box
 					.bname
-						h3 
-							a(href="#") Высокотехнологичные Услуги
+						h3: a(href="#") Высокотехнологичные Услуги
 					.bcon
 						.item
 							.iname
@@ -138,8 +134,7 @@ block append content
 						.sep
 				.box
 					.bname
-						h3 
-							a(href="#") Программное обеспечение
+						h3: a(href="#") Программное обеспечение
 					.bcon
 						.item
 							.iname
@@ -186,12 +181,51 @@ block append content
 						.clear
 						.all
 							a(href="#") Все программы
+				
+				.box
+					.bname
+						h3: a(href="#") Объекты Научно-технического потенциала
+					.bcon
+						mixin item-ntp(name, text, link)
+							.item
+								.iname
+									a(href="#") #{name}
+								.itext 
+									| #{text}
+									| <br><br>
+									a(href="#").link-orange #{link} 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li.star
+						
+						+item-ntp(
+							"Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527",
+							"Предназначена для исследования эксплуатационных характеристик продуктивных пластов",
+							"ТюмГНГУ"
+						)
+						+item-ntp(
+							"Автоматизированное рабочее место конструктора АРМК",
+							"Для проектирования и моделирования МКА",
+							"ЮЗГУ"
+						)
+						+item-ntp(
+							"Автоматизированный учебно-исследовательский комплекс «Логос»",
+							"Проведение практических, лабораторных и исследовательских работ на базе реального оборудования",
+							"СибГИУ"
+						)
+						.clear
+						.all
+							a(href="#") Все программы
 			//------------------------------------------------
 			.box-info.orange
 				.box
 					.bname
-						h3 
-							a(href="#") Потребности в услугах и оборудовании
+						h3: a(href="#") Потребности
 					.bcon
 						.item
 							.idate 19 сентября 2014 года
@@ -241,8 +275,7 @@ block append content
 			//------------------------------------------------
 			.box-info-graph
 				.bname
-					h3 
-						a(href="#") Рейтинг организаций по научно-техническому потенциалу
+					h3: a(href="#") Рейтинг организаций по научно-техническому потенциалу
 				.bcon
 					.item
 						.item-left
@@ -288,8 +321,7 @@ block append content
 			//------------------------------------------------
 			.box-info-one
 				.bname
-					h3 
-						a(href="#") Результаты интеллектуальной деятельности
+					h3: a(href="#") Результаты интеллектуальной деятельности
 				.bcon
 					.item
 						.iname
@@ -328,8 +360,7 @@ block append content
 		.main-right
 			.box-news.box-right
 				.bname
-					h3 
-						a(href="#") Новости
+					h3: a(href="#") Новости
 				.bcon
 					.item
 						.idate 30 Сентября
@@ -363,8 +394,7 @@ block append content
 			//------------------------------------------------
 			.box-talks.box-right
 				.bname
-					h3 
-						a(href="#") Сейчас обсуждают
+					h3: a(href="#") Сейчас обсуждают
 				.bcon
 					.item
 						.iname
@@ -398,35 +428,20 @@ block append content
 			//------------------------------------------------
 			.box-events.box-right
 				.bname
-					h3 
-						a(href="#") События
-				.bcon.animate-height.js-news-cal
-					.items.month-09.month-01.month-02.month-03.month-04.month-05.month-06.month-07
-						.item
-							.idate 09.09 >
-							.iname 
-								a(href="#") Конференция по промышленному дизайну
-						.item
-							.idate 18.09 >
-							.iname 
-								a(href="#") Конкурс проектов в области энергосбережения
-						.item
-							.idate 22.09 >
-							.iname 
-								a(href="#") Конкурс проектов в области энергосбережения
-					.items.month-10.hide
-						.item
-							.idate 09.10 >
-							.iname 
-								a(href="#") Конференция по промышленному дизайну
-						.item
-							.idate 18.10 >
-							.iname 
-								a(href="#") Конкурс проектов в области энергосбережения
-						.item
-							.idate 22.10 >
-							.iname 
-								a(href="#") Конкурс проектов в области энергосбережения
+					h3: a(href="#") События
+				.bcon
+					.item
+						.idate 09.09 >
+						.iname 
+							a(href="#") Конференция по промышленному дизайну
+					.item
+						.idate 18.09 >
+						.iname 
+							a(href="#") Конкурс проектов в области энергосбережения
+					.item
+						.idate 22.09 >
+						.iname 
+							a(href="#") Конкурс проектов в области энергосбережения
 				.calendar-wrap
 					input(type="text").calendar-widget
 			//------------------------------------------------

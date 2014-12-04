@@ -1,7 +1,4 @@
-//- Настройки 
-//- Навигация по страницам верстки
-- var develop = 0
-
+include _mixin
 
 doctype html
 //	proscom.ru
@@ -10,43 +7,6 @@ html
 	include _head
 	
 	body
-		if develop
-			style
-				| .system-menu {position: fixed; width:10px; bottom:0; z-index: 9999; background: #fff; opacity:0; overflow:hidden; transition:all 0.3s ease-out;}
-				| .system-menu:hover {width:auto; opacity: 1;}
-				| .system-menu a {display:block; padding:5px 10px; font-size:12px; color: #000;}
-				| .system-menu a:hover {background:#e6e6e6; text-decoration:none;}
-				| .system-menu p.sep {margin:0; padding:5px 10px; min-height:2px; font-size:12px; border-top: 2px solid #000;}
-
-			div.system-menu
-				a(href="analytics.html") Статья
-				a(href="articles.html") Статьи
-				a(href="docs-item.html") Документ 
-				a(href="docs.html") Документы 
-				a(href="edit-interface.html") Редактирование
-				a(href="equipments-item.html") Оборудование
-				a(href="equipments-item-user.html") Оборудование пользователь
-				a(href="equipments.html") Оборудования
-				a(href="events-item.html") Событие 
-				a(href="events.html") События 
-				a(href="info.html") Информация 
-				a(href="links.html") Ссылки 
-				a(href="lk.html") ЛК 
-				a(href="main.html") Главная 
-				a(href="messages.html") Сообщения
-				a(href="news.html") Новости 
-				a(href="notify.html") Уведомления 
-				a(href="organizations-item.html") Организация 
-				a(href="organizations.html") Организации
-				a(href="reports.html") Отчеты
-				a(href="requirements-comment.html") Потребность
-				a(href="requirements.html") Потребности
-				a(href="results.html") Результаты
-				a(href="results-item.html") Результат
-				a(href="services-item.html") Услуга
-				a(href="services.html") Услуги
-				a(href="story-item.html") История/Новость
-
 		#shikarniy
 			include _sidebar
 			.main-page
@@ -60,7 +20,7 @@ html
 									a(href="#") Отчеты
 								li
 									a(href="#") О проекте
-						.user
+						.user.js-usermenu
 							.name
 								a(href="#") 
 									.title Алексей Петров
@@ -70,6 +30,15 @@ html
 									img(src="img/content/ava-1.png", alt="")
 								.count
 									a(href="#") 9
+								.arrow
+							ul.user-drop.js-usermenu-drop
+								li.user-drop__link.user-drop__link_work: a(href="#") Рабочая область
+								li.user-drop__link.user-drop__link_request: a(href="#") Заявки
+								li.user-drop__link.user-drop__link_messages: a(href="#") Сообщения
+								li.user-drop__link.user-drop__link_notifyc
+									a(href="#") Уведомления
+										span.count
+											i 9 
 				//------------------------------------------------
 				block content
 				include _footer

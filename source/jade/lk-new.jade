@@ -1,15 +1,114 @@
-//- Шаблон
-//------------------------------------------------
 extends _layout
 
-//- Загаловок страницы
 block title
 	| - Моя организация
 
+block scripts
+	script(src="js/jquery.remodal.js", type="text/javascript")
 
-//- Контент
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
+
 //------------------------------------------------
 block append content
+	.remodal(data-remodal-id="remodal-add-ok")
+		.order-accept
+			.order-accept__name Заявка № 2123423
+			.order-accept__text
+				p
+					strong Ваша заявка на добавление нового оборудования принята. <br>
+					| Группа мониторинга рассмотрит ее и примет решение о публикации на портале. <br>
+				p За ходом рассмотрения Вы можете следить в разделе меню 
+					a(href="#") «Заявки».
+				p &nbsp;
+				a(href="#").btn-orange-wide.inline Согласен
+	.remodal(data-remodal-id="popedit")
+		.popedit
+			.popedit__name Новое оборудование
+			.popedit__form
+				.lineedit
+					.lineedit__name
+						| Название
+						span.req *
+					.lineedit__con
+						input(type="text", placeholder="", value="Станок токарный с ЧПУ").inp-field.inp-field_500
+				.lineedit
+					.lineedit__name
+						| Модель
+					.lineedit__con
+						input(type="text", placeholder="", value="DELTAMAB 400").inp-field.inp-field_500
+				.lineedit
+					.lineedit__name
+						| Свойства
+						span.req *
+					.lineedit__con
+						input(type="text", placeholder="", value="Отличные").inp-field.inp-field_full
+				.lineedit
+					.lineedit__name
+						| Описание
+						span.req *
+					.lineedit__con
+						textarea(placeholder="").text-field.text-field_full Прецизионный токарный станок с ЧПУ выполнен по прогрессивной схеме компоновки с расположением револьверной головки на наклонных направляющих, что увеличивает жесткость конструкции, позволяет уменьшить размеры станка по ширине и оптимально распределить по направляющим нагрузки, образующиеся в процессе резания. 
+				.lineedit
+					.lineedit__name
+						| Основные характеристики
+					.lineedit__con
+						textarea(placeholder="").text-field.text-field_full Наибольший диаметр обрабатываемого изделия — 600 мм. Число управляемых координат — 2
+				.lineedit
+					.lineedit__name
+						| Производитель
+					.lineedit__con
+						input(type="text", placeholder="", value="SOMAB, Франция").inp-field.inp-field_360
+				.lineedit
+					.lineedit__name
+						| Год
+					.lineedit__con
+						input(type="text", placeholder="", value="2012").inp-field.inp-field_70
+				.lineedit
+					.lineedit__name
+						| Состояние
+					.lineedit__con_pad-left
+						input(id="radio-s-1" type="radio" name="radio" checked).inp-radio
+						label(for="radio-s-1") Новый
+						input(id="radio-s-2" type="radio" name="radio").inp-radio
+						label(for="radio-s-2") Поддержанный
+						input(id="radio-s-3" type="radio" name="radio").inp-radio
+						label(for="radio-s-3") Старый
+				.lineedit
+					.lineedit__name
+						| Порядок предоставления услуг по доступу к оборудованию
+						span.req
+					.lineedit__con_pad-left
+						input(id="radio-p-1" type="radio" name="radio" checked).inp-radio
+						label(for="radio-p-1") Передача в собственность
+						input(id="radio-p-2" type="radio" name="radio").inp-radio
+						label(for="radio-p-2") Аренда
+				.lineedit
+					.lineedit__name
+						| Организация (ВУЗ, ГНЦ)
+					.lineedit__con
+						input(type="text", placeholder="", value="Национальный исследовательский Томский политехнический институт").inp-field.inp-field_full
+				.lineedit
+					.lineedit__name
+						| Область применения
+					.lineedit__con
+						input(type="text", placeholder="", value="Машиностроение Металлообработка").inp-field.inp-field_500
+						.desc укажите через пробел
+				.lineedit
+					.lineedit__name Изображение
+					.lineedit__con
+						.formgroup.articles__edit-images
+							ul.articles__edit-images-list.inline
+								li.articles__edit-images-list-item
+									img(src="img/content/edit-page/1.png", alt="")
+									.articles__edit-images-list-item--edit
+								li.articles__edit-images-list-item--add
+									.articles__edit-images-list-item--add-icon
+									.articles__edit-images-list-item--add-text добавить изображение
+				.lineedit_save
+					a(href="#").btn-orange-wide.inline.edit-save Сохранить
+										
+			
 	.main-width.main-wrap
 		.pathway
 			ul
@@ -18,7 +117,7 @@ block append content
 				li.sep >
 				li
 					a(href="#") Моя организация
-		//------------------------------------------------
+		
 		.organ-info
 			ul.admin-box--column
 				li.admin-edit
@@ -40,13 +139,14 @@ block append content
 				.td
 					ul
 						li.map 107078, Россия, Москва, <br>ул. Маши Порываевой, д.7, стр. 2.
-		//------------------------------------------------
+		
 		.main-full
+			p
+				a(href="#remodal-add-ok") Открыть окно подтверждения
 			.box-info
 				.box
 					.bname
-						h3 
-							a(href="#") Оборудование
+						h3: a(href="#") Оборудование
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
@@ -89,7 +189,7 @@ block append content
 										li
 						.col-3_sep
 						.col-3_border.item-adder
-							a(href="#").item-adder--link + <br>Добавить оборудование																	
+							a(href="#popedit").item-adder--link + <br>Добавить оборудование																	
 						.clear
 						.all_full
 							a(href="#") Все оборудование
@@ -135,7 +235,7 @@ block append content
 										li
 						.col-3_sep
 						.col-3_border.item-adder
-							a(href="#").item-adder--link + <br>Добавить услугу
+							a(href="#popedit").item-adder--link + <br>Добавить услугу
 						.clear
 						.all_full
 							a(href="#") Все услуги
@@ -183,7 +283,55 @@ block append content
 										li
 						.col-3_sep
 						.col-3_border.item-adder
-							a(href="#").item-adder--link + <br>Добавить программное обеспечение
+							a(href="#popedit").item-adder--link + <br>Добавить программное обеспечение
+						.clear
+						.all_full
+							a(href="#") Все программы
+						.sep_full
+				//----------------------------
+				.box
+					.bname
+						h3 
+							a(href="#") Объекты научно-технического потенциала
+					.bcon.bcon--padding
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527 
+								.itext Предназначена для исследования эксплуатационных характеристик продуктивных пластов <br><br>
+									a(href="#").link-orange ТюмГНГУ
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border
+							.item.item--edit
+								ul.admin-box--columnpad
+									li.admin-edit
+									li.admin-delete
+								.iname
+									a(href="#") Автоматизированное рабочее место конструктора АРМК 
+								.itext Для проектирования и моделирования МКА <br><br>
+									a(href="#").link-orange ЮЗГУ
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
+						.col-3_sep
+						.col-3_border.item-adder
+							a(href="#popedit").item-adder--link + <br>Добавить <br> объект НТП
 						.clear
 						.all_full
 							a(href="#") Все программы
@@ -234,7 +382,7 @@ block append content
 									a(href="#") Предложить решение
 						.col-3_sep
 						.col-3_border.item-adder
-							a(href="#").item-adder--link + <br>Добавить потребность
+							a(href="#popedit").item-adder--link + <br>Добавить потребность
 						.clear
 						.all_full
 							a(href="#") Все потребности
@@ -264,7 +412,7 @@ block append content
 								b Охранный документ:
 								| Патент №2481822 от 21.02.2012
 					.item-adder
-						a(href="#").item-adder--link + Добавить результат интеллектуальной деятельности
+						a(href="#popedit").item-adder--link + Добавить результат интеллектуальной деятельности
 					.clear
 					.all_full
 						a(href="#") Все результаты
@@ -319,7 +467,7 @@ block append content
 									.views
 										a(href="#") 225
 				.item-adder
-						a(href="#").item-adder--link + Добавить обсуждение
+						a(href="#popedit").item-adder--link + Добавить обсуждение
 					.clear
 					.all_full
 						a(href="#") Все обсуждения
@@ -356,7 +504,7 @@ block append content
 										.views
 											a(href="#") 225
 					.item-adder
-							a(href="#").item-adder--link + Добавить событие
+							a(href="#popedit").item-adder--link + Добавить событие
 						.clear
 						.all_full
 							a(href="#") Все события
@@ -386,7 +534,7 @@ block append content
 										span.name Машиностроение
 										span.count.empty
 						.item-adder
-							a(href="#").item-adder--link + Добавить документ
+							a(href="#popedit").item-adder--link + Добавить документ
 						.clear
 						.all_full
 							a(href="#") Все документы
