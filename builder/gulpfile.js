@@ -87,7 +87,7 @@ gulp.task('jade', function() {
 			pretty: true
 		}))
 		.pipe(gulp.dest('../site'))
-		.pipe(connect.reload());
+		//.pipe(connect.reload());
 });
 
 

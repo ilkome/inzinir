@@ -1,10 +1,20 @@
 //- MIXIN
 //------------------------------------------------
-mixin comment-block
+mixin comment-block(name)
+	.hide
+		include _popup-login
+		include _popup-register
+	
 	.box-comments
 		.bwrite
 			.bname
-				h3 Комментарии к статье
+				h3
+					if name
+						=name
+					else
+						| Комментарии
+
+
 				a(href="#enter-popup") Войти
 			.bcon
 				.ava
