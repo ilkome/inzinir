@@ -6,10 +6,51 @@
 
 
 $(document).ready(function() {
+	
+	//	#user-menu
+	$(".js-usermenu").on("click", function(e) {
+		e.preventDefault();
+		var drop = $(".js-usermenu-drop");
+		var arrow = $(this).find(".arrow");
+		
+		if(drop.is(":visible") && !$(e.target).closest('.js-usermenu-drop').length ) {
+			drop.slideUp();
+			arrow.removeClass("open");
+		} else {
+			drop.slideDown();
+			arrow.addClass("open");
+		}
+	});
+	$(document).click(function(e){
+		if ($('.js-usermenu-drop:visible').length && !$(e.target).closest('.js-usermenu').length){
+			$(".js-usermenu-drop").slideUp();
+			$(".js-usermenu .arrow").removeClass("open");
+		}
+	});
+
+
+	//	#show-orders
 	$(".js-show-orders").on("click", function(e) {
 		$(".js-orders-pop").fadeIn();
 		$(this).toggleClass("active")
 	});
+
+
+	//	#show-more
+	$(".js-show-more").on("click", function(e) {
+		var thisis = $(this);
+		var box = $(this).closest(".js-show-more-box");
+		var hideItems = box.find(".row.hide");
+
+		e.preventDefault()
+		hideItems.first().hide().removeClass("hide").slideDown();
+		
+		if (hideItems.length == 1) {
+			thisis.fadeOut()
+		}
+
+	});
+
 
 
 	//	Page article content nav
@@ -86,7 +127,6 @@ $(document).ready(function() {
 		$(".side-extend-fix").stop().fadeIn()
 		$('.sidebar .side-extend').stop().fadeOut(500);
 		$('.sidebar .side-extend[data-menu="'+menu+'"]').stop().fadeIn(300)
-
 	})
 
 	// Закрытие второго меню
@@ -228,11 +268,6 @@ $(document).ready(function() {
 			format:'d.m.Y',
 			inline:true,
 			todayButton: false,
-			onChangeMonth:function(ct,$i){
-				var month = ct.dateFormat('m');
-				$(".js-news-cal").find(".items").hide()
-				$(".js-news-cal").find(".items.month-"+month).removeClass("hide").fadeIn()
-			}
 		});
 	}
 	
