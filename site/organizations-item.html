@@ -361,14 +361,21 @@
                 <li><a href="#">О проекте</a></li>
               </ul>
             </div>
-            <div class="user">
+            <div class="user js-usermenu">
               <div class="name"><a href="#"> 
                   <div class="title">Алексей Петров</div>
                   <div class="email">petrov.i1975@mail.ru</div></a></div>
               <div class="pic">
                 <div class="ava"><img src="img/content/ava-1.png" alt=""></div>
                 <div class="count"><a href="#">9</a></div>
+                <div class="arrow"></div>
               </div>
+              <ul class="user-drop js-usermenu-drop">
+                <li class="user-drop__link user-drop__link_work"><a href="#">Рабочая область</a></li>
+                <li class="user-drop__link user-drop__link_request"><a href="#">Заявки</a></li>
+                <li class="user-drop__link user-drop__link_messages"><a href="#">Сообщения</a></li>
+                <li class="user-drop__link user-drop__link_notifyc"><a href="#">Уведомления<span class="count"><i>9 </i></span></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -392,7 +399,7 @@
               <div class="bcon bcon-text-style">
                 <div class="event-item mar-bot-30">
                   <div class="icon">
-                    <h1>ЗАО «Научно-производственный центр “Модуль”»</h1>
+                    <h1 class="service-title">ЗАО «Научно-производственный центр “Модуль”»</h1>
                     <div class="graph-name">Рейтинг НТП 73 %</div>
                     <div class="graph-box graph-box_mwidth">
                       <div style="width:73%;" class="graph-inner"></div>
@@ -412,6 +419,7 @@
                     Оборудование: 78% <br>
                     Услуги: 67% <br>
                     Программное обеспечние: 68% <br> 
+                    Объекты научного технического потенциала - 28% <br> 
                     Результаты интеллектуальной деятельности: 64% <br>
                   </p>
                   <p><strong>Вид деятельности: </strong>проведение исследований, измерение <br><strong>Расположение: </strong>Московская область, Протвино <br><strong>Контакты: </strong>email@email.com, +7 495 675 87 98</p>
@@ -435,82 +443,510 @@
                 </div>
                 <div class="bcon">
                   <div class="box-articles m-mod">
-                    <div class="item-3col">
-                      <div class="iprev"><img src="img/content/120-85-2.jpg" alt=""></div>
-                      <div class="icon">
-                        <div class="iname"><a href="#">Московский государственный университет им. М.В.Ломоносова</a></div>
-                        <div class="itext lh-small">
-                          <p>
-                            Оборудование: 78% <br>
-                            Услуги: 67% <br>
-                            Программное обеспечние: 68% <br> 
-                            Результаты интеллектуальной деятельности: 64% <br>
-                          </p><a href="#" class="btn-orange-empty">Связаться</a>
-                        </div>
-                      </div>
-                      <div class="iconright">
-                        <div class="graph-name">Рейтинг НТП 98 %</div>
-                        <div class="graph-box">
-                          <div style="width:98%;" class="graph-inner"></div>
-                        </div>
-                        <div class="irating irating_margin">
-                          <ul>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                        <div class="imeta">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-3col">
-                      <div class="iprev"><img src="img/content/120-85-1.jpg" alt=""></div>
-                      <div class="icon">
-                        <div class="iname"><a href="#">Санкт-Петербургский государственный университет аэрокосмического приборостроения</a></div>
-                        <div class="itext lh-small">
-                          <p>
-                            Оборудование: 78% <br>
-                            Услуги: 67% <br>
-                            Программное обеспечние: 68% <br> 
-                            Результаты интеллектуальной деятельности: 64% <br>
-                          </p><a href="#" class="btn-orange-empty">Связаться</a>
-                        </div>
-                      </div>
-                      <div class="iconright">
-                        <div class="graph-name">Рейтинг НТП 53 %</div>
-                        <div class="graph-box">
-                          <div style="width:53%;" class="graph-inner"></div>
-                        </div>
-                        <div class="irating irating_margin">
-                          <ul>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                        <div class="imeta">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
+                                        <div class="item-3col js-object-box">
+                                          <div class="iprev"><img src="img/content/120-85-2.jpg" alt=""><a href="#" class="feedback">Связаться</a></div>
+                                          <div class="icon">
+                                            <div class="iname"><a href="#">ЗАО «Научно-производственный центр “Модуль”»</a></div>
+                                            <div class="iobjects"><a href="#" class="js-show-objects">Предложения организации</a></div>
+                                            <div class="itext lh-small">
+                                              <p>
+                                                Оборудование: 78% <br>
+                                                Услуги: 67% <br>
+                                                Программное обеспечние: 68% <br> 
+                                                Объекты научного технического потенциала: - 28% <br> 
+                                                Результаты интеллектуальной деятельности: 64% <br>
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div class="iconright">
+                                            <div class="graph-name">Рейтинг НТП 75 %</div>
+                                            <div class="graph-box">
+                                              <div style="width:75%;" class="graph-inner"></div>
+                                            </div>
+                                            <div class="irating irating_margin">
+                                              <ul>
+                                                <li class="star"></li>
+                                                <li class="star"></li>
+                                                <li class="star"></li>
+                                                <li></li>
+                                                <li></li>
+                                              </ul>
+                                            </div>
+                                            <div class="imeta">
+                                              <div class="comments"><a href="#">51</a></div>
+                                              <div class="views"><a href="#">225</a></div>
+                                            </div>
+                                          </div>
+                                          <div class="l-boxgrey js-object-con">
+                                            <div class="boxgrey-name js-show-objects"><a href="#" class="close"></a>
+                                              <h3>Объекты научно-технического потенциала</h3>
+                                            </div>
+                                            <div class="boxgrey-con js-show-more-box">
+                                              <div class="row">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row hide">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row hide">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="show-more js-show-more"><a href="#">Показать еще</a></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="item-3col js-object-box">
+                                          <div class="iprev"><img src="img/content/120-85-1.jpg" alt=""><a href="#" class="feedback">Связаться</a></div>
+                                          <div class="icon">
+                                            <div class="iname"><a href="#">Санкт-Петербургский государственный университет аэрокосмического приборостроения</a></div>
+                                            <div class="iobjects"><a href="#" class="js-show-objects">Предложения организации</a></div>
+                                            <div class="itext lh-small">
+                                              <p>
+                                                Оборудование: 78% <br>
+                                                Услуги: 67% <br>
+                                                Программное обеспечние: 68% <br> 
+                                                Объекты научного технического потенциала: - 28% <br> 
+                                                Результаты интеллектуальной деятельности: 64% <br>
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div class="iconright">
+                                            <div class="graph-name">Рейтинг НТП 91 %</div>
+                                            <div class="graph-box">
+                                              <div style="width:91%;" class="graph-inner"></div>
+                                            </div>
+                                            <div class="irating irating_margin">
+                                              <ul>
+                                                <li class="star"></li>
+                                                <li class="star"></li>
+                                                <li class="star"></li>
+                                                <li></li>
+                                                <li></li>
+                                              </ul>
+                                            </div>
+                                            <div class="imeta">
+                                              <div class="comments"><a href="#">51</a></div>
+                                              <div class="views"><a href="#">225</a></div>
+                                            </div>
+                                          </div>
+                                          <div class="l-boxgrey js-object-con">
+                                            <div class="boxgrey-name js-show-objects"><a href="#" class="close"></a>
+                                              <h3>Объекты научно-технического потенциала</h3>
+                                            </div>
+                                            <div class="boxgrey-con js-show-more-box">
+                                              <div class="row">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row hide">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row hide">
+                                                <div class="col-4-sep"></div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                                                      <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="link-orange">email@email.com</a></span></div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33">
+                                                  <div class="item-object">
+                                                    <div class="ipic"><img src="img/content/equip-2.jpg" alt=""></div>
+                                                    <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
+                                                    <div class="irating irating_sm mar-bot-10"><span>DELTAMAB 400</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar">Изготовление деталей типа тел вращения</p>
+                                                      <p class="sm-mar"><span class="dark"> Организация (ВУЗ / ГНЦ): <br> </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-4-sep">&nbsp;</div>
+                                                <div class="col-4 col-4_white w33"> 
+                                                  <div class="item-object">
+                                                    <div class="iname"> <a href="#">Металлографические исследования</a></div>
+                                                    <div class="grey">Микроскопия, анализ химического состава материалов</div>
+                                                    <div class="irating mar-bot-10"><span>Лаборатория</span>
+                                                      <ul>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li class="star"></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="itext-ext">
+                                                      <p class="sm-mar"><span class="dark">Описание: </span><span class="grey">лаборатория</span></p>
+                                                      <p class="sm-mar"><span class="dark">Организация (ВУЗ / ГНЦ): <br></span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
+                                                    </div>
+                                                    <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="show-more js-show-more"><a href="#">Показать еще</a></div>
+                                            </div>
+                                          </div>
+                                        </div>
                   </div>
                 </div>
               </div>
               <div class="box-comments">
                 <div class="bwrite">
                   <div class="bname">
-                    <h3>Обсуждаем станок токарный с чпу</h3><a href="#enter-popup">Войти</a>
+                    <h3>Комментарии к статье</h3><a href="#enter-popup">Войти</a>
                   </div>
                   <div class="bcon">
-                    <div class="ava"><img src="img/ava.png" alt=""></div>
+                    <div class="ava"><img src="img/ava.png" alt=""/></div>
                     <div class="text">
                       <textarea placeholder=""></textarea>
                     </div>
@@ -519,7 +955,7 @@
                 </div>
                 <div class="bcomments">
                   <div class="comment">
-                    <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""></a></div>
+                    <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""/></a></div>
                     <div class="ccon">
                       <div class="name"><a href="#">Konrad Karlovich</a>
                         <div class="date">1 час назад</div>
@@ -528,7 +964,7 @@
                       <div class="answer"><a href="#">Ответить</a></div>
                     </div>
                     <div class="comment">
-                      <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""></a></div>
+                      <div class="cprev"><a href="#"> <img src="img/content/ava-2.jpg" alt=""/></a></div>
                       <div class="ccon">
                         <div class="name"><a href="#">Konrad Karlovich</a>
                           <div class="pep">
@@ -541,7 +977,7 @@
                         <div class="answer"><a href="#">Ответить</a></div>
                       </div>
                       <div class="comment">
-                        <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""></a></div>
+                        <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""/></a></div>
                         <div class="ccon">
                           <div class="name"><a href="#">Konrad Karlovich</a>
                             <div class="date">1 час назад</div>
@@ -550,7 +986,7 @@
                           <div class="answer"><a href="#">Ответить</a></div>
                         </div>
                         <div class="comment">
-                          <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""></a></div>
+                          <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""/></a></div>
                           <div class="ccon">
                             <div class="name"><a href="#">Konrad Karlovich</a>
                               <div class="date">1 час назад</div>
@@ -563,7 +999,7 @@
                     </div>
                   </div>
                   <div class="comment">
-                    <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""></a></div>
+                    <div class="cprev"><a href="#"> <img src="img/ava.png" alt=""/></a></div>
                     <div class="ccon">
                       <div class="name"><a href="#">Konrad Karlovich</a>
                         <div class="date">1 час назад</div>
@@ -573,7 +1009,7 @@
                     </div>
                   </div>
                   <div class="comment">
-                    <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""></a></div>
+                    <div class="cprev"><a href="#"> <img src="img/content/ava-1.png" alt=""/></a></div>
                     <div class="ccon">
                       <div class="name"><a href="#">Konrad Karlovich</a>
                         <div class="date">1 час назад</div>
@@ -589,12 +1025,11 @@
           <div class="main-right">
             <div class="box-news box-right box-news_dotted">
               <div class="bname">
-                <h3> <a href="#">Популярное оборудование</a></h3>
+                <h3><a href="#">Популярные объекты научно-технического потенциала</a></h3>
               </div>
               <div class="bcon">
                 <div class="item">
-                  <div class="iname"> <a href="#">Станок токарный с ЧПУ</a></div>
-                  <div class="itext">Микроскопия, анализ химического состава</div>
+                  <div class="iname"> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></div>
                   <div class="irating mar-bot-10"><span>Лаборатория</span>
                     <ul>
                       <li class="star"></li>
@@ -605,8 +1040,11 @@
                     </ul>
                   </div>
                   <div class="itext-ext">
-                    <p class="sm-mar"><span class="dark"> Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
-                    <p class="sm-mar"> <span class="dark"> Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                    <p class="sm-mar"><span class="dark">Выполняемые работы<br> </span><span class="grey">Оптическая микроскопия.</span></p>
+                    <p class="sm-mar"> <span class="dark">Основные характеристики<br> </span><span class="grey">Исследования сплавов черных и цветных металлов.</span></p>
+                    <p class="sm-mar"> <span class="dark">Производственная мощность<br> </span><span class="grey">До 250 исследуемых образцов в месяц</span></p>
+                    <p class="sm-mar"> <span class="dark">Аккредитация: </span><span class="grey">Есть</span></p>
+                    <p class="sm-mar"> <span class="dark">Организация (ВУЗ / ГНЦ): </span><span class="grey">ЗАО «Научно-производственный центр “Модуль”»</span></p>
                   </div>
                   <div class="itext-ext"><a href="#">Национальный исследовательский Томский политехнический университет</a></div>
                   <div class="contacts-box"><span class="phone">+7 495 675 87 98</span><span class="email"><a href="#" class="grey-link">email@email.com</a></span></div>
@@ -646,34 +1084,11 @@
               </div>
               <div class="ball"><a href="#">Все оборудование</a></div>
             </div>
-            <div class="box-news box-right box-news_dotted">
-              <div class="bname">
-                <h3> <a href="#">Популярные услуги</a></h3>
-              </div>
-              <div class="bcon">
-                <div class="item">
-                  <div class="iname"> <a href="#">Выставка научного оборудования НИИ спорта РГУФКСМиТ</a></div>
-                  <div class="irating irating_margin2">
-                    <ul>
-                      <li class="star"></li>
-                      <li class="star"></li>
-                      <li class="star"></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="itext">10 ноября 2014 года в лаборатории комплексных исследований НИИ спорта РГУФКСМиТ состоится выставка научного оборудования. <br></div>
-                  <div class="itext-ext"><span class="dark">Организация (ВУЗ / ГНЦ): </span><a href="#">Национальный исследовательский Томский политехнический университет</a></div>
-                  <div class="tags"><a href="#" class="tags-item"><span class="name">Машиностроение</span><span class="count">12</span></a><a href="#" class="tags-item"><span class="name">Металлообработка</span><span class="count empty"></span></a></div>
-                </div>
-              </div>
-              <div class="ball"><a href="#">Все оборудование</a></div>
-            </div>
             <div class="box-support">
               <div class="bcon">
-                <div class="item"><a href="#"> <img src="img/content/logo-minprom.png" alt=""></a></div>
-                <div class="item"><a href="#"> <img src="img/content/logo-smr.png" alt=""></a></div>
-                <div class="item"><a href="#"> <img src="img/content/logo-ibs.png" alt=""></a></div>
+                <div class="item"><a href="#"> <img src="img/content/logo-minprom.png" alt=""/></a></div>
+                <div class="item"><a href="#"> <img src="img/content/logo-smr.png" alt=""/></a></div>
+                <div class="item"><a href="#"> <img src="img/content/logo-ibs.png" alt=""/></a></div>
               </div>
             </div>
           </div>

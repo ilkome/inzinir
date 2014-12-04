@@ -3,7 +3,8 @@
 <!--	Simple Communication-->
 <html>
   <head>
-    <title>ИП - Документы</title>
+    <title>ИП 
+    </title>
     <!-- Meta-->
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -362,14 +363,21 @@
                 <li><a href="#">О проекте</a></li>
               </ul>
             </div>
-            <div class="user">
+            <div class="user js-usermenu">
               <div class="name"><a href="#"> 
                   <div class="title">Алексей Петров</div>
                   <div class="email">petrov.i1975@mail.ru</div></a></div>
               <div class="pic">
                 <div class="ava"><img src="img/content/ava-1.png" alt=""></div>
                 <div class="count"><a href="#">9</a></div>
+                <div class="arrow"></div>
               </div>
+              <ul class="user-drop js-usermenu-drop">
+                <li class="user-drop__link user-drop__link_work"><a href="#">Рабочая область</a></li>
+                <li class="user-drop__link user-drop__link_request"><a href="#">Заявки</a></li>
+                <li class="user-drop__link user-drop__link_messages"><a href="#">Сообщения</a></li>
+                <li class="user-drop__link user-drop__link_notifyc"><a href="#">Уведомления<span class="count"><i>9 </i></span></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -397,364 +405,691 @@
                 <li class="tabs__item"><a href="#js-tab-service" class="tabs__link">в Услугах</a></li>
                 <li class="tabs__item"><a href="#js-tab-equipment" class="tabs__link">в оборудовании</a></li>
                 <li class="tabs__item"><a href="#js-tab-soft" class="tabs__link">в программном обеспечении</a></li>
+                <li class="tabs__item"><a href="#js-tab-ntp" class="tabs__link">объекты НТП</a></li>
               </ul>
               <div class="tabs-wrapper">
                 <div data-id="#js-tab-service" class="tabs-content js-tabs-content">
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Комплекс по переработки растительного сырья</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Лаборатория экспертизы промышленной безопасности зданий, сооружений и технических устройств опасных производственных объектов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Компьютеризированная станция SMID 65</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизация технологических объектов (процессов)</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизированный лабораторный стенд для исследования параметров постоянных резисторов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Междисциплинарная лабораторная платформа в комплекте с аппаратно-программным контроллером NI ELVIS II Hard-ware</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                 </div>
                 <div data-id="#js-tab-equipment" class="tabs-content js-tabs-content">
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Человек</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагуповл</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a><a href="#">225</a><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Компьютеризированная станция SMID 65</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Комплекс по переработки растительного сырья</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизация технологических объектов (процессов)</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизированный лабораторный стенд для исследования параметров постоянных резисторов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Междисциплинарная лабораторная платформа в комплекте с аппаратно-программным контроллером NI ELVIS II Hard-ware</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Лаборатория экспертизы промышленной безопасности зданий, сооружений и технических устройств опасных производственных объектов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                 </div>
                 <div data-id="#js-tab-soft" class="tabs-content js-tabs-content">
-                  <div class="item item_cloud">
-                    <div class="iprev">
-                      <div class="person">
-                        <div class="date">10 сентября 2014</div>
-                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
-                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
-                        <ul class="person__info"> 
-                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="icon">
-                      <div class="cloud">
-                        <div class="iname"><a href="#">Разработка конструкторской документации</a></div>
-                        <div class="itext">
-                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
-                          С уважением, Олег Джагупов.
-                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
-                      </div>
-                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
-                        <div class="right">
-                          <div class="comments"><a href="#">51</a></div>
-                          <div class="views"><a href="#">225</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Междисциплинарная лабораторная платформа в комплекте с аппаратно-программным контроллером NI ELVIS II Hard-ware</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                </div>
+                <div data-id="#js-tab-ntp" class="tabs-content js-tabs-content">
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Компьютеризированная станция SMID 65</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Лаборатория экспертизы промышленной безопасности зданий, сооружений и технических устройств опасных производственных объектов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Комплекс по переработки растительного сырья</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизированный лабораторный стенд для исследования параметров постоянных резисторов</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Мобильный компьютерный класс ICLab</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Междисциплинарная лабораторная платформа в комплекте с аппаратно-программным контроллером NI ELVIS II Hard-ware</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item item_cloud">
+                                    <div class="iprev">
+                                      <div class="person">
+                                        <div class="date">10 сентября 2014</div>
+                                        <div class="person__img"><a href="#"><img src="img/content/ava-100.jpg" alt="img"></a></div>
+                                        <div class="person__name"> <a href="#">Олег Джагупов</a></div>
+                                        <ul class="person__info"> 
+                                          <li><a href="mailto:Djagupovol@mzmo.ru">Djagupovol@mzmo.ru</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="icon">
+                                      <div class="cloud">
+                                        <div class="iname"><a href="#">Автоматизация технологических объектов (процессов)</a></div>
+                                        <div class="itext">
+                                          Здравствуйте, прошу сообщить о возможности проектирования грейферов. 
+                                          С уважением, Олег Джагупов.
+                                        </div><a href="#" class="doc-link">math.pdf <span>(14 mb)</span></a>
+                                      </div>
+                                      <div class="imeta"><a href="#" class="btn-add">Предложить решение</a>
+                                        <div class="right">
+                                          <div class="comments"><a href="#">51</a></div>
+                                          <div class="views"><a href="#">225	</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                 </div>
               </div>
             </div>
