@@ -1,10 +1,4 @@
-//- Шаблон
-//------------------------------------------------
 extends _layout
-
-//- Загаловок страницы
-block title
-	| - Главная
 
 block styles
 	link(href="css/lightSlider.css", rel="stylesheet")
@@ -14,7 +8,6 @@ block scripts
 	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
 	script(src="js/jquery.datetimepicker.js", type="text/javascript")
 
-//- Контент
 //------------------------------------------------
 block append content
 	.main-width.main-wrap
@@ -79,14 +72,25 @@ block append content
 					a(href="#")  Програмы вернут
 			.serp-result
 				ul
-					li
+					li.js-show-more-box
 						h4 В разделе «Новости»
 							a(href="#")  (23)
 						p в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей
 						p
 							a(href="#") новые программы вернут рынок национальным производителям
 						p ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии
-						a(href="#").show-all-link Смотреть все
+						.row.hide
+							p в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей
+							p
+								a(href="#") новые программы вернут рынок национальным производителям
+							p ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии
+						.row.hide
+							p в рамках <span class="bold">программы</span> обновления автопарка продано более 10 тысяч автомобилей
+							p
+								a(href="#") новые программы вернут рынок национальным производителям
+							p ученые подготовили <span class="bold">программы</span> по локализации судотроения в Росии
+						a(href="#").show-all-link.js-show-more Смотреть все
+
 					li
 						h4 В разделе «Новости»
 							a(href="#")  (23)

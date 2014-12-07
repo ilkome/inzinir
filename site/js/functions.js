@@ -52,7 +52,6 @@ $(document).ready(function() {
 	});
 
 
-
 	//	Page article content nav
 	// ==================================================
 	$(".box-page-nav a").on("click", function(e){
