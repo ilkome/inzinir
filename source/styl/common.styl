@@ -235,22 +235,30 @@ input[type=checkbox]:checked + label
 	background-position 0 -22px;
 
 	
-input[type="radio"] + label 
+input[type="radio"] + label
+input.input-radio + label
 	cursor:pointer; font-size:14px; line-height:30px; margin:0px 20px 0px 0;
 input[type="radio"] + label::before 
+input.input-radio + label::before 
 	content:""; display:inline-block; height:22px; width:22px; margin:0 10px -5px 0px; 
 	background:url("../img/radio.png") no-repeat;
 input[type="radio"]
+input.input-radio
 	display:none;
 input[type="radio"]:disabled + label 
+input.input-radio:disabled + label 
 	cursor:default;
 input[type="radio"] + label:hover::before
+input.input-radio + label:hover::before
 	background-position 0px 0px;
 input[type="radio"]:checked + label::before 
+input.input-radio:checked + label::before 
 	background-position 0 -22px;
 input[type="radio"]:disabled + label::before 
+input.input-radio:disabled + label::before 
 	background-position:0px 0px;
 input[type="radio"]:checked:disabled + label::before 
+input.input-radio:checked:disabled + label::before 
 	background-position 0px -22px;
 
 
