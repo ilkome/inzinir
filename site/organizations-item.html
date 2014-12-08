@@ -13,10 +13,12 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/sweet-alert.css" rel="stylesheet">
+    <link href="css/jquery.remodal.css" rel="stylesheet">
     <!-- Scripts-->
     <script src="js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/jquery.remodal.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
   </head>
   <body>
@@ -379,6 +381,48 @@
             </div>
           </div>
         </div>
+        <div class="hide">
+          <div data-remodal-id="poporder" class="remodal">
+            <div class="popedit">
+              <div class="popedit__name">Связаться</div>
+              <form action="#">
+                <div class="popedit__form">
+                  <div class="lineedit">
+                    <div class="lineedit__name">Название<span class="req">*</span></div>
+                    <div class="lineedit__con">
+                      <input type="text" placeholder="" value="Станок токарный с ЧПУ" class="inp-field inp-field_500">
+                    </div>
+                  </div>
+                  <div class="lineedit">
+                    <div class="lineedit__name">Описание</div>
+                    <div class="lineedit__con">
+                      <input type="text" placeholder="" value="DELTAMAB 400" class="inp-field inp-field_500">
+                    </div>
+                  </div>
+                  <div class="lineedit">
+                    <div class="lineedit__name">ID заказа<span class="req">*</span></div>
+                    <div class="lineedit__con">
+                      <input type="text" placeholder="" value="Отличные" class="inp-field inp-field_full">
+                    </div>
+                  </div>
+                  <div class="lineedit">
+                    <div class="lineedit__name">Контакты<span class="req">*</span></div>
+                    <div class="lineedit__con">
+                      <textarea placeholder="" class="text-field text-field_full">(заказчика) , ФИО, телефон, емаил.</textarea>
+                    </div>
+                  </div>
+                  <div class="lineedit">
+                    <div class="lineedit__name">Комментарий</div>
+                    <div class="lineedit__con">
+                      <textarea placeholder="" class="text-field text-field_full">Комментарий</textarea>
+                    </div>
+                  </div>
+                  <div class="lineedit"><a href="#" class="btn-orange-wide inline edit-save">Связаться</a></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <div class="main-width main-wrap">
           <div class="pathway">
             <ul>
@@ -423,7 +467,7 @@
                     Результаты интеллектуальной деятельности: 64% <br>
                   </p>
                   <p><strong>Вид деятельности: </strong>проведение исследований, измерение <br><strong>Расположение: </strong>Московская область, Протвино <br><strong>Контакты: </strong>email@email.com, +7 495 675 87 98</p>
-                  <div class="inline"><a href="#" class="btn-orange btn-orange-bigm">Свзяаться</a></div>
+                  <div class="inline"><a href="#poporder" class="btn-orange btn-orange-bigm">Свзяаться</a></div>
                 </div>
               </div>
               <div class="bmetabot">
@@ -444,7 +488,7 @@
                 <div class="bcon">
                   <div class="box-articles m-mod">
                                         <div class="item-3col js-object-box">
-                                          <div class="iprev"><img src="img/content/120-85-2.jpg" alt=""><a href="#" class="feedback">Связаться</a></div>
+                                          <div class="iprev"><img src="img/content/120-85-2.jpg" alt=""><a href="#poporder" class="feedback">Связаться</a></div>
                                           <div class="icon">
                                             <div class="iname"><a href="#">ЗАО «Научно-производственный центр “Модуль”»</a></div>
                                             <div class="iobjects"><a href="#" class="js-show-objects">Предложения организации</a></div>
@@ -691,7 +735,7 @@
                                           </div>
                                         </div>
                                         <div class="item-3col js-object-box">
-                                          <div class="iprev"><img src="img/content/120-85-1.jpg" alt=""><a href="#" class="feedback">Связаться</a></div>
+                                          <div class="iprev"><img src="img/content/120-85-1.jpg" alt=""><a href="#poporder" class="feedback">Связаться</a></div>
                                           <div class="icon">
                                             <div class="iname"><a href="#">Санкт-Петербургский государственный университет аэрокосмического приборостроения</a></div>
                                             <div class="iobjects"><a href="#" class="js-show-objects">Предложения организации</a></div>

@@ -48,8 +48,16 @@ $(document).ready(function() {
 		if (hideItems.length == 1) {
 			thisis.fadeOut()
 		}
-
 	});
+
+
+	//	#add-order-id
+	$(".js-add-order-id").on("click", function(e) {
+		orderId = $(this).data("order-id");
+		$(".js-order-id").val(orderId);
+	});
+
+
 
 
 	//	Page article content nav

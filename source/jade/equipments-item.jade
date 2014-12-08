@@ -1,17 +1,50 @@
-//- Шаблон
-//------------------------------------------------
 extends _layout
 
-//- Загаловок страницы
-block title
-	| - Оборудование
-	
+block styles
+	link(href="css/jquery.remodal.css", rel="stylesheet")
 block scripts
- 
- 
-//- Контент
-//------------------------------------------------
+	script(src="js/jquery.remodal.js", type="text/javascript")
+
 block append content
+	.remodal(data-remodal-id="order-ok")
+		.order-ok Спасибо ваш заказ отправлен!
+
+	.remodal(data-remodal-id="poporder")
+		.popedit
+			.popedit__name Окно заказа
+			form(action="#")
+				.popedit__form
+					.lineedit
+						.lineedit__name
+							| Название
+							span.req *
+						.lineedit__con
+							input(type="text", placeholder="", value="Станок токарный с ЧПУ").inp-field.inp-field_500
+					.lineedit
+						.lineedit__name
+							| Описание
+						.lineedit__con
+							input(type="text", placeholder="", value="DELTAMAB 400").inp-field.inp-field_500
+					.lineedit
+						.lineedit__name
+							| ID заказа
+							span.req *
+						.lineedit__con
+							input(type="text", placeholder="", value="Отличные").inp-field.inp-field_full.js-order-id
+					.lineedit
+						.lineedit__name
+							| Контакты
+							span.req *
+						.lineedit__con
+							textarea(placeholder="").text-field.text-field_full (заказчика) , ФИО, телефон, емаил.
+					.lineedit
+						.lineedit__name
+							| Комментарий
+						.lineedit__con
+							textarea(placeholder="").text-field.text-field_full Комментарий
+					.lineedit
+						a(href="#order-ok").btn-orange-wide.inline.edit-save Заказать
+						
 	.main-width.main-wrap
 		.pathway
 			ul
@@ -68,7 +101,7 @@ block append content
 						strong Организация (ВУЗ / ГНЦ): 
 						| Национальный исследовательский Томский политехнический университет
 				.order-service-cont
-					a(href="#").btn-orange.inline.js-open-coming-soon Заказать
+					a(href="#poporder", data-order-id="id#1").btn-orange-wide.inline.js-add-order-id Заказать
 					a(href="#").btn-grey-dashed.js-show-contacts Показать контакты
 					.contacts.js-contacts-box
 						span.phone +7 495 675 87 98
@@ -121,7 +154,7 @@ block append content
 											span.name Машиностроение
 											span.count.empty
 									.order-service
-										a(href="#").btn-orange Заказать
+										a(href="#poporder", data-order-id="id#2").btn-orange.js-add-order-id Заказать
 									.imeta
 										.right.mar-top-20m
 											.comments
@@ -155,7 +188,7 @@ block append content
 											span.name Машиностроение
 											span.count.empty
 									.order-service
-										a(href="#").btn-orange Заказать
+										a(href="#poporder", data-order-id="id#3").btn-orange.js-add-order-id Заказать
 									.imeta
 										.right.mar-top-20m
 											.comments

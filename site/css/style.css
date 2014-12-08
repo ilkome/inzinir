@@ -5200,6 +5200,7 @@ i {
 .btn-orange,
 .btn-orange-big,
 .btn-orange-wide,
+input.btn-orange-wide,
 .box-sort-docs .action a {
   display: block;
   padding: 10px 10px;
@@ -5214,6 +5215,7 @@ i {
 .btn-orange:hover,
 .btn-orange-big:hover,
 .btn-orange-wide:hover,
+input.btn-orange-wide:hover,
 .box-sort-docs .action a:hover {
   text-decoration: none;
   border-color: #f85800;
@@ -5222,7 +5224,8 @@ i {
   padding: 15px 35px;
   font-size: 15px;
 }
-.btn-orange-wide {
+.btn-orange-wide,
+input.btn-orange-wide {
   padding: 10px 70px;
   font-size: 15px;
 }
@@ -5348,6 +5351,12 @@ i {
 }
 .btn-center-or {
   display: inline-block;
+}
+input.btn-orange-wide {
+  background: none;
+}
+input.btn-orange-wide:hover {
+  background: none;
 }
 .font-black {
   color: #000;
@@ -10763,6 +10772,12 @@ footer .copy {
   content: "";
   display: table;
   clear: both;
+}
+.order-ok {
+  width: 400px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
 }
 .lineedit {
   padding-bottom: 25px;
