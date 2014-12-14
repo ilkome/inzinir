@@ -6029,14 +6029,17 @@ input.btn-orange-wide:hover {
 .sep-space {
   height: 30px;
 }
+.mar-bot-5 {
+  margin-bottom: 5px;
+}
+.mar-bot-10 {
+  margin-bottom: 10px;
+}
 .mar-bot-20 {
   margin-bottom: 20px;
 }
 .mar-bot-30 {
   margin-bottom: 30px;
-}
-.mar-bot-10 {
-  margin-bottom: 10px;
 }
 .mar-top-20m {
   margin-top: -15px;
@@ -8580,6 +8583,11 @@ textarea.inp-full {
   color: #ccc;
   font-size: 11px;
 }
+.box-docs .item .file-desc .prev-ver,
+.item-docs .file-desc .prev-ver {
+  display: inline-block;
+  margin-left: 10px;
+}
 .box-docs .item .file-desc .text,
 .item-docs .file-desc .text {
   padding: 10px 0;
@@ -10979,6 +10987,14 @@ input.inp-radio + label {
   width: 600px;
   height: 500px;
   padding: 0 !important;
+}
+.prev-ver-box {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.prev-ver-box .prev-ver {
+  display: inline-block;
+  margin-left: 5px;
 }
 @-webkit-keyframes opacity-fade {
   0% {

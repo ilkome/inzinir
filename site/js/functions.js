@@ -9,9 +9,13 @@ $(document).ready(function() {
 	
 	//	#user-menu
 	$(".js-usermenu").on("click", function(e) {
-		e.preventDefault();
 		var drop = $(".js-usermenu-drop");
 		var arrow = $(this).find(".arrow");
+
+		if($(e.target).closest(".menu-wrap").length) {
+			//alert(1)
+			e.preventDefault();
+		}
 		
 		if(drop.is(":visible") && !$(e.target).closest('.js-usermenu-drop').length ) {
 			drop.slideUp();
