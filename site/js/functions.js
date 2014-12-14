@@ -491,4 +491,39 @@ $(document).ready(function() {
 			}
 		);
 	}
+
+	
+	$('.js-open-map').on("click", function(e) {
+		var inst = $.remodal.lookup[$('[data-remodal-id="modal"]').data('remodal')];
+		inst.open();
+		initializeMap();
+		e.preventDefault();
+	});
+
+	// Функция инициализации карты
+	function initializeMap() {
+		// проверяем есть ли карта на странице
+		if ( $('#google-map').length) {
+			
+			// настройки карты
+			// опции включаем по вкусу
+			var mapOptions = {
+				zoom: 13,
+				center: new google.maps.LatLng(55.753584, 37.622453),
+				panControl: false,
+				zoomControl: true,
+				scaleControl: true,
+				// scrollwheel: false,
+				navigationControlOptions: { style: 'SMALL' },
+				disableDefaultUI: true,
+				// minZoom: 10,
+				// maxZoom: 17,
+			};
+
+			// создадим карту с нашими настройками
+			map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+		}
+	}
+
 });

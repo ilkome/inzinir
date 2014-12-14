@@ -9,6 +9,8 @@ block title
 //- Контент
 //------------------------------------------------
 block append content
+	+event-map
+
 	.main-width.main-wrap
 		.pathway
 			ul
@@ -33,7 +35,8 @@ block append content
 									span.name Круглый стол
 									span.count.empty
 							.address-date
-								.ad-address Москва, ул. Сиреневый бульвар, д.4
+								.ad-address 
+									a(href="#").js-open-map Москва, ул. Сиреневый бульвар, д.4
 								.ad-date 27, 28 октября - с 14.00 до 16.00, <br>29, 30 октября - с 10.00 до 12.00
 							.add-to-cal
 								a(href="#") Добавить в Google Calendar  

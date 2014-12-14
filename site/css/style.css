@@ -10969,6 +10969,17 @@ input.inp-radio + label {
   width: 100%;
   box-sizing: border-box;
 }
+#google-map {
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+.remodal_map {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  padding: 0 !important;
+}
 @-webkit-keyframes opacity-fade {
   0% {
     opacity: 0.5;

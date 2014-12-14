@@ -107,3 +107,9 @@ mixin support-block
 			.item
 				a(href="#") 
 					img(src="img/content/logo-ibs.png", alt="")
+
+
+mixin event-map
+	script(src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;", type="text/javascript")
+	.remodal(data-remodal-id="modal").remodal_map
+		#google-map(style="width:700px; height:600px;")
