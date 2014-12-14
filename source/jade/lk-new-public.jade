@@ -3,106 +3,7 @@ extends _layout
 block title
 	| - Моя организация
 
-//------------------------------------------------
 block append content
-	.remodal(data-remodal-id="remodal-add-ok")
-		.order-accept
-			.order-accept__name Заявка № 2123423
-			.order-accept__text
-				p
-					strong Ваша заявка на добавление нового оборудования принята. <br>
-					| Группа мониторинга рассмотрит ее и примет решение о публикации на портале. <br>
-				p За ходом рассмотрения Вы можете следить в разделе меню 
-					a(href="#") «Заявки».
-				p &nbsp;
-				a(href="#").btn-orange-wide.inline Согласен
-	.remodal(data-remodal-id="popedit")
-		.popedit
-			.popedit__name Новое оборудование
-			.popedit__form
-				.lineedit
-					.lineedit__name
-						| Название
-						span.req *
-					.lineedit__con
-						input(type="text", placeholder="", value="Станок токарный с ЧПУ").inp-field.inp-field_500
-				.lineedit
-					.lineedit__name
-						| Модель
-					.lineedit__con
-						input(type="text", placeholder="", value="DELTAMAB 400").inp-field.inp-field_500
-				.lineedit
-					.lineedit__name
-						| Свойства
-						span.req *
-					.lineedit__con
-						input(type="text", placeholder="", value="Отличные").inp-field.inp-field_full
-				.lineedit
-					.lineedit__name
-						| Описание
-						span.req *
-					.lineedit__con
-						textarea(placeholder="").text-field.text-field_full Прецизионный токарный станок с ЧПУ выполнен по прогрессивной схеме компоновки с расположением револьверной головки на наклонных направляющих, что увеличивает жесткость конструкции, позволяет уменьшить размеры станка по ширине и оптимально распределить по направляющим нагрузки, образующиеся в процессе резания. 
-				.lineedit
-					.lineedit__name
-						| Основные характеристики
-					.lineedit__con
-						textarea(placeholder="").text-field.text-field_full Наибольший диаметр обрабатываемого изделия — 600 мм. Число управляемых координат — 2
-				.lineedit
-					.lineedit__name
-						| Производитель
-					.lineedit__con
-						input(type="text", placeholder="", value="SOMAB, Франция").inp-field.inp-field_360
-				.lineedit
-					.lineedit__name
-						| Год
-					.lineedit__con
-						input(type="text", placeholder="", value="2012").inp-field.inp-field_70
-				.lineedit
-					.lineedit__name
-						| Состояние
-					.lineedit__con_pad-left
-						input(id="radio-s-1" type="radio" name="radio" checked).inp-radio
-						label(for="radio-s-1") Новый
-						input(id="radio-s-2" type="radio" name="radio").inp-radio
-						label(for="radio-s-2") Поддержанный
-						input(id="radio-s-3" type="radio" name="radio").inp-radio
-						label(for="radio-s-3") Старый
-				.lineedit
-					.lineedit__name
-						| Порядок предоставления услуг по доступу к оборудованию
-						span.req
-					.lineedit__con_pad-left
-						input(id="radio-p-1" type="radio" name="radio" checked).inp-radio
-						label(for="radio-p-1") Передача в собственность
-						input(id="radio-p-2" type="radio" name="radio").inp-radio
-						label(for="radio-p-2") Аренда
-				.lineedit
-					.lineedit__name
-						| Организация (ВУЗ, ГНЦ)
-					.lineedit__con
-						input(type="text", placeholder="", value="Национальный исследовательский Томский политехнический институт").inp-field.inp-field_full
-				.lineedit
-					.lineedit__name
-						| Область применения
-					.lineedit__con
-						input(type="text", placeholder="", value="Машиностроение Металлообработка").inp-field.inp-field_500
-						.desc укажите через пробел
-				.lineedit
-					.lineedit__name Изображение
-					.lineedit__con
-						.formgroup.articles__edit-images
-							ul.articles__edit-images-list.inline
-								li.articles__edit-images-list-item
-									img(src="img/content/edit-page/1.png", alt="")
-									.articles__edit-images-list-item--edit
-								li.articles__edit-images-list-item--add
-									.articles__edit-images-list-item--add-icon
-									.articles__edit-images-list-item--add-text добавить изображение
-				.lineedit_save
-					a(href="#").btn-orange-wide.inline.edit-save Сохранить
-										
-			
 	.main-width.main-wrap
 		.pathway
 			ul
@@ -113,9 +14,6 @@ block append content
 					a(href="#") Моя организация
 		
 		.organ-info
-			ul.admin-box--column
-				li.admin-edit
-				li.admin-delete
 			.prev
 				img(src="img/content/pic.png", alt="")
 			.pic
@@ -135,8 +33,6 @@ block append content
 						li.map 107078, Россия, Москва, <br>ул. Маши Порываевой, д.7, стр. 2.
 		
 		.main-full
-			p
-				a(href="#remodal-add-ok") Открыть окно подтверждения
 			.box-info
 				.box
 					.bname
@@ -144,9 +40,6 @@ block append content
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iprev
 									a(href="#") 
 										img(src="img/content/200-120-1.jpg", alt="")
@@ -164,9 +57,6 @@ block append content
 						.col-3_sep
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iprev
 									a(href="#") 
 										img(src="img/content/200-120-2.jpg", alt="")
@@ -182,8 +72,22 @@ block append content
 										li.star
 										li
 						.col-3_sep
-						.col-3_border.item-adder
-							a(href="#popedit").item-adder--link + <br>Добавить оборудование																	
+						.col-3_border
+							.item.item--edit
+								.iprev
+									a(href="#") 
+										img(src="img/content/200-120-1.jpg", alt="")
+								.iname
+									a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+								.itext Национальный исследовательский Томский политехнический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
 						.clear
 						.all_full
 							a(href="#") Все оборудование
@@ -196,9 +100,6 @@ block append content
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
 								.itext Национальный исследовательский Томский политехнический университет 
@@ -213,9 +114,6 @@ block append content
 						.col-3_sep
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
 								.itext Кубанский государственный технологический университет 
@@ -228,8 +126,19 @@ block append content
 										li.star
 										li
 						.col-3_sep
-						.col-3_border.item-adder
-							a(href="#popedit").item-adder--link + <br>Добавить услугу
+						.col-3_border
+							.item.item--edit
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext Кубанский государственный технологический университет 
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li.star
+										li
 						.clear
 						.all_full
 							a(href="#") Все услуги
@@ -242,9 +151,6 @@ block append content
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Разработка систем диспетчерского контроля и управления
 								.itext ЗАО Самфинг <br>
@@ -260,9 +166,6 @@ block append content
 						.col-3_sep
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
 								.itext ЗАО «ЭлеСи» <br>
@@ -276,8 +179,20 @@ block append content
 										li
 										li
 						.col-3_sep
-						.col-3_border.item-adder
-							a(href="#popedit").item-adder--link + <br>Добавить программное обеспечение
+						.col-3_border
+							.item.item--edit
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext ЗАО «ЭлеСи» <br>
+									a(href="#") http://elesy.ru/engineering/services
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
 						.clear
 						.all_full
 							a(href="#") Все программы
@@ -290,9 +205,6 @@ block append content
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527 
 								.itext Предназначена для исследования эксплуатационных характеристик продуктивных пластов <br><br>
@@ -308,9 +220,6 @@ block append content
 						.col-3_sep
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.iname
 									a(href="#") Автоматизированное рабочее место конструктора АРМК 
 								.itext Для проектирования и моделирования МКА <br><br>
@@ -324,8 +233,20 @@ block append content
 										li
 										li
 						.col-3_sep
-						.col-3_border.item-adder
-							a(href="#popedit").item-adder--link + <br>Добавить <br> объект НТП
+						.col-3_border
+							.item.item--edit
+								.iname
+									a(href="#") Автоматизированное рабочее место конструктора АРМК 
+								.itext Для проектирования и моделирования МКА <br><br>
+									a(href="#").link-orange ЮЗГУ
+								.irating
+									span Рейтинг
+									ul
+										li.star
+										li.star
+										li.star
+										li
+										li
 						.clear
 						.all_full
 							a(href="#") Все программы
@@ -339,9 +260,6 @@ block append content
 					.bcon.bcon--padding
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.idate 19 сентября 2014 года
 								.iname
 									a(href="#") Разработка систем диспетчерского контроля и управления
@@ -358,9 +276,6 @@ block append content
 						.col-3_sep
 						.col-3_border
 							.item.item--edit
-								ul.admin-box--columnpad
-									li.admin-edit
-									li.admin-delete
 								.idate 19 сентября 2014 года
 								.iname
 									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
@@ -375,8 +290,21 @@ block append content
 								.isuggest
 									a(href="#") Предложить решение
 						.col-3_sep
-						.col-3_border.item-adder
-							a(href="#popedit").item-adder--link + <br>Добавить потребность
+						.col-3_border
+							.item.item--edit
+								.idate 19 сентября 2014 года
+								.iname
+									a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+								.itext 	
+									p
+										b Описание задачи: 
+										| Здравствуйте, прошу сообщить о возможности проектирования грейферов.
+									p С уважением, Олег Джагупов
+									p
+										b Контакт: 
+										| Djagupovol@mzmo.ru
+								.isuggest
+									a(href="#") Предложить решение
 						.clear
 						.all_full
 							a(href="#") Все потребности
@@ -387,9 +315,6 @@ block append content
 						a(href="#") Результаты интеллектуальной деятельности
 				.bcon
 					.item.item--edit_border
-						ul.admin-box--column
-							li.admin-edit
-							li.admin-delete
 						.iname
 							a(href="#") Эскизные проекты роторов низкого давления тихоходной турбины мощностью свыше 1200 МВт с двумя ЦНД
 						.itext
@@ -405,8 +330,6 @@ block append content
 							p
 								b Охранный документ:
 								| Патент №2481822 от 21.02.2012
-					.item-adder
-						a(href="#popedit").item-adder--link + Добавить результат интеллектуальной деятельности
 					.clear
 					.all_full
 						a(href="#") Все результаты
@@ -416,9 +339,6 @@ block append content
 					h3 
 						a(href="#") Результаты интеллектуальной деятельности
 				.item.item--edit_border
-					ul.admin-box--column
-						li.admin-edit
-						li.admin-delete
 					.item-cloud-talks_min.w80p
 						.iprev
 							.person
@@ -460,8 +380,6 @@ block append content
 										a(href="#") 51
 									.views
 										a(href="#") 225
-				.item-adder
-						a(href="#popedit").item-adder--link + Добавить обсуждение
 					.clear
 					.all_full
 						a(href="#") Все обсуждения
@@ -472,9 +390,6 @@ block append content
 						a(href="#") События
 				.bcon
 					.item.item--edit_border
-						ul.admin-box--column
-							li.admin-edit
-							li.admin-delete
 						.item--edit--in.w80p
 							.iprev
 								img(src="img/content/180-135-1.jpg", alt="")
@@ -497,8 +412,6 @@ block append content
 											a(href="#") 51
 										.views
 											a(href="#") 225
-					.item-adder
-							a(href="#popedit").item-adder--link + Добавить событие
 						.clear
 						.all_full
 							a(href="#") Все события
@@ -510,9 +423,6 @@ block append content
 				.bcon
 					.box-docs
 						.item.item--edit_pad
-							ul.admin-box--column
-								li.admin-edit
-								li.admin-delete
 							.file-list_nobg
 								a(href="#") JPG - 7 Мб
 								a(href="#") PDF - 12 Мб
@@ -527,8 +437,6 @@ block append content
 									a(href="#").tags-item
 										span.name Машиностроение
 										span.count.empty
-						.item-adder
-							a(href="#popedit").item-adder--link + Добавить документ
 						.clear
 						.all_full
 							a(href="#") Все документы
