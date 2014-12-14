@@ -1,0 +1,27 @@
+extends _layout
+
+block append content
+	//------------------------------------------------
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Обратная связь 
+		//------------------------------------------------
+		.page-name
+			h1 Обратная связь
+		//------------------------------------------------
+		.main-full
+			.feedback-box
+				form
+					.formgroup
+						.formgroup__name Эл. почта
+						.formgroup__field: input(type="text" placeholder="Эл. почта" autofocus)
+					.formgroup
+						.formgroup__name Имя
+						.formgroup__field: input(type="text" placeholder="Имя")
+					.formgroup
+						.formgroup__name Текст сообщения
+						.formgroup__field: textarea
+					.formgroup
+						input(type="submit" value="Войти").btn-orange-wide

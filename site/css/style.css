@@ -8999,6 +8999,11 @@ textarea.inp-full {
   font-size: 11px;
   color: #ccc;
 }
+.box-interest_novisual {
+  margin: 0;
+  background: none;
+  border: 1px solid #e5e5e5;
+}
 .item-3col {
   width: 100%;
   margin-bottom: 20px;
@@ -10948,7 +10953,7 @@ input.inp-radio + label {
   border-top-color: #ff8c4d;
   border-width: 5px;
 }
-.feedback {
+.feedback-box {
   width: 350px;
 }
 .formgroup {
