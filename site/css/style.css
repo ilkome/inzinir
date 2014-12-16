@@ -5866,8 +5866,11 @@ input.btn-orange-wide:hover {
 .user-drop__link_messages {
   background: url("../img/m-talks.png") 17px 25px no-repeat;
 }
-.user-drop__link_notifyc {
+.user-drop__link_notify {
   background: url("../img/m-notification.png") 17px 25px no-repeat;
+}
+.user-drop__link_exit {
+  background: url("../img/m-exit.png") 17px 25px no-repeat;
 }
 .user-drop__link a {
   display: block;

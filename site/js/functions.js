@@ -13,7 +13,6 @@ $(document).ready(function() {
 		var arrow = $(this).find(".arrow");
 
 		if($(e.target).closest(".menu-wrap").length) {
-			//alert(1)
 			e.preventDefault();
 		}
 		
@@ -279,6 +278,11 @@ $(document).ready(function() {
 			format:'d.m.Y',
 			inline:true,
 			todayButton: false,
+			onChangeMonth:function(ct,$i){
+				var month = ct.dateFormat('m');
+				$(".js-news-cal").find(".items").hide()
+				$(".js-news-cal").find(".items.month-"+month).removeClass("hide").fadeIn()
+			}
 		});
 	}
 	
