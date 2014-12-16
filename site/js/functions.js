@@ -538,6 +538,15 @@ $(document).ready(function() {
 			// создадим карту с нашими настройками
 			map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 
+			var myLatlng = new google.maps.LatLng(55.753584, 37.622453);
+
+			// добавляем данные в маркер
+			var marker = new google.maps.Marker({
+				position: myLatlng
+			});
+
+			// Добавляем маркер
+			marker.setMap(map);
 		}
 	}
 
