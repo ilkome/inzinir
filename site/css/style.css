@@ -5400,29 +5400,25 @@ input.btn-orange-wide:hover {
 .table {
   display: table;
 }
+.table-sm {
+  display: inline-block;
+}
 .col {
   display: table-cell;
   vertical-align: top;
 }
 .col-3,
-.col-3_sep,
-.col-3_border,
-.col-3_sep_border {
+.col-3_border {
   display: table-cell;
-  table-layout: fixed;
-  width: 33.3%;
+  width: 33%;
+  max-width: 330px;
   vertical-align: top;
 }
-.col-3_sep,
-.col-3_sep_sep,
-.col-3_border_sep,
-.col-3_sep_border_sep {
-  width: 200px;
+.col-3_sep {
+  display: table-cell;
+  width: 2%;
 }
-.col-3_border,
-.col-3_sep_border,
-.col-3_border_border,
-.col-3_sep_border_border {
+.col-3_border {
   border: 1px solid #e5e5e5;
 }
 .w100p {
