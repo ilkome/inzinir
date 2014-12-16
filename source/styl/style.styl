@@ -199,21 +199,25 @@ color-orange()
 // ===============================================
 .table
 	display table
+
+.table-sm
+	display inline-block
 .col
 	display table-cell 
 	vertical-align top
 .col-3
 	display table-cell 
-	table-layout fixed
-	width 33.3%
+	//table-layout fixed
+	width 33%
+	max-width 330px
 	vertical-align top
-	// mod
-	&_sep
-		@extend .col-3
-		width 200px
-	&_border
-		@extend .col-3
-		border 1px solid #e5e5e5	
+.col-3_sep
+	display table-cell 
+	width 2%
+.col-3_border
+	@extend .col-3
+	border 1px solid #e5e5e5
+		
 .w100p
 	width 100%
 .w50p
