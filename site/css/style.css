@@ -5410,7 +5410,7 @@ input.btn-orange-wide:hover {
 .col-3_sep_border {
   display: table-cell;
   table-layout: fixed;
-  width: 32%;
+  width: 33.3%;
   vertical-align: top;
 }
 .col-3_sep,
@@ -10787,6 +10787,13 @@ footer .copy {
   text-transform: uppercase;
   padding-bottom: 40px;
 }
+.popedit__name .desc {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: none;
+}
 .popedit__form {
   margin-bottom: -50px;
   overflow: hidden;
@@ -10868,6 +10875,10 @@ input.inp-field_70 {
 input.inp-radio + label {
   font-size: 14px;
   font-weight: 400;
+}
+.inp-radio-block + label {
+  display: block;
+  pdding-bottom: 20px;
 }
 .con-dess-lines p,
 .con-dess-lines_small p {
@@ -10998,6 +11009,120 @@ input.inp-radio + label {
 .prev-ver-box .prev-ver {
   display: inline-block;
   margin-left: 5px;
+}
+.select-wrap {
+  position: relative;
+  width: 420px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #333;
+}
+.select-wrap .select {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 13px 25px 13px 15px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: 0.3s ease-out;
+          transition: 0.3s ease-out;
+}
+.select-wrap .select .title {
+  padding: 0 !important;
+  color: #333;
+  overflow: hidden;
+}
+.select-wrap .select.active {
+  border-color: #e5e5e5;
+}
+.select-wrap .select.active .arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position: 0 -8px;
+}
+.select-wrap .select .arrow {
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  right: 10px;
+  top: 21px;
+  content: " ";
+  background: url("../img/arrow-down.png") 0 0 no-repeat;
+  -webkit-transition: 0.3s ease-out;
+          transition: 0.3s ease-out;
+}
+.select-wrap ul.option-list {
+  display: none;
+  overflow: hidden;
+  z-index: 6;
+  position: relative;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  background: #fff;
+}
+.select-wrap ul.option-list li {
+  margin: 0;
+  list-style: none;
+}
+.select-wrap ul.option-list li {
+  font-size: 14px;
+  color: #333;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+}
+.select-wrap ul.option-list li:hover {
+  background: #fff9f6;
+  border: 1px solid #ff8c4d;
+}
+.select-wrap ul.option-list li.active {
+  cursor: default;
+}
+input.inp-text_sm {
+  width: 95px;
+}
+.date-period {
+  color: #333;
+  font-size: 14px;
+}
+.date-period .inline {
+  margin-right: 10px;
+}
+.date-period a.cal {
+  margin-bottom: -10px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+  background: url("../img/icons/cal.jpg") no-repeat;
+  opacity: 0.6;
+  cursor: default;
+}
+.date-period .days {
+  padding-left: 180px;
+}
+.date-period .days a {
+  display: inline-block;
+  margin-right: 28px;
+  text-decoration: none;
+  border-bottom: 1px dashed #f85800;
+}
+.date-period .days a:hover {
+  text-decoration: none;
+  border-bottom: none;
 }
 @-webkit-keyframes opacity-fade {
   0% {

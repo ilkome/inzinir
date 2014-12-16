@@ -6,8 +6,14 @@
 
 
 $(document).ready(function() {
-	
+	// #change-dates
+	$(".js-change-dates").on("click", function(e) {
+		// function here
+		console.log("change-dates");
+		e.preventDefault();
+	})
 	//	#user-menu
+	
 	$(".js-usermenu").on("click", function(e) {
 		var drop = $(".js-usermenu-drop");
 		var arrow = $(this).find(".arrow");
@@ -261,8 +267,9 @@ $(document).ready(function() {
 			format:'d.m.Y',
 			todayButton: false,
 		});
-		$('.js-open-cal').click(function(){
+		$('.js-open-cal').click(function(e){
 			$(this).closest(".line").find(".js-calendar-widget").datetimepicker('show');
+			e.preventDefault()
 		});
 
 		$('.calendar-widget-pop2').datetimepicker({
@@ -533,5 +540,42 @@ $(document).ready(function() {
 
 		}
 	}
+
+
+	// custom select
+	// ==================================================		
+	$('.select-wrap .select').click(function() {
+		var select_wrap = $(this).closest('.select-wrap');
+		var option_list = select_wrap.find('.option-list');
+		$(".select-wrap .select").removeClass("active")
+
+		if (option_list.is(':visible')){
+			option_list.slideUp('fast');
+			$(this).removeClass('active');
+		} else {
+			if ($('.select-wrap .option-list:visible').length){
+				$('.select-wrap .option-list:visible').hide();
+			}
+			option_list.slideDown('fast');
+			$(this).addClass('active');
+		}
+	});
+	$('.select-wrap .option-list li').click(function() {
+		var title = $(this).closest('.select-wrap').find('.select .title');
+		var option = $(this).html();
+		$(this).closest('.select-wrap').find('input[type=hidden]').val($(this).attr('data-value'));
+		$(this).closest('.select-wrap').find("li").removeClass("active")
+		$(this).addClass("active")
+		title.empty();
+		title.html(option);
+		$(this).closest('.option-list').slideUp(300);
+		$(this).closest('.select-wrap').find('.select').removeClass('active');
+	});
+	$(document).click(function(e){
+		if ($('.select-wrap .option-list:visible').length && !$(e.target).closest('.select-wrap').length){
+			$('.select-wrap .option-list').slideUp(300);
+			$('.select-wrap .select').removeClass('active');
+		}
+	});
 
 });
