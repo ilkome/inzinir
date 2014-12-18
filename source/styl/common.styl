@@ -8,7 +8,8 @@
 //	ГЛОБАЛЬНЫЙ СБРОС
 // ===============================================
 html, body
-	position relative; min-height: 100%; 
+	position relative 
+	min-height 100%; 
 *
 	margin 0; padding 0; border 0; outline 0;
 hr 
@@ -62,17 +63,17 @@ anim-op()
 //	ТЕКСТ
 // ===============================================
 mainfont()
-	font-family: 'latoregular';
+	font-family 'latoregular';
 mediumfont()
-	font-family: 'latomedium';
+	font-family 'latomedium';
 latolight()
-	font-family: 'latolight';
+	font-family 'latolight';
 latoblack()
-	font-family: 'latoblack';
+	font-family 'latoblack';
 latohairline()
-	font-family: 'latohairline';
+	font-family 'latohairline';
 latoitalic()
-	font-family: 'latoitalic';
+	font-family 'latoitalic';
 light()
 	font-weight 300;
 regular()
@@ -215,26 +216,7 @@ textarea
 	&.valid
 		border-color #3ac020;
 
-input[type=checkbox]
-	overflow hidden; 
-	display  none;
-	position absolute; width 10px; height 10px; margin 0; padding 0; border 0;
-input[type=checkbox] + label
-	display inline-block;
-	height 22px; padding-left 30px;
-	font-size 14px; line-height 23px; vertical-align middle;
-	cursor pointer;
-	background url("../img/checkbox.png") no-repeat;
-input[type=checkbox].lightblue + label
-	background url("../img/checkbox4.png") no-repeat;
-input[type=checkbox].light + label
-	background url("../img/checkbox3.png") no-repeat;
-input[type=checkbox] + label:hover
-	background-position 0 0; 
-input[type=checkbox]:checked + label
-	background-position 0 -22px;
-
-	
+//	#radio
 input[type="radio"] + label
 input.input-radio + label
 	cursor:pointer; font-size:14px; line-height:30px; margin:0px 20px 0px 0;
@@ -260,12 +242,46 @@ input.input-radio:disabled + label::before
 input[type="radio"]:checked:disabled + label::before 
 input.input-radio:checked:disabled + label::before 
 	background-position 0px -22px;
+	
+
+//	#checkbox
+//	for old browser
+input[type="checkbox"]
+	width 17px
+	height 17px
+	margin 0 3px 0 0
+	vertical-align top
+input[type="checkbox"] + label
+	cursor pointer
+
+//	only for modern browser IE9+
+input[type="checkbox"]:not(checked)
+	position absolute
+	opacity 0
+input[type="checkbox"]:not(checked) + label
+	position relative
+	display inline-block
+	padding 0 0 0 30px
+input[type="checkbox"]:not(checked) + label:after
+	content ''
+	position absolute
+	top -1px
+	left 0px
+	width 22px
+	height 22px
+	background url("../img/checkbox.png") no-repeat
+//	checked
+input[type="checkbox"]:checked + label:after
+	background-position 0 -22px
+//	focus
+input[type="checkbox"]:focus + label:before
+	position relative
 
 
 
 //	ТАБЛИЦЫ
 // ===============================================
 table
-	width 100%;
+	width 100%
 	td
 		vertical-align top;
