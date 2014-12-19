@@ -6778,7 +6778,7 @@ a.link-orange:hover,
 .admin-box,
 .admin-box--column,
 .admin-box--columnpad,
-.admin-box--column--columnpad {
+.admin-box_line-padding {
   z-index: 10;
   position: absolute;
   right: 20px;
@@ -6791,14 +6791,14 @@ a.link-orange:hover,
 .admin-box li,
 .admin-box--column li,
 .admin-box--columnpad li,
-.admin-box--column--columnpad li {
+.admin-box_line-padding li {
   margin: 0;
   list-style: none;
 }
 .admin-box li,
 .admin-box--column li,
 .admin-box--columnpad li,
-.admin-box--column--columnpad li {
+.admin-box_line-padding li {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -6807,7 +6807,7 @@ a.link-orange:hover,
 .admin-box li:after,
 .admin-box--column li:after,
 .admin-box--columnpad li:after,
-.admin-box--column--columnpad li:after {
+.admin-box_line-padding li:after {
   content: "";
   width: 1px;
   height: 30px;
@@ -6821,84 +6821,99 @@ a.link-orange:hover,
 .admin-box li:hover,
 .admin-box--column li:hover,
 .admin-box--columnpad li:hover,
-.admin-box--column--columnpad li:hover {
+.admin-box_line-padding li:hover {
   cursor: pointer;
 }
 .admin-box li.admin-edit,
 .admin-box--column li.admin-edit,
 .admin-box--columnpad li.admin-edit,
-.admin-box--column--columnpad li.admin-edit {
+.admin-box_line-padding li.admin-edit {
   background: url("../img/icons/edit.png") center no-repeat;
 }
 .admin-box li.admin-edit:before,
 .admin-box--column li.admin-edit:before,
 .admin-box--columnpad li.admin-edit:before,
-.admin-box--column--columnpad li.admin-edit:before,
+.admin-box_line-padding li.admin-edit:before,
 .admin-box li.admin-edit:hover,
 .admin-box--column li.admin-edit:hover,
 .admin-box--columnpad li.admin-edit:hover,
-.admin-box--column--columnpad li.admin-edit:hover {
+.admin-box_line-padding li.admin-edit:hover {
   content: " ";
   background: url("../img/icons/edit-h.png") center no-repeat;
 }
 .admin-box li.admin-delete,
 .admin-box--column li.admin-delete,
 .admin-box--columnpad li.admin-delete,
-.admin-box--column--columnpad li.admin-delete {
+.admin-box_line-padding li.admin-delete {
   background: url("../img/icons/delete.png") center no-repeat;
 }
 .admin-box li.admin-delete:before,
 .admin-box--column li.admin-delete:before,
 .admin-box--columnpad li.admin-delete:before,
-.admin-box--column--columnpad li.admin-delete:before,
+.admin-box_line-padding li.admin-delete:before,
 .admin-box li.admin-delete:hover,
 .admin-box--column li.admin-delete:hover,
 .admin-box--columnpad li.admin-delete:hover,
-.admin-box--column--columnpad li.admin-delete:hover {
+.admin-box_line-padding li.admin-delete:hover {
   content: " ";
   background: url("../img/icons/delete-h.png") center no-repeat;
+}
+.admin-box li.admin-status,
+.admin-box--column li.admin-status,
+.admin-box--columnpad li.admin-status,
+.admin-box_line-padding li.admin-status {
+  background: url("../img/icons/status.png") center no-repeat;
+}
+.admin-box li.admin-status:before,
+.admin-box--column li.admin-status:before,
+.admin-box--columnpad li.admin-status:before,
+.admin-box_line-padding li.admin-status:before,
+.admin-box li.admin-status:hover,
+.admin-box--column li.admin-status:hover,
+.admin-box--columnpad li.admin-status:hover,
+.admin-box_line-padding li.admin-status:hover {
+  content: " ";
+  background: url("../img/icons/status-h.png") center no-repeat;
 }
 .admin-box .admin-orders,
 .admin-box--column .admin-orders,
 .admin-box--columnpad .admin-orders,
-.admin-box--column--columnpad .admin-orders {
+.admin-box_line-padding .admin-orders {
   background: url("../img/icons/list.png") center no-repeat;
 }
 .admin-box--column,
-.admin-box--column--column,
-.admin-box--columnpad--column,
-.admin-box--column--columnpad--column,
-.admin-box--columnpad,
-.admin-box--column--columnpad {
+.admin-box--columnpad {
   top: 10px;
   right: 0;
   border-right: 0;
 }
 .admin-box--column li,
-.admin-box--column--column li,
-.admin-box--columnpad--column li,
-.admin-box--column--columnpad--column li,
-.admin-box--columnpad li,
-.admin-box--column--columnpad li {
+.admin-box--columnpad li {
   display: block;
 }
 .admin-box--column li:after,
-.admin-box--column--column li:after,
-.admin-box--columnpad--column li:after,
-.admin-box--column--columnpad--column li:after,
-.admin-box--columnpad li:after,
-.admin-box--column--columnpad li:after {
+.admin-box--columnpad li:after {
   width: 30px;
   height: 1px;
   right: 0;
   left: 0;
   top: 60px;
 }
-.admin-box--columnpad,
-.admin-box--column--columnpad,
-.admin-box--columnpad--columnpad,
-.admin-box--column--columnpad--columnpad {
+.admin-box--columnpad {
   right: -10px;
+}
+.admin-box_line-padding {
+  top: -21px;
+  right: -1px;
+  bottom: 0;
+  padding: 20px 0;
+  height: 100%;
+}
+.admin-box_line-padding li {
+  height: 100%;
+}
+.admin-box_line-padding li:last-child:after {
+  background: none;
 }
 .bcon--edit {
   display: table;

@@ -1168,27 +1168,43 @@ a.link-orange
 		&:before, &:hover 
 			content " "
 			background url("../img/icons/delete-h.png")	center no-repeat;
+	li.admin-status
+		background url("../img/icons/status.png") center no-repeat;
+		&:before, &:hover 
+			content " "
+			background url("../img/icons/status-h.png")	center no-repeat;
+			
+
 	.admin-orders
 		background url("../img/icons/list.png") center no-repeat	
+.admin-box--column
+	@extend .admin-box
+	top 10px 
+	right 0
+	border-right 0
+	li
+		display block
+		&:after
+			width 30px
+			height 1px
+			right 0
+			left 0
+			top 60px
+.admin-box--columnpad
+	@extend .admin-box--column
+	right -10px
+.admin-box_line-padding
+	@extend .admin-box
+	top -21px
+	right -1px
+	bottom 0
+	padding 20px 0
+	height 100%
+	li
+		height 100%
+	li:last-child:after
+		background none
 	
-	// mod
-	&--column
-		@extend .admin-box
-		top 10px 
-		right 0
-		border-right 0
-		li
-			display block
-			&:after
-				width 30px
-				height 1px
-				right 0
-				left 0
-				top 60px
-	&--columnpad
-		@extend .admin-box--column
-		right -10px
-
 
 
 .bcon--edit
@@ -3881,6 +3897,7 @@ footer
 				background url(../img/icons/delete.png)
 				&:hover
 					background url(../img/icons/delete-h.png)
+			
 		&-controls_pad
 			margin-top -20px
 			margin-bottom -20px
