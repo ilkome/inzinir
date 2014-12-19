@@ -4845,7 +4845,9 @@ table td {
   display: inline-block;
   max-width: 200px;
   overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   white-space: nowrap;
   vertical-align: middle;
 }
@@ -10840,7 +10842,7 @@ footer .copy {
   text-transform: none;
 }
 .popedit__form {
-  margin-bottom: -50px;
+  margin-bottom: -30px;
   overflow: hidden;
 }
 .popedit__form:before,
