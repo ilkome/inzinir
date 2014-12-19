@@ -615,7 +615,8 @@ color-orange()
 	p
 		margin 0; latolight(); font-size 18px; 
 .main-left
-	width 75%; display table-cell;
+	width 748px
+	display table-cell
 	vertical-align top;
 .main-right
 	position relative;
@@ -3793,12 +3794,18 @@ footer
 	.item-edit-con
 		border 1px solid #e5e5e5
 		margin-bottom 20px
+	.item-edit-con_pad
+		padding 20px 0 20px 20px
+		.articles__item-date-added
+			margin-top 0
 	&__item
+		display table
 		width 100%
 		position relative
 		&-thumb
 			display table-cell
-			vertical-align middle
+			width 140px
+			vertical-align top
 			img 
 				vertical-align middle
 				display inline-block
@@ -3806,6 +3813,8 @@ footer
 			display table-cell
 			vertical-align top
 			padding-left 3%
+			padding-right 180px
+			padding-bottom 20px
 		&-date-added
 			color #CCC
 			font-size 10px
@@ -3856,6 +3865,9 @@ footer
 				background url(../img/icons/delete.png)
 				&:hover
 					background url(../img/icons/delete-h.png)
+		&-controls_pad
+			margin-top -20px
+			margin-bottom -20px
 	&__edit
 		display none
 		border-top 1px solid #E5E5E5

@@ -6009,7 +6009,7 @@ input.btn-orange-wide:hover {
   font-size: 18px;
 }
 .main-left {
-  width: 75%;
+  width: 748px;
   display: table-cell;
   vertical-align: top;
 }
@@ -10566,13 +10566,21 @@ footer .copy {
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
 }
+.articles .item-edit-con_pad {
+  padding: 20px 0 20px 20px;
+}
+.articles .item-edit-con_pad .articles__item-date-added {
+  margin-top: 0;
+}
 .articles__item {
+  display: table;
   width: 100%;
   position: relative;
 }
 .articles__item-thumb {
   display: table-cell;
-  vertical-align: middle;
+  width: 140px;
+  vertical-align: top;
 }
 .articles__item-thumb img {
   vertical-align: middle;
@@ -10582,6 +10590,8 @@ footer .copy {
   display: table-cell;
   vertical-align: top;
   padding-left: 3%;
+  padding-right: 180px;
+  padding-bottom: 20px;
 }
 .articles__item-date-added {
   color: #ccc;
@@ -10649,6 +10659,10 @@ footer .copy {
 }
 .articles__item-controls-delete:hover {
   background: url("../img/icons/delete-h.png");
+}
+.articles__item-controls_pad {
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 .articles__edit {
   display: none;
