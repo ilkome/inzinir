@@ -16,12 +16,14 @@ block append content
 			.search-con
 				form(action="#")
 					input(type="text", placeholder="Быстрый поиск по услугам").inp-text
-					input(type="submit", value="").inp-submit
+					input(type="submit", value="").inp-submit_with-reset
+					input(type="button", value="Сбросить фильтр").inp-reset 
 			mixin article(name)
 				.item-edit-con.item-edit-con_pad.js-edit-item-box
 					.articles__item
 						.articles__item-thumb
-							img(src="img/content/edit-page/1.png", alt="")
+							a(href="img/content/640-360-1.jpg" data-lightbox="image-1" data-title="Станок токарный с ЧПУ")
+								img(src="img/content/edit-page/1.png", alt="")
 						.articles__item-info
 							.articles__item-date-added Добавлен: 13 октября 2012
 							.articles__item-title #{name}
