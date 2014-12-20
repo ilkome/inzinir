@@ -6041,6 +6041,9 @@ input.btn-orange-wide:hover {
 .mar-bot-30 {
   margin-bottom: 30px;
 }
+.mar-bot-50 {
+  margin-bottom: 50px;
+}
 .mar-top-20m {
   margin-top: -15px;
 }
@@ -7414,21 +7417,26 @@ textarea.inp-full {
   border-color: #f85800;
   background: url("../img/icons/plus-big-a.png") center 40px no-repeat;
 }
-.box-info {
+.box-info,
+.box-info_noborder {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border: 1px solid #e5e5e5;
 }
 .box-info:before,
-.box-info:after {
+.box-info_noborder:before,
+.box-info:after,
+.box-info_noborder:after {
   content: "";
   display: table;
   clear: both;
 }
-.box-info.orange {
+.box-info.orange,
+.box-info_noborder.orange {
   border-color: #f85800;
 }
 .box-info .bname,
+.box-info_noborder .bname,
 .box-comments .bwrite .bname,
 .box-page-nav .bname,
 .box-articles .bname,
@@ -7437,6 +7445,7 @@ textarea.inp-full {
   padding: 20px 20px;
 }
 .box-info .bname h3,
+.box-info_noborder .bname h3,
 .box-comments .bwrite .bname h3,
 .box-page-nav .bname h3,
 .box-articles .bname h3,
@@ -7448,6 +7457,7 @@ textarea.inp-full {
   text-decoration: none;
 }
 .box-info .bname h3 a,
+.box-info_noborder .bname h3 a,
 .box-comments .bwrite .bname h3 a,
 .box-page-nav .bname h3 a,
 .box-articles .bname h3 a,
@@ -7457,6 +7467,7 @@ textarea.inp-full {
   text-decoration: none;
 }
 .box-info .bname h3 a:hover,
+.box-info_noborder .bname h3 a:hover,
 .box-comments .bwrite .bname h3 a:hover,
 .box-page-nav .bname h3 a:hover,
 .box-articles .bname h3 a:hover,
@@ -7464,75 +7475,137 @@ textarea.inp-full {
 .box-interest .bname h3 a:hover {
   color: #ff8c4d;
 }
-.box-info .bcon {
+.box-info .bname a.export-link,
+.box-info_noborder .bname a.export-link,
+.box-comments .bwrite .bname a.export-link,
+.box-page-nav .bname a.export-link,
+.box-articles .bname a.export-link,
+.box-articles .bname_norm a.export-link,
+.box-interest .bname a.export-link {
+  text-transform: none;
+  color: #f85800;
+  font-size: 14px;
+  font-weight: 300;
+}
+.box-info .bcon,
+.box-info_noborder .bcon {
   padding: 0 5px;
 }
-.box-info .bcon .item {
+.box-info .bcon .item,
+.box-info_noborder .bcon .item {
   float: left;
   width: 33%;
   padding: 0 15px 20px 15px;
   box-sizing: border-box;
 }
-.box-info .bcon .item .idate {
+.box-info .bcon .item .idate,
+.box-info_noborder .bcon .item .idate {
   display: 11px;
   color: #ccc;
 }
-.box-info .bcon .item .iname {
+.box-info .bcon .item .iname,
+.box-info_noborder .bcon .item .iname {
   padding-bottom: 15px;
 }
-.box-info .bcon .item .iname a {
+.box-info .bcon .item .iname a,
+.box-info_noborder .bcon .item .iname a {
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
   color: #333;
   line-height: 20px;
 }
-.box-info .bcon .item .iname a:hover {
+.box-info .bcon .item .iname a:hover,
+.box-info_noborder .bcon .item .iname a:hover {
   color: #ff8c4d;
 }
-.box-info .bcon .item .itext {
+.box-info .bcon .item .itext,
+.box-info_noborder .bcon .item .itext {
   padding-bottom: 15px;
   color: #999;
   font-size: 12px;
 }
-.box-info .bcon .item .itext a {
+.box-info .bcon .item .itext a,
+.box-info_noborder .bcon .item .itext a {
   color: #999;
 }
-.box-info .bcon .item .itext p {
+.box-info .bcon .item .itext p,
+.box-info_noborder .bcon .item .itext p {
   margin-bottom: 10px;
 }
-.box-info .bcon .item .itext p b {
+.box-info .bcon .item .itext p b,
+.box-info_noborder .bcon .item .itext p b {
   display: block;
   font-weight: 400;
   color: #333;
 }
-.box-info .bcon .item .isuggest a {
+.box-info .bcon .item .isuggest a,
+.box-info_noborder .bcon .item .isuggest a {
   display: inline-block;
   text-transform: uppercase;
   padding-left: 15px;
   background: url("../img/icons/plus-orange.jpg") 0 2px no-repeat;
 }
-.box-info .bcon .item .isuggest a:hover {
+.box-info .bcon .item .isuggest a:hover,
+.box-info_noborder .bcon .item .isuggest a:hover {
   text-decoration: none;
   opacity: 0.7;
 }
-.box-info .bcon .all {
+.box-info .bcon .all,
+.box-info_noborder .bcon .all {
   clear: both;
   padding: 0 15px 10px 0;
   text-align: right;
 }
-.box-info .bcon .all a {
+.box-info .bcon .all a,
+.box-info_noborder .bcon .all a {
   font-size: 11px;
   text-transform: uppercase;
   color: #3f3f3f;
   text-decoration: none;
 }
-.box-info .bcon .all a:hover {
+.box-info .bcon .all a:hover,
+.box-info_noborder .bcon .all a:hover {
   color: #ff8c4d;
 }
-.box-info .bcon .sep {
+.box-info .bcon .sep,
+.box-info_noborder .bcon .sep {
   margin: 0 15px 10px 15px;
   border-bottom: 1px dotted #e5e5e5;
+}
+.box-info_noborder {
+  border: none;
+}
+.table-reports {
+  border: 1px solid #e5e5e5;
+}
+.table-reports thead td {
+  vertical-align: middle;
+  color: #333;
+  font-size: 16px;
+  line-height: 18px;
+}
+.table-reports td.num {
+  width: 10px;
+}
+.table-reports td.cat {
+  width: 200px;
+}
+.table-reports td.name {
+  width: 480px;
+}
+.table-reports td {
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+}
+.table-reports td.num {
+  padding: 10px 10px 10px 15px;
+  text-align: center;
+}
+.table-reports td.date {
+  color: #808080;
 }
 .box-info-graph {
   margin-bottom: 20px;
@@ -10858,7 +10931,9 @@ footer .copy {
   text-align: center;
 }
 .lineedit {
-  padding-bottom: 25px;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 .lineedit_save {
   float: right;
@@ -10894,6 +10969,9 @@ footer .copy {
 }
 .lineedit__con_pad-left {
   padding-left: 10px;
+}
+.lineedit_pad-top {
+  padding-top: 30px;
 }
 input.inp-field,
 textarea.text-field {
@@ -11170,6 +11248,50 @@ input.inp-text_sm {
 .date-period .days a:hover {
   text-decoration: none;
   border-bottom: none;
+}
+.date-period_absolute {
+  position: absolute;
+  left: 275px;
+  top: 0px;
+}
+.date-period_absolute .days {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 22px;
+}
+.date-period_absolute .days a {
+  margin-left: 28px;
+  margin-right: 0;
+}
+a.sort-link {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+}
+a.sort-link:hover {
+  color: #f85800;
+  text-decoration: none;
+}
+a.sort-link span {
+  top: 49%;
+  right: 0%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #ff8c4d;
+  border-width: 5px;
+}
+a.sort-link.is-active span {
+  top: 40%;
+  border-top-color: transparent;
+  border-bottom-color: #ff8c4d;
 }
 @-webkit-keyframes opacity-fade {
   0% {

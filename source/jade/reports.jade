@@ -23,26 +23,7 @@ block append content
 				.desc о добавлении новых объектов каталогизации
 			.popedit__form
 				.lineedit
-					.mar-bot-20
-						input(id="radio-s-1" type="radio" name="radio" checked).inp-radio.inp-radio-block
-						label(for="radio-s-1") за выбранный промежуток времени
-					.mar-bot-20
-						input(id="radio-s-2" type="radio" name="radio").inp-radio.inp-radio-block
-						label(for="radio-s-2") по областям
-				.lineedit
-					.select-wrap
-						input(type="hidden" name="" value="")
-						.select
-							span.title Области
-							span.arrow
-						ul.option-list
-							li(data-value="1") Автоматизация
-							li(data-value="2") Биомедицинские материалы 
-							li(data-value="3") Биомедицинские полимерные материалы 
-							li(data-value="4") Геодезия
-				.lineedit
-					.date-period 
-						.inline За следующий период:
+					.date-period.date-period_absolute.js-report-date
 						span.inline с
 						input(type="text", placeholder="дата от").inline.js-calendar-widget.calendar-widget-pop.inp-text_sm
 						a(href="#").js-open-cal.cal
@@ -54,79 +35,54 @@ block append content
 							a(href="#change").js-change-dates неделю		
 							a(href="#change").js-change-dates месяц		
 							a(href="#change").js-change-dates все время		
+					.mar-bot-20
+						input(id="radio-s-1" type="radio" name="radio" checked).inp-radio.inp-radio-block.js-report-by-date
+						label(for="radio-s-1") за выбранный промежуток времени
+					.js-report-date-select
+						.lineedit.lineedit_pad-top
+							.select-wrap
+								input(type="hidden" name="" value="")
+								.select
+									span.title По направлению
+									span.arrow
+								ul.option-list
+									li(data-value="1") Автоматизация
+									li(data-value="2") Биомедицинские материалы 
+									li(data-value="3") Биомедицинские полимерные материалы 
+									li(data-value="4") Геодезия
+					.mar-bot-20
+						input(id="radio-s-2" type="radio" name="radio").inp-radio.inp-radio-block.js-report-by-obl
+						label(for="radio-s-2") по областям
+				
+
+				.hide.js-report-obl
+					.lineedit
+						.select-wrap
+							input(type="hidden" name="" value="")
+							.select
+								span.title Области
+								span.arrow
+							ul.option-list
+								li(data-value="1") Автоматизация
+								li(data-value="2") Биомедицинские материалы 
+								li(data-value="3") Биомедицинские полимерные материалы 
+								li(data-value="4") Геодезия
+					.lineedit
+						.date-period 
+							.inline За следующий период:
+							span.inline с
+							input(type="text", placeholder="дата от").inline.js-calendar-widget.calendar-widget-pop.inp-text_sm
+							a(href="#").js-open-cal.cal
+							span.inline до
+							input(type="text", placeholder="дата до").inline.js-calendar-widget.calendar-widget-pop2.inp-text_sm
+							a(href="#").js-open-cal.cal
+							.days
+								a(href="#change").js-change-dates вчера		
+								a(href="#change").js-change-dates неделю		
+								a(href="#change").js-change-dates месяц		
+								a(href="#change").js-change-dates все время		
 				.lineedit
-					a(href="#report-add-table").btn-orange-wide.inline Построить отчет
-
-	.remodal(data-remodal-id="report-add-table")
-		.popedit
-			.popedit__name 
-				| Построить отчет
-				.desc о добавлении новых объектов каталогизации
-			.box-info
-				.box
-					.bname
-						h3 Конструктор отчетов
-					.bcon.bcon-mod
-						table.table-ind
-							thead
-								tr
-									td.num #
-									td Вуз
-									td Краткое описание
-							tbody
-								tr
-									td.num 1
-									td ТПУ
-									td 
-										a(href="#") Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527
-								tr
-									td.num 2
-									td ТУСУР
-									td 
-										a(href="#") Автомат установки компонентов: АРС L40
-								tr
-									td.num 3
-									td КамГУ им. В.Беринга
-									td 
-										a(href="#") Автоматизированная система пробоподготовки для петрографических и минераграфических исследований 
-								tr
-									td.num 4
-									td АмГПГУ
-									td 
-										a(href="#") Автоматизированная система управлением освещением 
-								tr.is-active
-									td.num 5
-									td ТюмГНГУ
-									td 
-										a(href="#") Автоматизированная установка для исследования эксплуатационных характеристик продуктивных пластов FDS-350 VINCI TECHNOLOGIES 
-								tr
-									td.num 6
-									td СибГИУ
-									td 
-										a(href="#") Автоматизированная установка низкотемпературного моделирования саморегулирующегося струйно-эмульсионного реактора. 
-								tr
-									td.num 7
-									td ЮЗГУ
-									td 
-										a(href="#") Автоматизированное рабочее место конструктора АРМК (ПК с 3-мя мониторами,антенное поворотное устр-во, радиостанция,видеоадаптер) 
-								tr
-									td.num 8
-									td КНИТУ
-									td 
-										a(href="#") Автоматизированное рабочее место многодисциплинарного структурного анализа (США)
-								tr
-									td.num 9
-									td КНИТУ
-									td 
-										a(href="#") Автоматизированное рабочее место по созданию сложных конструкций и агрегатов перспективных транспортных средств на основе твердотельного 3D моделирования (США) 
-								tr
-									td.num 10
-									td КНИТУ
-									td 
-										a(href="#") Автоматизированное рабочее место расчета статической и динамической прочности (США) 		
-			.action
-				a(href="#report-add").btn-orange-wide.inline Построить отчет
-
+					a(href="reports-table.html").btn-orange-wide.inline Построить отчет
 
 	.main-width.main-wrap
 		.organ-info

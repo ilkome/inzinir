@@ -3,7 +3,8 @@
 <!--	Simple Communication-->
 <html>
   <head>
-    <title>ИП - Отчеты</title>
+    <title>ИП 
+    </title>
     <!-- Meta-->
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -14,16 +15,12 @@
     <link href="css/sweet-alert.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
     <link href="css/jquery.remodal.css" rel="stylesheet">
-    <link href="css/jquery.datetimepicker.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Scripts-->
     <script src="js/sweet-alert.min.js" type="text/javascript"></script>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
     <script src="js/lightbox.min.js" type="text/javascript"></script>
     <script src="js/jquery.remodal.js" type="text/javascript"></script>
-    <script src="js/jquery.datetimepicker.js" type="text/javascript"></script>
-    <script src="js/jquery.easypiechart.min.js" type="text/javascript"></script>
     <script src="js/functions.js" type="text/javascript"></script>
   </head>
   <body>
@@ -389,306 +386,81 @@
             </div>
           </div>
         </div>
-        <div data-remodal-id="report-add" class="remodal">
-          <div class="popedit">
-            <div class="popedit__name">
-               
-              Построить отчет
-              <div class="desc">о добавлении новых объектов каталогизации</div>
-            </div>
-            <div class="popedit__form">
-              <div class="lineedit">
-                <div class="date-period date-period_absolute js-report-date"><span class="inline">с</span>
-                  <input type="text" placeholder="дата от" class="inline js-calendar-widget calendar-widget-pop inp-text_sm"><a href="#" class="js-open-cal cal"></a><span class="inline">до</span>
-                  <input type="text" placeholder="дата до" class="inline js-calendar-widget calendar-widget-pop2 inp-text_sm"><a href="#" class="js-open-cal cal"></a>
-                  <div class="days"><a href="#change" class="js-change-dates">вчера		</a><a href="#change" class="js-change-dates">неделю		</a><a href="#change" class="js-change-dates">месяц		</a><a href="#change" class="js-change-dates">все время		</a></div>
-                </div>
-                <div class="mar-bot-20">
-                  <input id="radio-s-1" type="radio" name="radio" checked class="inp-radio inp-radio-block js-report-by-date">
-                  <label for="radio-s-1">за выбранный промежуток времени</label>
-                </div>
-                <div class="js-report-date-select">
-                  <div class="lineedit lineedit_pad-top">
-                    <div class="select-wrap">
-                      <input type="hidden" name="" value="">
-                      <div class="select"><span class="title">По направлению</span><span class="arrow"></span></div>
-                      <ul class="option-list">
-                        <li data-value="1">Автоматизация</li>
-                        <li data-value="2">Биомедицинские материалы </li>
-                        <li data-value="3">Биомедицинские полимерные материалы </li>
-                        <li data-value="4">Геодезия</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="mar-bot-20">
-                  <input id="radio-s-2" type="radio" name="radio" class="inp-radio inp-radio-block js-report-by-obl">
-                  <label for="radio-s-2">по областям</label>
-                </div>
-              </div>
-              <div class="hide js-report-obl">
-                <div class="lineedit">
-                  <div class="select-wrap">
-                    <input type="hidden" name="" value="">
-                    <div class="select"><span class="title">Области</span><span class="arrow"></span></div>
-                    <ul class="option-list">
-                      <li data-value="1">Автоматизация</li>
-                      <li data-value="2">Биомедицинские материалы </li>
-                      <li data-value="3">Биомедицинские полимерные материалы </li>
-                      <li data-value="4">Геодезия</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="lineedit">
-                  <div class="date-period"> 
-                    <div class="inline">За следующий период:</div><span class="inline">с</span>
-                    <input type="text" placeholder="дата от" class="inline js-calendar-widget calendar-widget-pop inp-text_sm"><a href="#" class="js-open-cal cal"></a><span class="inline">до</span>
-                    <input type="text" placeholder="дата до" class="inline js-calendar-widget calendar-widget-pop2 inp-text_sm"><a href="#" class="js-open-cal cal"></a>
-                    <div class="days"><a href="#change" class="js-change-dates">вчера		</a><a href="#change" class="js-change-dates">неделю		</a><a href="#change" class="js-change-dates">месяц		</a><a href="#change" class="js-change-dates">все время		</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="lineedit"><a href="reports-table.html" class="btn-orange-wide inline">Построить отчет</a></div>
-            </div>
-          </div>
-        </div>
         <div class="main-width main-wrap">
-          <div class="organ-info">
-            <div class="prev"><img src="img/content/pic.png" alt=""></div>
-            <div class="pic"><img src="img/content/logo-inz.png" alt=""></div>
-            <div class="info">
-              <div class="name">ООО «ГСИ»</div>
-              <div class="desc">Отраслевые компетенции Компании — нефтяная и газовая промышленность, нефтехимическая и химическая промышленность, черная и цветная.</div>
-            </div>
-            <div class="contacts">
-              <div class="td">
-                <ul>
-                  <li class="phone">+7 (495) 258-84-20</li>
-                  <li class="fax">+7 (495) 258-60-64</li>
-                  <li class="email"> <a href="#">info@vebeng.ru</a></li>
-                </ul>
-              </div>
-              <div class="td">
-                <ul>
-                  <li class="map">107078, Россия, Москва, <br>ул. Маши Порываевой, д.7, стр. 2.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="main-left">
-            <div class="search-con">
-              <form action="#">
-                <input type="text" placeholder="Быстрый поиск по отчетам" class="inp-text">
-                <input type="submit" value="" class="inp-submit">
-              </form>
-            </div>
-            <div class="box-info">
-              <div class="box">
-                <div class="bname">
-                  <h3>Инфографика</h3>
-                </div>
-                <div class="bcon bcon-mod">
-                  <div class="infographics">
-                    <div class="infographics-col">
-                      <div class="infographics-col-container">
-                        <div class="gr-chart">
-                          <div class="gr-chart-row gr-chart-row-1">
-                            <div class="gr-chart-row-num">100</div>
-                          </div>
-                          <div class="gr-chart-row gr-chart-row-2">
-                            <div class="gr-chart-row-num">80</div>
-                          </div>
-                          <div class="gr-chart-row gr-chart-row-3">
-                            <div class="gr-chart-row-num">60</div>
-                          </div>
-                          <div class="gr-chart-row gr-chart-row-4">
-                            <div class="gr-chart-row-num">40</div>
-                          </div>
-                          <div class="gr-chart-row gr-chart-row-5">
-                            <div class="gr-chart-row-num">20</div>
-                          </div>
-                          <div class="gr-chart-row gr-chart-row-0">
-                            <div class="gr-chart-row-num"></div>
-                          </div>
-                          <div class="gr-chart-col gr-chart-col-1">
-                            <div class="gr-chart-progress">
-                              <div style="height: 33%;" class="gr-chart-progress-num"></div>
-                            </div>
-                            <div class="gr-chart-date">2010</div>
-                          </div>
-                          <div class="gr-chart-col gr-chart-col-2">
-                            <div class="gr-chart-progress">
-                              <div style="height: 1%;" class="gr-chart-progress-num"></div>
-                            </div>
-                            <div class="gr-chart-date">2011</div>
-                          </div>
-                          <div class="gr-chart-col gr-chart-col-3">
-                            <div class="gr-chart-progress">
-                              <div style="height: 100%;" class="gr-chart-progress-num"></div>
-                            </div>
-                            <div class="gr-chart-date">2012</div>
-                          </div>
-                          <div class="gr-chart-col gr-chart-col-4">
-                            <div class="gr-chart-progress">
-                              <div style="height: 55%;" class="gr-chart-progress-num"></div>
-                            </div>
-                            <div class="gr-chart-date">2013</div>
-                          </div>
-                          <div class="gr-chart-col gr-chart-col-5">
-                            <div class="gr-chart-progress">
-                              <div style="height: 67%;" class="gr-chart-progress-num red"></div>
-                              <div style="height: 48%;" class="gr-chart-progress-num blue"></div>
-                              <div style="height: 38%;" class="gr-chart-progress-num green"></div>
-                            </div>
-                            <div class="gr-chart-date">2014</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="infographics-box">
-                        <div class="infographics-box-in">
-                          <div class="chart-wrap">
-                            <div class="chart-item"><span data-percent="40" class="chart js-charts-visits"><span class="percent"></span></span>
-                              <div class="chart-descr">visits</div>
-                            </div>
-                            <div class="chart-item"><span data-percent="25" class="chart js-charts-members"><span class="percent"></span></span>
-                              <div class="chart-descr">members</div>
-                            </div>
-                            <div class="chart-item"><span data-percent="23" class="chart js-charts-sales"><span class="percent"></span></span>
-                              <div class="chart-descr">sales</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="infographics-col">
-                      <div class="infographics-col-container">
-                        <div class="infographics-detail">
-                          <div class="infographics-detail-item">
-                            <div class="infographics-stataus"><span class="infographics-stataus-green"></span><span class="infographics-stataus-num">40%</span></div>
-                            <div class="infographics-note">Промышленный дизайн потребительской электронники</div>
-                          </div>
-                          <div class="infographics-detail-item">
-                            <div class="infographics-stataus"><span class="infographics-stataus-blue"></span><span class="infographics-stataus-num">25%</span></div>
-                            <div class="infographics-note">Промышленный дизайн медицинского оборудования</div>
-                          </div>
-                          <div class="infographics-detail-item">
-                            <div class="infographics-stataus"><span class="infographics-stataus-red"></span><span class="infographics-stataus-num">14%</span></div>
-                            <div class="infographics-note">Строительный инжиниринг</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="infographics-box">
-                        <div class="infographics-box-in">
-                          <div class="price"><span class="price-val">$ </span><span class="price-summ">124,057</span></div>
-                          <div class="graph-wrap graph-success">
-                            <div style="width:78%;" class="graph-inner"></div>
-                          </div>
-                          <div class="stat">
-                            <div class="stat-ico"></div>
-                            <div class="stat-descr"><span class="stat-descr-percent">27%</span><span class="stat-descr-note">к предыдущему месяцу</span></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="box-info">
-              <div class="box">
-                <div class="bname">
-                  <h3>Конструктор отчетов</h3>
-                </div>
-                <div class="bcon bcon-mod">
-                  <table class="table-ind">
-                    <thead>
-                      <tr>
-                        <td class="num">#</td>
-                        <td>Вуз</td>
-                        <td>Краткое описание</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="num">1</td>
-                        <td>ТПУ</td>
-                        <td> <a href="#">Автолаборатория для проведения энергетического обследования на базе ГАЗ-27527</a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">2</td>
-                        <td>ТУСУР</td>
-                        <td> <a href="#">Автомат установки компонентов: АРС L40</a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">3</td>
-                        <td>КамГУ им. В.Беринга</td>
-                        <td> <a href="#">Автоматизированная система пробоподготовки для петрографических и минераграфических исследований </a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">4</td>
-                        <td>АмГПГУ</td>
-                        <td> <a href="#">Автоматизированная система управлением освещением </a></td>
-                      </tr>
-                      <tr class="is-active">
-                        <td class="num">5</td>
-                        <td>ТюмГНГУ</td>
-                        <td> <a href="#">Автоматизированная установка для исследования эксплуатационных характеристик продуктивных пластов FDS-350 VINCI TECHNOLOGIES </a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">6</td>
-                        <td>СибГИУ</td>
-                        <td> <a href="#">Автоматизированная установка низкотемпературного моделирования саморегулирующегося струйно-эмульсионного реактора. </a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">7</td>
-                        <td>ЮЗГУ</td>
-                        <td> <a href="#">Автоматизированное рабочее место конструктора АРМК (ПК с 3-мя мониторами,антенное поворотное устр-во, радиостанция,видеоадаптер) </a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">8</td>
-                        <td>КНИТУ</td>
-                        <td> <a href="#">Автоматизированное рабочее место многодисциплинарного структурного анализа (США)</a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">9</td>
-                        <td>КНИТУ</td>
-                        <td> <a href="#">Автоматизированное рабочее место по созданию сложных конструкций и агрегатов перспективных транспортных средств на основе твердотельного 3D моделирования (США) </a></td>
-                      </tr>
-                      <tr>
-                        <td class="num">10</td>
-                        <td>КНИТУ</td>
-                        <td> <a href="#">Автоматизированное рабочее место расчета статической и динамической прочности (США) </a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-right">
-            <div class="boxside-docs box-right">
+          <div class="main-full">
+            <div class="box-info box-info_noborder">
               <div class="bname">
-                <h3>Отчеты</h3>
+                <h3>Отчет о добавлении новых объектов катологизации по областям применения<a href="#" class="export-link float-right">Экспортировать в формате *.xls</a></h3>
               </div>
-              <div class="bcon">
-                <div class="item">
-                  <div class="iname"><a href="#">Лазерная гравировка и резка материалов</a></div>
-                  <div class="ifile">PDF - 12 Мб </div>
-                </div>
-                <div class="item">
-                  <div class="iname"><a href="#">Лазерная гравировка и резка материалов</a></div>
-                  <div class="ifile">PDF - 12 Мб </div>
-                </div>
-                <div class="item">
-                  <div class="iname"><a href="#">Лазерная гравировка и резка материалов</a></div>
-                  <div class="ifile">PDF - 12 Мб</div>
-                </div>
+              <div class="bcon bcon-mod">
+                <table class="table-reports">
+                  <thead>
+                    <tr>
+                      <td class="num">#</td>
+                      <td class="cat"><a href="#" class="sort-link is-active">Область <br>применения <span></span></a></td>
+                      <td class="name"><a href="#" class="sort-link">Наименование<span></span></a></td>
+                      <td class="date"><a href="#" class="sort-link">Дата обновления<span></span></a></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="num">1</td>
+                      <td>Оборудование</td>
+                      <td><a href="#">Станок токарный с ЧПУ</a></td>
+                      <td class="date">12.10.2003</td>
+                    </tr>
+                    <tr>
+                      <td class="num">2</td>
+                      <td>Потребности</td>
+                      <td><a href="#">Тренажер-имитатор бурения (учебный класс АМТ-231 УК)</a></td>
+                      <td class="date">14.12.2005</td>
+                    </tr>
+                    <tr>
+                      <td class="num">3</td>
+                      <td>Услуги</td>
+                      <td><a href="#">Изготовление деталей</a></td>
+                      <td class="date">18.01.2007</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="badd"><a href="#">Добавить документ</a></div>
-              <div class="ball"><a href="#">Все отчеты</a></div>
             </div>
-            <div class="boxside-btns">
-              <div class="btn-reports"><a href="#report-add" class="btn-orange-big">Построить отчет</a></div>
+            <div class="box-info box-info_noborder">
+              <div class="bname">
+                <h3>Отчет о добавлении новых объектов катологизации<a href="#" class="export-link float-right">Экспортировать в формате *.xls</a></h3>
+              </div>
+              <div class="bcon bcon-mod">
+                <table class="table-reports">
+                  <thead>
+                    <tr>
+                      <td class="num">#</td>
+                      <td class="cat"><a href="#" class="sort-link is-active">Область <br>применения <span></span></a></td>
+                      <td class="name"><a href="#" class="sort-link">Наименование<span></span></a></td>
+                      <td class="date"><a href="#" class="sort-link">Дата обновления<span></span></a></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="num">1</td>
+                      <td>Оборудование</td>
+                      <td><a href="#">Станок токарный с ЧПУ</a></td>
+                      <td class="date">12.10.2003</td>
+                    </tr>
+                    <tr>
+                      <td class="num">2</td>
+                      <td>Потребности</td>
+                      <td><a href="#">Тренажер-имитатор бурения (учебный класс АМТ-231 УК)</a></td>
+                      <td class="date">14.12.2005</td>
+                    </tr>
+                    <tr>
+                      <td class="num">3</td>
+                      <td>Услуги</td>
+                      <td><a href="#">Изготовление деталей</a></td>
+                      <td class="date">18.01.2007</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

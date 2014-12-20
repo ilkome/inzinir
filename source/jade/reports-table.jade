@@ -1,0 +1,74 @@
+extends _layout
+
+block append content
+	.main-width.main-wrap
+		.main-full
+			.box-info.box-info_noborder
+				.bname
+					h3 Отчет о добавлении новых объектов катологизации по областям применения
+						a(href="#").export-link.float-right Экспортировать в формате *.xls
+				.bcon.bcon-mod
+					table.table-reports
+						thead
+							tr
+								td.num #
+								td.cat
+									a(href="#").sort-link.is-active Область <br>применения 
+										span
+								td.name
+									a(href="#").sort-link Наименование
+										span
+								td.date
+									a(href="#").sort-link Дата обновления
+										span
+						tbody
+							tr
+								td.num 1
+								td Оборудование
+								td: a(href="#") Станок токарный с ЧПУ
+								td.date 12.10.2003
+							tr
+								td.num 2
+								td Потребности
+								td: a(href="#") Тренажер-имитатор бурения (учебный класс АМТ-231 УК)
+								td.date 14.12.2005
+							tr
+								td.num 3
+								td Услуги
+								td: a(href="#") Изготовление деталей
+								td.date 18.01.2007
+			
+			.box-info.box-info_noborder
+				.bname
+					h3 Отчет о добавлении новых объектов катологизации
+						a(href="#").export-link.float-right Экспортировать в формате *.xls
+				.bcon.bcon-mod
+					table.table-reports
+						thead
+							tr
+								td.num #
+								td.cat
+									a(href="#").sort-link.is-active Область <br>применения 
+										span
+								td.name
+									a(href="#").sort-link Наименование
+										span
+								td.date
+									a(href="#").sort-link Дата обновления
+										span
+						tbody
+							tr
+								td.num 1
+								td Оборудование
+								td: a(href="#") Станок токарный с ЧПУ
+								td.date 12.10.2003
+							tr
+								td.num 2
+								td Потребности
+								td: a(href="#") Тренажер-имитатор бурения (учебный класс АМТ-231 УК)
+								td.date 14.12.2005
+							tr
+								td.num 3
+								td Услуги
+								td: a(href="#") Изготовление деталей
+								td.date 18.01.2007

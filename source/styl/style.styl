@@ -639,6 +639,8 @@ color-orange()
 	margin-bottom 20px
 .mar-bot-30
 	margin-bottom 30px
+.mar-bot-50
+	margin-bottom 50px
 
 .mar-top-20m
 	margin-top -15px
@@ -1598,6 +1600,11 @@ textarea.inp-full
 				color: #4E5255; tdn(); 
 				&:hover
 					color #ff8c4d; 
+		a.export-link
+			text-transform none
+			color-orange()
+			font-size 14px
+			font-weight 300			
 	.bcon
 		padding 0 5px;
 		.item
@@ -1643,6 +1650,35 @@ textarea.inp-full
 		.sep
 			margin 0 15px 10px 15px;
 			border-bottom 1px dotted #E5E5E5;
+.box-info_noborder
+	@extend .box-info
+	border none 
+
+.table-reports
+	border 1px solid #E5E5E5
+	thead
+		td
+			vertical-align middle
+			color #333
+			font-size 16px
+			line-height 18px
+	td.num
+		width 10px
+	td.cat
+		width 200px
+	td.name
+		width 480px
+		
+	td
+		border-top 1px solid #E5E5E5
+		padding 10px 15px
+		font-size 14px
+		color #333333
+	td.num
+		padding 10px 10px 10px 15px
+		text-align center
+	td.date
+		color #808080
 
 .box-info-graph
 	margin-bottom 20px;
@@ -4026,7 +4062,9 @@ footer
 
 //	#lineedit
 .lineedit
-	padding-bottom 25px
+	position relative
+	padding-bottom 20px
+	padding-top 5px
 	&_save
 		float right
 		margin-top -90px
@@ -4056,7 +4094,8 @@ footer
 	&__con_pad-left
 		@extend .lineedit__con
 		padding-left 10px
-	
+.lineedit_pad-top
+	padding-top 30px
 
 //	#inputs
 input.inp-field, textarea.text-field
@@ -4295,3 +4334,42 @@ input.inp-text_sm
 			&:hover
 				tdn()
 				border-bottom none 
+.date-period_absolute
+	position absolute 
+	left 275px 
+	top 0px
+	.days
+		text-align right
+		padding-left 0
+		padding-right 22px
+		a
+			margin-left 28px
+			margin-right 0
+
+a.sort-link
+	position relative
+	display inline-block
+	padding-right 20px
+	color #333
+	font-size 16px
+	line-height 18px
+	cursor pointer
+	&:hover
+		color-orange()
+		tdn() 
+	span
+		top: 49%;
+		right: 0%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-top-color: #ff8c4d;
+		border-width: 5px;
+a.sort-link.is-active
+	span
+		top 40%
+		border-top-color transparent
+		border-bottom-color #ff8c4d;

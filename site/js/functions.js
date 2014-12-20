@@ -6,6 +6,26 @@
 
 
 $(document).ready(function() {
+
+	//	
+	$(".js-report-by-date").on("click", function(e) {
+		if($(".js-report-date").is(":hidden")) {
+			$(".js-report-date").hide().removeClass("hide").fadeIn();
+			$(".js-report-date-select").hide().removeClass("hide").slideDown();
+			$(".js-report-obl").slideUp();
+		}
+	});
+
+	$(".js-report-by-obl").on("click", function(e) {
+		if($(".js-report-obl").is(":hidden")) {
+			
+			$(".js-report-obl").hide().removeClass("hide").slideDown();
+			$(".js-report-date").fadeOut();
+			$(".js-report-date-select").slideUp();
+		}
+	});
+
+
 	// #change-dates
 	$(".js-change-dates").on("click", function(e) {
 		// function here
