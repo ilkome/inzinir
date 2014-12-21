@@ -11273,7 +11273,7 @@ a.sort-link:hover {
   text-decoration: none;
 }
 a.sort-link span {
-  top: 49%;
+  top: 46%;
   right: 0%;
   border: solid transparent;
   content: " ";
@@ -11284,10 +11284,24 @@ a.sort-link span {
   border-top-color: #ff8c4d;
   border-width: 5px;
 }
+a.sort-link.is-active {
+  color: #f85800;
+}
 a.sort-link.is-active span {
-  top: 40%;
+  top: 0%;
   border-top-color: transparent;
-  border-bottom-color: #ff8c4d;
+  border-bottom-color: #f85800;
+}
+a.sort-link.is-active.is-sort {
+  color: #f85800;
+}
+a.sort-link.is-active.is-sort span {
+  top: 40%;
+  border-bottom-color: transparent;
+  border-top-color: #f85800;
+}
+a.sort-link.lines.is-active span {
+  top: 30%;
 }
 @-webkit-keyframes opacity-fade {
   0% {
