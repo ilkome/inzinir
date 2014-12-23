@@ -195,6 +195,67 @@ color-orange()
 		margin 0
 
 
+.bmeta
+	padding-bottom 0px
+	a
+		color #9A9A9A
+		tdn()
+		&:hover
+			color-orange()
+			tdu() 
+	.date
+		display inline-block
+		padding-right 20px 
+	.views
+		display inline-block
+		padding-left 20px
+		padding-right 20px
+		background url("../img/icons/views.png") 0 2px no-repeat
+		color #9A9A9A
+	.comments
+		display inline-block
+		padding-right 20px
+		a
+			display block 
+			padding-left 20px
+			background url("../img/icons/comments.png") 0 1px no-repeat 
+			
+.imeta
+	div:last-child
+		padding-right 0
+	clearfix()
+	a.btn-add
+		color #F85800
+	a
+		padding-left 20px
+		color #9A9A9A
+		tdn()
+		&:hover
+			color #ff8c4d
+	.date
+		display inline-block
+		padding-right 20px 
+	.comments
+		display inline-block
+		padding-right 20px
+		a
+			display block
+			background url("../img/icons/comments.png") 0 1px no-repeat
+	.views
+		display inline-block
+		padding-left 20px
+		padding-right 20px
+		background url("../img/icons/views.png") 0 2px no-repeat
+	.left-grey
+		float left
+		font-size 11px
+		color #ccc
+		a
+			padding 0
+			color-orange()
+.imeta_padside
+	padding 0 0 0 20px
+
 //	LAYOUT
 // ===============================================
 .table
@@ -659,32 +720,6 @@ color-orange()
 
 // ===============================================
 
-.imeta
-	clearfix(); 
-	a.btn-add
-		color #F85800
-	a
-		padding-left 20px; 
-		color #9A9A9A; tdn();
-		&:hover
-			color #ff8c4d; 
-	.comments
-		float left; padding-right 15px;
-		a
-			display block; background url("../img/icons/comments.png") 0 1px no-repeat; 
-	.views
-		float left; 
-		a
-			display block; background url("../img/icons/views.png") 0 2px no-repeat;
-	.left-grey
-		float left
-		font-size 11px
-		color #ccc
-		a
-			padding 0
-			color-orange()
-.imeta_padside
-	padding 0 20px
 .meta-comments
 	@extend .imeta .comments
 	display inline-block
@@ -760,6 +795,8 @@ color-orange()
 	margin-bottom 10px
 	ul
 		margin 0
+.irating_dib
+	display inline-block
 .irating_fl
 	float left
 	padding-left 30px
@@ -2428,14 +2465,7 @@ textarea.inp-full
 	padding 20px;
 	border 1px solid #E5E5E5;
 	.bmeta
-		padding-bottom 30px;
-		.date
-			display inline-block; padding-right 30px; 
-		.views
-			display inline-block; padding-left 20px; background url("../img/icons/views.png") 0 2px no-repeat;
-			color #9A9A9A;
-			&:hover
-				color #ff8c4d;
+		padding-bottom 30px
 	.bname
 		padding-bottom 30px;
 		color #333;
@@ -2477,8 +2507,6 @@ textarea.inp-full
 		clearfix(); 
 		&.bot
 			padding-bottom 0;
-		.date
-			display inline-block; padding-right 30px; 
 		.more
 			float left; 
 			a
@@ -2529,7 +2557,6 @@ textarea.inp-full
 			color #CCC
 			font-size 10px
 	.bmeta
-		@extend .imeta
 		.more
 			a
 				padding 0
@@ -2792,13 +2819,6 @@ textarea.inp-full
 	border 1px solid #E5E5E5;
 	.bmeta
 		padding-bottom 30px;
-		@extend .imeta
-		.date
-			float left
-			padding-right 30px;
-		.views
-			display inline-block; padding-left 20px; background url("../img/icons/views.png") 0 2px no-repeat;
-			color #9A9A9A;
 	.bname
 		padding-bottom 30px;
 		color #333;
@@ -4355,7 +4375,7 @@ a.sort-link
 		color-orange()
 		tdn() 
 	span
-		top: 49%;
+		top: 46%;
 		right: 0%;
 		border: solid transparent;
 		content: " ";
@@ -4366,7 +4386,17 @@ a.sort-link
 		border-top-color: #ff8c4d;
 		border-width: 5px;
 a.sort-link.is-active
+	color-orange()
+	span
+		top 0%
+		border-top-color transparent
+		border-bottom-color #F85800;
+a.sort-link.is-active.is-sort
+	color-orange()
 	span
 		top 40%
-		border-top-color transparent
-		border-bottom-color #ff8c4d;
+		border-bottom-color transparent
+		border-top-color #F85800;
+a.sort-link.lines.is-active
+	span
+		top 30%

@@ -31,9 +31,9 @@ $(document).ready(function() {
 		// function here
 		console.log("change-dates");
 		e.preventDefault();
-	})
+	});
+
 	//	#user-menu
-	
 	$(".js-usermenu").on("click", function(e) {
 		var drop = $(".js-usermenu-drop");
 		var arrow = $(this).find(".arrow");
@@ -140,12 +140,12 @@ $(document).ready(function() {
 		var item = thisis.closest(".bcat");
 
 		if(item.hasClass("active")) {
-			thisis.find(".toogle").text("+");
+			thisis.text("+");
 			item.removeClass("active");
 			item.find(".bcat-con").slideUp();
 		} else {
 			item.addClass("active");
-			thisis.find(".toogle").text("-");
+			thisis.text("-");
 			item.find(".bcat-con").slideDown();
 		}
 	});
