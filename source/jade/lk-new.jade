@@ -107,7 +107,7 @@ block append content
 				.lineedit_save
 					a(href="#").btn-orange-wide.inline.edit-save Сохранить
 										
-			
+
 	.main-width.main-wrap
 		.pathway
 			ul
@@ -557,7 +557,7 @@ block append content
 								.info-head Текущий НТП: 17%
 								.info-text Оборудование: 56 % <br>Услуги: 23 %<br>Программное обеспечение: 49 %<br>Результаты интеллектальной деятельности: 58 %
 			//------------------------------------------------
-			.box-interest.box-interest_novisual
+			.box-interest.box-interest_novisual.mar-bot-20
 				.bname
 					h3 Рекомендуемые организации
 				.bcon
@@ -889,3 +889,40 @@ block append content
 						
 						+item("ЗАО «Научно-производственный центр “Модуль”»", "120-85-2.jpg", "75")
 						+item("Санкт-Петербургский государственный университет аэрокосмического приборостроения", "120-85-1.jpg", "91")
+
+			//- #отчетность
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Отчетность
+				.bcon
+					.reporting-line.reporting-line_names
+						.reporting-item.reporting_num №
+						.reporting-item.reporting_name Название
+						.reporting-item.reporting_time Срок
+						.reporting-item.reporting_status Статус
+					
+					mixin reporting(num, name, status)
+						.reporting-line
+							.reporting-item.reporting_num= num
+							.reporting-item.reporting_name= name
+							.reporting-item.reporting_time до 10.12.2014
+							.reporting-item.reporting_status
+								a(href="#").link-plus Добавить
+								
+					+reporting("1", "Государственная поддержка")
+					+reporting("2", "Источники и структура выручки")
+					+reporting("3", "Дебиторская задолженность")
+					+reporting("4", "Долговые обязательства")
+					+reporting("5", "Сведения о персонале")
+				
+					.reporting-line
+						.reporting-item.reporting_num 6
+						.reporting-item.reporting_name Государственная поддержка
+						.reporting-item.reporting_time до 10.12.2014
+						.reporting-item.reporting_status
+							a(href="#").link-edit Изменить
+							a(href="#").ok
+
+					.all_full
+						a(href="#") Все документы

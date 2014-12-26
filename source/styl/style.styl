@@ -2664,7 +2664,9 @@ textarea.inp-full
 	margin 0;
 	background none
 	border 1px solid #E5E5E5
-
+.box-interest.mar-bot-20
+	margin-bottom 20px
+	
 // Items with 3 collums
 .item-3col
 	width 100%
@@ -4400,3 +4402,53 @@ a.sort-link.is-active.is-sort
 a.sort-link.lines.is-active
 	span
 		top 30%
+
+
+
+.reporting-line
+	display table
+	table-layout fixed
+	width 100%
+	margin-bottom 7px
+	border 1px solid #e5e5e5
+.reporting-item
+	position relative
+	display table-cell
+	full()
+	padding 5px 10px
+	color #333
+	font-size 12px
+.reporting_num
+	width 30px
+.reporting_time
+	width 160px
+.reporting_status
+	width 160px
+	.ok
+		position absolute 
+		right 10px 
+		top 5px
+		width 17px
+		height 17px
+		background url("../img/icons/ok-blue.png") no-repeat
+.reporting-line_names 
+	border none
+	.reporting-item
+		color #999
+		font-size 14px
+		
+.link-edit
+	display inline-block
+	color #ccc
+	padding-left 15px
+	background url("../img/icons/edit-sm.png") 0 center no-repeat
+	&:hover
+		background url("../img/icons/edit-sm-a.png") 0 center no-repeat
+		color-orange()
+.link-plus
+	display inline-block
+	padding-left 15px
+	background url("../img/icons/plus-sm.png") 0 center no-repeat
+	&:hover
+		opacity .9
+	

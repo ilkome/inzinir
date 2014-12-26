@@ -9120,6 +9120,9 @@ textarea.inp-full {
   background: none;
   border: 1px solid #e5e5e5;
 }
+.box-interest.mar-bot-20 {
+  margin-bottom: 20px;
+}
 .item-3col {
   width: 100%;
   margin-bottom: 20px;
@@ -11295,6 +11298,63 @@ a.sort-link.is-active.is-sort span {
 }
 a.sort-link.lines.is-active span {
   top: 30%;
+}
+.reporting-line {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 7px;
+  border: 1px solid #e5e5e5;
+}
+.reporting-item {
+  position: relative;
+  display: table-cell;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  color: #333;
+  font-size: 12px;
+}
+.reporting_num {
+  width: 30px;
+}
+.reporting_time {
+  width: 160px;
+}
+.reporting_status {
+  width: 160px;
+}
+.reporting_status .ok {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icons/ok-blue.png") no-repeat;
+}
+.reporting-line_names {
+  border: none;
+}
+.reporting-line_names .reporting-item {
+  color: #999;
+  font-size: 14px;
+}
+.link-edit {
+  display: inline-block;
+  color: #ccc;
+  padding-left: 15px;
+  background: url("../img/icons/edit-sm.png") 0 center no-repeat;
+}
+.link-edit:hover {
+  background: url("../img/icons/edit-sm-a.png") 0 center no-repeat;
+  color: #f85800;
+}
+.link-plus {
+  display: inline-block;
+  padding-left: 15px;
+  background: url("../img/icons/plus-sm.png") 0 center no-repeat;
+}
+.link-plus:hover {
+  opacity: 0.9;
 }
 @-webkit-keyframes opacity-fade {
   0% {
