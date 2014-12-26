@@ -11382,6 +11382,9 @@ a.sort-link.lines.is-active span {
 .kir__col_wide {
   width: 250px;
 }
+.kir__col_med {
+  text-align: center;
+}
 .kir__name {
   color: #333;
   font-size: 16px;
