@@ -1,0 +1,71 @@
+extends _layout
+
+//------------------------------------------------
+block append content
+
+	mixin kir-name
+		.kir
+			.kir__col.kir__col_wide
+			.kir__col.kir__col_med Краткосрочные обязательства (до 1 года)
+			.kir__col.kir__col_med Среднесрочные обязательства (от 1 года до 3 лет)
+			.kir__col.kir__col_med Долгосрочные обязательства (свыше 3х лет)
+			.kir__col.kir__col_med Просроченная задолженность всего
+	
+	mixin kir(name, orange)
+		.kir
+			.kir__col.kir__col_wide= name
+			if orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="212 000" readonly).inp_kir.inp_orange
+			else 
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="334 000").inp_kir
+
+	mixin kir-currency
+		+kir("Российские рубли")
+		+kir("Американские доллары")
+		+kir("Евро")
+		+kir("Иная иностранная валюта")
+		.mar-bot-20
+
+
+	.main-width.main-wrap
+		.pathway
+			ul: li.nound: a(href="#") Информация
+
+		.page-name.page-name_small
+			h1 Структура дебиторской задолженности
+		
+
+		.main-full
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Займы (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+					+kir("ДЕБИТОР-РЕЗИДЕНТ ВСЕГО", "1")
+					+kir-currency
+					+kir("ДЕБИТОР-НЕРЕЗИДЕНТ ВСЕГО", "1")
+					+kir-currency
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Обязательства по контрактам (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+					+kir("ДЕБИТОР-РЕЗИДЕНТ ВСЕГО", "1")
+					+kir-currency
+					+kir("ДЕБИТОР-НЕРЕЗИДЕНТ ВСЕГО", "1")
+					+kir-currency
+											
+
+			//- #action
+			.mar-top-20.center
+				a(href="#").btn-grey-wide.inline Отмена
+				a(href="#").btn-orange-wide.inline Сохранить

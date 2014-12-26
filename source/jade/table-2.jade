@@ -1,0 +1,57 @@
+extends _layout
+
+//------------------------------------------------
+block append content
+
+	mixin kir-name
+		.kir
+			.kir__col.kir__col_wide
+			.kir__col.kir__col_med Внутрениий рынок
+			.kir__col.kir__col_med Внешний рынок
+			.kir__col.kir__col_med ГОЗ
+			.kir__col.kir__col_med ВТС
+	
+	mixin kir(name, orange)
+		.kir
+			.kir__col.kir__col_wide= name
+			if orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="212 000" readonly).inp_kir.inp_orange
+			else 
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="334 000").inp_kir
+
+	mixin kir-currency
+		+kir("Российские рубли")
+		+kir("Американские доллары")
+		+kir("Евро")
+		+kir("Иная иностранная валюта")
+		.mar-bot-20
+
+
+	.main-width.main-wrap
+		.pathway
+			ul: li.nound: a(href="#") Информация
+
+		.page-name.page-name_small
+			h1 Источники и структура выручки от реализации
+		
+
+		.main-full
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Остаток денежных средств на начало отчетного месяца (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+					+kir-currency
+											
+
+			//- #action
+			.mar-top-20.center
+				a(href="#").btn-grey-wide.inline Отмена
+				a(href="#").btn-orange-wide.inline Сохранить

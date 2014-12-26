@@ -1,0 +1,67 @@
+extends _layout
+
+//------------------------------------------------
+block append content
+
+	mixin kir-name
+		.kir
+			.kir__col.kir__col_wide
+			.kir__col.kir__col_med Отчетная неделя (факт)
+			.kir__col.kir__col_med Неделя, следующая за отчетной (прогноз)
+			.kir__col.kir__col_med Вторая неделя, следующая за отчетной (прогноз) 
+	
+	mixin kir(name, orange)
+		.kir
+			.kir__col.kir__col_wide= name
+			if orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
+			else 
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
+
+	mixin kir-currency
+		+kir("Российские рубли")
+		+kir("Американские доллары")
+		+kir("Евро")
+		+kir("Иная иностранная валюта")
+		.mar-bot-20
+
+
+	.main-width.main-wrap
+		.pathway
+			ul: li.nound: a(href="#") Информация
+
+		.page-name.page-name_small
+			h1 Сведения о персонале
+		
+
+		.main-full
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Остаток денежных средств на начало отчетного месяца (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Фонд оплаты труда (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Среднемесячная заработная плата (тыс. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+
+
+			//- #action
+			.mar-top-20.center
+				a(href="#").btn-grey-wide.inline Отмена
+				a(href="#").btn-orange-wide.inline Сохранить

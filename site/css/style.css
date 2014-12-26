@@ -11365,10 +11365,13 @@ a.sort-link.lines.is-active span {
 .link-plus:hover {
   opacity: 0.9;
 }
-.kir {
+.kir-table {
   display: table;
   table-layout: fixed;
-  width: 600px;
+  min-width: 600px;
+}
+.kir {
+  display: table-row;
 }
 .kir__col {
   position: relative;
@@ -11384,6 +11387,8 @@ a.sort-link.lines.is-active span {
 }
 .kir__col_med {
   text-align: center;
+  width: 200px;
+  vertical-align: top;
 }
 .kir__name {
   color: #333;
@@ -11407,6 +11412,7 @@ input.inp_full {
 input.inp_orange {
   background: #ffe9db;
   border: 1px solid #ff9350;
+  cursor: default;
 }
 @-webkit-keyframes opacity-fade {
   0% {
