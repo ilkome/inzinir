@@ -11396,7 +11396,8 @@ input.inp_kir {
   font-size: 18px;
   text-align: center;
 }
-input.inp_kir:hover {
+input.inp_kir:hover,
+input.inp_kir:focus {
   box-shadow: 0 1px 11px rgba(1,1,1,0.1);
 }
 input.inp_full {
