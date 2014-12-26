@@ -6129,6 +6129,9 @@ input.btn-orange-wide:hover {
   font-family: 'latolight';
   font-size: 18px;
 }
+.page-name_small h1 {
+  font-size: 36px;
+}
 .main-left {
   width: 748px;
   display: table-cell;
@@ -10429,6 +10432,12 @@ footer .copy {
 .heading .heading-left_sort-fl a {
   margin-left: 40px;
 }
+.heading_normal {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .read-time {
   display: inline-block;
   color: #f85800;
@@ -11355,6 +11364,45 @@ a.sort-link.lines.is-active span {
 }
 .link-plus:hover {
   opacity: 0.9;
+}
+.kir {
+  display: table;
+  table-layout: fixed;
+  width: 600px;
+}
+.kir__col {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  color: #333;
+  font-size: 14px;
+}
+.kir__col_wide {
+  width: 250px;
+}
+.kir__name {
+  color: #333;
+  font-size: 16px;
+}
+input.inp_kir {
+  width: 130px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: center;
+}
+input.inp_kir:hover {
+  box-shadow: 0 1px 11px rgba(1,1,1,0.1);
+}
+input.inp_full {
+  width: 100%;
+  box-sizing: border-box;
+}
+input.inp_orange {
+  background: #ffe9db;
+  border: 1px solid #ff9350;
 }
 @-webkit-keyframes opacity-fade {
   0% {

@@ -675,6 +675,9 @@ color-orange()
 		font-size 72px; latolight();
 	p
 		margin 0; latolight(); font-size 18px; 
+.page-name_small
+	h1
+		font-size 36px
 .main-left
 	width 748px
 	display table-cell
@@ -3671,7 +3674,11 @@ footer
 		@extend .heading .heading-right_sort
 		a
 			margin-left 40px
-
+.heading_normal
+	color #333
+	font-size 14px
+	font-weight bold
+	text-transform uppercase
 .read-time
 	display: inline-block
 	color #F85800
@@ -4437,6 +4444,7 @@ a.sort-link.lines.is-active
 		color #999
 		font-size 14px
 		
+
 .link-edit
 	display inline-block
 	color #ccc
@@ -4452,3 +4460,37 @@ a.sort-link.lines.is-active
 	&:hover
 		opacity .9
 	
+
+.kir
+	display table
+	table-layout fixed
+	width 600px
+.kir__col
+	position relative
+	display table-cell
+	vertical-align middle
+	full()
+	padding 5px 10px
+	color #333
+	font-size 14px
+.kir__col_wide
+	width 250px
+.kir__name 
+	color #333
+	font-size 16px
+
+input.inp_kir
+	width 130px
+	full() 
+	margin-bottom 0
+	font-size 18px
+	text-align center
+	&:hover
+		box-shadow 0 1px 11px rgba(1, 1, 1, 0.1)
+
+input.inp_full
+	width 100%
+	full() 
+input.inp_orange
+	background #ffe9db
+	border 1px solid #ff9350
