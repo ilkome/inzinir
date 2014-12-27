@@ -1,6 +1,10 @@
 extends _layout
 
-//------------------------------------------------
+block styles
+	link(href="css/lightSlider.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
+		
 block append content
 
 	mixin kir-name
@@ -41,7 +45,7 @@ block append content
 			h1 Источники и структура выручки от реализации
 		
 
-		.main-full
+		.main-left
 			//- #box
 			.box-articles.mar-bot-20
 				.heading.heading_normal Остаток денежных средств на начало отчетного месяца (млн. руб.)
@@ -55,3 +59,6 @@ block append content
 			.mar-top-20.center
 				a(href="#").btn-grey-wide.inline Отмена
 				a(href="#").btn-orange-wide.inline Сохранить
+
+		.main-right
+			+report-archive

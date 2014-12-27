@@ -94,7 +94,6 @@ mixin comment-block(name)
 					.answer
 						a(href="#") Ответить
 
-
 mixin support-block
 	.box-support
 		.bcon
@@ -108,8 +107,47 @@ mixin support-block
 				a(href="#") 
 					img(src="img/content/logo-ibs.png", alt="")
 
-
 mixin event-map
 	script(src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;", type="text/javascript")
 	.remodal(data-remodal-id="modal").remodal_map
 		#google-map(style="width:700px; height:600px;")
+
+mixin report-archive
+	.box-right.boxside-list
+		.bname: h3: a(href="#") Архив отчетов
+		.bcon
+			.js-archive-slider
+				.slide
+					ul
+						mixin archive-item
+							li
+								.small-grey 30 Сентября 2014
+								a(href="#") Отчет №2
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						li.center Сентября 2014
+				.slide
+					ul
+						mixin archive-item
+							li
+								.small-grey 30 Сентября 2014
+								a(href="#") Отчет №2
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						+archive-item
+						li.center Октябрь 2014

@@ -173,7 +173,9 @@ color-orange()
 	font-size 14px
 .fz11
 	font-size 11px
-	
+.small-grey
+	color #CCC
+	font-size 12px
 .textarea-full
 	full() 
 	width 100%
@@ -683,9 +685,11 @@ color-orange()
 	display table-cell
 	vertical-align top;
 .main-right
-	position relative;
-	padding-left 20px; display table-cell;
-	vertical-align top;
+	display table-cell
+	position relative
+	width 264px
+	padding-left 20px
+	vertical-align top
 
 .sep-black
 	margin 30px 0;
@@ -4411,7 +4415,6 @@ a.sort-link.lines.is-active
 		top 30%
 
 
-
 .reporting-line
 	display table
 	table-layout fixed
@@ -4472,28 +4475,25 @@ a.sort-link.lines.is-active
 	display table-cell
 	vertical-align middle
 	full()
-	padding 5px 10px
+	padding 5px 5px
 	color #333
 	font-size 14px
 .kir__col_wide
 	width 250px
 .kir__col_med
 	text-align center
-	width 200px
+	min-width 115px
 	vertical-align top
-.kir__name 
-	color #333
-	font-size 16px
+
 
 input.inp_kir
-	width 130px
+	width 115px
 	full() 
 	margin-bottom 0
-	font-size 18px
+	font-size 16px
 	text-align center
 	&:hover, &:focus
 		box-shadow 0 1px 11px rgba(1, 1, 1, 0.1)
-
 input.inp_full
 	width 100%
 	full() 
@@ -4501,3 +4501,36 @@ input.inp_orange
 	background #ffe9db
 	border 1px solid #ff9350
 	cursor default
+	
+.boxside-list
+	position relative
+	width 210px
+	ul
+		lino()
+	li
+		padding-bottom 20px
+		color #3F3F3F
+		font-size 16px
+	a
+		padding-top 5px
+		display block
+		color #3F3F3F
+		&:hover
+			color-orange()
+	.lSAction
+		position absolute
+		width 100%
+		left 0
+		bottom 40px
+		a
+			width auto
+		.lSPrev 
+			left 0
+		.lSNext 
+			right 0
+	.lSPrev 
+	.lSNext
+		font-size 30px
+		&:hover
+			tdn() 
+	

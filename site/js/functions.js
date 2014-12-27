@@ -325,7 +325,19 @@ $(document).ready(function() {
 			auto: true,
 			pause: 4000,
 			cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-				swipeThreshold: 100,
+			swipeThreshold: 100,
+		});
+
+		$(".js-archive-slider").lightSlider({
+			item: 1,
+			loop: false,
+			auto: 0,
+			pager: false,
+			pause: 4000,
+			cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+			swipeThreshold: 50,
+			prevHtml: "<",
+			nextHtml: ">",
 		});
 	}
 

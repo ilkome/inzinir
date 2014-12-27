@@ -5376,6 +5376,10 @@ input.btn-orange-wide:hover {
 .fz11 {
   font-size: 11px;
 }
+.small-grey {
+  color: #ccc;
+  font-size: 12px;
+}
 .textarea-full {
   box-sizing: border-box;
   width: 100%;
@@ -6138,9 +6142,10 @@ input.btn-orange-wide:hover {
   vertical-align: top;
 }
 .main-right {
-  position: relative;
-  padding-left: 20px;
   display: table-cell;
+  position: relative;
+  width: 264px;
+  padding-left: 20px;
   vertical-align: top;
 }
 .sep-black {
@@ -11378,7 +11383,7 @@ a.sort-link.lines.is-active span {
   display: table-cell;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 5px 10px;
+  padding: 5px 5px;
   color: #333;
   font-size: 14px;
 }
@@ -11387,18 +11392,14 @@ a.sort-link.lines.is-active span {
 }
 .kir__col_med {
   text-align: center;
-  width: 200px;
+  min-width: 115px;
   vertical-align: top;
 }
-.kir__name {
-  color: #333;
-  font-size: 16px;
-}
 input.inp_kir {
-  width: 130px;
+  width: 115px;
   box-sizing: border-box;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 input.inp_kir:hover,
@@ -11413,6 +11414,54 @@ input.inp_orange {
   background: #ffe9db;
   border: 1px solid #ff9350;
   cursor: default;
+}
+.boxside-list {
+  position: relative;
+  width: 210px;
+}
+.boxside-list ul {
+  margin: 0;
+  list-style: none;
+}
+.boxside-list ul li {
+  margin: 0;
+  list-style: none;
+}
+.boxside-list li {
+  padding-bottom: 20px;
+  color: #3f3f3f;
+  font-size: 16px;
+}
+.boxside-list a {
+  padding-top: 5px;
+  display: block;
+  color: #3f3f3f;
+}
+.boxside-list a:hover {
+  color: #f85800;
+}
+.boxside-list .lSAction {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+}
+.boxside-list .lSAction a {
+  width: auto;
+}
+.boxside-list .lSAction .lSPrev {
+  left: 0;
+}
+.boxside-list .lSAction .lSNext {
+  right: 0;
+}
+.boxside-list .lSPrev,
+.boxside-list .lSNext {
+  font-size: 30px;
+}
+.boxside-list .lSPrev:hover,
+.boxside-list .lSNext:hover {
+  text-decoration: none;
 }
 @-webkit-keyframes opacity-fade {
   0% {
