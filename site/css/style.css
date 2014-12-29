@@ -5605,7 +5605,7 @@ input.btn-orange-wide:hover {
 }
 .sidebar .menu ul li a {
   display: block;
-  padding: 25px 20px 20px 75px;
+  padding: 25px 20px 20px 65px;
   font-size: 12px;
   color: #e6e6e6;
   text-transform: uppercase;
@@ -5625,6 +5625,7 @@ input.btn-orange-wide:hover {
 }
 .sidebar .menu ul li.search a {
   background: url("../img/left/search.png") 15px center no-repeat;
+  white-space: nowrap;
 }
 .sidebar .menu ul li.active {
   background: #272729;
