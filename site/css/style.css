@@ -11416,8 +11416,10 @@ input.inp_orange {
   cursor: default;
 }
 .boxside-list {
-  position: relative;
   width: 210px;
+}
+.boxside-list .bcon {
+  position: relative;
 }
 .boxside-list ul {
   margin: 0;
@@ -11441,18 +11443,18 @@ input.inp_orange {
   color: #f85800;
 }
 .boxside-list .lSAction {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 40px;
+  position: relative;
+  height: 1px;
 }
 .boxside-list .lSAction a {
   width: auto;
 }
 .boxside-list .lSAction .lSPrev {
   left: 0;
+  top: -37px;
 }
 .boxside-list .lSAction .lSNext {
+  top: -37px;
   right: 0;
 }
 .boxside-list .lSPrev,

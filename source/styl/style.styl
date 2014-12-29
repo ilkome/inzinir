@@ -4503,8 +4503,9 @@ input.inp_orange
 	cursor default
 	
 .boxside-list
-	position relative
 	width 210px
+	.bcon
+		position relative
 	ul
 		lino()
 	li
@@ -4518,15 +4519,15 @@ input.inp_orange
 		&:hover
 			color-orange()
 	.lSAction
-		position absolute
-		width 100%
-		left 0
-		bottom 40px
+		position relative
+		height 1px
 		a
 			width auto
 		.lSPrev 
 			left 0
+			top -37px
 		.lSNext 
+			top -37px
 			right 0
 	.lSPrev 
 	.lSNext
