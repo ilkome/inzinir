@@ -338,6 +338,7 @@ $(document).ready(function() {
 			swipeThreshold: 50,
 			prevHtml: "<",
 			nextHtml: ">",
+			adaptiveHeight: true,
 		});
 	}
 

@@ -16,7 +16,7 @@ block append content
 					input(type="text", placeholder="Быстрый поиск по предприятиям").inp-text
 					input(type="submit", value="").inp-submit
 			
-			.box-articles				
+			.box-articles
 				mixin item(name, pic, rating)
 					.item-3col
 						.iprev
@@ -24,7 +24,7 @@ block append content
 						.icon
 							.iname
 								a(href="#")= name
-							a(href="#").feedback_big Связаться				
+							a(href="#").feedback_big Связаться
 				+item("ЗАО «Научно-производственный центр “Модуль”»", "120-85-2.jpg", "75")
 				+item("Санкт-Петербургский государственный университет аэрокосмического приборостроения", "120-85-1.jpg", "91")
 				+item("ООО «Лаборатории АМФОРА»", "120-85-2.jpg", "64")

@@ -4529,27 +4529,42 @@ input.inp_orange
 	.bcon
 		position relative
 	ul
+		position relative
+		height 520px
 		lino()
+		padding-bottom 35px
 	li
 		padding-bottom 20px
 		color #3F3F3F
-		font-size 16px
+		font-size 16px	
+	.ok a
+		background url("../img/icons/report-green.png") 0 7px no-repeat
+	.fault a
+		background url("../img/icons/report-red.png") 0 7px no-repeat
 	a
-		padding-top 5px
 		display block
+		padding-left 20px
+		padding-top 5px
 		color #3F3F3F
 		&:hover
 			color-orange()
+	.last
+		position absolute 
+		left 0px 
+		bottom 0px
+		z-index 10
+		width 100%
+		text-align center
 	.lSAction
 		position relative
 		height 1px
 		a
 			width auto
 		.lSPrev 
-			left 0
-			top -37px
+			left -20px
+			top -35px
 		.lSNext 
-			top -37px
+			top -35px
 			right 0
 	.lSPrev 
 	.lSNext

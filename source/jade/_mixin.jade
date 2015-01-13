@@ -117,40 +117,33 @@ mixin report-archive
 		.bname: h3: a(href="#") Архив отчетов
 		.bcon
 			.js-archive-slider
+				mixin archive-item(status)
+					li(
+						class=typeof 
+						status === "undefined" ? undefined : status
+						)
+						.small-grey 30 Сентября 2014
+						a(href="#") Отчет №2
 				.slide
 					ul
-						mixin archive-item
-							li
-								.small-grey 30 Сентября 2014
-								a(href="#") Отчет №2
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						li.center Сентября 2014
+						+archive-item("ok")
+						+archive-item("fault")
+						+archive-item("ok")
+						+archive-item("fault")
+						+archive-item("fault")
+						+archive-item("ok")
+						+archive-item("ok")
+						+archive-item("ok")
+						li.last Сентября 2014
 				.slide
 					ul
-						mixin archive-item
-							li
-								.small-grey 30 Сентября 2014
-								a(href="#") Отчет №2
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						+archive-item
-						li.center Октябрь 2014
+						+archive-item("ok")
+						+archive-item("ok")
+						+archive-item("ok")
+						+archive-item("fault")
+						+archive-item("fault")
+						+archive-item("ok")
+						li.last Октябрь 2014
 
 mixin logo-bottom
 	.logos-bottom

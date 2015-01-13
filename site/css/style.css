@@ -11455,8 +11455,11 @@ input.inp_orange {
   position: relative;
 }
 .boxside-list ul {
+  position: relative;
+  height: 520px;
   margin: 0;
   list-style: none;
+  padding-bottom: 35px;
 }
 .boxside-list ul li {
   margin: 0;
@@ -11467,13 +11470,28 @@ input.inp_orange {
   color: #3f3f3f;
   font-size: 16px;
 }
+.boxside-list .ok a {
+  background: url("../img/icons/report-green.png") 0 7px no-repeat;
+}
+.boxside-list .fault a {
+  background: url("../img/icons/report-red.png") 0 7px no-repeat;
+}
 .boxside-list a {
-  padding-top: 5px;
   display: block;
+  padding-left: 20px;
+  padding-top: 5px;
   color: #3f3f3f;
 }
 .boxside-list a:hover {
   color: #f85800;
+}
+.boxside-list .last {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
 }
 .boxside-list .lSAction {
   position: relative;
@@ -11483,11 +11501,11 @@ input.inp_orange {
   width: auto;
 }
 .boxside-list .lSAction .lSPrev {
-  left: 0;
-  top: -37px;
+  left: -20px;
+  top: -35px;
 }
 .boxside-list .lSAction .lSNext {
-  top: -37px;
+  top: -35px;
   right: 0;
 }
 .boxside-list .lSPrev,
