@@ -5384,6 +5384,9 @@ input.btn-orange-wide:hover {
   box-sizing: border-box;
   width: 100%;
 }
+.feedback_big {
+  text-transform: uppercase;
+}
 .refusal-name {
   font-size: 14px;
   text-transform: uppercase;
@@ -6165,6 +6168,14 @@ input.btn-orange-wide:hover {
 }
 .sep-space {
   height: 30px;
+}
+.logos-bottom {
+  padding-top: 30px;
+  text-align: center;
+}
+.logos-bottom .item {
+  display: inline-block;
+  padding: 0 20px;
 }
 .mar-bot-5 {
   margin-bottom: 5px;
