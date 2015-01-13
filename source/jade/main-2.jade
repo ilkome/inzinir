@@ -1,0 +1,113 @@
+extends _layout
+
+block styles
+	link(href="css/lightSlider.css", rel="stylesheet")
+
+block scripts
+	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
+
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li
+					a(href="#") Рынок услуг
+		//------------------------------------------------
+		.slider-index-wrap
+			ul.slider-index
+				li 
+					img(src="img/content/slider-1.jpg", alt="")
+					.desc Информационный портал, содействующий развитию инжиниринговой деятельности<br>и промышленного дизайна
+				li 
+					img(src="img/content/slider-2.jpg", alt="")
+					.desc Наиболее полная информация <br>о рынке инжиниринговых услуг
+				li
+					img(src="img/content/slider-3.jpg", alt="")
+					.desc Экспертное сообщество профессионалов <br>в сфере инжиниринга и промдизайна
+		//------------------------------------------------
+		.main-full
+			.box-info.box-info_4col
+				.box
+					.bname
+						h3: a(href="#") Новости
+					.bcon
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-1.jpg", alt="")
+							.idate.idate_pad 12 Декабря 2012
+							.iname
+								a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+							.imeta.mar-bot-20
+								.comments
+									a(href="#") 51
+								.views 225
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li
+									li
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-2.jpg", alt="")
+							.idate.idate_pad 12 Декабря 2012
+							.iname
+								a(href="#") Тренажёр-имитатор бурения (учебный класс АМТ-231 УК) 
+							.imeta.mar-bot-20
+								.comments
+									a(href="#") 51
+								.views 225
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-3.jpg", alt="")
+							.idate.idate_pad 12 Декабря 2012
+							.iname
+								a(href="#") Технологический лазерный комплекс гравировки и резки материалов 
+							.imeta.mar-bot-20
+								.comments
+									a(href="#") 51
+								.views 225
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li.star
+									li.star
+						.item
+							.iprev
+								a(href="#") 
+									img(src="img/content/200-120-1.jpg", alt="")
+							.idate.idate_pad 12 Декабря 2012
+							.iname
+								a(href="#") Установка для исследования радиационного и термического выделения газов из неорганических материалов 
+							.imeta.mar-bot-20
+								.comments
+									a(href="#") 51
+								.views 225
+							.irating
+								span Рейтинг
+								ul
+									li.star
+									li.star
+									li.star
+									li
+									li
+						.clear
+						.all
+							a(href="#") Все новости
