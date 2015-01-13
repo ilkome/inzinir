@@ -1,0 +1,217 @@
+extends _layout
+	
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
+
+block scripts
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
+ 
+ 
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Новости
+		
+		.page-name
+			h1 Новости
+		
+		.main-left
+			.search-con
+				form(action="#")
+					input(type="text", placeholder="Быстрый поиск по новостям").inp-text
+					input(type="submit", value="").inp-submit
+			.box-articles
+				.item
+					.iprev
+						img(src="img/content/180-135-1.jpg", alt="")
+					.icon
+						.idate 10 сентября 2014
+						.iname
+							a(href="#") Состояние науки российской федерации
+						.irating.mar-bot-10.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext.lh-small
+							p Взлет строителя сетей связи «Инфра инжиниринг» хорошо показывает, что такое история успеха в России.
+						.imeta-info
+							a(href="#") Читать полностью
+							.imeta.col-2.col-fix
+								.comments
+									a(href="#") 51
+								.views 225
+				.item
+					.iprev
+						img(src="img/content/180-135-2.jpg", alt="")
+					.icon
+						.idate 10 сентября 2014
+						.iname
+							a(href="#") Состояние науки российской федерации
+						.irating.mar-bot-10.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext.lh-small
+							p Взлет строителя сетей связи «Инфра инжиниринг» хорошо показывает, что такое история успеха в России.
+						.imeta-info
+							a(href="#") Читать полностью
+							.imeta.col-2.col-fix
+								.comments
+									a(href="#") 51
+								.views 225
+				.item
+					.iprev
+						img(src="img/content/180-135-1.jpg", alt="")
+					.icon
+						.idate 10 сентября 2014
+						.iname
+							a(href="#") Состояние науки российской федерации
+						.irating.mar-bot-10.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext.lh-small
+							p Взлет строителя сетей связи «Инфра инжиниринг» хорошо показывает, что такое история успеха в России.
+						.imeta-info
+							.tags.col-2
+								a(href="#").rdm Читать полностью
+							.imeta.col-2.col-fix
+								.comments
+									a(href="#") 51
+								.views 225
+				.item
+					.iprev
+						img(src="img/content/180-135-2.jpg", alt="")
+					.icon
+						.idate 10 сентября 2014
+						.iname
+							a(href="#") Состояние науки российской федерации
+						.irating.mar-bot-10.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext.lh-small
+							p Взлет строителя сетей связи «Инфра инжиниринг» хорошо показывает, что такое история успеха в России.
+						.imeta-info
+							a(href="#").rdm Читать полностью
+							.imeta.col-2.col-fix
+								.comments
+									a(href="#") 51
+								.views 225
+				.item
+					.iprev
+						img(src="img/content/180-135-1.jpg", alt="")
+					.icon
+						.idate 10 сентября 2014
+						.iname
+							a(href="#") Состояние науки российской федерации
+						.irating.mar-bot-10.irating_margin2
+							ul
+								li.star
+								li.star
+								li.star
+								li
+								li
+						.itext.lh-small
+							p Взлет строителя сетей связи «Инфра инжиниринг» хорошо показывает, что такое история успеха в России.
+						.imeta-info
+							.tags.col-2
+								a(href="#").rdm Читать полностью
+							.imeta.col-2.col-fix
+								.comments
+									a(href="#") 51
+								.views 225
+		//------------------------------------------------
+		.main-right
+			.box-sort-docs.box-right
+				.bname
+					h3 Показать новости
+				.bcon
+					.dates
+						.legend c датой публикации
+						.line
+							.td
+								span от
+							.td
+								input(type="text", placeholder="дата от").js-calendar-widget.calendar-widget-pop
+							.td
+								a(href="#").js-open-cal.cal
+						.line
+							.td
+								span до
+							.td
+								input(type="text", placeholder="дата до").js-calendar-widget.calendar-widget-pop2
+							.td
+								a(href="#").js-open-cal.cal
+					.checks
+						.legend Относятся к разделу
+						.line
+							input(id="check-val2" type="checkbox" name="radio")
+							label(for="check-val2") Свидетельства о регистрации (243)
+						.line
+							input(id="check-val3" type="checkbox" name="radio")
+							label(for="check-val3") Патенты РФ (68)
+				.action
+					a(href="#") Показать
+			
+			.box-right.boxside-sort-cat
+				.bname
+					h3 По разделам
+				.bcon
+					ul
+						li.selected
+							a(href="#") Авиация и космос (10)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Безопасность (17)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+						li
+							a(href="#") Власть (31)
+						li
+							a(href="#") Добыча полезных ископаемых (4)
+						li.selected
+							a(href="#") ЖКХ (3)
+						li
+							a(href="#") Бизнес-консалтинг (1)
+						li
+							a(href="#") Биотехнологии и медицина (25)
+
+		+logo-bottom
