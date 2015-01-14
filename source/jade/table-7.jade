@@ -1,0 +1,97 @@
+extends _layout
+
+block styles
+	link(href="css/lightSlider.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.lightSlider.min.js", type="text/javascript")
+
+block append content
+
+	mixin kir-name
+		.kir
+			.kir__col.kir__col_wide
+			.kir__col.kir__col_med Отчетная неделя (факт)
+			.kir__col.kir__col_med Неделя, следующая за отчетной (прогноз)
+			.kir__col.kir__col_med Вторая неделя, следующая за отчетной (прогноз) 
+	
+	mixin kir(name, orange)
+		.kir
+			.kir__col.kir__col_wide= name
+			if orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
+			else 
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
+
+	mixin kir-currency
+		+kir("Российские рубли")
+		+kir("Американские доллары")
+		+kir("Евро")
+		+kir("Иная иностранная валюта")
+		.mar-bot-20
+
+
+	.main-width.main-wrap
+		.pathway
+			ul: li: a(href="#") Информация
+
+		.page-desc
+			.norm Научно-ссследовальский институт систем связи и управления
+			.grey Транспортное машиностроение
+			h3 движение денежных средств
+		.mar-bot-20.fl-right
+			a(href="#") список отчетов
+		.clear
+
+		.main-full
+			//- #box
+			.kir-headtime Отчет от 29 декабря 2014
+			.box-articles.mar-bot-20
+				.heading.heading_normal Остаток денежных средств на начало отчетного месяца (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+					+kir-currency
+			
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Поступления денежных средств (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ДОХОД ОТ ОСНОВНОЙ ДЕЯТЕЛЬНОСТИ ВСЕГО", "1")
+					+kir-currency
+					+kir("КРЕДИТЫ, ЗАЙМЫ И ИНЫЕ ВЛИВАНИЯ ВСЕГО", "1")
+					+kir-currency
+					+kir("ДЕНЕЖНЫЕ СРЕДСТВА В РАМКАХ ГОСУДАРСТВЕННОЙ ПОДДЕРЖКИ - ПРОЧИЕ ПОСТУПЛЕНИЯ", 1)
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Средств в наличии (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Платежи (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ЗАКУПКИ СЫРЬЯ, МАТЕРИАЛОВ, ТОВАРОВ И УСЛУГ", "1")
+					+kir-currency
+					+kir("РАСХОДЫ НА ПЕРСОНАЛ", "1")
+					+kir("НАЛОГОВЫЕ ПЛАТЕЖИ", "1")
+					+kir("ПОГАШЕНИЕ ДОЛГОВЫХ ОБЯЗАТЕЛЬСТВ ВСЕГО", "1")
+					+kir-currency
+					+kir("КАПИТАЛЬНЫЕ ИНВЕСТИЦИИ ВСЕГО", "1")
+					+kir-currency
+
+			//- #box
+			.box-articles.mar-bot-20
+				.heading.heading_normal Остаток денежных средств (млн. руб.)
+				.kir-table
+					+kir-name
+					+kir("ВСЕГО", "1")
+					+kir-currency

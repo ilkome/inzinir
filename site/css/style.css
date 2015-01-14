@@ -11444,6 +11444,14 @@ a.sort-link.lines.is-active span {
   min-width: 115px;
   vertical-align: top;
 }
+.kir-headtime {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #353535;
+}
 input.inp_kir {
   width: 115px;
   box-sizing: border-box;
@@ -11586,6 +11594,25 @@ input.inp_orange {
   border: 1px solid #f2f2f2;
   background: #fafafa;
   color: #c8c8c8;
+}
+.page-desc {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+}
+.page-desc .norm {
+  padding-bottom: 5px;
+  color: #353535;
+}
+.page-desc .grey {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.page-desc h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 @-webkit-keyframes opacity-fade {
   0% {
