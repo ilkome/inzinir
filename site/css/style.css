@@ -11614,6 +11614,11 @@ input.inp_orange {
   font-weight: normal;
   text-transform: uppercase;
 }
+.page-desc_no-bd {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+}
 @-webkit-keyframes opacity-fade {
   0% {
     opacity: 0.5;

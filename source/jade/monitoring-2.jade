@@ -1,0 +1,49 @@
+extends _layout
+
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Системообразующие предприятия
+
+		.main-full
+			//- #отчетность
+			.box-info-one
+				.page-desc.page-desc_no-bd
+					.norm Научно-ссследовальский институт систем связи и управления
+					.grey Транспортное машиностроение
+				.bname
+					h3 
+						a(href="#") Движение денежных средств
+				.bcon
+					.reporting-line.reporting-line_names
+						.reporting-item.reporting_num №
+						.reporting-item.reporting_name Название
+						.reporting-item.reporting_status Статус
+					
+					mixin reporting(num, name, status)
+						.reporting-line
+							.reporting-item.reporting_num= num
+							.reporting-item.reporting_name(
+								class=typeof 
+								status === "undefined" ? undefined : status
+								) #{name}
+							.reporting-item.reporting_status
+								a(href="#").link-plus Добавить
+								
+					+reporting("1", "Государственная поддержка", "ok")
+					+reporting("2", "Источники и структура выручки", "ok")
+					+reporting("3", "Дебиторская задолженность", "fault")
+					+reporting("4", "Долговые обязательства", "ok")
+					+reporting("5", "Сведения о персонале", "fault")
+				
+					.reporting-line
+						.reporting-item.reporting_num 6
+						.reporting-item.reporting_name.ok Государственная поддержка
+						.reporting-item.reporting_status
+							a(href="#").link-edit Изменить
+							a(href="#").ok
+
+					.all_full
+						a(href="#") Все документы
