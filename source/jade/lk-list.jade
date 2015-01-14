@@ -1,0 +1,80 @@
+//- Шаблон
+//------------------------------------------------
+extends _layout
+
+//- Загаловок страницы
+block title
+	| - Статьи
+	
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
+ 
+ 
+//- Контент
+//------------------------------------------------
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Информация
+				li.sep >
+				li
+					a(href="#") Рынок услуг
+		//------------------------------------------------
+		.page-name
+			h1 Аналитические статьи
+			p Аналитические статьи на тему строительства промышленных и иных объектов
+		//------------------------------------------------
+		.main-left
+			.search-con
+				form(action="#")
+					input(type="text", placeholder="Быстрый поиск по аналитическим статьям").inp-text
+					input(type="submit", value="").inp-submit
+			
+			.items-bds
+				mixin items-bds_item 
+					.page-desc
+						h3 движение денежных средств
+						.grey Транспортное машиностроение
+				
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+
+				.page-desc
+					h3 движение денежных средств
+					.grey Транспортное машиностроение
+					ul.check-ttu
+						li
+							a(href="#") Движение денежных средств 
+							span (23)
+						li
+							a(href="#") Источники и структура выручки реализации 
+							span (0)
+					.download-report
+						a(href="#") Скачать отчет
+						.date 05-11 Января 2015
+
+
+		.main-right
+			.box-sort-docs.box-right
+				.bname
+					h3 Отрасли
+				.bcon
+					.checks
+						.line
+							input(id="check-val2" type="checkbox" name="radio")
+							label(for="check-val2") Свидетельства о регистрации (243)
+						.line
+							input(id="check-val3" type="checkbox" name="radio")
+							label(for="check-val3") Патенты РФ (68)
+				.action
+					a(href="#") Показать
+		
+		+pager

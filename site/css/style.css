@@ -7464,6 +7464,9 @@ textarea.inp-full {
 .items-bds {
   padding-bottom: 30px;
 }
+.items-bds .page-desc {
+  margin-bottom: 10px;
+}
 .items-bds_item {
   padding: 20px 20px 10px 15px;
   margin-bottom: 5px;
@@ -11606,6 +11609,7 @@ input.inp_orange {
   color: #c8c8c8;
 }
 .page-desc {
+  position: relative;
   margin-bottom: 20px;
   padding: 15px 20px;
   border: 1px solid #e5e5e5;
@@ -11628,6 +11632,36 @@ input.inp_orange {
   margin-bottom: 0;
   padding-bottom: 0;
   border: none;
+}
+.check-ttu {
+  padding-top: 10px;
+  padding-right: 300px;
+  margin: 0;
+  list-style: none;
+}
+.check-ttu li {
+  margin: 0;
+  list-style: none;
+}
+.check-ttu li {
+  margin: 5px;
+}
+.check-ttu a {
+  text-transform: uppercase;
+}
+.download-report {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  padding-left: 50px;
+  border: 1px solid #e5e5e5;
+  background: #fafafa url("../img/icons/document.png") 15px center no-repeat;
+}
+.download-report a {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 @-webkit-keyframes opacity-fade {
   0% {
