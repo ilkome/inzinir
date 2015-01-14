@@ -295,6 +295,10 @@ color-orange()
 	margin-left 0
 	margin-right 0
 
+.fl-left
+	float left
+.fl-right
+	float right
 
 // ===============================================	
 
@@ -1638,6 +1642,31 @@ textarea.inp-full
 			color #f85800;
 			border-color #f85800;  
 			background url("../img/icons/plus-big-a.png") center 40px no-repeat;
+
+.box-name
+	padding-bottom 20px
+	h3
+		margin 0;
+		font-size 14px; text-transform uppercase; tdn();
+
+.items-bds
+	padding-bottom 30px
+.items-bds_item
+	padding 20px 20px 10px 15px
+	margin-bottom 5px
+	clearfix() 
+	border 1px solid #e5e5e5
+	.name 
+		color #323232
+		font-size 14px
+	.doc
+		margin-top -10px
+		margin-right 20px
+		padding 9px 0 6px 40px
+		color-orange()
+		font-size 14px
+		font-weight bold
+		background url("../img/icons/doc-blank.png") no-repeat
 
 .box-info
 	margin-bottom 20px;
@@ -4572,3 +4601,36 @@ input.inp_orange
 		&:hover
 			tdn() 
 	
+
+.pager-nav
+	text-align center
+	ul
+		display inline-block
+		lino()
+		clearfix() 
+	li
+		float left
+	a
+		display block
+		font-size 12px
+		color-orange()
+		padding 5px 10px 
+		&:hover
+			text-decoration none
+	span
+		display block
+		padding 5px 10px 
+		font-size 12px
+	li.prev a, li.next a
+		display block
+		background url("../img/icons/arrow-grey-right.png") center center no-repeat
+		border 1px solid #f2f2f2
+	li.prev a
+		transform rotate(180deg)
+	li.is-active
+		padding 0 3px
+		a
+			padding 5px 7px
+			border 1px solid #f2f2f2
+			background #fafafa
+			color #c8c8c8

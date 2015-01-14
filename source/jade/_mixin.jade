@@ -153,3 +153,18 @@ mixin logo-bottom
 		.item
 			a(href="#") 
 				img(src="img/content/logo-ibs.png", alt="")
+
+mixin pager
+	.pager-nav
+		ul
+			li.prev.is-disable: a(href="#") &nbsp;
+			li: a(href="#") 1
+			li: a(href="#") 2
+			li: a(href="#") 3
+			li.is-active: a(href="#") 4
+			li: a(href="#") 5
+			li: a(href="#") 6
+			li: a(href="#") 7
+			li: span ...
+			li: a(href="#") 27
+			li.next: a(href="#") &nbsp;
