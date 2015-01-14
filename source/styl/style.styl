@@ -3,7 +3,7 @@
 @import "_summernote.styl"
 
 
-min-height = "screen and (min-height: 768px)"
+min-height = "screen and (min-height 768px)"
 min-width = "screen and (max-width 1350px)"
 
 
@@ -45,15 +45,15 @@ i
 //	BTNs
 // ===============================================
 .btn-orange
-	display block;
-	padding 10px 10px;
-	text-align center; 
-	color #333; 
-	font-size 12px; 
-	tdn(); 
-	latoblack(); 
-	text-transform uppercase;
-	border 3px solid #FF8C4D;
+	display block
+	padding 10px 10px
+	text-align center 
+	color #333 
+	font-size 12px 
+	tdn() 
+	latoblack() 
+	text-transform uppercase
+	border 3px solid #FF8C4D
 	&:hover
 		tdn(); 
 		border-color #f85800;
@@ -97,7 +97,7 @@ i
 .btn-primary
 	@extend .btn;
 	border-color #00557d;
-	color: #00557d;
+	color #00557d;
 	&:hover
 		background #00557d; 
 		color #FFF; 
@@ -4494,6 +4494,9 @@ a.sort-link.lines.is-active
 		width 17px
 		height 17px
 		background url("../img/icons/ok-blue.png") no-repeat
+.reporting_date-range
+	display table-cell 
+	width 100px
 .reporting_file
 	width 200px
 	.ins
@@ -4501,7 +4504,6 @@ a.sort-link.lines.is-active
 		background url("../img/icons/doc-sm.png") no-repeat
 	a
 		margin-left 10px
-	
 .reporting-line_names 
 	border none
 	.reporting-item
@@ -4514,6 +4516,44 @@ a.sort-link.lines.is-active
 	padding-left 20px
 	background url("../img/icons/report-red.png") 0 8px no-repeat
 
+.reporting-line-fl
+	margin-bottom 7px
+	border 1px solid #e5e5e5
+	clearfix() 
+	.reporting-item
+		position relative
+		padding 10px 10px
+		color #333
+		font-size 12px
+	.reporting_name
+		float left
+		width 300px
+	.reporting_date-range
+		float left
+		width 100px
+		padding 10px 10px
+		text-align center
+.reporting-line-fl_nobd
+	border none
+	.reporting-item
+		color #999
+		font-size 14px
+.reporting_date-range .ok
+	display inline-block
+	width 16px
+	height 16px
+	background url("../img/icons/report-green.png") 0 0 no-repeat
+.reporting_date-range .fault
+	display inline-block
+	width 16px
+	height 16px
+	background url("../img/icons/report-red.png") 0 0 no-repeat
+.reporting_date-range .nothing
+	display inline-block
+	width 16px
+	height 16px
+	background url("../img/icons/report-grey.png") 0 0 no-repeat
+	
 
 .link-edit
 	display inline-block
@@ -4701,3 +4741,58 @@ input.inp_orange
 		display block
 		margin-bottom 5px
 		text-transform uppercase
+		
+.sorting-reports
+	padding 20px 40px 10px 0
+	.nav
+		position relative
+		color-orange()
+	.nav-prev
+		padding-right 20px
+	.btn-orange
+		padding 10px 40px
+.nav-prev .btn-orange
+	border-left none
+.nav-next .btn-orange
+	border-right none
+			
+.nav .btn-orange:after
+.nav .btn-orange:before
+	top 50%
+	border solid transparent
+	content " "
+	height 0
+	width 0
+	position absolute
+	pointer-events none
+.nav .btn-orange:after
+	border-color rgba(255, 255, 255, 0)
+	border-width 16px
+	margin-top -16px
+.nav .btn-orange:before
+	border-color rgba(248, 88, 0, 0)
+	border-width 20px
+	margin-top -20px
+	anim()
+.nav-prev .btn-orange:hover:before
+.nav-prev .btn-orange:hover:before
+	border-right-color #f85800
+	
+.nav-prev .btn-orange:after
+.nav-prev .btn-orange:before
+	right 100%
+.nav-prev .btn-orange:after
+	border-right-color #fff
+.nav-prev .btn-orange:before
+	border-right-color #FF8C4D
+	
+.nav-next .btn-orange:after
+.nav-next .btn-orange:before
+	left 100%
+.nav-next .btn-orange:after
+	border-left-color #fff
+.nav-next .btn-orange:before
+	border-left-color #FF8C4D
+.nav-next .btn-orange:hover:before
+.nav-next .btn-orange:hover:before
+	border-left-color #f85800

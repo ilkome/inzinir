@@ -1,0 +1,65 @@
+extends _layout
+
+block styles
+	link(href="css/jquery.datetimepicker.css", rel="stylesheet")
+block scripts
+	script(src="js/jquery.datetimepicker.js", type="text/javascript")
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Системообразующие предприятия
+
+		.main-full
+			h3 ОАО 2
+			//- #отчетность
+			.box-info-one
+				.sorting-reports
+					.fl-right
+						.nav.nav-prev.fl-left
+							a(href="#").btn-orange Назад
+						.date-period.fl-left
+							span.inline с
+							input(type="text", placeholder="дата от").inline.js-calendar-widget.calendar-widget-pop.inp-text_sm
+							a(href="#").js-open-cal.cal
+							span.inline до
+							input(type="text", placeholder="дата до").inline.js-calendar-widget.calendar-widget-pop2.inp-text_sm
+							a(href="#").js-open-cal.cal
+						.nav.nav-next.fl-left 
+							a(href="#").btn-orange Вперед
+					.clear
+							
+				.bcon
+					.reporting-line-fl.reporting-line-fl_nobd
+						.reporting-item.reporting_name Форма
+						.reporting-item.reporting_date-range.center 02.01-08.01
+						.reporting-item.reporting_date-range.center 02.01-08.01
+						.reporting-item.reporting_date-range.center 02.01-08.01
+					
+					.reporting-line-fl
+						.reporting-item.reporting_name Государственная поддержка
+						.reporting-item.reporting_date-range
+							.ok.center
+						.reporting-item.reporting_date-range
+							.ok.center
+						.reporting-item.reporting_date-range
+							.fault.center
+
+					.reporting-line-fl
+						.reporting-item.reporting_name Государственная поддержка
+						.reporting-item.reporting_date-range
+							.fault.center
+						.reporting-item.reporting_date-range
+							.fault.center
+						.reporting-item.reporting_date-range
+							.fault.center
+
+					.reporting-line-fl
+						.reporting-item.reporting_name Источники и структура выручки от реализации
+						.reporting-item.reporting_date-range
+							.nothing.center
+						.reporting-item.reporting_date-range
+							.nothing.center
+						.reporting-item.reporting_date-range
+							.nothing.center
