@@ -1,0 +1,25 @@
+extends _layout
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li.nound
+					a(href="#") Личный кабинет
+				
+		.main-full
+			.box-name: h3 Области
+			.items-bds
+				mixin items-bds_item 
+					.items-bds_item
+						.name.fl-left Адыгея
+						.doc.fl-right: a(href="#") 69
+				
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+				+items-bds_item
+
+			+pager
