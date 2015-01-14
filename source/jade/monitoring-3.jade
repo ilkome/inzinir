@@ -1,0 +1,43 @@
+extends _layout
+
+
+block append content
+	.main-width.main-wrap
+		.pathway
+			ul
+				li: a(href="#") Системообразующие предприятия
+
+		.main-full
+			//- #отчетность
+			.box-info-one
+				.bname
+					h3 
+						a(href="#") Алтайский край
+				.bcon
+					.reporting-line.reporting-line_names
+						.reporting-item.reporting_num №
+						.reporting-item.reporting_name Название
+						.reporting-item.reporting_time Дата
+						.reporting-item.reporting_file Файл отчета
+					
+					mixin reporting(num, name, status)
+						.reporting-line
+							.reporting-item.reporting_num= num
+							.reporting-item.reporting_name(
+								class=typeof 
+								status === "undefined" ? undefined : status
+								) #{name}
+							.reporting-item.reporting_time Декабрь 2014
+							.reporting-item.reporting_file
+								.ins
+									| PDF - 12 Мб
+									a(href="#") СКАЧАТЬ
+								
+					+reporting("1", "Государственная поддержка")
+					+reporting("2", "Источники и структура выручки")
+					+reporting("3", "Дебиторская задолженность")
+					+reporting("4", "Долговые обязательства")
+					+reporting("5", "Сведения о персонале")
+				
+					.all_full
+						a(href="#") Все документы

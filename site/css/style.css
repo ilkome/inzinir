@@ -11386,6 +11386,16 @@ a.sort-link.lines.is-active span {
   height: 17px;
   background: url("../img/icons/ok-blue.png") no-repeat;
 }
+.reporting_file {
+  width: 200px;
+}
+.reporting_file .ins {
+  padding: 5px 0 0px 25px;
+  background: url("../img/icons/doc-sm.png") no-repeat;
+}
+.reporting_file a {
+  margin-left: 10px;
+}
 .reporting-line_names {
   border: none;
 }
