@@ -13,6 +13,9 @@ block append content
 			.kir__col.kir__col_med Отчетная неделя (факт)
 			.kir__col.kir__col_med Неделя, следующая за отчетной (прогноз)
 			.kir__col.kir__col_med Вторая неделя, следующая за отчетной (прогноз) 
+			.kir__col.kir__col_med Отчетная неделя (факт)
+			.kir__col.kir__col_med Неделя, следующая за отчетной (прогноз)
+			.kir__col.kir__col_med Вторая неделя, следующая за отчетной (прогноз) 
 	
 	mixin kir(name, orange)
 		.kir
@@ -21,7 +24,13 @@ block append content
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="590 800" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="460 500" readonly).inp_kir.inp_orange
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="990 000" readonly).inp_kir.inp_orange
 			else 
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
+				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="120 000").inp_kir
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="70 000").inp_kir
 				.kir__col.kir__col_med: input(type="text", placeholder="", value="134 000").inp_kir
@@ -48,7 +57,7 @@ block append content
 				.heading.heading_normal Остаток денежных средств на начало отчетного месяца (млн. руб.)
 				.kir-table
 					+kir-name
-					+kir("ВСЕГО", "1")
+					+kir("Остаток денежных средств на начало отчетного периода всего, в российских рублях по курсу ЦБ РФ на отчетную дату, млн руб., в т.ч. *", "1")
 					+kir-currency
 			
 			//- #box

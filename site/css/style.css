@@ -11494,6 +11494,7 @@ a.sort-link.lines.is-active span {
 }
 .kir {
   display: table-row;
+  width: 100%;
 }
 .kir__col {
   position: relative;
@@ -11505,11 +11506,11 @@ a.sort-link.lines.is-active span {
   font-size: 14px;
 }
 .kir__col_wide {
-  width: 250px;
+  width: 30%;
 }
 .kir__col_med {
   text-align: center;
-  min-width: 115px;
+  width: 10%;
   vertical-align: top;
 }
 .kir-headtime {
@@ -11521,10 +11522,11 @@ a.sort-link.lines.is-active span {
   color: #353535;
 }
 input.inp_kir {
-  width: 115px;
+  width: 70px;
   box-sizing: border-box;
+  padding: 10px 10px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }
 input.inp_kir:hover,
