@@ -7,6 +7,28 @@ html
 	include _head
 	
 	body
+		<!--[if lte IE 8]>
+		script(type="text/javascript").
+			$(document).ready(function() {
+				var remodalIEError = $.remodal.lookup[$('[data-remodal-id=error-ie]').data('remodal')];
+				remodalIEError.open();
+			});
+		<![endif]-->
+	
+		.remodal(data-remodal-id="error-ie")
+			.popup-error
+				h3.center.refusal-name Версия браузера
+				p Уважаемый пользователь, уведомляем Вас, <br> что ваша версия браузера не поддерживается системой. Просьба ипользовать IE9 версии и <br> выше и аналогичные версии других браузеров. <br> Вы можете продолжить использование
+				.center
+					a(href="#").btn-orange-wide.inline.remodal-ok Продолжить
+
+		.remodal(data-remodal-id="error-minwidth")
+			.popup-error
+				h3.center.refusal-name Минимальная ширина браузера
+				p Уважаемый пользователь, уведомляем Вас, <br> что ваш ширина браузера не достаточна для полноценного использования сайта.
+				.center
+					a(href="#").btn-orange-wide.inline.remodal-ok Продолжить
+
 		#shikarniy
 			include _sidebar
 			.main-page

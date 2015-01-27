@@ -6,6 +6,8 @@
 
 
 $(document).ready(function() {
+	//	#check-min-width
+	minWindthError()
 
 	//	
 	$(".js-report-by-date").on("click", function(e) {
@@ -128,8 +130,12 @@ $(document).ready(function() {
 	}
 
 	//	Ресайз
+	var minWindthErrorTimer;
 	$(window).on("resize", function (e) {
-	    sidebarHeight()
+	    sidebarHeight();
+	    
+	    clearTimeout(minWindthErrorTimer);
+		minWindthErrorTimer = setTimeout(minWindthError, 1000);
 	});
 	
 	
@@ -621,3 +627,14 @@ $(document).ready(function() {
 	});
 
 });
+
+
+function minWindthError() {
+	var bodyWidth = $(document).width();
+	var remodaMinWidth = $.remodal.lookup[$('[data-remodal-id=error-minwidth]').data('remodal')];
+	if(bodyWidth <= "1300") {
+		remodaMinWidth.open();
+	} else {
+		remodaMinWidth.close();
+	}
+}
