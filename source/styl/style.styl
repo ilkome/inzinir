@@ -1515,34 +1515,50 @@ a.link-orange
 				font-size 21px; color #fff; bold(); line-height 30px; 
 				text-align center;
 				background-color rgba(25, 36, 49, 0.6);
-	.lSSlideOuter 
-		.lSSlideWrapper 
-			height 400px;
-		.lSPager.lSpg
-			lino();
-			position absolute; left 50%; bottom 20px; 
-			width 200px; margin-left -100px;
-			li
-				padding 0 7px;
-				a
-					width 16px; height 16px
-					background-color #D3D3D3; border 3px solid #FFF;
-					&:hover
-						background #f2a075;
-			li.active
-				a
-					background-color #FF8B4D
-		.lSAction
+	.bx-controls
+		position absolute 
+		left 0px 
+		bottom 0px
+		width 100%
+	.bx-pager
+		position absolute; left 50%; bottom 20px; 
+		width 200px; margin-left -100px;
+		.bx-pager-item
+			padding 0 7px;
+			float left
 			a
-				width 37px; height 37px;
-				margin-top -18px;
-				background url("../img/slider-index-nav.png") no-repeat;
-				z-index 10;
-			.lSPrev
-				left 25px;
-			.lSNext
-				right 25px;
-				transform rotate(-180deg);
+				display block
+				width 16px
+				height 16px
+				background-color #D3D3D3
+				border 3px solid #FFF
+				border-radius 16px
+				text-indent -9999px
+				&:hover
+					background #f2a075
+				&.active
+					background #f2a075
+		li.active
+			a
+				background-color #FF8B4D
+	.bx-controls-direction
+		position absolute 
+		left 0px 
+		top -200px
+		width 100%
+		a
+			position absolute 
+			display block
+			width 37px; height 37px;
+			margin-top -18px;
+			text-indent -9999px
+			background url("../img/slider-index-nav.png") no-repeat;
+			z-index 10;
+		.bx-prev
+			left 25px;
+		.bx-next
+			right 25px;
+			transform rotate(-180deg);
 
 .organ-info
 	position relative;
@@ -4802,3 +4818,18 @@ input.inp_orange
 .nav-next .btn-orange:hover:before
 .nav-next .btn-orange:hover:before
 	border-left-color #f85800
+	
+
+// #bx-wrapper
+// ===============================================
+.bx-wrapper
+	position relative
+	margin 0 auto
+	padding 0
+	*zoom 1
+	.bx-viewport 
+		transform translatez(0)
+	.bx-loading
+		display none
+	.bx-controls-direction a
+		text-indent -9999px

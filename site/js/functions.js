@@ -324,16 +324,20 @@ $(document).ready(function() {
 	// ==================================================
 	//	СЛАЙДЕРЫ
 	// ==================================================
-	if ( $.isFunction($.fn.lightSlider) ) {
-		$(".slider-index").lightSlider({
-			item: 1,
-			loop: true,
-			auto: true,
-			pause: 10000,
-			cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-			swipeThreshold: 100,
-		});
+	var sliderRecommends = $('.slider-index').bxSlider({
+		mode: 'horizontal',
+		speed: 800,
+		useCSS: 1,
+		easing: "ease-in-out",
+		adaptiveHeight: 0,
+		infiniteLoop: true,
+		controls: 1,
+		pager: 1,
+		auto: 1,
+		pause: '10000', // pause between sliders
+	});
 
+	if ( $.isFunction($.fn.lightSlider) ) {
 		$(".js-archive-slider").lightSlider({
 			item: 1,
 			loop: false,

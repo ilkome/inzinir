@@ -7270,48 +7270,61 @@ a.link-orange:hover,
   text-align: center;
   background-color: rgba(25,36,49,0.6);
 }
-.slider-index-wrap .lSSlideOuter .lSSlideWrapper {
-  height: 400px;
+.slider-index-wrap .bx-controls {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 }
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg {
-  margin: 0;
-  list-style: none;
+.slider-index-wrap .bx-pager {
   position: absolute;
   left: 50%;
   bottom: 20px;
   width: 200px;
   margin-left: -100px;
 }
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg li {
-  margin: 0;
-  list-style: none;
-}
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg li {
+.slider-index-wrap .bx-pager .bx-pager-item {
   padding: 0 7px;
+  float: left;
 }
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg li a {
+.slider-index-wrap .bx-pager .bx-pager-item a {
+  display: block;
   width: 16px;
   height: 16px;
   background-color: #d3d3d3;
   border: 3px solid #fff;
+  border-radius: 16px;
+  text-indent: -9999px;
 }
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg li a:hover {
+.slider-index-wrap .bx-pager .bx-pager-item a:hover {
   background: #f2a075;
 }
-.slider-index-wrap .lSSlideOuter .lSPager.lSpg li.active a {
+.slider-index-wrap .bx-pager .bx-pager-item a.active {
+  background: #f2a075;
+}
+.slider-index-wrap .bx-pager li.active a {
   background-color: #ff8b4d;
 }
-.slider-index-wrap .lSSlideOuter .lSAction a {
+.slider-index-wrap .bx-controls-direction {
+  position: absolute;
+  left: 0px;
+  top: -200px;
+  width: 100%;
+}
+.slider-index-wrap .bx-controls-direction a {
+  position: absolute;
+  display: block;
   width: 37px;
   height: 37px;
   margin-top: -18px;
+  text-indent: -9999px;
   background: url("../img/slider-index-nav.png") no-repeat;
   z-index: 10;
 }
-.slider-index-wrap .lSSlideOuter .lSAction .lSPrev {
+.slider-index-wrap .bx-controls-direction .bx-prev {
   left: 25px;
 }
-.slider-index-wrap .lSSlideOuter .lSAction .lSNext {
+.slider-index-wrap .bx-controls-direction .bx-next {
   right: 25px;
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -11791,6 +11804,23 @@ input.inp_orange {
 }
 .nav-next .btn-orange:hover:before {
   border-left-color: #f85800;
+}
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+}
+.bx-wrapper .bx-viewport {
+  -webkit-transform: translatez(0);
+      -ms-transform: translatez(0);
+          transform: translatez(0);
+}
+.bx-wrapper .bx-loading {
+  display: none;
+}
+.bx-wrapper .bx-controls-direction a {
+  text-indent: -9999px;
 }
 @-webkit-keyframes opacity-fade {
   0% {
