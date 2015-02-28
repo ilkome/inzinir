@@ -5,10 +5,38 @@
 */
 
 
-$(document).ready(function() {
-	//	#check-min-width
-	minWindthError()
+	// #rev-select
+function RevSelect() {
+	$('.rev-sel').on("click",function(e) {
+		e.preventDefault();
+		if ($(this).hasClass('opened')) {
+			$(this).children('.sel-list').stop().slideUp(200);
+			$(this).removeClass('opened');
+		} else {
+			$(this).children('.sel-list').stop().slideDown(200);
+			$(this).addClass('opened');
+		}
+	});
+	$(".rev-sel").mouseleave(function() {
+		$(this).children('.sel-list').stop().slideUp(200);
+		$(this).removeClass('opened');
+	})
+	$('.rev-sel .sel-item a').on("click",function(e) {
+		e.preventDefault();
+		$(this).parent().parent().parent().children('.sel-title')
+		.html($(this).html());
+		$(this).parent().parent().children('li').removeClass('active');
+		$(this).parent().addClass('active');
+	})
+}
 
+$(document).ready(function() {
+	
+	RevSelect();
+	
+	//	#check-min-width
+	minWindthError();
+	
 	//	
 	$(".js-report-by-date").on("click", function(e) {
 		if($(".js-report-date").is(":hidden")) {
@@ -324,20 +352,16 @@ $(document).ready(function() {
 	// ==================================================
 	//	СЛАЙДЕРЫ
 	// ==================================================
-	var sliderRecommends = $('.slider-index').bxSlider({
-		mode: 'horizontal',
-		speed: 800,
-		useCSS: 1,
-		easing: "ease-in-out",
-		adaptiveHeight: 0,
-		infiniteLoop: true,
-		controls: 1,
-		pager: 1,
-		auto: 1,
-		pause: '10000', // pause between sliders
-	});
-
 	if ( $.isFunction($.fn.lightSlider) ) {
+		$(".slider-index").lightSlider({
+			item: 1,
+			loop: true,
+			auto: true,
+			pause: 10000,
+			cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+			swipeThreshold: 100,
+		});
+
 		$(".js-archive-slider").lightSlider({
 			item: 1,
 			loop: false,
@@ -630,6 +654,19 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.main-block.support .item-title').click(function(){
+//		event.preventDefault();
+		if ($(this).parent().hasClass('active')) {
+//			$(this).parent().find('.drop-list').stop().slideUp(300);
+			$(this).parent().removeClass('active');
+			return false;
+		}
+		else {
+//			$(this).parent().find('.drop-list').stop().slideDown(300);
+			$(this).parent().addClass('active');
+			return false;
+		}
+	});
 });
 
 
